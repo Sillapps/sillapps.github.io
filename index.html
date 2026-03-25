@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sillapps</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #050a14;
+        --surface: #0d1727;
+        --surface-2: #122039;
+        --text: #f4f8ff;
+        --muted: #94a8c6;
+        --border: rgba(0, 255, 255, 0.18);
+        --cyan: #00f0ff;
+        --gold: #ffb347;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family:
+          "Avenir Next",
+          "Segoe UI",
+          sans-serif;
+        line-height: 1.5;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top, rgba(0, 240, 255, 0.14), transparent 32%),
+          linear-gradient(180deg, #08111f 0%, var(--bg) 100%);
+      }
+
+      main {
+        width: min(860px, calc(100% - 32px));
+        margin: 56px auto;
+      }
+
+      .panel {
+        padding: 28px;
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        background: linear-gradient(180deg, rgba(13, 23, 39, 0.96), rgba(8, 16, 28, 0.96));
+        box-shadow: 0 0 0 1px rgba(0, 255, 255, 0.04), 0 24px 60px rgba(0, 0, 0, 0.4);
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.05;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        max-width: 64ch;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 14px;
+        margin-top: 18px;
+      }
+
+      .card {
+        display: block;
+        padding: 16px 18px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        background: linear-gradient(180deg, rgba(18, 32, 57, 0.95), rgba(12, 22, 39, 0.95));
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      .card:hover {
+        border-color: rgba(0, 240, 255, 0.28);
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+
+      .card strong {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 1rem;
+      }
+
+      .card span {
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      code {
+        font-family: "SFMono-Regular", ui-monospace, monospace;
+        color: var(--cyan);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel">
+        <div class="eyebrow">Sillapps</div>
+        <h1>Public App Pages</h1>
+        <p>
+          This site hosts public legal pages and platform verification files for
+          Sillapps mobile apps, including <code>app-ads.txt</code>.
+        </p>
+
+        <div class="grid">
+          <a class="card" href="/app-ads.txt">
+            <strong>app-ads.txt</strong>
+            <span>Authorized sellers file used by AdMob and other buyers.</span>
+          </a>
+          <a class="card" href="https://sillapps.github.io/eco-claims-pocket-legal/">
+            <strong>Eco Claims Pocket Legal</strong>
+            <span>Privacy policy and public legal page.</span>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+  </html>
