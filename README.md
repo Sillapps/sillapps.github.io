@@ -7,6 +7,7 @@ GitHub Pages root site for Sillapps public app pages.
 - `app-ads.txt`: Authorized sellers file for mobile app ad inventory.
 - `index.html`: Small landing page for public/legal resources.
 - `.nojekyll`: Serves files as-is on GitHub Pages.
+- `eco-claims-pocket/`: Consolidated public legal pages for Eco Claims Pocket.
 
 ## app-ads.txt
 
