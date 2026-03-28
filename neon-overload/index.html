@@ -4,130 +4,36 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Neon Overload</title>
-    <style>
-      :root {
-        color-scheme: dark;
-        --bg: #050a14;
-        --surface: #0d1727;
-        --surface-2: #122039;
-        --text: #f4f8ff;
-        --muted: #94a8c6;
-        --border: rgba(0, 255, 255, 0.18);
-        --cyan: #00f0ff;
-        --gold: #ffb347;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        font-family:
-          "Avenir Next",
-          "Segoe UI",
-          sans-serif;
-        line-height: 1.6;
-        color: var(--text);
-        background:
-          radial-gradient(circle at top, rgba(0, 240, 255, 0.14), transparent 32%),
-          linear-gradient(180deg, #08111f 0%, var(--bg) 100%);
-      }
-
-      main {
-        width: min(860px, calc(100% - 32px));
-        margin: 56px auto;
-      }
-
-      .panel {
-        padding: 28px;
-        border: 1px solid var(--border);
-        border-radius: 22px;
-        background: linear-gradient(180deg, rgba(13, 23, 39, 0.96), rgba(8, 16, 28, 0.96));
-        box-shadow: 0 0 0 1px rgba(0, 255, 255, 0.04), 0 24px 60px rgba(0, 0, 0, 0.4);
-      }
-
-      p {
-        margin: 0;
-        color: var(--muted);
-        max-width: 65ch;
-      }
-
-      h1 {
-        margin: 0 0 10px;
-        font-size: clamp(2.2rem, 4vw, 3.2rem);
-        line-height: 1.05;
-      }
-
-      .eyebrow {
-        display: inline-block;
-        margin-bottom: 10px;
-        font-size: 0.75rem;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--gold);
-      }
-
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 14px;
-        margin-top: 22px;
-      }
-
-      .card {
-        display: block;
-        padding: 18px;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 16px;
-        background: linear-gradient(180deg, rgba(18, 32, 57, 0.95), rgba(12, 22, 39, 0.95));
-        color: var(--text);
-        text-decoration: none;
-      }
-
-      .card:hover {
-        border-color: rgba(0, 240, 255, 0.28);
-      }
-
-      .card strong {
-        display: block;
-        margin-bottom: 6px;
-        font-size: 1rem;
-      }
-
-      .card span {
-        display: block;
-        color: var(--muted);
-        font-size: 0.95rem;
-      }
-
-      code {
-        font-family: "SFMono-Regular", ui-monospace, monospace;
-        color: var(--cyan);
-      }
-    </style>
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <main>
-      <section class="panel">
-        <div class="eyebrow">Neon Overload</div>
-        <h1>Public Legal Page</h1>
-        <p>
-          This site provides the public legal page for the mobile app
-          <strong>Neon Overload</strong>.
-        </p>
-        <p>
-          It is intended to support the app listing and compliance requirements
-          for app store distribution.
-        </p>
+      <section class="panel hero">
+        <div class="panel-inner">
+          <div class="nav-row">
+            <a class="back-link" href="/">Site Home</a>
+          </div>
 
-        <div class="grid">
-          <a class="card" href="privacy.html">
-            <strong>Privacy Policy</strong>
-            <span>Read the public privacy policy for Neon Overload.</span>
-          </a>
+          <div class="masthead">
+            <div>
+              <p class="eyebrow">Public Legal Page</p>
+              <h1 class="title">Neon Overload</h1>
+            </div>
+            <p class="brand-mark">SILLAPPS</p>
+          </div>
+
+          <p class="intro">
+            This page provides the public legal entry for the mobile app
+            <strong>Neon Overload</strong> and supports app store compliance and
+            listing requirements.
+          </p>
+
+          <div class="pill-row">
+            <a class="pill-link" href="privacy.html">
+              <strong>Privacy Policy</strong>
+              <span>Read the public privacy policy for Neon Overload.</span>
+            </a>
+          </div>
         </div>
       </section>
     </main>
