@@ -1,0 +1,1354 @@
+{
+ "schema": 1,
+ "published": "2026-09-26",
+ "countries": [
+  {
+   "id": "CO",
+   "name": "Colombia",
+   "scheme": "pico y placa",
+   "holidays": "co",
+   "plate_color": "yellow"
+  },
+  {
+   "id": "MX",
+   "name": "México",
+   "scheme": "Hoy No Circula",
+   "holidays": "none",
+   "plate_color": "white"
+  },
+  {
+   "id": "EC",
+   "name": "Ecuador",
+   "scheme": "pico y placa",
+   "holidays": "list",
+   "plate_color": "white"
+  }
+ ],
+ "holidays": {
+  "CO": {
+   "extra": [],
+   "removed": []
+  },
+  "EC": {
+   "extra": [
+    "2026-10-09",
+    "2026-11-02",
+    "2026-11-03",
+    "2026-12-07",
+    "2026-12-25",
+    "2027-01-01",
+    "2027-02-08",
+    "2027-02-09",
+    "2027-03-26",
+    "2027-04-30",
+    "2027-05-24",
+    "2027-08-09",
+    "2027-10-08",
+    "2027-11-01",
+    "2027-11-02",
+    "2027-12-06",
+    "2027-12-25"
+   ],
+   "removed": []
+  }
+ },
+ "hnc": {
+  "verification": {
+   "months": {
+    "amarillo": [
+     1,
+     2,
+     7,
+     8
+    ],
+    "rosa": [
+     2,
+     3,
+     8,
+     9
+    ],
+    "rojo": [
+     3,
+     4,
+     9,
+     10
+    ],
+    "verde": [
+     4,
+     5,
+     10,
+     11
+    ],
+    "azul": [
+     5,
+     6,
+     11,
+     12
+    ]
+   },
+   "hologramas": [
+    "0",
+    "1",
+    "2",
+    "none"
+   ],
+   "source_url": "https://proyectos.sedema.cdmx.gob.mx/datos/storage/app/media/gacetas/GOCDMX_26-07-01_DGCA.pdf"
+  }
+ },
+ "cities": [
+  {
+   "id": "bogota",
+   "country": "CO",
+   "name": "Bogotá",
+   "region": "Bogotá D.C.",
+   "timezone": "America/Bogota",
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "periods": [
+    {
+     "id": "bogota-particulares",
+     "kinds": [
+      "car"
+     ],
+     "valid_from": "2023-01-10",
+     "valid_to": "2026-12-20",
+     "decree": "Decreto 003 de 2023, compilado en el Decreto 652 de 2025",
+     "source_url": "https://www.movilidadbogota.gov.co/abece-del-pico-y-placa-en-bogota",
+     "last_verified": "2026-09-26",
+     "summary": "Lunes a viernes hábiles, 6:00–21:00. Días impares no circulan placas terminadas en 6, 7, 8, 9 y 0; días pares, 1, 2, 3, 4 y 5.",
+     "type": "parity",
+     "weekdays": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "odd": [
+      6,
+      7,
+      8,
+      9,
+      0
+     ],
+     "even": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "hours": [
+      [
+       "06:00",
+       "21:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid"
+     ],
+     "solidario": true,
+     "notes": [
+      "La paridad es la del número del día del mes, no del día de la semana.",
+      "No aplica sábados, domingos ni festivos.",
+      "Eléctricos e híbridos están exentos; la Secretaría de Movilidad los registra de forma automática con el RUNT.",
+      "Pico y Placa Solidario: permiso pago que exime de la medida mientras esté vigente.",
+      "La restricción de sábados para vehículos matriculados fuera de Bogotá fue anunciada y aplazada: no está vigente."
+     ]
+    },
+    {
+     "id": "bogota-motos",
+     "kinds": [
+      "moto"
+     ],
+     "valid_from": "2023-01-10",
+     "valid_to": "2026-12-20",
+     "decree": "Decreto 003 de 2023, compilado en el Decreto 652 de 2025",
+     "source_url": "https://www.movilidadbogota.gov.co/abece-del-pico-y-placa-en-bogota",
+     "last_verified": "2026-09-26",
+     "summary": "Las motos no tienen pico y placa en Bogotá.",
+     "type": "none"
+    }
+   ],
+   "notices": [
+    {
+     "date": "2026-10-12",
+     "title": "Pico y placa regional (plan retorno)",
+     "text": "Si entras a Bogotá por uno de los 9 corredores del plan retorno: de 12:00 a 16:00 solo circulan placas terminadas en número par (0, 2, 4, 6, 8) y de 16:00 a 20:00 solo placas impares (1, 3, 5, 7, 9). Motos, eléctricos e híbridos están exentos.",
+     "source_url": "https://www.movilidadbogota.gov.co/noticias/festivo-de-san-pedro-y-san-pablo-asi-funcionara-el-pico-y-placa-regional"
+    },
+    {
+     "date": "2026-11-02",
+     "title": "Pico y placa regional previsto",
+     "text": "Último día de puente festivo: normalmente aplica el pico y placa regional. Si entras a Bogotá por uno de los 9 corredores del plan retorno: de 12:00 a 16:00 solo circulan placas terminadas en número par (0, 2, 4, 6, 8) y de 16:00 a 20:00 solo placas impares (1, 3, 5, 7, 9). Motos, eléctricos e híbridos están exentos. Confírmalo en la fuente oficial.",
+     "source_url": "https://www.movilidadbogota.gov.co/"
+    },
+    {
+     "date": "2026-11-16",
+     "title": "Pico y placa regional previsto",
+     "text": "Último día de puente festivo: normalmente aplica el pico y placa regional. Si entras a Bogotá por uno de los 9 corredores del plan retorno: de 12:00 a 16:00 solo circulan placas terminadas en número par (0, 2, 4, 6, 8) y de 16:00 a 20:00 solo placas impares (1, 3, 5, 7, 9). Motos, eléctricos e híbridos están exentos. Confírmalo en la fuente oficial.",
+     "source_url": "https://www.movilidadbogota.gov.co/"
+    }
+   ]
+  },
+  {
+   "id": "medellin",
+   "country": "CO",
+   "name": "Medellín",
+   "region": "Valle de Aburrá: Bello, Envigado, Itagüí, Sabaneta, La Estrella, Caldas, Copacabana, Girardota y Barbosa",
+   "timezone": "America/Bogota",
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "periods": [
+    {
+     "id": "medellin-2026s2-carros",
+     "kinds": [
+      "car"
+     ],
+     "valid_from": "2026-08-03",
+     "valid_to": "2027-01-29",
+     "decree": "Decreto 1490 de 2026 (30 de julio)",
+     "source_url": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/la-nueva-rotacion-del-pico-y-placa-en-medellin-comenzara-a-regir-a-partir-del-lunes-3-de-agosto/",
+     "last_verified": "2026-09-26",
+     "summary": "Lunes a viernes hábiles, 5:00–20:00, por el último dígito: lunes 5 y 8, martes 1 y 4, miércoles 0 y 2, jueves 3 y 6, viernes 7 y 9.",
+     "days": {
+      "1": [
+       5,
+       8
+      ],
+      "2": [
+       1,
+       4
+      ],
+      "3": [
+       0,
+       2
+      ],
+      "4": [
+       3,
+       6
+      ],
+      "5": [
+       7,
+       9
+      ]
+     },
+     "hours": [
+      [
+       "05:00",
+       "20:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "No aplica en corregimientos ni en algunas vías (Sistema Vial del Río, Las Palmas desde la Calle 37, accesos a Terminales y aeropuerto).",
+     "notes": [
+      "Aplica igual en los 10 municipios del Valle de Aburrá; algunas vías exentas cambian según el municipio.",
+      "Exentos automáticamente según el RUNT: eléctricos, híbridos, gas natural (GNV) y gas-gasolina."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "medellin-2026s2-motos",
+     "kinds": [
+      "moto"
+     ],
+     "valid_from": "2026-08-03",
+     "valid_to": "2027-01-29",
+     "decree": "Decreto 1490 de 2026 (30 de julio)",
+     "source_url": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/la-nueva-rotacion-del-pico-y-placa-en-medellin-comenzara-a-regir-a-partir-del-lunes-3-de-agosto/",
+     "last_verified": "2026-09-26",
+     "summary": "Motos por el PRIMER dígito de la placa, mismos días y horario: lunes 5 y 8, martes 1 y 4, miércoles 0 y 2, jueves 3 y 6, viernes 7 y 9.",
+     "digit": "first",
+     "days": {
+      "1": [
+       5,
+       8
+      ],
+      "2": [
+       1,
+       4
+      ],
+      "3": [
+       0,
+       2
+      ],
+      "4": [
+       3,
+       6
+      ],
+      "5": [
+       7,
+       9
+      ]
+     },
+     "hours": [
+      [
+       "05:00",
+       "20:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric"
+     ],
+     "zone": "No aplica en corregimientos ni en algunas vías (Sistema Vial del Río, Las Palmas desde la Calle 37, accesos a Terminales y aeropuerto).",
+     "notes": [
+      "Solo las motos eléctricas están exentas (las híbridas y a gas no)."
+     ],
+     "type": "weekday"
+    }
+   ]
+  },
+  {
+   "id": "cali",
+   "country": "CO",
+   "name": "Cali",
+   "region": "Valle del Cauca",
+   "timezone": "America/Bogota",
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "periods": [
+    {
+     "id": "cali-2026s2",
+     "kinds": [
+      "car"
+     ],
+     "valid_from": "2026-07-01",
+     "valid_to": "2026-12-31",
+     "decree": "Decreto 4112.010.20.0814 de 2026",
+     "source_url": "https://www.cali.gov.co/boletines/publicaciones/193096/pico-y-placa-rota-en-cali-para-el-segundo-semestre-de-2026-nueva-medida-rige-desde-el-1-de-julio/",
+     "last_verified": "2026-09-26",
+     "summary": "Lunes a viernes hábiles, 6:00–19:00 continuo: lunes 9 y 0, martes 1 y 2, miércoles 3 y 4, jueves 5 y 6, viernes 7 y 8.",
+     "days": {
+      "1": [
+       9,
+       0
+      ],
+      "2": [
+       1,
+       2
+      ],
+      "3": [
+       3,
+       4
+      ],
+      "4": [
+       5,
+       6
+      ],
+      "5": [
+       7,
+       8
+      ]
+     },
+     "hours": [
+      [
+       "06:00",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid"
+     ],
+     "zone": "Dentro del perímetro urbano, incluidos los vehículos que entran o salen de él.",
+     "notes": [
+      "Quienes pagan la tasa por congestión (Acuerdo 0563 de 2023) están exentos.",
+      "Los vehículos a gas no están exentos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "cali-2026s2-motos",
+     "kinds": [
+      "moto"
+     ],
+     "valid_from": "2026-07-01",
+     "valid_to": "2026-12-31",
+     "decree": "Decreto 4112.010.20.0814 de 2026",
+     "source_url": "https://www.cali.gov.co/boletines/publicaciones/193096/pico-y-placa-rota-en-cali-para-el-segundo-semestre-de-2026-nueva-medida-rige-desde-el-1-de-julio/",
+     "last_verified": "2026-09-26",
+     "summary": "Las motos no tienen pico y placa en Cali.",
+     "type": "none"
+    }
+   ]
+  },
+  {
+   "id": "bucaramanga",
+   "country": "CO",
+   "name": "Bucaramanga",
+   "region": "Área metropolitana: Floridablanca, Girón y Piedecuesta",
+   "timezone": "America/Bogota",
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "periods": [
+    {
+     "id": "bucaramanga-2026-r3",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-07-06",
+     "valid_to": "2026-10-04",
+     "decree": "Resolución DTB 854 de 2025",
+     "source_url": "https://transitobucaramanga.gov.co/consulta_resoluciones_DTB/uploads/RESOLUCION-854-2025-PICOYPLACA.pdf",
+     "last_verified": "2026-09-26",
+     "summary": "Lunes a viernes 6:00–20:00: lunes 7 y 8, martes 9 y 0, miércoles 1 y 2, jueves 3 y 4, viernes 5 y 6. Sábados 9:00–13:00 por rotación.",
+     "days": {
+      "1": [
+       7,
+       8
+      ],
+      "2": [
+       9,
+       0
+      ],
+      "3": [
+       1,
+       2
+      ],
+      "4": [
+       3,
+       4
+      ],
+      "5": [
+       5,
+       6
+      ]
+     },
+     "hours": [
+      [
+       "06:00",
+       "20:00"
+      ]
+     ],
+     "saturday": {
+      "anchor": "2026-01-17",
+      "groups": [
+       [
+        3,
+        4
+       ],
+       [
+        5,
+        6
+       ],
+       [
+        7,
+        8
+       ],
+       [
+        9,
+        0
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "hours": [
+       [
+        "09:00",
+        "13:00"
+       ]
+      ]
+     },
+     "exempt_fuels": [
+      "electric",
+      "hybrid"
+     ],
+     "zone": "No aplica en el Anillo Vial entre Puente Palenque y Café Madrid.",
+     "notes": [
+      "Sábados de 9:00 a 13:00 con un par de dígitos que rota cada semana: 3-4, 5-6, 7-8, 9-0, 1-2.",
+      "Motos: mismo último dígito numérico, sin tener en cuenta la letra.",
+      "Vehículos a GNV modelo 2019 o posterior con certificado vigente están exentos (no se asume en la app).",
+      "Vehículos matriculados o trasladados a Bucaramanga en 2026 están exentos de 9:00 a 17:00 por 12 meses.",
+      "Floridablanca aplica la misma medida (Resolución 008 de 2026); Girón y Piedecuesta según prensa."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "bucaramanga-2026-r4",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-10-05",
+     "valid_to": "2026-12-31",
+     "decree": "Resolución DTB 854 de 2025",
+     "source_url": "https://transitobucaramanga.gov.co/consulta_resoluciones_DTB/uploads/RESOLUCION-854-2025-PICOYPLACA.pdf",
+     "last_verified": "2026-09-26",
+     "summary": "Lunes a viernes 6:00–20:00: lunes 5 y 6, martes 7 y 8, miércoles 9 y 0, jueves 1 y 2, viernes 3 y 4. Sábados 9:00–13:00 por rotación.",
+     "days": {
+      "1": [
+       5,
+       6
+      ],
+      "2": [
+       7,
+       8
+      ],
+      "3": [
+       9,
+       0
+      ],
+      "4": [
+       1,
+       2
+      ],
+      "5": [
+       3,
+       4
+      ]
+     },
+     "hours": [
+      [
+       "06:00",
+       "20:00"
+      ]
+     ],
+     "saturday": {
+      "anchor": "2026-01-17",
+      "groups": [
+       [
+        3,
+        4
+       ],
+       [
+        5,
+        6
+       ],
+       [
+        7,
+        8
+       ],
+       [
+        9,
+        0
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "hours": [
+       [
+        "09:00",
+        "13:00"
+       ]
+      ]
+     },
+     "exempt_fuels": [
+      "electric",
+      "hybrid"
+     ],
+     "zone": "No aplica en el Anillo Vial entre Puente Palenque y Café Madrid.",
+     "notes": [
+      "Sábados de 9:00 a 13:00 con un par de dígitos que rota cada semana: 3-4, 5-6, 7-8, 9-0, 1-2.",
+      "Motos: mismo último dígito numérico, sin tener en cuenta la letra.",
+      "Vehículos a GNV modelo 2019 o posterior con certificado vigente están exentos (no se asume en la app).",
+      "Vehículos matriculados o trasladados a Bucaramanga en 2026 están exentos de 9:00 a 17:00 por 12 meses.",
+      "Floridablanca aplica la misma medida (Resolución 008 de 2026); Girón y Piedecuesta según prensa."
+     ],
+     "type": "weekday"
+    }
+   ]
+  },
+  {
+   "id": "cartagena",
+   "country": "CO",
+   "name": "Cartagena",
+   "region": "Bolívar",
+   "timezone": "America/Bogota",
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "periods": [
+    {
+     "id": "cartagena-2026-t3",
+     "kinds": [
+      "car"
+     ],
+     "valid_from": "2026-06-30",
+     "valid_to": "2026-10-04",
+     "decree": "Decreto 0015 de 2026",
+     "source_url": "https://www.cartagena.gov.co/noticias",
+     "last_verified": "2026-09-26",
+     "summary": "Lunes a viernes hábiles, 7:00–9:00 y 18:00–20:00: lunes 9 y 0, martes 1 y 2, miércoles 3 y 4, jueves 5 y 6, viernes 7 y 8.",
+     "days": {
+      "1": [
+       9,
+       0
+      ],
+      "2": [
+       1,
+       2
+      ],
+      "3": [
+       3,
+       4
+      ],
+      "4": [
+       5,
+       6
+      ],
+      "5": [
+       7,
+       8
+      ]
+     },
+     "hours": [
+      [
+       "07:00",
+       "09:00"
+      ],
+      [
+       "18:00",
+       "20:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric"
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "cartagena-2026-t4",
+     "kinds": [
+      "car"
+     ],
+     "valid_from": "2026-10-05",
+     "valid_to": "2026-12-10",
+     "decree": "Decreto 0015 de 2026",
+     "source_url": "https://www.cartagena.gov.co/noticias",
+     "last_verified": "2026-09-26",
+     "summary": "Lunes a viernes hábiles, 7:00–9:00 y 18:00–20:00: lunes 1 y 2, martes 3 y 4, miércoles 5 y 6, jueves 7 y 8, viernes 9 y 0.",
+     "days": {
+      "1": [
+       1,
+       2
+      ],
+      "2": [
+       3,
+       4
+      ],
+      "3": [
+       5,
+       6
+      ],
+      "4": [
+       7,
+       8
+      ],
+      "5": [
+       9,
+       0
+      ]
+     },
+     "hours": [
+      [
+       "07:00",
+       "09:00"
+      ],
+      [
+       "18:00",
+       "20:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric"
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "cartagena-2026-temporada",
+     "kinds": [
+      "car"
+     ],
+     "valid_from": "2026-12-11",
+     "valid_to": "2027-01-22",
+     "decree": "Decreto 0015 de 2026",
+     "source_url": "https://www.cartagena.gov.co/noticias",
+     "last_verified": "2026-09-26",
+     "summary": "Temporada: lunes a viernes hábiles, todo el día (de 6:00 a 6:00 del día siguiente): lunes 1 y 2, martes 3 y 4, miércoles 5 y 6, jueves 7 y 8, viernes 9 y 0.",
+     "days": {
+      "1": [
+       1,
+       2
+      ],
+      "2": [
+       3,
+       4
+      ],
+      "3": [
+       5,
+       6
+      ],
+      "4": [
+       7,
+       8
+      ],
+      "5": [
+       9,
+       0
+      ]
+     },
+     "hours": [
+      [
+       "06:00",
+       "24:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric"
+     ],
+     "notes": [
+      "En temporada la restricción de cada día sigue hasta las 6:00 del día siguiente."
+     ],
+     "type": "weekday"
+    }
+   ]
+  },
+  {
+   "id": "cucuta",
+   "country": "CO",
+   "name": "Cúcuta",
+   "region": "Norte de Santander",
+   "timezone": "America/Bogota",
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "periods": [
+    {
+     "id": "cucuta-d0212",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2024-04-26",
+     "valid_to": "2026-12-31",
+     "decree": "Decreto 0212 de 2024",
+     "source_url": "https://cucuta.gov.co/wp-content/uploads/2024/04/DTO.-0212-2024.pdf",
+     "last_verified": "2026-09-26",
+     "summary": "Lunes a viernes hábiles: lunes 1 y 2, martes 3 y 4, miércoles 5 y 6, jueves 7 y 8, viernes 9 y 0. Placas del área metropolitana: 7:00–8:30, 11:30–14:30 y 17:30–19:30; otras placas: 7:00–20:00.",
+     "days": {
+      "1": [
+       1,
+       2
+      ],
+      "2": [
+       3,
+       4
+      ],
+      "3": [
+       5,
+       6
+      ],
+      "4": [
+       7,
+       8
+      ],
+      "5": [
+       9,
+       0
+      ]
+     },
+     "hours": [
+      [
+       "07:00",
+       "08:30"
+      ],
+      [
+       "11:30",
+       "14:30"
+      ],
+      [
+       "17:30",
+       "19:30"
+      ]
+     ],
+     "hours_nonlocal": [
+      [
+       "07:00",
+       "20:00"
+      ]
+     ],
+     "local_plate_label": "Placa matriculada en Cúcuta, Los Patios, Villa del Rosario o El Zulia",
+     "exempt_fuels": [
+      "electric",
+      "hybrid"
+     ],
+     "zone": "Placas del área metropolitana: solo dentro del polígono central (Diagonal Santander, Av. 8, Calle 1, Av. 10, Calle 17 y Av. 0). Otras placas: dentro de los anillos viales.",
+     "notes": [
+      "Las motos inscritas en el RUDCU (domicilios) están exentas."
+     ],
+     "type": "weekday"
+    }
+   ]
+  },
+  {
+   "id": "pereira",
+   "country": "CO",
+   "name": "Pereira",
+   "region": "Risaralda",
+   "timezone": "America/Bogota",
+   "beta": true,
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "periods": [
+    {
+     "id": "pereira-d540-carros",
+     "kinds": [
+      "car"
+     ],
+     "valid_from": "2026-09-26",
+     "valid_to": "2026-12-31",
+     "decree": "Decreto 540 de 2024",
+     "source_url": "https://movilidadpereira.gov.co/Documentos/Dependencias/2024/Juridica/DecretosAlcaldia/DecretoPicoyPlaca2024.pdf",
+     "last_verified": "2026-09-26",
+     "summary": "Lunes a viernes hábiles, 6:00–20:00: lunes 0 y 1, martes 2 y 3, miércoles 4 y 5, jueves 6 y 7, viernes 8 y 9.",
+     "days": {
+      "1": [
+       0,
+       1
+      ],
+      "2": [
+       2,
+       3
+      ],
+      "3": [
+       4,
+       5
+      ],
+      "4": [
+       6,
+       7
+      ],
+      "5": [
+       8,
+       9
+      ]
+     },
+     "hours": [
+      [
+       "06:00",
+       "20:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid"
+     ],
+     "zone": "Zona urbana y parte de la suburbana; no aplica en vías nacionales, departamentales ni concesionadas (Autopistas del Café, Variante Condina...).",
+     "notes": [
+      "Vuelve a regir desde el lunes 28 de septiembre de 2026, tras la medida temporal por el sismo del 10 de agosto (según prensa)."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pereira-d540-motos",
+     "kinds": [
+      "moto"
+     ],
+     "valid_from": "2026-09-26",
+     "valid_to": "2026-12-31",
+     "decree": "Decreto 540 de 2024",
+     "source_url": "https://movilidadpereira.gov.co/Documentos/Dependencias/2024/Juridica/DecretosAlcaldia/DecretoPicoyPlaca2024.pdf",
+     "last_verified": "2026-09-26",
+     "summary": "Motos por el PRIMER dígito de la placa, mismos días y horario.",
+     "digit": "first",
+     "days": {
+      "1": [
+       0,
+       1
+      ],
+      "2": [
+       2,
+       3
+      ],
+      "3": [
+       4,
+       5
+      ],
+      "4": [
+       6,
+       7
+      ],
+      "5": [
+       8,
+       9
+      ]
+     },
+     "hours": [
+      [
+       "06:00",
+       "20:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid"
+     ],
+     "zone": "Zona urbana y parte de la suburbana; no aplica en vías nacionales, departamentales ni concesionadas (Autopistas del Café, Variante Condina...).",
+     "type": "weekday"
+    }
+   ]
+  },
+  {
+   "id": "villavicencio",
+   "country": "CO",
+   "name": "Villavicencio",
+   "region": "Meta",
+   "timezone": "America/Bogota",
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "periods": [
+    {
+     "id": "villavicencio-2026",
+     "kinds": [
+      "car"
+     ],
+     "valid_from": "2026-01-26",
+     "valid_to": "2026-12-22",
+     "decree": "Decreto 015 de 2026",
+     "source_url": "https://villavicencio.gov.co/con-jornadas-pedagogicas-inicio-el-pico-y-placa-2026-para-vehiculos-particulares-en-villavicencio/",
+     "last_verified": "2026-09-26",
+     "summary": "Lunes a viernes hábiles, 6:30–9:30 y 17:00–20:00, solo en el centro: lunes 5 y 6, martes 7 y 8, miércoles 9 y 0, jueves 1 y 2, viernes 3 y 4.",
+     "days": {
+      "1": [
+       5,
+       6
+      ],
+      "2": [
+       7,
+       8
+      ],
+      "3": [
+       9,
+       0
+      ],
+      "4": [
+       1,
+       2
+      ],
+      "5": [
+       3,
+       4
+      ]
+     },
+     "hours": [
+      [
+       "06:30",
+       "09:30"
+      ],
+      [
+       "17:00",
+       "20:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric"
+     ],
+     "zone": "Solo dentro del polígono del centro y barrios cercanos.",
+     "type": "weekday"
+    },
+    {
+     "id": "villavicencio-2026-motos",
+     "kinds": [
+      "moto"
+     ],
+     "valid_from": "2026-01-26",
+     "valid_to": "2026-12-22",
+     "decree": "Decreto 015 de 2026",
+     "source_url": "https://villavicencio.gov.co/con-jornadas-pedagogicas-inicio-el-pico-y-placa-2026-para-vehiculos-particulares-en-villavicencio/",
+     "last_verified": "2026-09-26",
+     "summary": "Las motos no tienen pico y placa en Villavicencio.",
+     "type": "none"
+    }
+   ]
+  },
+  {
+   "id": "manizales",
+   "country": "CO",
+   "name": "Manizales",
+   "region": "Caldas",
+   "timezone": "America/Bogota",
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "periods": [
+    {
+     "id": "manizales-sin-pyp",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-09-16",
+     "valid_to": "2026-12-31",
+     "decree": "Sin pico y placa para particulares (medida temporal levantada el 16 de septiembre de 2026)",
+     "source_url": "https://centrodeinformacion.manizales.gov.co/manizales-levanta-el-pico-y-placa-temporal-desde-este-miercoles-16-de-septiembre/",
+     "last_verified": "2026-09-26",
+     "summary": "Manizales no tiene pico y placa para vehículos particulares. Los taxis sí tienen restricción.",
+     "type": "none"
+    }
+   ]
+  },
+  {
+   "id": "barranquilla",
+   "country": "CO",
+   "name": "Barranquilla",
+   "region": "Atlántico",
+   "timezone": "America/Bogota",
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "periods": [
+    {
+     "id": "barranquilla-sin-pyp",
+     "kinds": [
+      "car"
+     ],
+     "valid_from": "2025-07-01",
+     "valid_to": "2026-12-31",
+     "decree": "Sin pico y placa (Decreto 0450 de 2025 levantó el de taxis)",
+     "source_url": "https://barranquilla.gov.co/gerencia-ciudad/grandes-noticias-para-nuestros-taxistas-levantamos-el-pico-y-placa-en-barranquilla-alcalde-char",
+     "last_verified": "2026-09-26",
+     "summary": "Barranquilla no tiene pico y placa por número de placa.",
+     "type": "none"
+    },
+    {
+     "id": "barranquilla-motos",
+     "kinds": [
+      "moto"
+     ],
+     "valid_from": "2025-10-30",
+     "valid_to": "2026-10-31",
+     "decree": "Decreto 0703 de 2025",
+     "source_url": "https://barranquilla.gov.co/transito/medidas-que-regulan-circulacion-de-motociclistas-continuan-vigentes-en-barranquilla-hasta-octubre-de-2026",
+     "last_verified": "2026-09-26",
+     "summary": "Sin pico y placa para motos, pero hay restricciones de horario y zona.",
+     "type": "none",
+     "zone": "Motos: no pueden circular de 23:00 a 5:00 salvo el propietario, ni en el centro (Calle 30, Cra 38, Calle 45, Cra 46). Hay zonas con prohibición de parrillero hombre."
+    }
+   ]
+  },
+  {
+   "id": "cdmx",
+   "country": "MX",
+   "name": "Ciudad de México",
+   "region": "CDMX",
+   "timezone": "America/Mexico_City",
+   "contingency": "cdmx",
+   "periods": [
+    {
+     "id": "cdmx-hnc-2026s2",
+     "kinds": [
+      "car"
+     ],
+     "valid_from": "2026-07-01",
+     "valid_to": "2026-12-31",
+     "decree": "Programa Hoy No Circula (Gaceta Oficial, 19 de junio de 2014) y Programa de Verificación, 2.º semestre 2026",
+     "source_url": "https://www.gob.mx/comisionambiental/prensa/el-programa-hoy-no-circula-que-aplica-en-la-zona-metropolitana-del-valle-de-mexico?idiom=es",
+     "last_verified": "2026-09-26",
+     "summary": "Lunes a sábado, 5:00–22:00. Holograma 1: día de su engomado y dos sábados al mes. Holograma 2 o sin holograma: día del engomado y todos los sábados. Exento, 00 y 0 circulan diario.",
+     "type": "hnc",
+     "days": {
+      "1": [
+       5,
+       6
+      ],
+      "2": [
+       7,
+       8
+      ],
+      "3": [
+       3,
+       4
+      ],
+      "4": [
+       1,
+       2
+      ],
+      "5": [
+       9,
+       0
+      ]
+     },
+     "hours": [
+      [
+       "05:00",
+       "22:00"
+      ]
+     ],
+     "foreign_hours": [
+      [
+       "05:00",
+       "11:00"
+      ]
+     ],
+     "holidays": "apply",
+     "exempt_hologramas": [
+      "exento",
+      "00",
+      "0"
+     ],
+     "saturday_h1": [
+      [
+       1,
+       3,
+       5,
+       7,
+       9
+      ],
+      [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      [
+       1,
+       3,
+       5,
+       7,
+       9
+      ],
+      [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      []
+     ],
+     "notes": [
+      "Engomados: lunes amarillo (5 y 6), martes rosa (7 y 8), miércoles rojo (3 y 4), jueves verde (1 y 2), viernes azul (9 y 0).",
+      "Holograma 1: 1.er y 3.er sábado del mes no circulan placas impares; 2.º y 4.º sábado, pares; el 5.º sábado circulan todos.",
+      "Foráneos sin holograma reconocido: día del engomado, todos los sábados y de lunes a viernes de 5:00 a 11:00. El pase turístico los exime en días normales.",
+      "Placas sin números: se tratan como terminación 0 (engomado azul, par).",
+      "Aplica también en días festivos, salvo aviso de suspensión.",
+      "En contingencia ambiental (Fase I) no circulan todos los holograma 2, foráneos, pase turístico y placas sin números; holograma 1 según paridad del comunicado; 0 y 00 según engomado. Exentos y eléctricos circulan."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "edomex-zmvm",
+   "country": "MX",
+   "name": "Estado de México (Valle de México)",
+   "region": "Atizapán, Coacalco, Cuautitlán, Cuautitlán Izcalli, Chalco, Chicoloapan, Chimalhuacán, Ecatepec, Huixquilucan, Ixtapaluca, La Paz, Naucalpan, Nezahualcóyotl, Nicolás Romero, Tecámac, Tlalnepantla, Tultitlán y Valle de Chalco",
+   "timezone": "America/Mexico_City",
+   "contingency": "cdmx",
+   "periods": [
+    {
+     "id": "edomex-hnc-2026s2",
+     "kinds": [
+      "car"
+     ],
+     "valid_from": "2026-07-01",
+     "valid_to": "2026-12-31",
+     "decree": "Programa Hoy No Circula (Gaceta Oficial, 19 de junio de 2014) y Programa de Verificación, 2.º semestre 2026",
+     "source_url": "https://www.gob.mx/comisionambiental/prensa/el-programa-hoy-no-circula-que-aplica-en-la-zona-metropolitana-del-valle-de-mexico?idiom=es",
+     "last_verified": "2026-09-26",
+     "summary": "Lunes a sábado, 5:00–22:00. Holograma 1: día de su engomado y dos sábados al mes. Holograma 2 o sin holograma: día del engomado y todos los sábados. Exento, 00 y 0 circulan diario.",
+     "type": "hnc",
+     "days": {
+      "1": [
+       5,
+       6
+      ],
+      "2": [
+       7,
+       8
+      ],
+      "3": [
+       3,
+       4
+      ],
+      "4": [
+       1,
+       2
+      ],
+      "5": [
+       9,
+       0
+      ]
+     },
+     "hours": [
+      [
+       "05:00",
+       "22:00"
+      ]
+     ],
+     "foreign_hours": [
+      [
+       "05:00",
+       "11:00"
+      ]
+     ],
+     "holidays": "apply",
+     "exempt_hologramas": [
+      "exento",
+      "00",
+      "0"
+     ],
+     "saturday_h1": [
+      [
+       1,
+       3,
+       5,
+       7,
+       9
+      ],
+      [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      [
+       1,
+       3,
+       5,
+       7,
+       9
+      ],
+      [
+       0,
+       2,
+       4,
+       6,
+       8
+      ],
+      []
+     ],
+     "notes": [
+      "Engomados: lunes amarillo (5 y 6), martes rosa (7 y 8), miércoles rojo (3 y 4), jueves verde (1 y 2), viernes azul (9 y 0).",
+      "Holograma 1: 1.er y 3.er sábado del mes no circulan placas impares; 2.º y 4.º sábado, pares; el 5.º sábado circulan todos.",
+      "Foráneos sin holograma reconocido: día del engomado, todos los sábados y de lunes a viernes de 5:00 a 11:00. El pase turístico los exime en días normales.",
+      "Placas sin números: se tratan como terminación 0 (engomado azul, par).",
+      "Aplica también en días festivos, salvo aviso de suspensión.",
+      "En contingencia ambiental (Fase I) no circulan todos los holograma 2, foráneos, pase turístico y placas sin números; holograma 1 según paridad del comunicado; 0 y 00 según engomado. Exentos y eléctricos circulan."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quito",
+   "country": "EC",
+   "name": "Quito",
+   "region": "Distrito Metropolitano de Quito",
+   "timezone": "America/Guayaquil",
+   "beta": true,
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "periods": [
+    {
+     "id": "quito-aq013-2023",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2023-04-10",
+     "valid_to": "2026-12-31",
+     "decree": "Resoluciones AQ 019-2021, AQ 033-2021 y AQ 013-2023; Ordenanza Metropolitana 085-2024",
+     "source_url": "https://www.quito.gob.ec/wp-content/uploads/2024/12/Ordenanza-Metropolitana-085-2024-No-Retencion-Pico-y-Placa-signed.pdf",
+     "last_verified": "2026-09-26",
+     "summary": "Lunes a viernes, 6:00–9:30 y 16:00–20:00, por el último dígito: lunes 1 y 2, martes 3 y 4, miércoles 5 y 6, jueves 7 y 8, viernes 9 y 0.",
+     "days": {
+      "1": [
+       1,
+       2
+      ],
+      "2": [
+       3,
+       4
+      ],
+      "3": [
+       5,
+       6
+      ],
+      "4": [
+       7,
+       8
+      ],
+      "5": [
+       9,
+       0
+      ]
+     },
+     "hours": [
+      [
+       "06:00",
+       "09:30"
+      ],
+      [
+       "16:00",
+       "20:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric"
+     ],
+     "zone": "Solo en la zona urbana, entre la Av. Morán Valverde (sur), la Calle de los Narcisos (norte) y la Av. Simón Bolívar (este), vías que no tienen restricción. Los valles no tienen pico y placa.",
+     "notes": [
+      "Sábados, domingos y feriados oficiales: libre circulación.",
+      "Exentos: vehículos 100 % eléctricos, conducidos por adultos mayores o que transportan a personas con discapacidad o adultos mayores (con registro en la AMT para cuidadores).",
+      "Los híbridos no están exentos.",
+      "El alcalde puede suspender la medida con poco aviso (por ejemplo, las tardes del 24 y 31 de diciembre).",
+      "Desde 2025 no se retiene el vehículo; la multa es del 15 % del salario básico."
+     ],
+     "type": "weekday"
+    }
+   ],
+   "overrides": [
+    {
+     "date": "2026-11-20",
+     "action": "unconfirmed",
+     "note": "El Decreto Ejecutivo 507 suspende la jornada laboral; la AMT aún no ha dicho si se suspende el pico y placa.",
+     "source_url": "https://movilidad.quito.gob.ec/"
+    }
+   ],
+   "notices": [
+    {
+     "date": "2026-12-24",
+     "title": "Tarde posiblemente libre",
+     "text": "Otros años el alcalde ha suspendido el pico y placa de la tarde este día. Confírmalo en la fuente oficial.",
+     "source_url": "https://movilidad.quito.gob.ec/"
+    },
+    {
+     "date": "2026-12-31",
+     "title": "Tarde posiblemente libre",
+     "text": "Otros años el alcalde ha suspendido el pico y placa de la tarde este día. Confírmalo en la fuente oficial.",
+     "source_url": "https://movilidad.quito.gob.ec/"
+    }
+   ]
+  }
+ ],
+ "version": 2026092601
+}
