@@ -821,7 +821,7 @@
      "valid_to": "2026-12-31",
      "decree": "Decreto 540 de 2024",
      "source_url": "https://movilidadpereira.gov.co/Documentos/Dependencias/2024/Juridica/DecretosAlcaldia/DecretoPicoyPlaca2024.pdf",
-     "last_verified": "2026-09-26",
+     "last_verified": "2026-09-28",
      "summary": "Lunes a viernes hábiles, 6:00–20:00: lunes 0 y 1, martes 2 y 3, miércoles 4 y 5, jueves 6 y 7, viernes 8 y 9.",
      "days": {
       "1": [
@@ -857,7 +857,7 @@
      ],
      "zone": "Zona urbana y parte de la suburbana; no aplica en vías nacionales, departamentales ni concesionadas (Autopistas del Café, Variante Condina...).",
      "notes": [
-      "Vuelve a regir desde el lunes 28 de septiembre de 2026, tras la medida temporal por el sismo del 10 de agosto (según prensa)."
+      "Vuelve a regir desde el lunes 28 de septiembre de 2026, tras la medida temporal por el sismo del 10 de agosto (anuncio de la Alcaldía de Pereira, 26 de septiembre de 2026)."
      ],
      "type": "weekday"
     },
@@ -870,7 +870,7 @@
      "valid_to": "2026-12-31",
      "decree": "Decreto 540 de 2024",
      "source_url": "https://movilidadpereira.gov.co/Documentos/Dependencias/2024/Juridica/DecretosAlcaldia/DecretoPicoyPlaca2024.pdf",
-     "last_verified": "2026-09-26",
+     "last_verified": "2026-09-28",
      "summary": "Motos por el PRIMER dígito de la placa, mismos días y horario.",
      "digit": "first",
      "days": {
@@ -1350,5 +1350,5 @@
    ]
   }
  ],
- "version": 2026092601
+ "version": 2026092602
 }
