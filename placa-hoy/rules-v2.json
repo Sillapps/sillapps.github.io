@@ -1,5 +1,5 @@
 {
- "schema": 1,
+ "schema": 2,
  "published": "2026-09-29",
  "countries": [
   {
@@ -2275,6 +2275,225 @@
       "Hay permisos pagos de circulación por horario (art. 3); la app no los tiene en cuenta."
      ],
      "type": "weekday"
+    }
+   ]
+  },
+  {
+   "id": "armenia",
+   "country": "CO",
+   "name": "Armenia",
+   "region": "Quindío",
+   "timezone": "America/Bogota",
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "periods": [
+    {
+     "id": "armenia-d640-d284",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-09-21",
+     "valid_to": "2027-02-28",
+     "decree": "Decreto 640 de 2025, prorrogado por los Decretos 135 y 284 de 2026 (Cuadrante Norte: Decreto 284, art. 2)",
+     "source_url": "https://www.armenia.gov.co/images/2026/Gacetas/GACETA_MUNICIPAL_3265-SEPT_17_DE_2026_compressed.pdf",
+     "last_verified": "2026-09-29",
+     "summary": "Lunes a viernes hábiles, 7:00–19:00, carros y motos por el último dígito: lunes 5 y 6, martes 7 y 8, miércoles 9 y 0, jueves 1 y 2, viernes 3 y 4. Además, en el Cuadrante Norte: lunes 1 y 2, martes 3 y 4, miércoles 5 y 6, jueves 7 y 8, viernes 9 y 0, de 7:00 a 8:30 y de 17:30 a 19:00.",
+     "days": {
+      "1": [
+       5,
+       6
+      ],
+      "2": [
+       7,
+       8
+      ],
+      "3": [
+       9,
+       0
+      ],
+      "4": [
+       1,
+       2
+      ],
+      "5": [
+       3,
+       4
+      ]
+     },
+     "hours": [
+      [
+       "07:00",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric"
+     ],
+     "zone": "Todo el perímetro urbano de Armenia, desde las entradas que fija el Decreto 640 (Jardines de Armenia, Malibú, Ciudad Dorada, Puerto Espejo, Vásquez Cobo, Gimnasio Contemporáneo, María Cristina, Hojas Anchas y Ciudadela de Occidente).",
+     "zones": [
+      {
+       "name": "el Cuadrante Norte",
+       "area": "calles 2 a 10 Norte y carreras 6 (Av. Centenario) a 14 (Av. Bolívar), inclusive",
+       "days": {
+        "1": [
+         1,
+         2
+        ],
+        "2": [
+         3,
+         4
+        ],
+        "3": [
+         5,
+         6
+        ],
+        "4": [
+         7,
+         8
+        ],
+        "5": [
+         9,
+         0
+        ]
+       },
+       "hours": [
+        [
+         "07:00",
+         "08:30"
+        ],
+        [
+         "17:30",
+         "19:00"
+        ]
+       ]
+      }
+     ],
+     "notes": [
+      "En el Cuadrante Norte la restricción se suma a la de toda la ciudad: ese día no circulan cuatro terminaciones.",
+      "No aplica sábados, domingos ni festivos (Ley 51 de 1983).",
+      "Vehículos eléctricos exentos (Ley 1964 de 2019). Los híbridos no figuran como exentos en los decretos vigentes: confírmalo con la Secretaría de Tránsito (Setta)."
+     ],
+     "type": "weekday"
+    }
+   ]
+  },
+  {
+   "id": "tunja",
+   "country": "CO",
+   "name": "Tunja",
+   "region": "Boyacá",
+   "timezone": "America/Bogota",
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "beta": true,
+   "periods": [
+    {
+     "id": "tunja-d0399",
+     "kinds": [
+      "car"
+     ],
+     "valid_from": "2026-01-13",
+     "valid_to": "2026-12-11",
+     "decree": "Decreto 0399 de 2024 (19 de septiembre)",
+     "source_url": "https://www.tunja-boyaca.gov.co/noticias/desde-el-13-de-enero-vuelve-el-pico-y-placa-en-tunja",
+     "last_verified": "2026-09-29",
+     "summary": "Lunes a viernes hábiles, por el último dígito: lunes 3 y 4, martes 5 y 6, miércoles 7 y 8, jueves 9 y 0, viernes 1 y 2. Centro Histórico: 6:00–20:00; resto de la ciudad: 6:00–9:00, 12:00–14:00 y 17:00–20:00.",
+     "days": {
+      "1": [
+       3,
+       4
+      ],
+      "2": [
+       5,
+       6
+      ],
+      "3": [
+       7,
+       8
+      ],
+      "4": [
+       9,
+       0
+      ],
+      "5": [
+       1,
+       2
+      ]
+     },
+     "hours": [
+      [
+       "06:00",
+       "09:00"
+      ],
+      [
+       "12:00",
+       "14:00"
+      ],
+      [
+       "17:00",
+       "20:00"
+      ]
+     ],
+     "zone": "Todo el perímetro urbano de Tunja, incluidas las avenidas y glorietas principales; dentro del anillo vial del Centro Histórico el horario es de 6:00 a 20:00.",
+     "zones": [
+      {
+       "name": "el Centro Histórico",
+       "area": "dentro del anillo vial: Calle 29, Av. Maldonado, Av. Colón, Calle 22, Transversal 15, Carrera 15, Calle 17, Carrera 14, Calle 11, Carrera 10, Calle 9C, Carrera 6A y Av. Oriental; las vías del anillo no tienen restricción",
+       "days": {
+        "1": [
+         3,
+         4
+        ],
+        "2": [
+         5,
+         6
+        ],
+        "3": [
+         7,
+         8
+        ],
+        "4": [
+         9,
+         0
+        ],
+        "5": [
+         1,
+         2
+        ]
+       },
+       "hours": [
+        [
+         "06:00",
+         "20:00"
+        ]
+       ]
+      }
+     ],
+     "notes": [
+      "Solo vehículos particulares (automóvil, camioneta, campero, camión, volqueta); las motos no tienen pico y placa.",
+      "No aplica sábados, domingos ni festivos.",
+      "Eléctricos, híbridos y demás excepciones del decreto deben tener la autorización de la Secretaría de Movilidad (picoyplaca.tunja.gov.co); sin ella, la restricción aplica.",
+      "La Alcaldía anunció que evalúa un nuevo esquema; confirma en la fuente oficial."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "tunja-motos",
+     "kinds": [
+      "moto"
+     ],
+     "valid_from": "2026-01-13",
+     "valid_to": "2026-12-11",
+     "decree": "Decreto 0399 de 2024 (19 de septiembre)",
+     "source_url": "https://www.tunja-boyaca.gov.co/noticias/desde-el-13-de-enero-vuelve-el-pico-y-placa-en-tunja",
+     "last_verified": "2026-09-29",
+     "summary": "Las motos no tienen pico y placa en Tunja.",
+     "type": "none"
     }
    ]
   },
