@@ -4,36 +4,170 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0b1119" />
-    <title>Neon Overload</title>
-    <link rel="stylesheet" href="/styles.css?v=20260328-dark-1" />
+    <title>Neon Overload · Offline neon tower defense for Android</title>
+    <meta name="description" content="Neon Overload is an offline neon tower defense game for Android: five towers, fifty permanent upgrades, 16 handcrafted maps and boss waves. No wifi needed, no energy timers, no forced ads." />
+    <link rel="canonical" href="https://sillapps.com/neon-overload/" />
+    <link rel="icon" type="image/png" href="/neon-overload/icon-192.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sillapps" />
+    <meta property="og:title" content="Neon Overload · Offline neon tower defense" />
+    <meta property="og:description" content="Five towers, fifty upgrades, one job: hold the line. Play offline, no energy timers, no forced ads." />
+    <meta property="og:url" content="https://sillapps.com/neon-overload/" />
+    <meta property="og:image" content="https://sillapps.com/neon-overload/og.jpg" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="500" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Neon Overload: Tower Defense",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "GameApplication",
+      "genre": "Tower defense",
+      "inLanguage": ["en", "fr", "es", "de"],
+      "url": "https://sillapps.com/neon-overload/",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.sillapps.neonoverload",
+      "image": "https://sillapps.com/neon-overload/icon-192.png",
+      "screenshot": "https://sillapps.com/neon-overload/shot-hero.jpg",
+      "description": "Offline neon tower defense: place towers, upgrade them between runs and hold the line against neon hordes and boss waves.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "publisher": { "@type": "Organization", "name": "Sillapps", "url": "https://sillapps.com/" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I play Neon Overload offline?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The whole campaign plays without wifi or mobile data. Leaderboards simply sync the next time you are online." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Neon Overload have forced ads?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. There are no banners and no interstitials. Ads are optional videos you choose to watch for a bonus reward." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I have to pay to finish the game?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Every level can be beaten for free. Purchases remove ads, speed up progression, and unlock cosmetics and the Pylon support tower." }
+        },
+        {
+          "@type": "Question",
+          "name": "How long is a run?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Five to fifteen minutes, with 30 waves per map." }
+        }
+      ]
+    }
+    </script>
+    <link rel="stylesheet" href="/styles.css?v=20260928-1" />
+    <style>
+      .no-badge { display: inline-block; margin-top: 18px; line-height: 0; }
+      .no-badge img { display: block; width: 186px; height: auto; margin: -12px; }
+      .no-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
+      .no-chips li { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.9rem; color: var(--muted); }
+      .no-shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 22px 0 0; padding: 0; list-style: none; }
+      .no-shots img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
+      @media (max-width: 560px) {
+        .no-shots { grid-template-columns: repeat(3, 70%); overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; }
+        .no-shots li { scroll-snap-align: start; }
+      }
+      .section .no-towers { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; max-width: none; }
+      .section .no-towers strong { color: var(--text); }
+      .no-faq details { border-top: 1px solid var(--line); padding: 10px 0; }
+      .no-faq details:first-of-type { border-top: 0; padding-top: 0; }
+      .no-faq summary { cursor: pointer; font-weight: 650; color: var(--text); }
+      .section.no-faq details p { margin: 8px 0 0; }
+    </style>
   </head>
   <body>
     <main>
       <section class="panel hero">
         <div class="panel-inner">
           <div class="nav-row">
-            <a class="back-link" href="/">Site Home</a>
+            <a class="back-link" href="/">Sillapps</a>
           </div>
 
           <div class="masthead">
             <div>
-              <p class="eyebrow">Mobile App</p>
-              <h1 class="title">Neon Overload</h1>
+              <p class="eyebrow">Neon Overload · Android game</p>
+              <h1 class="title">Offline neon tower defense</h1>
             </div>
             <p class="brand-mark">SILLAPPS</p>
           </div>
 
           <p class="intro">
-            This page provides the public legal entry for the mobile app
-            <strong>Neon Overload</strong> and supports app store compliance and
-            listing requirements.
+            The grid is failing and the waves keep coming. <strong>Neon Overload</strong> is a
+            tower defense strategy game you can play anywhere: place towers, upgrade them between
+            runs and hold the line against neon hordes and bosses that fight back.
           </p>
+          <a class="no-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.neonoverload&amp;referrer=utm_source%3Dsillapps.com%26utm_medium%3Dwebsite">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                 alt="Get it on Google Play" width="646" height="250" referrerpolicy="no-referrer" />
+          </a>
+          <ul class="no-chips">
+            <li>Plays offline</li>
+            <li>No energy timers</li>
+            <li>No forced ads</li>
+            <li>English · Français · Español · Deutsch</li>
+          </ul>
+          <ul class="no-shots">
+            <li><img src="shot-hero.jpg" width="540" height="960" alt="A neon tower defense map with chain lightning and laser towers holding off enemy waves" /></li>
+            <li><img src="shot-towers.jpg" width="540" height="960" alt="The five towers: Pulse, Photon, Nova, Cryo and Pylon" loading="lazy" /></li>
+            <li><img src="shot-boss.jpg" width="540" height="960" alt="A boss wave breaking through the defenses" loading="lazy" /></li>
+          </ul>
 
-          <div class="pill-row">
-            <a class="pill-link" href="privacy.html">
-              <strong>Privacy Policy</strong>
-              <span>Read the public privacy policy for Neon Overload.</span>
-            </a>
+          <div class="section-grid">
+            <section class="section">
+              <h2>Five towers, five ways to play</h2>
+              <ul class="no-towers">
+                <li><strong>Pulse</strong> — chain lightning that arcs between enemies. The reliable all-rounder.</li>
+                <li><strong>Photon</strong> — a continuous laser that melts bosses.</li>
+                <li><strong>Nova</strong> — area shockwaves for dense waves and swarms.</li>
+                <li><strong>Cryo</strong> — stasis fields that slow and freeze.</li>
+                <li><strong>Pylon</strong> — a support tower that links to a neighbor and supercharges it (in-app purchase).</li>
+              </ul>
+            </section>
+
+            <section class="section">
+              <h2>What's inside</h2>
+              <ul>
+                <li>16 handcrafted maps with 30 waves each, and a Heroic mode for every map.</li>
+                <li>Fifty permanent upgrades across six skill trees, with a specialization per tower.</li>
+                <li>Overcharges to clear the board when a wave is about to break through.</li>
+                <li>Act 4 terrain: slow zones, speed lanes and power tiles.</li>
+                <li>Global leaderboards when you're online.</li>
+                <li>Quick runs of 5 to 15 minutes.</li>
+              </ul>
+            </section>
+
+            <section class="section no-faq">
+              <h2>FAQ</h2>
+              <details>
+                <summary>Can I play offline?</summary>
+                <p>Yes. The whole campaign plays without wifi or mobile data. Leaderboards simply sync the next time you're online.</p>
+              </details>
+              <details>
+                <summary>Are there forced ads?</summary>
+                <p>No. There are no banners and no interstitials. Ads are optional videos you choose to watch for a bonus reward.</p>
+              </details>
+              <details>
+                <summary>Do I have to pay?</summary>
+                <p>No. Every level can be beaten for free. Purchases remove ads, speed up progression, and unlock cosmetics and the Pylon support tower.</p>
+              </details>
+              <details>
+                <summary>Which devices are supported?</summary>
+                <p>Android 9 and later, on phones and tablets.</p>
+              </details>
+            </section>
+
+            <section class="section">
+              <h2>Legal</h2>
+              <p>Read the <a href="privacy.html">privacy policy</a>. Questions: <code>contact@sillapps.com</code></p>
+            </section>
           </div>
         </div>
       </section>

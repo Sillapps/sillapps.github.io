@@ -27,7 +27,7 @@
           <div class="meta-card">
             <p class="meta-line">App name: Neon Overload</p>
             <p class="meta-line">Developer: Sillapps</p>
-            <p class="meta-line">Effective date: September 28, 2026</p>
+            <p class="meta-line">Effective date: September 29, 2026</p>
           </div>
 
           <div class="section-grid">
@@ -87,6 +87,24 @@
                 transaction status, and fraud-prevention or security signals.
               </p>
               <p>
+                <strong>Crash reports.</strong> The app uses Firebase Crashlytics
+                to receive a report when it crashes or hits an unexpected error: the
+                error details and stack trace, the app version, device model,
+                Android version, and a random Crashlytics installation
+                identifier. No advertising identifier is included.
+              </p>
+              <p>
+                <strong>Gameplay statistics.</strong> Where your consent is
+                required, and only if you accept it in the privacy form, the app
+                uses Google Analytics for Firebase to count a few gameplay events
+                (level started or finished with the wave reached, tutorial
+                completed or skipped, rewarded ad watched, talent unlocked),
+                together with a random app-instance identifier and basic device
+                information. Elsewhere these statistics are collected without a
+                prompt. They never include your advertising identifier and are
+                not used for advertising.
+              </p>
+              <p>
                 <strong>Reviews and updates.</strong> The app uses Google Play's
                 in-app review and in-app update features. These are provided by
                 Google Play; Neon Overload does not receive your rating or review
@@ -128,6 +146,12 @@
                 non-personalized ads).
               </p>
               <p>
+                Crash reports are used to find and fix bugs (legitimate interest
+                in keeping the game working). Gameplay statistics are used to see
+                where players get stuck and improve the game (consent where
+                required by law, otherwise legitimate interest).
+              </p>
+              <p>
                 Feedback you send is used to answer you and improve the game
                 (legitimate interest).
               </p>
@@ -139,8 +163,9 @@
                 Neon Overload relies on Google services: Google AdMob
                 (advertising), Google User Messaging Platform (consent), Google
                 Play Billing (purchases), Google Play Games Services
-                (leaderboards), Google Play in-app review and in-app update, and
-                Google Forms (feedback). Their processing is governed by Google's
+                (leaderboards), Google Play in-app review and in-app update,
+                Firebase Crashlytics (crash reports), Google Analytics for
+                Firebase (gameplay statistics), and Google Forms (feedback). Their processing is governed by Google's
                 Privacy Policy:
                 <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
               </p>
@@ -190,12 +215,12 @@
               </p>
               <p>
                 Leaderboard scores stay on Google Play Games leaderboards until
-                you delete your Play Games profile data. Feedback messages are
+                you delete your Play Games profile data. Crash reports are kept
+                for 90 days and gameplay statistics for 2 months, then deleted. Feedback messages are
                 kept only as long as needed to handle them.
               </p>
               <p>
-                Technical logs generated inside the app stay on the device and
-                are never sent to the developer.
+                Other technical logs generated inside the app stay on the device.
               </p>
             </section>
 
