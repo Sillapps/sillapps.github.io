@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 2026092701,
- "published": "2026-09-27",
+ "version": 2026092801,
+ "published": "2026-09-28",
  "countries": [
   {
    "code": "BR",
@@ -243,6 +243,8 @@
       }
      ],
      "notes": [],
+     "next_label": "",
+     "day_note": "",
      "pending": []
     },
     {
@@ -495,6 +497,8 @@
       }
      ],
      "notes": [],
+     "next_label": "",
+     "day_note": "",
      "pending": []
     },
     {
@@ -747,6 +751,8 @@
       }
      ],
      "notes": [],
+     "next_label": "",
+     "day_note": "",
      "pending": []
     },
     {
@@ -847,14 +853,16 @@
       }
      ],
      "notes": [],
+     "next_label": "",
+     "day_note": "Só recebe quem tem direito ao abono de 2026 (trabalhou com carteira assinada em 2024 e cumpre as regras). Consulte na Carteira de Trabalho Digital.",
      "pending": []
     },
     {
      "id": "br_pe_de_meia",
-     "name": "Pé-de-Meia",
+     "name": "Pé-de-Meia – ensino médio regular",
      "short_name": "Pé-de-Meia",
      "agency": "Ministério da Educação (MEC)",
-     "summary": "Incentivo para estudantes do ensino médio, pago em janelas de datas.",
+     "summary": "Estudantes do ensino médio regular, pagos em janelas de datas.",
      "key": "none",
      "key_values": [],
      "official_url": "https://www.gov.br/mec/pt-br/pe-de-meia",
@@ -964,7 +972,23 @@
         "Ensino médio regular: até 9 parcelas de frequência de R$ 200, parcela de matrícula, R$ 1.000 pela aprovação e R$ 200 pelo Enem (concluintes).",
         "De 24/08 a 31/08/2026 também podem ser pagas parcelas de frequência referentes a maio e junho."
        ]
-      },
+      }
+     ],
+     "notes": [],
+     "next_label": "",
+     "day_note": "O dia exato dentro da janela varia para cada estudante. Confira no app Jornada do Estudante.",
+     "pending": []
+    },
+    {
+     "id": "br_pe_de_meia_eja",
+     "name": "Pé-de-Meia – EJA (educação de jovens e adultos)",
+     "short_name": "Pé-de-Meia EJA",
+     "agency": "Ministério da Educação (MEC)",
+     "summary": "Estudantes do ensino médio na EJA, pagos em janelas de datas por semestre.",
+     "key": "none",
+     "key_values": [],
+     "official_url": "https://www.gov.br/mec/pt-br/pe-de-meia",
+     "calendars": [
       {
        "id": "br_pe_de_meia_2026_eja",
        "source_url": "https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos",
@@ -1064,6 +1088,8 @@
       }
      ],
      "notes": [],
+     "next_label": "",
+     "day_note": "O dia exato dentro da janela varia para cada estudante. Confira no app Jornada do Estudante.",
      "pending": []
     },
     {
@@ -1071,7 +1097,7 @@
      "name": "Gás do Povo",
      "short_name": "Gás do Povo",
      "agency": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS) e Ministério de Minas e Energia (MME)",
-     "summary": "Novos vales-recarga liberados todo dia 10, sem depender do NIS.",
+     "summary": "Novos vales-recarga liberados todo dia 10. Cada família recebe 1 vale a cada 2 ou 3 meses.",
      "key": "none",
      "key_values": [],
      "official_url": "https://www.gov.br/pt-br/servicos/programa-gas-do-povo",
@@ -1131,6 +1157,8 @@
       }
      ],
      "notes": [],
+     "next_label": "Próxima liberação de vales",
+     "day_note": "Nem todo mês é o seu: famílias com 4 ou mais pessoas recebem 1 vale a cada 2 meses; com 2 ou 3 pessoas, a cada 3 meses. Confira no app Meu Social.",
      "pending": []
     }
    ]
@@ -1499,6 +1527,8 @@
       }
      ],
      "notes": [],
+     "next_label": "",
+     "day_note": "",
      "pending": [
       {
        "period": "2026-11",
@@ -1865,6 +1895,8 @@
       }
      ],
      "notes": [],
+     "next_label": "",
+     "day_note": "",
      "pending": [
       {
        "period": "2026-11",
@@ -2231,6 +2263,8 @@
       }
      ],
      "notes": [],
+     "next_label": "",
+     "day_note": "",
      "pending": [
       {
        "period": "2026-11",
@@ -2597,6 +2631,8 @@
       }
      ],
      "notes": [],
+     "next_label": "",
+     "day_note": "",
      "pending": [
       {
        "period": "2026-11",
@@ -2611,7 +2647,7 @@
      "name": "Beca Universal Rita Cetina de Educación Básica",
      "short_name": "Beca Rita Cetina",
      "agency": "Coordinación Nacional de Becas para el Bienestar Benito Juárez (SEP)",
-     "summary": "Educación básica (familias de continuidad). Letra del primer apellido del titular.",
+     "summary": "Educación básica, pago bimestral por letra del primer apellido del titular. En primaria el apoyo 2026-2027 es un pago anual: ver «Rita Cetina útiles».",
      "key": "surname_letter",
      "key_values": [
       "A",
@@ -2799,6 +2835,8 @@
       }
      ],
      "notes": [],
+     "next_label": "",
+     "day_note": "",
      "pending": [
       {
        "period": "2026-09",
@@ -2906,6 +2944,8 @@
       }
      ],
      "notes": [],
+     "next_label": "",
+     "day_note": "",
      "pending": [
       {
        "period": "2026-08",
@@ -3054,6 +3094,8 @@
       }
      ],
      "notes": [],
+     "next_label": "",
+     "day_note": "",
      "pending": [
       {
        "period": "2026-09",
@@ -3208,6 +3250,8 @@
       }
      ],
      "notes": [],
+     "next_label": "",
+     "day_note": "",
      "pending": [
       {
        "period": "2026-09",
@@ -3362,6 +3406,8 @@
       }
      ],
      "notes": [],
+     "next_label": "",
+     "day_note": "",
      "pending": [
       {
        "period": "2026-09",
@@ -3517,15 +3563,6 @@
          }
         },
         {
-         "period": "2026-11",
-         "label": "November 2026",
-         "by_key": {
-          "older_persons": "2026-11-03",
-          "disability": "2026-11-04",
-          "children": "2026-11-05"
-         }
-        },
-        {
          "period": "2026-12",
          "label": "December 2026",
          "by_key": {
@@ -3565,7 +3602,9 @@
        "notes": [
         "Schedule approved by National Treasury on 20 March 2026 and announced by SASSA on 23 March 2026.",
         "Grants are paid early in the month over three days: Older Persons first, then Disability, then Children's grants.",
-        "SASSA rules: no payment on the 1st of the month, on a Monday, on a weekend, or on the day after a public holiday (April 2026 is an official exception: Disability is paid on Tuesday 7 April, the day after Family Day).",
+        "SASSA rules: no payment on the 1st of the month, on a weekend, on a public holiday or on the day after a public holiday (April 2026 is an official exception: Disability is paid on Tuesday 7 April, the day after Family Day).",
+        "November 2026: the schedule published in March had Older Persons on 3 November, Disability on 4 November and Children's grants on 5 November. On 15 September 2026 the President declared Wednesday 4 November (local government elections) a public holiday, so the November dates are shown as \"to be confirmed\" until SASSA confirms them (usually at the end of October).",
+        "Care Dependency, War Veterans and Grant-in-Aid: the official statement does not say which payment day they share. Check your SASSA SMS or ask your SASSA office.",
         "If your grant is under review, SASSA pays it on a fourth payment day instead (officially confirmed: Friday 7 August 2026 and Monday 7 September 2026). Check your SMS from SASSA.",
         "Amounts from April 2026: Older Persons R2 400, Disability R2 400, Care Dependency R2 400, War Veterans R2 420, Foster Child R1 290 (R1 300 from October 2026), Child Support R580, Grant-in-Aid R580.",
         "If you did not receive your grant on your date, visit your nearest SASSA office for assistance."
@@ -3573,11 +3612,20 @@
       }
      ],
      "notes": [],
-     "pending": [],
+     "next_label": "",
+     "day_note": "Grant under review? SASSA may pay it on a later day: check your SMS from SASSA.",
+     "pending": [
+      {
+       "period": "2026-11",
+       "label": "November 2026",
+       "expected": "4 November 2026 was declared a public holiday (local government elections) after SASSA published its schedule (3, 4 and 5 November). SASSA usually posts the month's dates at the end of the previous month: wait for its confirmation.",
+       "months": 1
+      }
+     ],
      "key_labels": {
       "older_persons": "Older Persons Grant",
       "disability": "Disability Grant",
-      "children": "Children's grants (Child Support, Foster Child, Care Dependency)"
+      "children": "Children's grants (Child Support, Foster Child)"
      }
     },
     {
@@ -3706,6 +3754,8 @@
       }
      ],
      "notes": [],
+     "next_label": "",
+     "day_note": "",
      "pending": [
       {
        "period": "2026-10",
