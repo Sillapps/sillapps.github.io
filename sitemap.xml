@@ -94,7 +94,15 @@
   </url>
   <url>
     <loc>https://sillapps.com/placa-hoy/privacy.html</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sillapps.com/placa-hoy/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sillapps.com/placa-hoy/privacidad.html" />
+  </url>
+  <url>
+    <loc>https://sillapps.com/placa-hoy/privacidad.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sillapps.com/placa-hoy/privacidad.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sillapps.com/placa-hoy/privacy.html" />
   </url>
   <url>
     <loc>https://sillapps.com/scioperi/</loc>
