@@ -90,8 +90,62 @@
   </url>
   <url>
     <loc>https://sillapps.com/placa-hoy/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
   </url>
+  <!-- placa-hoy:cities:start -->
+  <url>
+    <loc>https://sillapps.com/placa-hoy/pico-y-placa-bogota/</loc>
+    <lastmod>2026-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://sillapps.com/placa-hoy/pico-y-placa-medellin/</loc>
+    <lastmod>2026-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://sillapps.com/placa-hoy/pico-y-placa-cali/</loc>
+    <lastmod>2026-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://sillapps.com/placa-hoy/pico-y-placa-bucaramanga/</loc>
+    <lastmod>2026-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://sillapps.com/placa-hoy/pico-y-placa-cartagena/</loc>
+    <lastmod>2026-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://sillapps.com/placa-hoy/pico-y-placa-cucuta/</loc>
+    <lastmod>2026-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://sillapps.com/placa-hoy/pico-y-placa-pereira/</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://sillapps.com/placa-hoy/pico-y-placa-villavicencio/</loc>
+    <lastmod>2026-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://sillapps.com/placa-hoy/pico-y-placa-manizales/</loc>
+    <lastmod>2026-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://sillapps.com/placa-hoy/pico-y-placa-barranquilla/</loc>
+    <lastmod>2026-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://sillapps.com/placa-hoy/hoy-no-circula-cdmx/</loc>
+    <lastmod>2026-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://sillapps.com/placa-hoy/hoy-no-circula-edomex/</loc>
+    <lastmod>2026-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://sillapps.com/placa-hoy/pico-y-placa-quito/</loc>
+    <lastmod>2026-09-26</lastmod>
+  </url>
+  <!-- placa-hoy:cities:end -->
   <url>
     <loc>https://sillapps.com/placa-hoy/privacy.html</loc>
     <lastmod>2026-09-28</lastmod>

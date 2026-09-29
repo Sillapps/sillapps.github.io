@@ -1,40 +1,227 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0b1119" />
-    <title>Placa Hoy</title>
-    <link rel="stylesheet" href="/styles.css?v=20260328-dark-1" />
+    <title>Placa Hoy: pico y placa y Hoy No Circula · ¿Circulo hoy?</title>
+    <meta name="description" content="Placa Hoy te dice si tu carro puede circular: pico y placa en Bogotá, Medellín, Cali y más ciudades de Colombia, Hoy No Circula en CDMX y Edomex, y Quito. Sin anuncios, sin cuenta." />
+    <link rel="canonical" href="https://sillapps.com/placa-hoy/" />
+    <link rel="icon" type="image/png" href="/placa-hoy/icon-192.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sillapps" />
+    <meta property="og:locale" content="es_419" />
+    <meta property="og:title" content="Placa Hoy: pico y placa y Hoy No Circula" />
+    <meta property="og:description" content="¿Circulo hoy? La respuesta para tu placa, con el horario, la norma y la fuente oficial. Sin anuncios, sin cuenta y sin rastreo." />
+    <meta property="og:url" content="https://sillapps.com/placa-hoy/" />
+    <meta property="og:image" content="https://sillapps.com/placa-hoy/og.jpg" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="500" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Placa Hoy",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "TravelApplication",
+      "inLanguage": "es",
+      "url": "https://sillapps.com/placa-hoy/",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.sillapps.placahoy",
+      "image": "https://sillapps.com/placa-hoy/icon-192.png",
+      "description": "Pico y placa (Colombia, Quito) y Hoy No Circula (CDMX y Edomex): si tu vehículo puede circular, con el horario, la norma y la fuente oficial.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@type": "Organization", "name": "Sillapps", "url": "https://sillapps.com/" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Placa Hoy es una app oficial?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Placa Hoy es una app independiente de Sillapps y no está afiliada a ninguna alcaldía, gobierno ni autoridad de tránsito. Cada respuesta indica la norma y enlaza a la fuente oficial." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa cuando cambia el pico y placa?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Cada regla tiene una fecha de inicio y de fin. Fuera de esas fechas, o si se anuncia un cambio que aún no está confirmado, Placa Hoy muestra SIN CONFIRMAR en lugar de adivinar. Las reglas se actualizan sin tener que actualizar la app." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Placa Hoy es gratis? ¿Tiene anuncios?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Es gratis, sin anuncios, sin cuenta y sin rastreo, con hasta 2 vehículos. Placa Hoy Pro, un pago único sin suscripción, añade el widget de inicio, las alertas y vehículos ilimitados; se puede probar gratis 7 días." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué datos recoge la app?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ninguno. Tu placa y tus vehículos se guardan solo en tu teléfono. La app solo descarga las reglas desde sillapps.com y, en México, consulta la página oficial de calidad del aire." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Tiene en cuenta la contingencia ambiental en CDMX?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. Para los vehículos del Valle de México, Placa Hoy consulta la página oficial aire.cdmx.gob.mx y avisa si hay una contingencia ambiental activa." }
+        }
+      ]
+    }
+    </script>
+    <link rel="stylesheet" href="/styles.css?v=20260928-1" />
+    <style>
+      .ph-badge { display: inline-block; margin-top: 18px; line-height: 0; }
+      .ph-badge img { display: block; width: 186px; height: auto; margin: -12px; }
+      .ph-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
+      .ph-chips li { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.9rem; color: var(--muted); }
+      .section .stack { margin-top: 0; max-width: none; padding-left: 0; }
+      .ph-faq details { border-top: 1px solid var(--line); padding: 10px 0; }
+      .ph-faq details:first-of-type { border-top: 0; padding-top: 0; }
+      .ph-faq summary { cursor: pointer; font-weight: 650; color: var(--text); }
+      .section.ph-faq details p { margin: 8px 0 0; }
+    </style>
   </head>
   <body>
     <main>
       <section class="panel hero">
         <div class="panel-inner">
           <div class="nav-row">
-            <a class="back-link" href="/">Site Home</a>
+            <a class="back-link" href="/">Sillapps</a>
           </div>
 
           <div class="masthead">
             <div>
-              <p class="eyebrow">Mobile App</p>
-              <h1 class="title">Placa Hoy</h1>
+              <p class="eyebrow">Placa Hoy · App Android</p>
+              <h1 class="title">¿Circulo hoy?</h1>
             </div>
             <p class="brand-mark">SILLAPPS</p>
           </div>
 
           <p class="intro">
-            This page provides the public legal entry for the mobile app
-            <strong>Placa Hoy</strong> and supports app store compliance
-            and listing requirements.
+            <strong>Placa Hoy</strong> te dice si tu carro o tu moto puede circular:
+            pico y placa en Colombia y Quito, Hoy No Circula en la Ciudad de México y el Estado de México.
+            Guarda tu placa una vez y ve la respuesta del día, con el horario, la norma y la fuente oficial.
+            Sin anuncios, sin cuenta y sin rastreo.
           </p>
 
-          <div class="pill-row">
-            <a class="pill-link" href="privacy.html">
-              <strong>Privacy Policy</strong>
-              <span>Read the public privacy policy for Placa Hoy.</span>
-            </a>
+          <a class="ph-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.placahoy&amp;hl=es_419">
+            <img src="https://play.google.com/intl/es-419/badges/static/images/badges/es-419_badge_web_generic.png"
+                 alt="Disponible en Google Play" width="646" height="250" referrerpolicy="no-referrer" />
+          </a>
+
+          <ul class="ph-chips">
+            <li>Pico y placa en Colombia: 10 ciudades</li>
+            <li>Hoy No Circula CDMX y Edomex</li>
+            <li>Quito (beta)</li>
+            <li>Sin anuncios</li>
+          </ul>
+
+          <div class="section-grid">
+            <section class="section" id="app">
+              <h2>Qué hace Placa Hoy</h2>
+              <ul>
+                <li><strong>Una respuesta clara para tu placa:</strong> PUEDES CIRCULAR o NO CIRCULAS, con las horas de la restricción.</li>
+                <li><strong>Calendario de los próximos días</strong> y la regla explicada: dígitos, horarios, sábados, exentos y motos.</li>
+                <li><strong>La norma y la fuente oficial</strong> en cada respuesta, con la fecha de la última verificación.</li>
+                <li><strong>Hoy No Circula completo:</strong> engomado, holograma (exento, 00, 0, 1, 2), sábados, foráneos y aviso de contingencia ambiental.</li>
+                <li><strong>Carros y motos</strong>, eléctricos, híbridos y a gas según lo que diga cada decreto, y Pico y Placa Solidario en Bogotá.</li>
+              </ul>
+              <p>
+                Cuando una regla vence o se anuncia un cambio que aún no está confirmado, Placa Hoy no adivina:
+                muestra <strong>SIN CONFIRMAR</strong> y te envía a la fuente oficial.
+              </p>
+            </section>
+
+            <section class="section" id="ciudades">
+              <h2>Ciudades: horarios y placas por día</h2>
+              <p>Consulta la regla de cada ciudad, con su norma, su vigencia y el enlace a la fuente oficial:</p>
+              <!-- placa-hoy:cities:start -->
+              <ul class="stack">
+                <li><a class="stack-link" href="pico-y-placa-bogota/"><strong>Pico y placa en Bogotá</strong><span>Colombia · Bogotá D.C.</span></a></li>
+                <li><a class="stack-link" href="pico-y-placa-medellin/"><strong>Pico y placa en Medellín</strong><span>Colombia · Valle de Aburrá: Bello, Envigado, Itagüí, Sabaneta, La Estrella, Caldas, Copacabana, Girardota y Barbosa</span></a></li>
+                <li><a class="stack-link" href="pico-y-placa-cali/"><strong>Pico y placa en Cali</strong><span>Colombia · Valle del Cauca</span></a></li>
+                <li><a class="stack-link" href="pico-y-placa-bucaramanga/"><strong>Pico y placa en Bucaramanga</strong><span>Colombia · Área metropolitana: Floridablanca, Girón y Piedecuesta</span></a></li>
+                <li><a class="stack-link" href="pico-y-placa-cartagena/"><strong>Pico y placa en Cartagena</strong><span>Colombia · Bolívar</span></a></li>
+                <li><a class="stack-link" href="pico-y-placa-cucuta/"><strong>Pico y placa en Cúcuta</strong><span>Colombia · Norte de Santander</span></a></li>
+                <li><a class="stack-link" href="pico-y-placa-pereira/"><strong>Pico y placa en Pereira (beta)</strong><span>Colombia · Risaralda</span></a></li>
+                <li><a class="stack-link" href="pico-y-placa-villavicencio/"><strong>Pico y placa en Villavicencio</strong><span>Colombia · Meta</span></a></li>
+                <li><a class="stack-link" href="pico-y-placa-manizales/"><strong>Pico y placa en Manizales</strong><span>Colombia · Caldas · Sin pico y placa para particulares</span></a></li>
+                <li><a class="stack-link" href="pico-y-placa-barranquilla/"><strong>Pico y placa en Barranquilla</strong><span>Colombia · Atlántico · Sin pico y placa para particulares</span></a></li>
+                <li><a class="stack-link" href="hoy-no-circula-cdmx/"><strong>Hoy No Circula en CDMX</strong><span>México · CDMX</span></a></li>
+                <li><a class="stack-link" href="hoy-no-circula-edomex/"><strong>Hoy No Circula en Estado de México</strong><span>México · Atizapán, Coacalco, Cuautitlán, Cuautitlán Izcalli, Chalco, Chicoloapan, Chimalhuacán, Ecatepec, Huixquilucan, Ixtapaluca, La Paz, Naucalpan, Nezahualcóyotl, Nicolás Romero, Tecámac, Tlalnepantla, Tultitlán y Valle de Chalco</span></a></li>
+                <li><a class="stack-link" href="pico-y-placa-quito/"><strong>Pico y placa en Quito (beta)</strong><span>Ecuador · Distrito Metropolitano de Quito</span></a></li>
+              </ul>
+              <p class="note">Fuentes oficiales: <a href="https://www.movilidadbogota.gov.co/abece-del-pico-y-placa-en-bogota" rel="noopener">Bogotá</a>, <a href="https://www.medellin.gov.co/es/sala-de-prensa/noticias/la-nueva-rotacion-del-pico-y-placa-en-medellin-comenzara-a-regir-a-partir-del-lunes-3-de-agosto/" rel="noopener">Medellín</a>, <a href="https://www.cali.gov.co/boletines/publicaciones/193096/pico-y-placa-rota-en-cali-para-el-segundo-semestre-de-2026-nueva-medida-rige-desde-el-1-de-julio/" rel="noopener">Cali</a>, <a href="https://transitobucaramanga.gov.co/consulta_resoluciones_DTB/uploads/RESOLUCION-854-2025-PICOYPLACA.pdf" rel="noopener">Bucaramanga</a>, <a href="https://www.cartagena.gov.co/noticias" rel="noopener">Cartagena</a>, <a href="https://cucuta.gov.co/wp-content/uploads/2024/04/DTO.-0212-2024.pdf" rel="noopener">Cúcuta</a>, <a href="https://movilidadpereira.gov.co/Documentos/Dependencias/2024/Juridica/DecretosAlcaldia/DecretoPicoyPlaca2024.pdf" rel="noopener">Pereira</a>, <a href="https://villavicencio.gov.co/con-jornadas-pedagogicas-inicio-el-pico-y-placa-2026-para-vehiculos-particulares-en-villavicencio/" rel="noopener">Villavicencio</a>, <a href="https://centrodeinformacion.manizales.gov.co/manizales-levanta-el-pico-y-placa-temporal-desde-este-miercoles-16-de-septiembre/" rel="noopener">Manizales</a>, <a href="https://barranquilla.gov.co/gerencia-ciudad/grandes-noticias-para-nuestros-taxistas-levantamos-el-pico-y-placa-en-barranquilla-alcalde-char" rel="noopener">Barranquilla</a>, <a href="https://www.gob.mx/comisionambiental/prensa/el-programa-hoy-no-circula-que-aplica-en-la-zona-metropolitana-del-valle-de-mexico?idiom=es" rel="noopener">Ciudad de México</a>, <a href="https://www.gob.mx/comisionambiental/prensa/el-programa-hoy-no-circula-que-aplica-en-la-zona-metropolitana-del-valle-de-mexico?idiom=es" rel="noopener">Estado de México (Valle de México)</a> y <a href="https://www.quito.gob.ec/wp-content/uploads/2024/12/Ordenanza-Metropolitana-085-2024-No-Retencion-Pico-y-Placa-signed.pdf" rel="noopener">Quito</a>.</p>
+              <!-- placa-hoy:cities:end -->
+            </section>
+
+            <section class="section" id="pro">
+              <h2>Gratis, y Pro si quieres más</h2>
+              <p>
+                La app es gratis, sin anuncios, con la respuesta del día, el calendario y las reglas para hasta 2 vehículos.
+                <strong>Placa Hoy Pro</strong> es un pago único, sin suscripción, que añade:
+              </p>
+              <ul>
+                <li><strong>Widget «¿Circulo hoy?»</strong> en la pantalla de inicio.</li>
+                <li><strong>Alertas</strong> la noche anterior y la mañana, y en México avisos de contingencia y recordatorios de verificación.</li>
+                <li><strong>Vehículos ilimitados.</strong></li>
+              </ul>
+              <p>Puedes probar el widget y las alertas gratis durante 7 días, sin cuenta.</p>
+            </section>
+
+            <section class="section" id="aviso">
+              <h2>Aviso importante</h2>
+              <p>
+                Placa Hoy es una app independiente de Sillapps. <strong>No está afiliada a ninguna alcaldía,
+                gobierno ni autoridad de tránsito</strong> y no es una fuente oficial. Las reglas se revisan
+                a mano en las fuentes oficiales (decretos, resoluciones y sitios de las secretarías de movilidad),
+                pero pueden cambiar con poco aviso: ante la duda, la norma oficial es la que manda.
+              </p>
+            </section>
+
+            <section class="section ph-faq" id="faq">
+              <h2>Preguntas frecuentes</h2>
+              <details>
+                <summary>¿Placa Hoy es una app oficial?</summary>
+                <p>No. Placa Hoy es una app independiente de Sillapps y no está afiliada a ninguna alcaldía, gobierno ni autoridad de tránsito. Cada respuesta indica la norma y enlaza a la fuente oficial.</p>
+              </details>
+              <details>
+                <summary>¿Qué pasa cuando cambia el pico y placa?</summary>
+                <p>Cada regla tiene una fecha de inicio y de fin. Fuera de esas fechas, o si se anuncia un cambio que aún no está confirmado, Placa Hoy muestra SIN CONFIRMAR en lugar de adivinar. Las reglas se actualizan sin tener que actualizar la app.</p>
+              </details>
+              <details>
+                <summary>¿Placa Hoy es gratis? ¿Tiene anuncios?</summary>
+                <p>Es gratis, sin anuncios, sin cuenta y sin rastreo, con hasta 2 vehículos. Placa Hoy Pro, un pago único sin suscripción, añade el widget de inicio, las alertas y vehículos ilimitados; se puede probar gratis 7 días.</p>
+              </details>
+              <details>
+                <summary>¿Qué datos recoge la app?</summary>
+                <p>Ninguno. Tu placa y tus vehículos se guardan solo en tu teléfono. La app solo descarga las reglas desde sillapps.com y, en México, consulta la página oficial de calidad del aire. Los detalles están en la <a href="privacidad.html">política de privacidad</a>.</p>
+              </details>
+              <details>
+                <summary>¿Tiene en cuenta la contingencia ambiental en CDMX?</summary>
+                <p>Sí. Para los vehículos del Valle de México, Placa Hoy consulta la página oficial aire.cdmx.gob.mx y avisa si hay una contingencia ambiental activa.</p>
+              </details>
+            </section>
+
+            <section class="section" id="english" lang="en">
+              <h2>In English</h2>
+              <p>
+                Placa Hoy tells you whether your car or motorcycle can drive today under pico y placa (Colombia, Quito)
+                and Hoy No Circula (Mexico City and the State of Mexico), with the restricted hours, the decree and
+                the official source. Free, no ads, no account, no tracking. Not affiliated with any government.
+                <a href="privacy.html">Privacy policy (English)</a>.
+              </p>
+            </section>
           </div>
+
+          <footer class="site-footer">
+            <nav aria-label="Enlaces legales">
+              <a href="privacidad.html">Política de privacidad</a>
+              <a href="privacy.html" lang="en">Privacy policy (English)</a>
+              <a href="/legal.html#es">Aviso legal</a>
+              <a href="mailto:contact@sillapps.com">contact@sillapps.com</a>
+            </nav>
+            <p>Esta página no usa cookies ni analítica. © 2026 Sillapps. Google Play y el logotipo de Google Play son marcas de Google LLC.</p>
+          </footer>
         </div>
       </section>
     </main>
