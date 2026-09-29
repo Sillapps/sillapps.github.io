@@ -1,42 +1,324 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0b1119" />
-    <title>Hora Barata</title>
-    <link rel="stylesheet" href="/styles.css?v=20260328-dark-1" />
+    <title>Precio de la luz hoy por horas (PVPC) · Hora Barata</title>
+    <meta name="description" content="Precio de la luz hoy y mañana por horas (PVPC), las horas más baratas, los tramos 2.0TD y a qué hora poner la lavadora. App gratis y sin anuncios, también en Canarias." />
+    <link rel="canonical" href="https://sillapps.com/hora-barata/" />
+    <link rel="icon" type="image/png" href="/hora-barata/icon-192.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sillapps" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:title" content="Precio de la luz hoy por horas (PVPC) · Hora Barata" />
+    <meta property="og:description" content="El precio de la luz hora a hora, hoy y mañana, y la mejor hora para poner la lavadora. Gratis, sin anuncios y sin cuenta." />
+    <meta property="og:url" content="https://sillapps.com/hora-barata/" />
+    <meta property="og:image" content="https://sillapps.com/hora-barata/og.jpg" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="500" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Hora Barata",
+      "alternateName": "Precio Luz Hoy · Hora Barata",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "UtilitiesApplication",
+      "inLanguage": "es",
+      "url": "https://sillapps.com/hora-barata/",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.sillapps.ecoclaimspocket",
+      "image": "https://sillapps.com/hora-barata/icon-192.png",
+      "description": "Precio de la luz PVPC hora a hora, hoy y mañana, con las horas más baratas y un planificador para la lavadora.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "publisher": { "@type": "Organization", "name": "Sillapps", "url": "https://sillapps.com/" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿A qué hora se publica el precio de la luz de mañana?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Red Eléctrica publica los precios PVPC del día siguiente cada tarde, normalmente hacia las 20:15 (hora peninsular). Hora Barata los muestra en cuanto están disponibles." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la hora más barata de la luz hoy?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Cambia cada día. Suelen ser las horas de madrugada y, los días de mucho sol, las primeras horas de la tarde. En esta página y en la app las horas más baratas aparecen en verde." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El precio incluye impuestos?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Es el término de energía del PVPC 2.0TD publicado por Red Eléctrica, que ya incluye peajes y cargos pero no el IVA ni el impuesto eléctrico. En la app puedes mostrar un precio aproximado con impuestos." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Me sirve si tengo una tarifa del mercado libre?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Los precios hora a hora solo se aplican a la tarifa regulada PVPC. En el mercado libre pagas lo que diga tu contrato; si tiene precios distintos por tramos, los tramos 2.0TD de esta página te siguen sirviendo." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Funciona en Canarias?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. Los tramos 2.0TD son los mismos en hora local y Hora Barata muestra los precios en hora canaria cuando tu móvil está en esa zona horaria." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hora Barata es gratis? ¿Tiene anuncios?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Es gratis, sin anuncios, sin cuenta y sin rastreo. Hora Barata Pro, un pago único de 4,99 €, añade el widget de inicio y las alertas de hora barata." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué datos recoge la app?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ninguno. Tus ajustes se guardan en el móvil y los precios se descargan de los servicios públicos de Red Eléctrica. Los detalles están en la política de privacidad." }
+        }
+      ]
+    }
+    </script>
+    <link rel="stylesheet" href="/styles.css?v=20260928-1" />
+    <style>
+      .hb-badge { display: inline-block; margin-top: 18px; line-height: 0; }
+      .hb-badge img { display: block; width: 186px; height: auto; margin: -12px; }
+      .hb-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
+      .hb-chips li { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.9rem; color: var(--muted); }
+      .hb-loading { min-height: 46rem; }
+      .hb-tabs { display: flex; gap: 8px; margin: 4px 0 14px; }
+      .hb-tabs[hidden] { display: none; }
+      .hb-tabs button {
+        font: inherit; font-weight: 650; color: var(--text); cursor: pointer;
+        padding: 7px 18px; border: 1px solid var(--line-strong); border-radius: 999px; background: transparent;
+      }
+      .hb-tabs button[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+      .hb-summary { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 0.92rem; }
+      .section .hb-tip { color: var(--text); font-weight: 600; }
+      .section .hb-bars { list-style: none; margin: 0; padding: 0; max-width: none; display: grid; gap: 3px; }
+      .hb-row {
+        position: relative; display: grid; grid-template-columns: 4.8em 1fr 3.4em; align-items: center; gap: 10px;
+        padding: 2px 6px; border-radius: 8px; font-variant-numeric: tabular-nums; font-size: 0.92rem;
+      }
+      .section .hb-row .hb-h { color: var(--muted); white-space: nowrap; }
+      .section .hb-row .hb-v { text-align: right; color: var(--text); }
+      .hb-track { height: 12px; border-radius: 6px; background: rgba(255, 255, 255, 0.05); overflow: hidden; }
+      .hb-fill { display: block; height: 100%; border-radius: 6px; }
+      .hb-cheap .hb-fill { background: #3ecf8e; }
+      .hb-mid .hb-fill { background: #f5c451; }
+      .hb-high .hb-fill { background: #f06a6a; }
+      .section .hb-cheap .hb-v { color: #6be3a9; font-weight: 700; }
+      .hb-now { background: var(--accent-soft); outline: 1px solid rgba(140, 200, 255, 0.45); }
+      .section .hb-now .hb-h { color: var(--accent); font-weight: 700; }
+      .hb-tag {
+        position: absolute; right: 4.6em; top: 50%; transform: translateY(-50%);
+        font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.5;
+        color: #0b1119; background: var(--accent); padding: 0 6px; border-radius: 999px;
+      }
+      .hb-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 0.86rem; }
+      .section .hb-legend { margin-top: 12px; }
+      .hb-legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; }
+      .hb-legend .l-cheap::before { background: #3ecf8e; }
+      .hb-legend .l-mid::before { background: #f5c451; }
+      .hb-legend .l-high::before { background: #f06a6a; }
+      .hb-table { width: 100%; border-collapse: collapse; font-size: 0.94rem; margin: 0 0 12px; }
+      .hb-table th, .hb-table td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+      .hb-table th { color: var(--text); }
+      .hb-table td { color: var(--muted); }
+      .hb-p { font-weight: 700; }
+      .hb-p.punta { color: #f06a6a; }
+      .hb-p.llano { color: #f5c451; }
+      .hb-p.valle { color: #3ecf8e; }
+      .hb-faq details { border-top: 1px solid var(--line); padding: 10px 0; }
+      .hb-faq details:first-of-type { border-top: 0; padding-top: 0; }
+      .hb-faq summary { cursor: pointer; font-weight: 650; color: var(--text); }
+      .section.hb-faq details p { margin: 8px 0 0; }
+    </style>
+    <noscript><style>.hb-loading { min-height: 0; }</style></noscript>
   </head>
   <body>
     <main>
       <section class="panel hero">
         <div class="panel-inner">
           <div class="nav-row">
-            <a class="back-link" href="/">Site Home</a>
+            <a class="back-link" href="/">Sillapps</a>
           </div>
 
           <div class="masthead">
             <div>
-              <p class="eyebrow">Mobile App</p>
-              <h1 class="title">Hora Barata</h1>
+              <p class="eyebrow">Hora Barata · App Android</p>
+              <h1 class="title">Precio de la luz hoy por horas</h1>
             </div>
             <p class="brand-mark">SILLAPPS</p>
           </div>
 
           <p class="intro">
-            This page provides the public legal entry for the mobile app
-            <strong>Hora Barata</strong> and supports app store compliance
-            and listing requirements.
+            <strong>Hora Barata</strong> te enseña el precio regulado de la luz (PVPC)
+            hora a hora, hoy y mañana, y te dice cuándo poner la lavadora para pagar menos.
+            Gratis, sin anuncios, sin cuenta y sin rastreo.
           </p>
 
-          <div class="pill-row">
-            <a class="pill-link" href="privacy.html">
-              <strong>Privacy Policy</strong>
-              <span>Read the public privacy policy for Hora Barata.</span>
-            </a>
+          <a class="hb-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.ecoclaimspocket&amp;hl=es">
+            <img src="https://play.google.com/intl/es_es/badges/static/images/badges/es_badge_web_generic.png"
+                 alt="Disponible en Google Play" width="646" height="250" referrerpolicy="no-referrer" />
+          </a>
+
+          <ul class="hb-chips">
+            <li>Precios de hoy y de mañana</li>
+            <li>¿Cuándo pongo la lavadora?</li>
+            <li>Península, Baleares y Canarias</li>
+            <li>Sin anuncios</li>
+          </ul>
+
+          <div class="section-grid">
+            <section class="section" id="precios" aria-labelledby="precios-h">
+              <h2 id="precios-h">Precio de la luz hoy y mañana</h2>
+              <div class="hb-tabs" id="hb-tabs" hidden>
+                <button type="button" data-hb-day="hoy" aria-pressed="true">Hoy</button>
+                <button type="button" data-hb-day="manana" aria-pressed="false">Mañana</button>
+              </div>
+              <div id="hb-prices" class="hb-loading" aria-live="polite">
+                <p class="hb-msg">Cargando precios…</p>
+              </div>
+              <noscript>
+                <p>Para ver los precios aquí hace falta JavaScript.
+                  <a href="https://play.google.com/store/apps/details?id=com.sillapps.ecoclaimspocket&amp;hl=es">Consulta los precios en la app</a>.</p>
+              </noscript>
+              <p class="hb-legend"><span class="l-cheap">Barata</span><span class="l-mid">Media</span><span class="l-high">Cara</span></p>
+              <p class="note">
+                Precios en €/kWh del término de energía PVPC 2.0TD (incluye peajes y cargos,
+                sin IVA ni impuesto eléctrico), en hora peninsular. En Canarias es una hora menos:
+                la app los muestra en hora canaria. Datos de Red Eléctrica, cargados por tu navegador
+                directamente desde su API pública (apidatos.ree.es). Hora Barata no está afiliada a Red Eléctrica.
+              </p>
+            </section>
+
+            <section class="section" id="pvpc">
+              <h2>¿Qué es el PVPC y el mercado regulado?</h2>
+              <p>
+                El PVPC (Precio Voluntario para el Pequeño Consumidor) es la tarifa regulada de la luz
+                para hogares con hasta 10 kW de potencia contratada. Solo lo ofrecen las comercializadoras
+                de referencia y su precio no depende de una oferta comercial: sale de una fórmula oficial.
+              </p>
+              <p>
+                A diferencia del mercado libre, donde pagas el precio pactado en tu contrato, con el PVPC
+                cada hora tiene un precio distinto. Red Eléctrica publica cada tarde los precios del día
+                siguiente, hacia las 20:15. Por eso mover el consumo a las horas baratas se nota en la factura.
+              </p>
+            </section>
+
+            <section class="section" id="tramos">
+              <h2>Tramos horarios 2.0TD: punta, llano y valle</h2>
+              <p>
+                Los peajes y cargos cambian según el tramo horario. Estos son los tramos de la tarifa 2.0TD,
+                la de casi todos los hogares, de lunes a viernes laborables:
+              </p>
+              <table class="hb-table">
+                <thead><tr><th scope="col">Tramo</th><th scope="col">Horas</th></tr></thead>
+                <tbody>
+                  <tr><td><span class="hb-p punta">Punta</span></td><td>10:00–14:00 y 18:00–22:00</td></tr>
+                  <tr><td><span class="hb-p llano">Llano</span></td><td>8:00–10:00, 14:00–18:00 y 22:00–24:00</td></tr>
+                  <tr><td><span class="hb-p valle">Valle</span></td><td>0:00–8:00</td></tr>
+                </tbody>
+              </table>
+              <p>
+                Los sábados, domingos y festivos nacionales son <strong>valle todo el día</strong>.
+                En Canarias los tramos son los mismos, en hora canaria.
+              </p>
+            </section>
+
+            <section class="section" id="lavadora">
+              <h2>¿A qué hora poner la lavadora?</h2>
+              <p>
+                En la hora más barata del día, que cambia cada día. Con el PVPC suele estar de madrugada y,
+                los días de mucho sol, a primera hora de la tarde. Los fines de semana todo el día es valle,
+                así que es buen momento para las coladas grandes.
+              </p>
+              <ul>
+                <li>Mira los precios de mañana a partir de las 20:15 y programa el inicio diferido.</li>
+                <li>Una lavadora dura 1 o 2 horas: busca la franja más barata, no solo la hora más barata.</li>
+                <li>Lo mismo vale para el lavavajillas, la secadora, el termo o cargar el coche.</li>
+              </ul>
+              <p>
+                El planificador <strong>«¿Cuándo pongo la lavadora?»</strong> de Hora Barata calcula esa franja
+                según lo que dura tu electrodoméstico.
+              </p>
+            </section>
+
+            <section class="section" id="canarias">
+              <h2>Precio de la luz en Canarias</h2>
+              <p>
+                El PVPC también se aplica en Canarias, y los tramos punta, llano y valle son los mismos en hora local.
+                Muchas webs dan los precios solo en hora peninsular, así que en las islas hay que restar una hora.
+                Hora Barata lo hace por ti: si tu móvil está en hora canaria, verás cada precio en su hora.
+              </p>
+            </section>
+
+            <section class="section" id="pro">
+              <h2>Hora Barata Pro</h2>
+              <p>
+                La app es gratis. Si quieres más, <strong>Hora Barata Pro</strong> es un pago único
+                de 4,99 € (sin suscripción) que añade:
+              </p>
+              <ul>
+                <li><strong>Widget de inicio</strong>: el precio actual y la próxima hora barata, siempre a la vista.</li>
+                <li><strong>Alertas de hora barata</strong>: un aviso cuando empieza tu franja más barata y cuando salen los precios de mañana.</li>
+              </ul>
+            </section>
+
+            <section class="section hb-faq" id="faq">
+              <h2>Preguntas frecuentes</h2>
+              <details>
+                <summary>¿A qué hora se publica el precio de la luz de mañana?</summary>
+                <p>Red Eléctrica publica los precios PVPC del día siguiente cada tarde, normalmente hacia las 20:15 (hora peninsular). Hora Barata los muestra en cuanto están disponibles.</p>
+              </details>
+              <details>
+                <summary>¿Cuál es la hora más barata de la luz hoy?</summary>
+                <p>Cambia cada día. Suelen ser las horas de madrugada y, los días de mucho sol, las primeras horas de la tarde. En esta página y en la app las horas más baratas aparecen en verde.</p>
+              </details>
+              <details>
+                <summary>¿El precio incluye impuestos?</summary>
+                <p>No. Es el término de energía del PVPC 2.0TD publicado por Red Eléctrica, que ya incluye peajes y cargos pero no el IVA ni el impuesto eléctrico. En la app puedes mostrar un precio aproximado con impuestos.</p>
+              </details>
+              <details>
+                <summary>¿Me sirve si tengo una tarifa del mercado libre?</summary>
+                <p>Los precios hora a hora solo se aplican a la tarifa regulada PVPC. En el mercado libre pagas lo que diga tu contrato; si tiene precios distintos por tramos, los tramos 2.0TD de esta página te siguen sirviendo.</p>
+              </details>
+              <details>
+                <summary>¿Funciona en Canarias?</summary>
+                <p>Sí. Los tramos 2.0TD son los mismos en hora local y Hora Barata muestra los precios en hora canaria cuando tu móvil está en esa zona horaria.</p>
+              </details>
+              <details>
+                <summary>¿Hora Barata es gratis? ¿Tiene anuncios?</summary>
+                <p>Es gratis, sin anuncios, sin cuenta y sin rastreo. Hora Barata Pro, un pago único de 4,99 €, añade el widget de inicio y las alertas de hora barata.</p>
+              </details>
+              <details>
+                <summary>¿Qué datos recoge la app?</summary>
+                <p>Ninguno. Tus ajustes se guardan en el móvil y los precios se descargan de los servicios públicos de Red Eléctrica. Los detalles están en la <a href="privacidad.html">política de privacidad</a>.</p>
+              </details>
+            </section>
+
+            <section class="section" id="english" lang="en">
+              <h2>In English</h2>
+              <p>
+                Hora Barata shows Spain's regulated electricity price (PVPC) hour by hour for today and tomorrow,
+                and tells you the cheapest time to run your washing machine. Free, no ads, no account, no tracking.
+                <a href="privacy.html">Privacy policy (English)</a>.
+              </p>
+            </section>
           </div>
+
+          <footer class="site-footer">
+            <nav aria-label="Enlaces legales">
+              <a href="privacidad.html">Política de privacidad</a>
+              <a href="privacy.html" lang="en">Privacy policy (English)</a>
+              <a href="/legal.html#es">Aviso legal</a>
+              <a href="mailto:contact@sillapps.com">contact@sillapps.com</a>
+            </nav>
+            <p>Esta página no usa cookies ni analítica. © 2026 Sillapps. Google Play y el logotipo de Google Play son marcas de Google LLC.</p>
+          </footer>
         </div>
       </section>
     </main>
+    <script src="precios.js?v=20260928-1" defer></script>
   </body>
 </html>
