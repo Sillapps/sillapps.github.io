@@ -311,6 +311,48 @@ code {
   font-size: 0.94em;
 }
 
+.site-footer {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-bottom: 8px;
+}
+
+.site-footer a {
+  color: var(--text);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.notice-card {
+  display: grid;
+  gap: 6px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(140, 200, 255, 0.42);
+  border-radius: var(--radius-lg);
+  background: var(--accent-soft);
+}
+
+.notice-card p {
+  margin: 0;
+}
+
+.notice-card a {
+  color: var(--accent);
+  font-weight: 700;
+}
+
 @keyframes panel-enter {
   from {
     opacity: 0;
