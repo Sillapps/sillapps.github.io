@@ -1,45 +1,189 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-AU">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0b1119" />
-    <title>Fuel Tomorrow WA</title>
-    <link rel="stylesheet" href="/styles.css?v=20260328-dark-1" />
+    <title>Perth fuel prices today and tomorrow · Fuel Tomorrow WA</title>
+    <meta name="description" content="WA petrol prices are fixed for 24 hours and tomorrow's are out after 2:30pm. Fuel Tomorrow WA compares both for your suburb and tells you: fill up today, or wait. Free, no ads." />
+    <link rel="canonical" href="https://sillapps.com/fuel-wa/" />
+    <link rel="icon" type="image/png" href="/fuel-wa/icon-192.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sillapps" />
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:title" content="Fill up today or wait? · Fuel Tomorrow WA" />
+    <meta property="og:description" content="Today's and tomorrow's cheapest petrol in your WA suburb, side by side, with a straight answer. Free, no ads, no account." />
+    <meta property="og:url" content="https://sillapps.com/fuel-wa/" />
+    <meta property="og:image" content="https://sillapps.com/fuel-wa/og.jpg" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="500" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Fuel Tomorrow WA",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "TravelApplication",
+      "inLanguage": "en-AU",
+      "url": "https://sillapps.com/fuel-wa/",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.sillapps.fuelwa",
+      "image": "https://sillapps.com/fuel-wa/icon-192.png",
+      "description": "Western Australia fuel prices today and tomorrow from FuelWatch, and a clear answer: fill up today or wait.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "AUD" },
+      "publisher": { "@type": "Organization", "name": "Sillapps", "url": "https://sillapps.com/" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What time are tomorrow's fuel prices out in WA?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Every station tells FuelWatch its price for the next day by 2pm, and FuelWatch publishes tomorrow's prices after 2:30pm (Perth time). They apply from 6am the next morning." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a servo change its price during the day in WA?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Under WA's FuelWatch scheme each station's price is fixed for 24 hours, from 6am to 6am. Between midnight and 6am you still pay the previous day's price." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Tuesday still the cheapest day for petrol in Perth?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Often, but not always: Perth prices follow a weekly cycle that shifts from time to time. Since tomorrow's prices are published in advance, comparing the real prices beats guessing the day." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Fuel Tomorrow WA free? Does it have ads?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It is free, with no ads, no account and no tracking. Fuel Tomorrow Pro, a one-time purchase with a 7-day free trial, adds the home screen widget, the alert around 2:35pm, favourite stations and several suburbs." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it an official FuelWatch app?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Fuel Tomorrow WA is an independent app by Sillapps. It shows prices published by FuelWatch (Government of Western Australia) and is not affiliated with FuelWatch or the Government of Western Australia." }
+        }
+      ]
+    }
+    </script>
+    <link rel="stylesheet" href="/styles.css?v=20260928-1" />
+    <style>
+      .fw-badge { display: inline-block; margin-top: 18px; line-height: 0; }
+      .fw-badge img { display: block; width: 186px; height: auto; margin: -12px; }
+      .fw-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
+      .fw-chips li { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.9rem; color: var(--muted); }
+      .fw-shot { display: block; width: 100%; max-width: 640px; height: auto; border-radius: 16px; margin: 6px 0 0; }
+      .fw-table { width: 100%; border-collapse: collapse; font-size: 0.94rem; margin: 0 0 12px; }
+      .fw-table th, .fw-table td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+      .fw-table th { color: var(--text); white-space: nowrap; }
+      .fw-table td { color: var(--muted); }
+      .fw-faq details { border-top: 1px solid var(--line); padding: 10px 0; }
+      .fw-faq details:first-of-type { border-top: 0; padding-top: 0; }
+      .fw-faq summary { cursor: pointer; font-weight: 650; color: var(--text); }
+      .section.fw-faq details p { margin: 8px 0 0; }
+    </style>
   </head>
   <body>
     <main>
       <section class="panel hero">
         <div class="panel-inner">
           <div class="nav-row">
-            <a class="back-link" href="/">Site Home</a>
+            <a class="back-link" href="/">Sillapps</a>
           </div>
-
           <div class="masthead">
             <div>
-              <p class="eyebrow">Mobile App</p>
-              <h1 class="title">Fuel Tomorrow WA</h1>
+              <p class="eyebrow">Fuel Tomorrow WA · Android app</p>
+              <h1 class="title">Fill up today, or wait for tomorrow?</h1>
             </div>
             <p class="brand-mark">SILLAPPS</p>
           </div>
-
           <p class="intro">
-            <strong>Fuel Tomorrow WA</strong> compares Western Australia fuel
-            prices for today and tomorrow and tells you whether to fill up now
-            or wait. Price data comes from
-            <a href="https://www.fuelwatch.wa.gov.au/">FuelWatch</a>
-            (Government of Western Australia). Fuel Tomorrow WA is an
-            independent app and is not affiliated with FuelWatch or the
-            Government of Western Australia. This page provides the public
-            legal entry for the app and supports app store compliance and
-            listing requirements.
+            In Western Australia every servo's price is fixed for 24 hours from 6am, and
+            tomorrow's prices are published after 2:30pm. <strong>Fuel Tomorrow WA</strong>
+            compares today and tomorrow for your suburb and your fuel, and gives you a straight
+            answer. Free, no ads, no account.
           </p>
+          <a class="fw-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.fuelwa&amp;hl=en_AU">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                 alt="Get it on Google Play" width="646" height="250" referrerpolicy="no-referrer" />
+          </a>
+          <ul class="fw-chips">
+            <li>Today and tomorrow, side by side</li>
+            <li>Perth and regional WA</li>
+            <li>ULP, 95, 98, diesel, LPG, E85</li>
+            <li>No ads, ever</li>
+          </ul>
 
-          <div class="pill-row">
-            <a class="pill-link" href="privacy.html">
-              <strong>Privacy Policy</strong>
-              <span>Read the public privacy policy for Fuel Tomorrow WA.</span>
-            </a>
+          <div class="section-grid">
+            <section class="section" id="how">
+              <h2>How WA fuel prices work</h2>
+              <table class="fw-table">
+                <tr><th>By 2pm</th><td>Every station tells FuelWatch its price for tomorrow.</td></tr>
+                <tr><th>After 2:30pm</th><td>FuelWatch publishes tomorrow's prices. Fuel Tomorrow WA compares them with today's.</td></tr>
+                <tr><th>6am</th><td>The new prices start, fixed for 24 hours. Until then you pay yesterday's.</td></tr>
+              </table>
+              <p>
+                Perth prices follow a weekly cycle. From the cheapest day to the dearest the jump is
+                often more than 10 cents a litre, about $5 on a 50 L tank. Knowing tomorrow's price
+                today is the whole trick.
+              </p>
+            </section>
+
+            <section class="section" id="app">
+              <h2>What the app tells you</h2>
+              <img class="fw-shot" src="og.jpg" alt="Fuel Tomorrow WA: the verdict card, today's and tomorrow's cheapest" width="1024" height="500" />
+              <ul>
+                <li><strong>Wait</strong>: tomorrow is cheaper, and where.</li>
+                <li><strong>Fill up today</strong>: tomorrow is dearer (before 6am: "fill up before 6am").</li>
+                <li><strong>Same</strong>: within 1c/L, and what most servos around you do.</li>
+                <li>Before 2:30pm: how today compares with yesterday, and when tomorrow's prices are due.</li>
+                <li>The list of servos with price, change, opening hours and distance; a map; directions.</li>
+              </ul>
+              <p>
+                <strong>Fuel Tomorrow Pro</strong> (one-time purchase, 7-day free trial): home screen
+                widget, an alert around 2:35pm, favourite stations, several suburbs.
+              </p>
+            </section>
+
+            <section class="section fw-faq" id="faq">
+              <h2>Questions</h2>
+              <details>
+                <summary>What time are tomorrow's fuel prices out in WA?</summary>
+                <p>Every station tells FuelWatch its price for the next day by 2pm, and FuelWatch publishes tomorrow's prices after 2:30pm (Perth time). They apply from 6am the next morning.</p>
+              </details>
+              <details>
+                <summary>Can a servo change its price during the day?</summary>
+                <p>No. Each station's price is fixed for 24 hours, from 6am to 6am. Between midnight and 6am you still pay the previous day's price.</p>
+              </details>
+              <details>
+                <summary>Is Tuesday still the cheapest day in Perth?</summary>
+                <p>Often, but not always: the weekly cycle shifts from time to time. Since tomorrow's prices are published in advance, comparing the real prices beats guessing the day.</p>
+              </details>
+              <details>
+                <summary>Is it free? Does it have ads?</summary>
+                <p>Free, with no ads, no account and no tracking. Pro is a single payment; there is no subscription.</p>
+              </details>
+              <details>
+                <summary>Is it an official FuelWatch app?</summary>
+                <p>No. Fuel Tomorrow WA is an independent app by Sillapps. It shows prices published by FuelWatch (Government of Western Australia) and is not affiliated with FuelWatch or the Government of Western Australia.</p>
+              </details>
+            </section>
+
+            <section class="section" id="source">
+              <h2>Source and privacy</h2>
+              <p>
+                Price data: <a href="https://www.fuelwatch.wa.gov.au/">FuelWatch</a>, Government of Western
+                Australia. Prices are for information only: always check the price at the pump.
+                The app keeps your settings on your phone and sends nothing to the developer.
+              </p>
+              <div class="pill-row">
+                <a class="pill-link" href="privacy.html">
+                  <strong>Privacy Policy</strong>
+                  <span>How Fuel Tomorrow WA handles your data.</span>
+                </a>
+              </div>
+            </section>
           </div>
         </div>
       </section>
