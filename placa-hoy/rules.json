@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "published": "2026-09-26",
+ "published": "2026-09-28",
  "countries": [
   {
    "id": "CO",
@@ -176,21 +176,84 @@
    "notices": [
     {
      "date": "2026-10-12",
-     "title": "Pico y placa regional (plan retorno)",
-     "text": "Si entras a Bogotá por uno de los 9 corredores del plan retorno: de 12:00 a 16:00 solo circulan placas terminadas en número par (0, 2, 4, 6, 8) y de 16:00 a 20:00 solo placas impares (1, 3, 5, 7, 9). Motos, eléctricos e híbridos están exentos.",
-     "source_url": "https://www.movilidadbogota.gov.co/noticias/festivo-de-san-pedro-y-san-pablo-asi-funcionara-el-pico-y-placa-regional"
+     "title": "Pico y placa regional previsto",
+     "text": "Último día de puente festivo: normalmente aplica el pico y placa regional. Si entras a Bogotá por uno de los 9 corredores del plan retorno: de 12:00 a 16:00 solo entran placas terminadas en número par (0, 2, 4, 6, 8) y de 16:00 a 20:00 solo placas impares (1, 3, 5, 7, 9). Motos y eléctricos e híbridos inscritos están exentos; el Pico y Placa Solidario no exime. Confírmalo en la fuente oficial.",
+     "source_url": "https://www.movilidadbogota.gov.co/noticias/festivo-de-san-pedro-y-san-pablo-asi-funcionara-el-pico-y-placa-regional",
+     "regional": {
+      "kinds": [
+       "car"
+      ],
+      "odd": [
+       [
+        "12:00",
+        "16:00"
+       ]
+      ],
+      "even": [
+       [
+        "16:00",
+        "20:00"
+       ]
+      ],
+      "exempt_fuels": [
+       "electric"
+      ],
+      "announced": false
+     }
     },
     {
      "date": "2026-11-02",
      "title": "Pico y placa regional previsto",
-     "text": "Último día de puente festivo: normalmente aplica el pico y placa regional. Si entras a Bogotá por uno de los 9 corredores del plan retorno: de 12:00 a 16:00 solo circulan placas terminadas en número par (0, 2, 4, 6, 8) y de 16:00 a 20:00 solo placas impares (1, 3, 5, 7, 9). Motos, eléctricos e híbridos están exentos. Confírmalo en la fuente oficial.",
-     "source_url": "https://www.movilidadbogota.gov.co/"
+     "text": "Último día de puente festivo: normalmente aplica el pico y placa regional. Si entras a Bogotá por uno de los 9 corredores del plan retorno: de 12:00 a 16:00 solo entran placas terminadas en número par (0, 2, 4, 6, 8) y de 16:00 a 20:00 solo placas impares (1, 3, 5, 7, 9). Motos y eléctricos e híbridos inscritos están exentos; el Pico y Placa Solidario no exime. Confírmalo en la fuente oficial.",
+     "source_url": "https://www.movilidadbogota.gov.co/noticias/festivo-de-san-pedro-y-san-pablo-asi-funcionara-el-pico-y-placa-regional",
+     "regional": {
+      "kinds": [
+       "car"
+      ],
+      "odd": [
+       [
+        "12:00",
+        "16:00"
+       ]
+      ],
+      "even": [
+       [
+        "16:00",
+        "20:00"
+       ]
+      ],
+      "exempt_fuels": [
+       "electric"
+      ],
+      "announced": false
+     }
     },
     {
      "date": "2026-11-16",
      "title": "Pico y placa regional previsto",
-     "text": "Último día de puente festivo: normalmente aplica el pico y placa regional. Si entras a Bogotá por uno de los 9 corredores del plan retorno: de 12:00 a 16:00 solo circulan placas terminadas en número par (0, 2, 4, 6, 8) y de 16:00 a 20:00 solo placas impares (1, 3, 5, 7, 9). Motos, eléctricos e híbridos están exentos. Confírmalo en la fuente oficial.",
-     "source_url": "https://www.movilidadbogota.gov.co/"
+     "text": "Último día de puente festivo: normalmente aplica el pico y placa regional. Si entras a Bogotá por uno de los 9 corredores del plan retorno: de 12:00 a 16:00 solo entran placas terminadas en número par (0, 2, 4, 6, 8) y de 16:00 a 20:00 solo placas impares (1, 3, 5, 7, 9). Motos y eléctricos e híbridos inscritos están exentos; el Pico y Placa Solidario no exime. Confírmalo en la fuente oficial.",
+     "source_url": "https://www.movilidadbogota.gov.co/noticias/festivo-de-san-pedro-y-san-pablo-asi-funcionara-el-pico-y-placa-regional",
+     "regional": {
+      "kinds": [
+       "car"
+      ],
+      "odd": [
+       [
+        "12:00",
+        "16:00"
+       ]
+      ],
+      "even": [
+       [
+        "16:00",
+        "20:00"
+       ]
+      ],
+      "exempt_fuels": [
+       "electric"
+      ],
+      "announced": false
+     }
     }
    ]
   },
@@ -712,11 +775,12 @@
        "24:00"
       ]
      ],
+     "overnight_until": "06:00",
      "exempt_fuels": [
       "electric"
      ],
      "notes": [
-      "En temporada la restricción de cada día sigue hasta las 6:00 del día siguiente."
+      "En temporada la restricción de cada día sigue hasta las 6:00 del día siguiente, también el sábado después del viernes."
      ],
      "type": "weekday"
     }
@@ -857,7 +921,8 @@
      ],
      "zone": "Zona urbana y parte de la suburbana; no aplica en vías nacionales, departamentales ni concesionadas (Autopistas del Café, Variante Condina...).",
      "notes": [
-      "Vuelve a regir desde el lunes 28 de septiembre de 2026, tras la medida temporal por el sismo del 10 de agosto (anuncio de la Alcaldía de Pereira, 26 de septiembre de 2026)."
+      "Vuelve a regir desde el lunes 28 de septiembre de 2026, tras la medida temporal por el sismo del 10 de agosto (anuncio de la Alcaldía de Pereira, 26 de septiembre de 2026).",
+      "Eléctricos e híbridos exentos (Decreto 540, art. 4) si la licencia de tránsito indica ese combustible. Durante la medida temporal por el sismo (18 de agosto al 25 de septiembre de 2026) sí tenían restricción."
      ],
      "type": "weekday"
     },
@@ -906,6 +971,9 @@
       "hybrid"
      ],
      "zone": "Zona urbana y parte de la suburbana; no aplica en vías nacionales, departamentales ni concesionadas (Autopistas del Café, Variante Condina...).",
+     "notes": [
+      "Eléctricos e híbridos exentos (Decreto 540, art. 4) si la licencia de tránsito indica ese combustible. Durante la medida temporal por el sismo (18 de agosto al 25 de septiembre de 2026) sí tenían restricción."
+     ],
      "type": "weekday"
     }
    ]
@@ -1049,6 +1117,1164 @@
      "summary": "Sin pico y placa para motos, pero hay restricciones de horario y zona.",
      "type": "none",
      "zone": "Motos: no pueden circular de 23:00 a 5:00 salvo el propietario, ni en el centro (Calle 30, Cra 38, Calle 45, Cra 46). Hay zonas con prohibición de parrillero hombre."
+    }
+   ]
+  },
+  {
+   "id": "pasto",
+   "country": "CO",
+   "name": "Pasto",
+   "region": "Nariño",
+   "timezone": "America/Bogota",
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "beta": true,
+   "periods": [
+    {
+     "id": "pasto-d0175-2026-09-21",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-09-25",
+     "valid_to": "2026-09-27",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 21/9 (ciclo 1), lunes a viernes hábiles, 7:30–19:00: lunes 8 y 9, martes 0 y 1, miércoles 2 y 3, jueves 4 y 5, viernes 6 y 7.",
+     "days": {
+      "1": [
+       8,
+       9
+      ],
+      "2": [
+       0,
+       1
+      ],
+      "3": [
+       2,
+       3
+      ],
+      "4": [
+       4,
+       5
+      ],
+      "5": [
+       6,
+       7
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2026-09-28",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-09-28",
+     "valid_to": "2026-10-04",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 28/9 (ciclo 2), lunes a viernes hábiles, 7:30–19:00: lunes 0 y 1, martes 2 y 3, miércoles 4 y 5, jueves 6 y 7, viernes 8 y 9.",
+     "days": {
+      "1": [
+       0,
+       1
+      ],
+      "2": [
+       2,
+       3
+      ],
+      "3": [
+       4,
+       5
+      ],
+      "4": [
+       6,
+       7
+      ],
+      "5": [
+       8,
+       9
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2026-10-05",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-10-05",
+     "valid_to": "2026-10-11",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 5/10 (ciclo 3), lunes a viernes hábiles, 7:30–19:00: lunes 2 y 3, martes 4 y 5, miércoles 6 y 7, jueves 8 y 9, viernes 0 y 1.",
+     "days": {
+      "1": [
+       2,
+       3
+      ],
+      "2": [
+       4,
+       5
+      ],
+      "3": [
+       6,
+       7
+      ],
+      "4": [
+       8,
+       9
+      ],
+      "5": [
+       0,
+       1
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2026-10-12",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-10-12",
+     "valid_to": "2026-10-18",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 12/10 (ciclo 4), lunes a viernes hábiles, 7:30–19:00: lunes 4 y 5, martes 6 y 7, miércoles 8 y 9, jueves 0 y 1, viernes 2 y 3.",
+     "days": {
+      "1": [
+       4,
+       5
+      ],
+      "2": [
+       6,
+       7
+      ],
+      "3": [
+       8,
+       9
+      ],
+      "4": [
+       0,
+       1
+      ],
+      "5": [
+       2,
+       3
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2026-10-19",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-10-19",
+     "valid_to": "2026-10-25",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 19/10 (ciclo 5), lunes a viernes hábiles, 7:30–19:00: lunes 6 y 7, martes 8 y 9, miércoles 0 y 1, jueves 2 y 3, viernes 4 y 5.",
+     "days": {
+      "1": [
+       6,
+       7
+      ],
+      "2": [
+       8,
+       9
+      ],
+      "3": [
+       0,
+       1
+      ],
+      "4": [
+       2,
+       3
+      ],
+      "5": [
+       4,
+       5
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2026-10-26",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-10-26",
+     "valid_to": "2026-11-01",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 26/10 (ciclo 1), lunes a viernes hábiles, 7:30–19:00: lunes 8 y 9, martes 0 y 1, miércoles 2 y 3, jueves 4 y 5, viernes 6 y 7.",
+     "days": {
+      "1": [
+       8,
+       9
+      ],
+      "2": [
+       0,
+       1
+      ],
+      "3": [
+       2,
+       3
+      ],
+      "4": [
+       4,
+       5
+      ],
+      "5": [
+       6,
+       7
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2026-11-02",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-11-02",
+     "valid_to": "2026-11-08",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 2/11 (ciclo 2), lunes a viernes hábiles, 7:30–19:00: lunes 0 y 1, martes 2 y 3, miércoles 4 y 5, jueves 6 y 7, viernes 8 y 9.",
+     "days": {
+      "1": [
+       0,
+       1
+      ],
+      "2": [
+       2,
+       3
+      ],
+      "3": [
+       4,
+       5
+      ],
+      "4": [
+       6,
+       7
+      ],
+      "5": [
+       8,
+       9
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2026-11-09",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-11-09",
+     "valid_to": "2026-11-15",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 9/11 (ciclo 3), lunes a viernes hábiles, 7:30–19:00: lunes 2 y 3, martes 4 y 5, miércoles 6 y 7, jueves 8 y 9, viernes 0 y 1.",
+     "days": {
+      "1": [
+       2,
+       3
+      ],
+      "2": [
+       4,
+       5
+      ],
+      "3": [
+       6,
+       7
+      ],
+      "4": [
+       8,
+       9
+      ],
+      "5": [
+       0,
+       1
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2026-11-16",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-11-16",
+     "valid_to": "2026-11-22",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 16/11 (ciclo 4), lunes a viernes hábiles, 7:30–19:00: lunes 4 y 5, martes 6 y 7, miércoles 8 y 9, jueves 0 y 1, viernes 2 y 3.",
+     "days": {
+      "1": [
+       4,
+       5
+      ],
+      "2": [
+       6,
+       7
+      ],
+      "3": [
+       8,
+       9
+      ],
+      "4": [
+       0,
+       1
+      ],
+      "5": [
+       2,
+       3
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2026-11-23",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-11-23",
+     "valid_to": "2026-11-29",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 23/11 (ciclo 5), lunes a viernes hábiles, 7:30–19:00: lunes 6 y 7, martes 8 y 9, miércoles 0 y 1, jueves 2 y 3, viernes 4 y 5.",
+     "days": {
+      "1": [
+       6,
+       7
+      ],
+      "2": [
+       8,
+       9
+      ],
+      "3": [
+       0,
+       1
+      ],
+      "4": [
+       2,
+       3
+      ],
+      "5": [
+       4,
+       5
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2026-11-30",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-11-30",
+     "valid_to": "2026-12-06",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 30/11 (ciclo 1), lunes a viernes hábiles, 7:30–19:00: lunes 8 y 9, martes 0 y 1, miércoles 2 y 3, jueves 4 y 5, viernes 6 y 7.",
+     "days": {
+      "1": [
+       8,
+       9
+      ],
+      "2": [
+       0,
+       1
+      ],
+      "3": [
+       2,
+       3
+      ],
+      "4": [
+       4,
+       5
+      ],
+      "5": [
+       6,
+       7
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2026-12-07",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-12-07",
+     "valid_to": "2026-12-13",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 7/12 (ciclo 2), lunes a viernes hábiles, 7:30–19:00: lunes 0 y 1, martes 2 y 3, miércoles 4 y 5, jueves 6 y 7, viernes 8 y 9.",
+     "days": {
+      "1": [
+       0,
+       1
+      ],
+      "2": [
+       2,
+       3
+      ],
+      "3": [
+       4,
+       5
+      ],
+      "4": [
+       6,
+       7
+      ],
+      "5": [
+       8,
+       9
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2026-12-14",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-12-14",
+     "valid_to": "2026-12-20",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 14/12 (ciclo 3), lunes a viernes hábiles, 7:30–19:00: lunes 2 y 3, martes 4 y 5, miércoles 6 y 7, jueves 8 y 9, viernes 0 y 1.",
+     "days": {
+      "1": [
+       2,
+       3
+      ],
+      "2": [
+       4,
+       5
+      ],
+      "3": [
+       6,
+       7
+      ],
+      "4": [
+       8,
+       9
+      ],
+      "5": [
+       0,
+       1
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2026-12-21",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-12-21",
+     "valid_to": "2026-12-27",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 21/12 (ciclo 4), lunes a viernes hábiles, 7:30–19:00: lunes 4 y 5, martes 6 y 7, miércoles 8 y 9, jueves 0 y 1, viernes 2 y 3.",
+     "days": {
+      "1": [
+       4,
+       5
+      ],
+      "2": [
+       6,
+       7
+      ],
+      "3": [
+       8,
+       9
+      ],
+      "4": [
+       0,
+       1
+      ],
+      "5": [
+       2,
+       3
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2026-12-28",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-12-28",
+     "valid_to": "2027-01-03",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 28/12 (ciclo 5), lunes a viernes hábiles, 7:30–19:00: lunes 6 y 7, martes 8 y 9, miércoles 0 y 1, jueves 2 y 3, viernes 4 y 5.",
+     "days": {
+      "1": [
+       6,
+       7
+      ],
+      "2": [
+       8,
+       9
+      ],
+      "3": [
+       0,
+       1
+      ],
+      "4": [
+       2,
+       3
+      ],
+      "5": [
+       4,
+       5
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2027-01-04",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2027-01-04",
+     "valid_to": "2027-01-10",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 4/1 (ciclo 1), lunes a viernes hábiles, 7:30–19:00: lunes 8 y 9, martes 0 y 1, miércoles 2 y 3, jueves 4 y 5, viernes 6 y 7.",
+     "days": {
+      "1": [
+       8,
+       9
+      ],
+      "2": [
+       0,
+       1
+      ],
+      "3": [
+       2,
+       3
+      ],
+      "4": [
+       4,
+       5
+      ],
+      "5": [
+       6,
+       7
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2027-01-11",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2027-01-11",
+     "valid_to": "2027-01-17",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 11/1 (ciclo 2), lunes a viernes hábiles, 7:30–19:00: lunes 0 y 1, martes 2 y 3, miércoles 4 y 5, jueves 6 y 7, viernes 8 y 9.",
+     "days": {
+      "1": [
+       0,
+       1
+      ],
+      "2": [
+       2,
+       3
+      ],
+      "3": [
+       4,
+       5
+      ],
+      "4": [
+       6,
+       7
+      ],
+      "5": [
+       8,
+       9
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    },
+    {
+     "id": "pasto-d0175-2027-01-18",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2027-01-18",
+     "valid_to": "2027-01-20",
+     "decree": "Decreto 0175 de 2026 (21 de septiembre)",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026?download=3116388:dec-0175-21-sep-2026",
+     "last_verified": "2026-09-28",
+     "summary": "Semana del 18/1 (ciclo 3), lunes a viernes hábiles, 7:30–19:00: lunes 2 y 3, martes 4 y 5, miércoles 6 y 7, jueves 8 y 9, viernes 0 y 1.",
+     "days": {
+      "1": [
+       2,
+       3
+      ],
+      "2": [
+       4,
+       5
+      ],
+      "3": [
+       6,
+       7
+      ],
+      "4": [
+       8,
+       9
+      ],
+      "5": [
+       0,
+       1
+      ]
+     },
+     "hours": [
+      [
+       "07:30",
+       "19:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "En la ciudad de San Juan de Pasto.",
+     "notes": [
+      "Ciclo semanal: cada semana cambian los dígitos de cada día (5 ciclos que se repiten).",
+      "Carros y motos por el último dígito numérico de la placa, en la ciudad de San Juan de Pasto.",
+      "Exentos: eléctricos, híbridos y a gas natural o propano (Decreto 0175, art. 3, num. 18).",
+      "No aplica sábados, domingos ni festivos."
+     ],
+     "type": "weekday"
+    }
+   ],
+   "overrides": [
+    {
+     "date": "2027-01-04",
+     "action": "unconfirmed",
+     "note": "Carnaval de Negros y Blancos: otros años la Alcaldía decretó días cívicos y medidas especiales de movilidad. Confírmalo en la fuente oficial.",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026"
+    },
+    {
+     "date": "2027-01-05",
+     "action": "unconfirmed",
+     "note": "Carnaval de Negros y Blancos: otros años la Alcaldía decretó días cívicos y medidas especiales de movilidad. Confírmalo en la fuente oficial.",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026"
+    },
+    {
+     "date": "2027-01-06",
+     "action": "unconfirmed",
+     "note": "Carnaval de Negros y Blancos: otros años la Alcaldía decretó días cívicos y medidas especiales de movilidad. Confírmalo en la fuente oficial.",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026"
+    },
+    {
+     "date": "2027-01-07",
+     "action": "unconfirmed",
+     "note": "Carnaval de Negros y Blancos: otros años la Alcaldía decretó días cívicos y medidas especiales de movilidad. Confírmalo en la fuente oficial.",
+     "source_url": "https://www.pasto.gov.co/index.php/decretos-2026"
+    }
+   ]
+  },
+  {
+   "id": "santa-marta",
+   "country": "CO",
+   "name": "Santa Marta",
+   "region": "Magdalena",
+   "timezone": "America/Bogota",
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "periods": [
+    {
+     "id": "santa-marta-d213-2026",
+     "kinds": [
+      "car"
+     ],
+     "valid_from": "2026-05-08",
+     "valid_to": "2026-11-07",
+     "decree": "Decreto 213 de 2026 (8 de mayo)",
+     "source_url": "https://www.santamarta.gov.co/sites/default/files/decretos_no._213_del_08_de_mayo_de_2026.pdf",
+     "last_verified": "2026-09-28",
+     "summary": "Lunes a viernes hábiles: lunes 1 y 2, martes 3 y 4, miércoles 5 y 6, jueves 7 y 8, viernes 9 y 0. Placas de Santa Marta: 7:00–9:00, 11:30–14:00 y 17:00–20:00; otras placas: 7:00–20:00.",
+     "days": {
+      "1": [
+       1,
+       2
+      ],
+      "2": [
+       3,
+       4
+      ],
+      "3": [
+       5,
+       6
+      ],
+      "4": [
+       7,
+       8
+      ],
+      "5": [
+       9,
+       0
+      ]
+     },
+     "hours": [
+      [
+       "07:00",
+       "09:00"
+      ],
+      [
+       "11:30",
+       "14:00"
+      ],
+      [
+       "17:00",
+       "20:00"
+      ]
+     ],
+     "hours_nonlocal": [
+      [
+       "07:00",
+       "20:00"
+      ]
+     ],
+     "local_plate_label": "Placa matriculada en Santa Marta",
+     "exempt_fuels": [
+      "electric",
+      "hybrid"
+     ],
+     "zone": "Dentro del anillo vial Carrera 1.ª, Batallón Córdoba, Cerro Ziruma, Troncal del Caribe y Vía Alterna (estas vías no tienen pico y placa).",
+     "notes": [
+      "Vehículos de otras ciudades: el día de llegada pueden circular mostrando el recibo de uno de los peajes de Neguanje, Tasajera o Tucurinca.",
+      "No aplica festivos; en días cívicos solo si el decreto del día lo dice.",
+      "Eléctricos e híbridos exentos (Decreto 213, art. 3); los vehículos a gas no."
+     ],
+     "type": "weekday"
+    }
+   ]
+  },
+  {
+   "id": "popayan",
+   "country": "CO",
+   "name": "Popayán",
+   "region": "Cauca",
+   "timezone": "America/Bogota",
+   "kinds": [
+    "car",
+    "moto"
+   ],
+   "periods": [
+    {
+     "id": "popayan-2026s2",
+     "kinds": [
+      "car",
+      "moto"
+     ],
+     "valid_from": "2026-07-06",
+     "valid_to": "2026-12-31",
+     "decree": "Decreto 20261000000355 de 2026 (9 de enero)",
+     "source_url": "https://www.popayan.gov.co/NuestraAlcaldia/Normatividad/Decreto_20261000000355_del_09_de_enero_2026.pdf",
+     "last_verified": "2026-09-28",
+     "summary": "Lunes a viernes hábiles, 7:00–20:00, carros y motos por el último dígito: lunes 9 y 0, martes 1 y 2, miércoles 3 y 4, jueves 5 y 6, viernes 7 y 8.",
+     "days": {
+      "1": [
+       9,
+       0
+      ],
+      "2": [
+       1,
+       2
+      ],
+      "3": [
+       3,
+       4
+      ],
+      "4": [
+       5,
+       6
+      ],
+      "5": [
+       7,
+       8
+      ]
+     },
+     "hours": [
+      [
+       "07:00",
+       "20:00"
+      ]
+     ],
+     "exempt_fuels": [
+      "electric",
+      "hybrid",
+      "gas"
+     ],
+     "zone": "Toda la zona urbana de Popayán; no aplica en los recorridos de paso por las variantes norte y sur y la Circunvalar que fija el decreto (art. 7).",
+     "notes": [
+      "Incluye motos, motocarros, mototriciclos y cuatrimotos de servicio particular; prohíbe circular y parquear.",
+      "Exentos sin trámite: eléctricos, híbridos, a gas y gas/gasolina (art. 4, num. 15).",
+      "No aplica sábados, domingos ni festivos, salvo decreto del alcalde.",
+      "Hay permisos pagos de circulación por horario (art. 3); la app no los tiene en cuenta."
+     ],
+     "type": "weekday"
     }
    ]
   },
@@ -1350,5 +2576,5 @@
    ]
   }
  ],
- "version": 2026092602
+ "version": 2026092808
 }
