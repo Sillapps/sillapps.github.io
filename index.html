@@ -3,23 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b1119" />
-    <title>Sillapps</title>
-    <meta name="description" content="Sillapps — public app pages, legal documents and platform verification files for Sillapps software." />
+    <meta name="theme-color" content="#f6f5f2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e0d14" media="(prefers-color-scheme: dark)" />
+    <title>Sillapps · Small apps that do one thing well</title>
+    <meta name="description" content="Sillapps is an independent studio in France making focused Android apps: neon strategy games, and everyday tools built on official public data for Spain, Germany, Italy, India, Latin America, Brazil, South Africa, Australia and more." />
     <meta name="application-name" content="Sillapps" />
     <link rel="canonical" href="https://sillapps.com/" />
+    <link rel="icon" type="image/svg+xml" href="/brand/mark.svg" />
+    <link rel="apple-touch-icon" href="/brand/mark-180.png" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Sillapps" />
-    <meta property="og:title" content="Sillapps" />
+    <meta property="og:title" content="Sillapps · Small apps that do one thing well" />
     <meta property="og:url" content="https://sillapps.com/" />
-    <meta property="og:description" content="Sillapps — public app pages, legal documents and platform verification files for Sillapps software." />
+    <meta property="og:description" content="Focused Android apps from an independent studio in France: neon strategy games and everyday tools built on official public data." />
+    <meta property="og:image" content="https://sillapps.com/brand/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "@id": "https://sillapps.com/#organization",
       "name": "Sillapps",
-      "url": "https://sillapps.com/"
+      "url": "https://sillapps.com/",
+      "logo": "https://sillapps.com/brand/mark-512.png",
+      "email": "contact@sillapps.com"
     }
     </script>
     <script type="application/ld+json">
@@ -31,84 +40,182 @@
       "publisher": { "@id": "https://sillapps.com/#organization" }
     }
     </script>
-    <link rel="stylesheet" href="/styles.css?v=20260928-1" />
+    <link rel="stylesheet" href="/fonts/fonts.css?v=20260930-1" />
+    <link rel="stylesheet" href="/styles.css?v=20260930-1" />
   </head>
-  <body>
+  <body class="home">
     <main>
-      <section class="panel hero">
-        <div class="panel-inner">
-          <div class="masthead">
-            <div>
-              <p class="eyebrow">Sillapps Public Directory</p>
-              <h1 class="title">Public App Pages</h1>
-            </div>
-            <p class="brand-mark">SILLAPPS</p>
-          </div>
+      <header class="site-header">
+        <a class="logo" href="/" aria-label="Sillapps home">
+          <img src="/brand/mark.svg" alt="" width="38" height="38" />
+          <span>sillapps</span>
+        </a>
+        <nav aria-label="Site">
+          <a href="#apps">Apps</a>
+          <a href="#about">About</a>
+          <a href="mailto:contact@sillapps.com">Contact</a>
+        </nav>
+      </header>
 
-          <p class="intro">
-            This site hosts public legal pages and platform verification files
-            for Sillapps mobile apps, including <code>app-ads.txt</code>.
-          </p>
+      <section class="home-hero">
+        <h1>Small apps that do <em>one thing well</em>.</h1>
+        <p>
+          Sillapps is an independent studio in France. We make focused Android apps:
+          neon strategy games, and everyday tools that turn official public data into a clear answer.
+        </p>
+        <ul class="home-values">
+          <li>Official sources, linked</li>
+          <li>Made for each country</li>
+          <li>Built for Android</li>
+        </ul>
+      </section>
 
-          <ul class="stack">
-            <li>
-              <a class="stack-link" href="/neon-overload/">
-                <strong>Neon Overload</strong>
-                <span>Offline neon tower defense for Android.</span>
-              </a>
-            </li>
-            <li>
-              <a class="stack-link" href="/hora-barata/">
-                <strong>Hora Barata</strong>
-                <span>Precio de la luz hoy por horas (PVPC): app page and privacy policy.</span>
-              </a>
-            </li>
-            <li>
-              <a class="stack-link" href="/biowetter/">
-                <strong>BioWetter Kompass</strong>
-                <span>Biowetter für Wetterfühlige, Pollenflug und UV-Index in Deutschland (Daten des DWD): App-Seite, Datenschutz und Impressum.</span>
-              </a>
-            </li>
-            <li>
-              <a class="stack-link" href="/choghadiya/">
-                <strong>Shubh Samay</strong>
-                <span>Choghadiya today, Rahu Kaal and tithi for your city, in English, हिन्दी and ગુજરાતી: app page and privacy policy.</span>
-              </a>
-            </li>
-            <li>
-              <a class="stack-link" href="/scioperi/">
-                <strong>Scioperi Oggi</strong>
-                <span>Sciopero oggi e domani in Italia: treni, bus, metro, aerei, dall'elenco ufficiale del MIT.</span>
-              </a>
-            </li>
-            <li>
-              <a class="stack-link" href="/beneficios/">
-                <strong>Dia do Pagamento · Calendario de Pagos · Grant Payment Dates</strong>
-                <span>Unofficial benefit payment dates for Brazil, Mexico and South Africa: app page and privacy policy.</span>
-              </a>
-            </li>
-            <li>
-              <a class="stack-link" href="/fusecore/">
-                <strong>FUSECORE</strong>
-                <span>Idle tower defense: fuse elements into chain reactions. Coming soon to Android.</span>
-              </a>
-            </li>
-            <li>
-              <a class="stack-link" href="/app-ads.txt">
-                <strong>app-ads.txt</strong>
-                <span>Authorized sellers file used by AdMob and other buyers.</span>
-              </a>
-            </li>
-          </ul>
+      <section class="home-section" id="apps" aria-labelledby="h-games">
+        <h2 id="h-games">Games</h2>
+        <ul class="app-grid wide">
+          <li>
+            <a class="app-card" data-app="neon-overload" href="/neon-overload/">
+              <span class="app-card-top">
+                <img src="/neon-overload/icon-192.png" alt="" width="64" height="64" />
+                <span class="app-card-where">Worldwide · 5 languages</span>
+              </span>
+              <h3>Neon Overload</h3>
+              <p>Offline neon tower defense: five towers, sixteen maps and bosses that fight back.</p>
+              <span class="app-card-go">View the game</span>
+            </a>
+          </li>
+          <li>
+            <a class="app-card" data-app="fusecore" href="/fusecore/">
+              <span class="app-card-top">
+                <img src="/fusecore/icon-192.png" alt="" width="64" height="64" />
+                <span class="app-card-where">Worldwide · 14 languages</span>
+              </span>
+              <h3>Fusecore</h3>
+              <p>Idle tower defense: fuse elements around a reactor into chain reactions.</p>
+              <span class="app-card-go soon">Coming soon</span>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-          <footer class="site-footer">
-            <nav aria-label="Legal links">
-              <a href="/legal.html">Legal notice · Mentions légales · Aviso legal</a>
-              <a href="mailto:contact@sillapps.com">contact@sillapps.com</a>
-            </nav>
-          </footer>
+      <section class="home-section" aria-labelledby="h-tools">
+        <h2 id="h-tools">Everyday tools</h2>
+        <ul class="app-grid">
+          <li>
+            <a class="app-card" data-app="hora-barata" href="/hora-barata/" lang="es">
+              <span class="app-card-top">
+                <img src="/hora-barata/icon-192.png" alt="" width="64" height="64" />
+                <span class="app-card-where">España</span>
+              </span>
+              <h3>Hora Barata</h3>
+              <p>El precio de la luz hoy y mañana por horas (PVPC), y la mejor hora para la lavadora.</p>
+              <span class="app-card-go">Ver la app</span>
+            </a>
+          </li>
+          <li>
+            <a class="app-card" data-app="placa-hoy" href="/placa-hoy/" lang="es">
+              <span class="app-card-top">
+                <img src="/placa-hoy/icon-192.png" alt="" width="64" height="64" />
+                <span class="app-card-where">Colombia · México · Ecuador</span>
+              </span>
+              <h3>Placa Hoy</h3>
+              <p>¿Circulo hoy? Pico y placa y Hoy No Circula para tu placa, con la norma oficial.</p>
+              <span class="app-card-go">Ver la app</span>
+            </a>
+          </li>
+          <li>
+            <a class="app-card" data-app="biowetter" href="/biowetter/" lang="de">
+              <span class="app-card-top">
+                <img src="/biowetter/icon-192.png" alt="" width="64" height="64" />
+                <span class="app-card-where">Deutschland</span>
+              </span>
+              <h3>BioWetter Kompass</h3>
+              <p>Biowetter für Wetterfühlige, Pollenflug und UV-Index, mit Daten des DWD.</p>
+              <span class="app-card-go">Zur App</span>
+            </a>
+          </li>
+          <li>
+            <a class="app-card" data-app="choghadiya" href="/choghadiya/">
+              <span class="app-card-top">
+                <img src="/choghadiya/icon-192.png" alt="" width="64" height="64" />
+                <span class="app-card-where">India · हिन्दी · ગુજરાતી</span>
+              </span>
+              <h3>Shubh Samay</h3>
+              <p>Today's choghadiya, Rahu Kaal and muhurat, calculated for your city.</p>
+              <span class="app-card-go">View the app</span>
+            </a>
+          </li>
+          <li>
+            <a class="app-card" data-app="scioperi" href="/scioperi/" lang="it">
+              <span class="app-card-top">
+                <img src="/scioperi/icon-192.png" alt="" width="64" height="64" />
+                <span class="app-card-where">Italia</span>
+              </span>
+              <h3>Scioperi Oggi</h3>
+              <p>Sciopero oggi e domani: treni, bus, metro e aerei, dall'elenco ufficiale del MIT.</p>
+              <span class="app-card-go">Scioperi di oggi</span>
+            </a>
+          </li>
+          <li>
+            <a class="app-card" data-app="beneficios" href="/beneficios/">
+              <span class="app-card-top">
+                <img src="/beneficios/icon-192.png" alt="" width="64" height="64" />
+                <span class="app-card-where">Brasil · México · South Africa</span>
+              </span>
+              <h3>Dia do Pagamento</h3>
+              <p>Unofficial benefit payment calendars: Bolsa Família and INSS, Bienestar, SASSA grants.</p>
+              <span class="app-card-go">View the app</span>
+            </a>
+          </li>
+          <li>
+            <a class="app-card" data-app="fuel-wa" href="/fuel-wa/">
+              <span class="app-card-top">
+                <img src="/fuel-wa/icon-192.png" alt="" width="64" height="64" />
+                <span class="app-card-where">Western Australia</span>
+              </span>
+              <h3>Fuel Tomorrow WA</h3>
+              <p>Today's and tomorrow's FuelWatch prices for your suburb: fill up now, or wait.</p>
+              <span class="app-card-go">View the app</span>
+            </a>
+          </li>
+          <li>
+            <a class="app-card" data-app="fuel-alert" href="/fuel-alert/">
+              <span class="app-card-top">
+                <img src="/fuel-alert/icon-192.png" alt="" width="64" height="64" />
+                <span class="app-card-where">Türkiye · Thailand · Malaysia</span>
+              </span>
+              <h3>Pompada</h3>
+              <p>Fuel prices today and tomorrow from official sources, with an alert when yours changes.</p>
+              <span class="app-card-go">View the app</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="home-about" id="about">
+        <div>
+          <h2>One job per app</h2>
+          <p>Each app answers one question, in the language and with the rules of its country: is it cheap now, can I drive today, is there a strike.</p>
+        </div>
+        <div>
+          <h2>Sources you can check</h2>
+          <p>Prices, rules and calendars come from official public data, and every app links to the source it reads.</p>
+        </div>
+        <div>
+          <h2>Independent</h2>
+          <p>Designed and built in France by Maxime Silla Pellicer. Questions or ideas: <a href="mailto:contact@sillapps.com">contact@sillapps.com</a>.</p>
         </div>
       </section>
+
+      <footer class="home-footer">
+        <nav aria-label="Legal links">
+          <a href="/legal.html">Legal notice · Mentions légales · Aviso legal</a>
+          <a href="/impressum.html">Impressum</a>
+          <a href="mailto:contact@sillapps.com">contact@sillapps.com</a>
+          <a href="/app-ads.txt">app-ads.txt</a>
+        </nav>
+        <p>© 2026 Sillapps. Google Play and the Google Play logo are trademarks of Google LLC.</p>
+      </footer>
     </main>
   </body>
 </html>

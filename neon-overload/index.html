@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-app="neon-overload">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b1119" />
+    <meta name="theme-color" content="#060d1a" />
     <title>Neon Overload · Offline neon tower defense for Android</title>
     <meta name="description" content="Neon Overload is an offline neon tower defense game for Android: five towers, fifty permanent upgrades, 16 handcrafted maps and boss waves. No wifi needed, no energy timers, no forced ads." />
     <link rel="canonical" href="https://sillapps.com/neon-overload/" />
@@ -63,25 +63,8 @@
       ]
     }
     </script>
-    <link rel="stylesheet" href="/styles.css?v=20260928-1" />
-    <style>
-      .no-badge { display: inline-block; margin-top: 18px; line-height: 0; }
-      .no-badge img { display: block; width: 186px; height: auto; margin: -12px; }
-      .no-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
-      .no-chips li { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.9rem; color: var(--muted); }
-      .no-shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 22px 0 0; padding: 0; list-style: none; }
-      .no-shots img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
-      @media (max-width: 560px) {
-        .no-shots { grid-template-columns: repeat(3, 70%); overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; }
-        .no-shots li { scroll-snap-align: start; }
-      }
-      .section .no-towers { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; max-width: none; }
-      .section .no-towers strong { color: var(--text); }
-      .no-faq details { border-top: 1px solid var(--line); padding: 10px 0; }
-      .no-faq details:first-of-type { border-top: 0; padding-top: 0; }
-      .no-faq summary { cursor: pointer; font-weight: 650; color: var(--text); }
-      .section.no-faq details p { margin: 8px 0 0; }
-    </style>
+    <link rel="stylesheet" href="/fonts/fonts.css?v=20260930-1" />
+    <link rel="stylesheet" href="/styles.css?v=20260930-1" />
   </head>
   <body>
     <main>
@@ -96,7 +79,7 @@
               <p class="eyebrow">Neon Overload · Android game</p>
               <h1 class="title">Offline neon tower defense</h1>
             </div>
-            <p class="brand-mark">SILLAPPS</p>
+            <img class="app-mark" src="/neon-overload/icon-192.png" alt="" width="76" height="76" />
           </div>
 
           <p class="intro">
@@ -104,17 +87,17 @@
             tower defense strategy game you can play anywhere: place towers, upgrade them between
             runs and hold the line against neon hordes and bosses that fight back.
           </p>
-          <a class="no-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.neonoverload&amp;referrer=utm_source%3Dsillapps.com%26utm_medium%3Dwebsite">
+          <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.neonoverload&amp;referrer=utm_source%3Dsillapps.com%26utm_medium%3Dwebsite">
             <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
                  alt="Get it on Google Play" width="646" height="250" referrerpolicy="no-referrer" />
           </a>
-          <ul class="no-chips">
+          <ul class="chips">
             <li>Plays offline</li>
             <li>No energy timers</li>
             <li>No forced ads</li>
             <li>English · Français · Español · Deutsch · Português</li>
           </ul>
-          <ul class="no-shots">
+          <ul class="shots">
             <li><img src="shot-hero.jpg" width="540" height="960" alt="A neon tower defense map with chain lightning and laser towers holding off enemy waves" /></li>
             <li><img src="shot-towers.jpg" width="540" height="960" alt="The five towers: Pulse, Photon, Nova, Cryo and Pylon" loading="lazy" /></li>
             <li><img src="shot-boss.jpg" width="540" height="960" alt="A boss wave breaking through the defenses" loading="lazy" /></li>
@@ -123,7 +106,7 @@
           <div class="section-grid">
             <section class="section">
               <h2>Five towers, five ways to play</h2>
-              <ul class="no-towers">
+              <ul class="feature-list">
                 <li><strong>Pulse</strong> — chain lightning that arcs between enemies. The reliable all-rounder.</li>
                 <li><strong>Photon</strong> — a continuous laser that melts bosses.</li>
                 <li><strong>Nova</strong> — area shockwaves for dense waves and swarms.</li>
@@ -144,7 +127,7 @@
               </ul>
             </section>
 
-            <section class="section no-faq">
+            <section class="section faq">
               <h2>FAQ</h2>
               <details>
                 <summary>Can I play offline?</summary>

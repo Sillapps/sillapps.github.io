@@ -337,7 +337,7 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
     title = f"Sciopero oggi e domani: treni, bus, aerei · {today.day} {MONTHS[today.month - 1]} {today.year}"
     answer_class = "yes" if n_today else "no"
     return f"""<!doctype html>
-<html lang="it">
+<html lang="it" data-app="scioperi">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -355,23 +355,26 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
     <meta property="og:image" content="https://sillapps.com/scioperi/og.png" />
     <meta name="twitter:card" content="summary_large_image" />
     {ld_html}
+    <link rel="stylesheet" href="/fonts/fonts.css?v=20260930-1" />
     <style>
       :root {{ --bg: #0b0f17; --card: #171e2c; --card-high: #212a3b; --ink: #f3f5f9; --soft: #a9b3c6; --line: rgba(255,255,255,.12); --strike: #ff5a5f; --clear: #2fd27e; --caution: #ffb020; --accent: #4da3ff; }}
       * {{ box-sizing: border-box; }}
-      body {{ margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }}
+      body {{ margin: 0; border-top: 4px solid; border-image: linear-gradient(90deg, #ff5a5f, #ffb020 50%, #2fd27e) 1; background: radial-gradient(circle at 92% -6%, rgba(255,90,95,.18), transparent 38%) no-repeat, radial-gradient(circle at 0% 0%, rgba(77,163,255,.1), transparent 40%) no-repeat, var(--bg); color: var(--ink); font: 16px/1.5 "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }}
       main {{ max-width: 760px; margin: 0 auto; padding: 16px 16px 48px; }}
       a {{ color: var(--accent); }}
       header {{ display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; }}
-      header img {{ width: 40px; height: 40px; border-radius: 10px; }}
-      .brand {{ display: flex; align-items: center; gap: 10px; font-weight: 800; text-decoration: none; color: var(--ink); }}
+      .brand img {{ width: 40px; height: 40px; border-radius: 10px; }}
+      .home {{ display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-weight: 650; font-size: .92rem; text-decoration: none; }}
+      .home img {{ width: 18px; height: 18px; border-radius: 5px; }}
+      .brand {{ display: flex; align-items: center; gap: 10px; font-family: "Space Grotesk", "Manrope", sans-serif; font-size: 1.1rem; font-weight: 700; letter-spacing: -.02em; text-decoration: none; color: var(--ink); }}
       h1 {{ font-size: 1.15rem; color: var(--soft); font-weight: 600; margin: 8px 0; }}
-      .answer {{ font-size: clamp(1.6rem, 6vw, 2.3rem); line-height: 1.15; font-weight: 900; margin: 4px 0 8px; overflow-wrap: anywhere; }}
+      .answer {{ font-family: "Space Grotesk", "Manrope", sans-serif; font-size: clamp(1.7rem, 6.4vw, 2.6rem); line-height: 1.08; letter-spacing: -.03em; font-weight: 700; margin: 4px 0 8px; overflow-wrap: anywhere; }}
       .answer.yes {{ color: var(--strike); }} .answer.no {{ color: var(--clear); }}
       .meta {{ color: var(--soft); font-size: .9rem; margin: 0 0 12px; }}
       .warn {{ background: rgba(255,176,32,.14); border: 1px solid var(--caution); color: var(--ink); border-radius: 12px; padding: 10px 12px; }}
       label {{ display: block; color: var(--soft); font-size: .9rem; margin: 16px 0 4px; }}
       select {{ width: 100%; min-height: 48px; font: inherit; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px; }}
-      h2 {{ font-size: 1.2rem; margin: 28px 0 8px; }}
+      h2 {{ font-family: "Space Grotesk", "Manrope", sans-serif; font-size: 1.25rem; letter-spacing: -.01em; margin: 28px 0 8px; }}
       .list {{ list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }}
       .s {{ background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--strike); border-radius: 14px; padding: 12px 14px; }}
       .s-off {{ border-left-color: var(--soft); opacity: .8; }}
@@ -394,7 +397,7 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
     <main data-day="{today.isoformat()}">
       <header>
         <a class="brand" href="/scioperi/"><img src="/scioperi/icon-192.png" alt="" width="40" height="40" /> Scioperi Oggi</a>
-        <a href="/">Sillapps</a>
+        <a class="home" href="/"><img src="/brand/mark.svg" alt="" width="18" height="18" /> Sillapps</a>
       </header>
       <p class="warn" id="old" hidden>Questa pagina è di {e(long_date(today))}: l'aggiornamento è in corso. Nel frattempo controlla il <a href="{SOURCE_URL}">sito del Ministero</a>.</p>
       {stale_html}

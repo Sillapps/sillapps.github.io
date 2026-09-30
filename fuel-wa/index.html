@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en-AU">
+<html lang="en-AU" data-app="fuel-wa">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b1119" />
+    <meta name="theme-color" content="#0c0a26" />
     <title>Perth fuel prices today and tomorrow · Fuel Tomorrow WA</title>
     <meta name="description" content="WA petrol prices are fixed for 24 hours and tomorrow's are out after 2:30pm. Fuel Tomorrow WA compares both for your suburb and tells you: fill up today, or wait. Free, no ads." />
     <link rel="canonical" href="https://sillapps.com/fuel-wa/" />
@@ -67,22 +67,8 @@
       ]
     }
     </script>
-    <link rel="stylesheet" href="/styles.css?v=20260928-1" />
-    <style>
-      .fw-badge { display: inline-block; margin-top: 18px; line-height: 0; }
-      .fw-badge img { display: block; width: 186px; height: auto; margin: -12px; }
-      .fw-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
-      .fw-chips li { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.9rem; color: var(--muted); }
-      .fw-shot { display: block; width: 100%; max-width: 640px; height: auto; border-radius: 16px; margin: 6px 0 0; }
-      .fw-table { width: 100%; border-collapse: collapse; font-size: 0.94rem; margin: 0 0 12px; }
-      .fw-table th, .fw-table td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
-      .fw-table th { color: var(--text); white-space: nowrap; }
-      .fw-table td { color: var(--muted); }
-      .fw-faq details { border-top: 1px solid var(--line); padding: 10px 0; }
-      .fw-faq details:first-of-type { border-top: 0; padding-top: 0; }
-      .fw-faq summary { cursor: pointer; font-weight: 650; color: var(--text); }
-      .section.fw-faq details p { margin: 8px 0 0; }
-    </style>
+    <link rel="stylesheet" href="/fonts/fonts.css?v=20260930-1" />
+    <link rel="stylesheet" href="/styles.css?v=20260930-1" />
   </head>
   <body>
     <main>
@@ -96,7 +82,7 @@
               <p class="eyebrow">Fuel Tomorrow WA · Android app</p>
               <h1 class="title">Fill up today, or wait for tomorrow?</h1>
             </div>
-            <p class="brand-mark">SILLAPPS</p>
+            <img class="app-mark" src="/fuel-wa/icon-192.png" alt="" width="76" height="76" />
           </div>
           <p class="intro">
             In Western Australia every servo's price is fixed for 24 hours from 6am, and
@@ -104,11 +90,11 @@
             compares today and tomorrow for your suburb and your fuel, and gives you a straight
             answer. Free, no ads, no account.
           </p>
-          <a class="fw-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.fuelwa&amp;hl=en_AU">
+          <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.fuelwa&amp;hl=en_AU">
             <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
                  alt="Get it on Google Play" width="646" height="250" referrerpolicy="no-referrer" />
           </a>
-          <ul class="fw-chips">
+          <ul class="chips">
             <li>Today and tomorrow, side by side</li>
             <li>Perth and regional WA</li>
             <li>ULP, 95, 98, diesel, LPG, E85</li>
@@ -118,7 +104,7 @@
           <div class="section-grid">
             <section class="section" id="how">
               <h2>How WA fuel prices work</h2>
-              <table class="fw-table">
+              <table class="data-table fw-table">
                 <tr><th>By 2pm</th><td>Every station tells FuelWatch its price for tomorrow.</td></tr>
                 <tr><th>After 2:30pm</th><td>FuelWatch publishes tomorrow's prices. Fuel Tomorrow WA compares them with today's.</td></tr>
                 <tr><th>6am</th><td>The new prices start, fixed for 24 hours. Until then you pay yesterday's.</td></tr>
@@ -132,7 +118,7 @@
 
             <section class="section" id="app">
               <h2>What the app tells you</h2>
-              <img class="fw-shot" src="og.jpg" alt="Fuel Tomorrow WA: the verdict card, today's and tomorrow's cheapest" width="1024" height="500" />
+              <img class="shot-wide" src="og.jpg" alt="Fuel Tomorrow WA: the verdict card, today's and tomorrow's cheapest" width="1024" height="500" />
               <ul>
                 <li><strong>Wait</strong>: tomorrow is cheaper, and where.</li>
                 <li><strong>Fill up today</strong>: tomorrow is dearer (before 6am: "fill up before 6am").</li>
@@ -146,7 +132,7 @@
               </p>
             </section>
 
-            <section class="section fw-faq" id="faq">
+            <section class="section faq" id="faq">
               <h2>Questions</h2>
               <details>
                 <summary>What time are tomorrow's fuel prices out in WA?</summary>

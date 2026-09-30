@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it">
+<html lang="it" data-app="scioperi">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,23 +17,26 @@
     <meta property="og:image" content="https://sillapps.com/scioperi/og.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "C'è sciopero oggi?", "acceptedAnswer": {"@type": "Answer", "text": "Oggi, mercoledì 30 settembre, 10 scioperi dei trasporti in Italia, secondo l'elenco ufficiale del Ministero delle Infrastrutture e dei Trasporti."}}, {"@type": "Question", "name": "C'è sciopero domani?", "acceptedAnswer": {"@type": "Answer", "text": "Domani, giovedì 1 ottobre, nessuno sciopero dei trasporti in elenco in Italia."}}, {"@type": "Question", "name": "Quando è il prossimo sciopero dei treni?", "acceptedAnswer": {"@type": "Answer", "text": "Il prossimo sciopero dei treni in elenco è giovedì 8 ottobre (24 ore), Sicilia: PERSONALE SOC. FS SECURITY REGIONE SICILIA."}}, {"@type": "Question", "name": "Quando è il prossimo sciopero generale?", "acceptedAnswer": {"@type": "Answer", "text": "Il prossimo sciopero generale in elenco è mercoledì 14 ottobre: intera giornata di lavoro - ferroviario: dalle 09.01 alle 17.00 / appalti ferroviari: secondo mezzo turno del turno di lavoro / tpl: 4 ore varie modalita' / trasporto merci su rotaia: intera prestazione lavorativa. Controlla nelle note quali settori sono esclusi."}}, {"@type": "Question", "name": "Cosa sono le fasce di garanzia?", "acceptedAnswer": {"@type": "Answer", "text": "Sono le ore in cui i servizi minimi sono garantiti anche durante lo sciopero. Per i treni regionali nei giorni feriali: dalle 6 alle 9 e dalle 18 alle 21. Per bus, metro e tram dipendono dall'azienda locale."}}, {"@type": "Question", "name": "Da dove vengono i dati?", "acceptedAnswer": {"@type": "Answer", "text": "Dall'elenco pubblico degli scioperi dell'Osservatorio del Ministero delle Infrastrutture e dei Trasporti (scioperi.mit.gov.it), letto ogni ora. Questa pagina e l'app Scioperi Oggi non sono ufficiali e non sono affiliate al Ministero."}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Scioperi Oggi", "operatingSystem": "ANDROID", "applicationCategory": "TravelApplication", "inLanguage": "it", "url": "https://sillapps.com/scioperi/", "image": "https://sillapps.com/scioperi/icon-192.png", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "publisher": {"@type": "Organization", "name": "Sillapps", "url": "https://sillapps.com/"}}</script>
+    <link rel="stylesheet" href="/fonts/fonts.css?v=20260930-1" />
     <style>
       :root { --bg: #0b0f17; --card: #171e2c; --card-high: #212a3b; --ink: #f3f5f9; --soft: #a9b3c6; --line: rgba(255,255,255,.12); --strike: #ff5a5f; --clear: #2fd27e; --caution: #ffb020; --accent: #4da3ff; }
       * { box-sizing: border-box; }
-      body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      body { margin: 0; border-top: 4px solid; border-image: linear-gradient(90deg, #ff5a5f, #ffb020 50%, #2fd27e) 1; background: radial-gradient(circle at 92% -6%, rgba(255,90,95,.18), transparent 38%) no-repeat, radial-gradient(circle at 0% 0%, rgba(77,163,255,.1), transparent 40%) no-repeat, var(--bg); color: var(--ink); font: 16px/1.5 "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
       main { max-width: 760px; margin: 0 auto; padding: 16px 16px 48px; }
       a { color: var(--accent); }
       header { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; }
-      header img { width: 40px; height: 40px; border-radius: 10px; }
-      .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; text-decoration: none; color: var(--ink); }
+      .brand img { width: 40px; height: 40px; border-radius: 10px; }
+      .home { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-weight: 650; font-size: .92rem; text-decoration: none; }
+      .home img { width: 18px; height: 18px; border-radius: 5px; }
+      .brand { display: flex; align-items: center; gap: 10px; font-family: "Space Grotesk", "Manrope", sans-serif; font-size: 1.1rem; font-weight: 700; letter-spacing: -.02em; text-decoration: none; color: var(--ink); }
       h1 { font-size: 1.15rem; color: var(--soft); font-weight: 600; margin: 8px 0; }
-      .answer { font-size: clamp(1.6rem, 6vw, 2.3rem); line-height: 1.15; font-weight: 900; margin: 4px 0 8px; overflow-wrap: anywhere; }
+      .answer { font-family: "Space Grotesk", "Manrope", sans-serif; font-size: clamp(1.7rem, 6.4vw, 2.6rem); line-height: 1.08; letter-spacing: -.03em; font-weight: 700; margin: 4px 0 8px; overflow-wrap: anywhere; }
       .answer.yes { color: var(--strike); } .answer.no { color: var(--clear); }
       .meta { color: var(--soft); font-size: .9rem; margin: 0 0 12px; }
       .warn { background: rgba(255,176,32,.14); border: 1px solid var(--caution); color: var(--ink); border-radius: 12px; padding: 10px 12px; }
       label { display: block; color: var(--soft); font-size: .9rem; margin: 16px 0 4px; }
       select { width: 100%; min-height: 48px; font: inherit; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px; }
-      h2 { font-size: 1.2rem; margin: 28px 0 8px; }
+      h2 { font-family: "Space Grotesk", "Manrope", sans-serif; font-size: 1.25rem; letter-spacing: -.01em; margin: 28px 0 8px; }
       .list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
       .s { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--strike); border-radius: 14px; padding: 12px 14px; }
       .s-off { border-left-color: var(--soft); opacity: .8; }
@@ -56,7 +59,7 @@
     <main data-day="2026-09-30">
       <header>
         <a class="brand" href="/scioperi/"><img src="/scioperi/icon-192.png" alt="" width="40" height="40" /> Scioperi Oggi</a>
-        <a href="/">Sillapps</a>
+        <a class="home" href="/"><img src="/brand/mark.svg" alt="" width="18" height="18" /> Sillapps</a>
       </header>
       <p class="warn" id="old" hidden>Questa pagina è di mercoledì 30 settembre: l'aggiornamento è in corso. Nel frattempo controlla il <a href="https://scioperi.mit.gov.it/mit2/public/scioperi">sito del Ministero</a>.</p>
       

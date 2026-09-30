@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-app="placa-hoy">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b1119" />
+    <meta name="theme-color" content="#0d1015" />
     <title>Pico y placa en Tunja 2026: horarios y placas por día</title>
     <meta name="description" content="Pico y placa en Tunja 2026: qué placas no circulan cada día (6:00–9:00, 12:00–14:00 y 17:00–20:00), exentos, norma vigente y enlace a la fuente oficial." />
     <link rel="canonical" href="https://sillapps.com/placa-hoy/pico-y-placa-tunja/" />
@@ -44,24 +44,19 @@
   ]
 }
     </script>
-    <link rel="stylesheet" href="/styles.css?v=20260928-1" />
+    <link rel="stylesheet" href="/fonts/fonts.css?v=20260930-1" />
+    <link rel="stylesheet" href="/styles.css?v=20260930-1" />
     <style>
-      .ph-badge { display: inline-block; margin-top: 18px; line-height: 0; }
-      .ph-badge img { display: block; width: 186px; height: auto; margin: -12px; }
-      .ph-table { width: 100%; border-collapse: collapse; font-size: 0.94rem; margin: 0 0 12px; }
-      .ph-table th, .ph-table td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
-      .ph-table th { color: var(--text); }
-      .ph-table td { color: var(--muted); }
       .ph-table td.ph-d { color: var(--text); font-weight: 650; font-variant-numeric: tabular-nums; }
-      .ph-table td.ph-free { color: #6be3a9; }
+      .ph-table td.ph-free { color: var(--free); }
       .ph-src { font-size: 0.92rem; }
       .ph-tag { display: inline-block; margin-left: 8px; padding: 0 8px; border-radius: 999px; font-size: 0.72rem;
-        font-weight: 800; letter-spacing: 0.06em; vertical-align: middle; color: #0b1119; background: #f5c451; }
+        font-weight: 800; letter-spacing: 0.06em; vertical-align: middle; color: var(--accent-ink); background: var(--accent); }
       .ph-cities { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
       .section .ph-cities { max-width: none; padding-left: 0; }
-      .ph-cities a { display: inline-block; padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px;
+      .ph-cities a { display: inline-block; padding: 5px 12px; border: 1px solid var(--line-strong); border-radius: 999px;
         font-size: 0.9rem; color: var(--text); text-decoration: none; }
-      .ph-cities a:hover, .ph-cities a:focus-visible { border-color: rgba(140, 200, 255, 0.42); }
+      .ph-cities a:hover, .ph-cities a:focus-visible { border-color: var(--accent); }
     </style>
   </head>
   <body>
@@ -78,7 +73,7 @@
               <p class="eyebrow">Placa Hoy · Colombia</p>
               <h1 class="title">Pico y placa en Tunja 2026 <span class="ph-tag">BETA</span></h1>
             </div>
-            <p class="brand-mark">SILLAPPS</p>
+            <img class="app-mark" src="/placa-hoy/icon-192.png" alt="" width="76" height="76" />
           </div>
 
           <p class="intro">
@@ -92,7 +87,7 @@
               Esta página resume las reglas que usa la app; la norma oficial es la que manda.</p>
           </div>
           <p>Esta ciudad está en <strong>beta</strong> en Placa Hoy: confirma con más atención en la fuente oficial.</p>
-          <a class="ph-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.placahoy&amp;hl=es_419">
+          <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.placahoy&amp;hl=es_419">
             <img src="https://play.google.com/intl/es-419/badges/static/images/badges/es-419_badge_web_generic.png" alt="Disponible en Google Play" width="646" height="250" referrerpolicy="no-referrer" />
           </a>
 
@@ -100,7 +95,7 @@
 <section class="section" id="tunja-d0399">
 <h2>Carros particulares: del 13 de enero de 2026 al 11 de diciembre de 2026</h2>
 <p>Lunes a viernes hábiles, por el último dígito: lunes 3 y 4, martes 5 y 6, miércoles 7 y 8, jueves 9 y 0, viernes 1 y 2. Centro Histórico: 6:00–20:00; resto de la ciudad: 6:00–9:00, 12:00–14:00 y 17:00–20:00.</p>
-<table class="ph-table">
+<table class="data-table ph-table">
 <thead><tr><th scope="col">Día</th><th scope="col">No circulan placas con último dígito</th><th scope="col">Horario</th></tr></thead>
 <tbody>
 <tr><td>Lunes</td><td class="ph-d">3 y 4</td><td>6:00–9:00, 12:00–14:00 y 17:00–20:00</td></tr>
@@ -116,7 +111,7 @@
 <p><strong>Dónde aplica:</strong> Todo el perímetro urbano de Tunja, incluidas las avenidas y glorietas principales; dentro del anillo vial del Centro Histórico el horario es de 6:00 a 20:00.</p>
 <h3>En el Centro Histórico</h3>
 <p><strong>Zona:</strong> Dentro del anillo vial: Calle 29, Av. Maldonado, Av. Colón, Calle 22, Transversal 15, Carrera 15, Calle 17, Carrera 14, Calle 11, Carrera 10, Calle 9C, Carrera 6A y Av. Oriental; las vías del anillo no tienen restricción. Dentro de esta zona también aplica la regla general de arriba: se suman las dos.</p>
-<table class="ph-table">
+<table class="data-table ph-table">
 <thead><tr><th scope="col">Día</th><th scope="col">No circulan placas con último dígito</th><th scope="col">Horario</th></tr></thead>
 <tbody>
 <tr><td>Lunes</td><td class="ph-d">3 y 4</td><td>6:00–20:00</td></tr>

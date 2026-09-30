@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-app="hora-barata">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b1119" />
+    <meta name="theme-color" content="#0a0e1a" />
     <title>Precio de la luz hoy por horas (PVPC) · Hora Barata</title>
     <meta name="description" content="Precio de la luz hoy y mañana por horas (PVPC), las horas más baratas, los tramos 2.0TD y a qué hora poner la lavadora. App gratis y sin anuncios, también en Canarias." />
     <link rel="canonical" href="https://sillapps.com/hora-barata/" />
@@ -78,12 +78,9 @@
       ]
     }
     </script>
-    <link rel="stylesheet" href="/styles.css?v=20260928-1" />
+    <link rel="stylesheet" href="/fonts/fonts.css?v=20260930-1" />
+    <link rel="stylesheet" href="/styles.css?v=20260930-1" />
     <style>
-      .hb-badge { display: inline-block; margin-top: 18px; line-height: 0; }
-      .hb-badge img { display: block; width: 186px; height: auto; margin: -12px; }
-      .hb-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
-      .hb-chips li { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.9rem; color: var(--muted); }
       .hb-loading { min-height: 46rem; }
       .hb-tabs { display: flex; gap: 8px; margin: 4px 0 14px; }
       .hb-tabs[hidden] { display: none; }
@@ -101,37 +98,29 @@
       }
       .section .hb-row .hb-h { color: var(--muted); white-space: nowrap; }
       .section .hb-row .hb-v { text-align: right; color: var(--text); }
-      .hb-track { height: 12px; border-radius: 6px; background: rgba(255, 255, 255, 0.05); overflow: hidden; }
+      .hb-track { height: 12px; border-radius: 6px; background: rgba(255, 255, 255, 0.06); overflow: hidden; }
       .hb-fill { display: block; height: 100%; border-radius: 6px; }
-      .hb-cheap .hb-fill { background: #3ecf8e; }
-      .hb-mid .hb-fill { background: #f5c451; }
-      .hb-high .hb-fill { background: #f06a6a; }
-      .section .hb-cheap .hb-v { color: #6be3a9; font-weight: 700; }
-      .hb-now { background: var(--accent-soft); outline: 1px solid rgba(140, 200, 255, 0.45); }
+      .hb-cheap .hb-fill { background: var(--cheap); }
+      .hb-mid .hb-fill { background: var(--normal); }
+      .hb-high .hb-fill { background: var(--expensive); }
+      .section .hb-cheap .hb-v { color: var(--cheap); font-weight: 700; }
+      .hb-now { background: var(--accent-soft); outline: 1px solid var(--accent); }
       .section .hb-now .hb-h { color: var(--accent); font-weight: 700; }
       .hb-tag {
         position: absolute; right: 4.6em; top: 50%; transform: translateY(-50%);
         font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.5;
-        color: #0b1119; background: var(--accent); padding: 0 6px; border-radius: 999px;
+        color: var(--accent-ink); background: var(--accent); padding: 0 6px; border-radius: 999px;
       }
       .hb-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 0.86rem; }
       .section .hb-legend { margin-top: 12px; }
       .hb-legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; }
-      .hb-legend .l-cheap::before { background: #3ecf8e; }
-      .hb-legend .l-mid::before { background: #f5c451; }
-      .hb-legend .l-high::before { background: #f06a6a; }
-      .hb-table { width: 100%; border-collapse: collapse; font-size: 0.94rem; margin: 0 0 12px; }
-      .hb-table th, .hb-table td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
-      .hb-table th { color: var(--text); }
-      .hb-table td { color: var(--muted); }
+      .hb-legend .l-cheap::before { background: var(--cheap); }
+      .hb-legend .l-mid::before { background: var(--normal); }
+      .hb-legend .l-high::before { background: var(--expensive); }
       .hb-p { font-weight: 700; }
-      .hb-p.punta { color: #f06a6a; }
-      .hb-p.llano { color: #f5c451; }
-      .hb-p.valle { color: #3ecf8e; }
-      .hb-faq details { border-top: 1px solid var(--line); padding: 10px 0; }
-      .hb-faq details:first-of-type { border-top: 0; padding-top: 0; }
-      .hb-faq summary { cursor: pointer; font-weight: 650; color: var(--text); }
-      .section.hb-faq details p { margin: 8px 0 0; }
+      .hb-p.punta { color: var(--expensive); }
+      .hb-p.llano { color: var(--normal); }
+      .hb-p.valle { color: var(--cheap); }
     </style>
     <noscript><style>.hb-loading { min-height: 0; }</style></noscript>
   </head>
@@ -148,7 +137,7 @@
               <p class="eyebrow">Hora Barata · App Android</p>
               <h1 class="title">Precio de la luz hoy por horas</h1>
             </div>
-            <p class="brand-mark">SILLAPPS</p>
+            <img class="app-mark" src="/hora-barata/icon-192.png" alt="" width="76" height="76" />
           </div>
 
           <p class="intro">
@@ -157,12 +146,12 @@
             Gratis, sin anuncios, sin cuenta y sin rastreo.
           </p>
 
-          <a class="hb-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.ecoclaimspocket&amp;hl=es">
+          <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.ecoclaimspocket&amp;hl=es">
             <img src="https://play.google.com/intl/es_es/badges/static/images/badges/es_badge_web_generic.png"
                  alt="Disponible en Google Play" width="646" height="250" referrerpolicy="no-referrer" />
           </a>
 
-          <ul class="hb-chips">
+          <ul class="chips">
             <li>Precios de hoy y de mañana</li>
             <li>¿Cuándo pongo la lavadora?</li>
             <li>Península, Baleares y Canarias</li>
@@ -212,7 +201,7 @@
                 Los peajes y cargos cambian según el tramo horario. Estos son los tramos de la tarifa 2.0TD,
                 la de casi todos los hogares, de lunes a viernes laborables:
               </p>
-              <table class="hb-table">
+              <table class="data-table hb-table">
                 <thead><tr><th scope="col">Tramo</th><th scope="col">Horas</th></tr></thead>
                 <tbody>
                   <tr><td><span class="hb-p punta">Punta</span></td><td>10:00–14:00 y 18:00–22:00</td></tr>
@@ -265,7 +254,7 @@
               </ul>
             </section>
 
-            <section class="section hb-faq" id="faq">
+            <section class="section faq" id="faq">
               <h2>Preguntas frecuentes</h2>
               <details>
                 <summary>¿A qué hora se publica el precio de la luz de mañana?</summary>

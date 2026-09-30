@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-app="fusecore">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b1119" />
+    <meta name="theme-color" content="#060d1a" />
     <title>FUSECORE · Idle tower defense for Android</title>
     <meta name="description" content="FUSECORE is an idle tower defense for Android: build a 3×3 grid of elemental towers around a fusion reactor, fuse elements into chain reactions and earn even offline. No forced ads." />
     <link rel="canonical" href="https://sillapps.com/fusecore/" />
@@ -62,24 +62,8 @@
       ]
     }
     </script>
-    <link rel="stylesheet" href="/styles.css?v=20260928-1" />
-    <style>
-      .fc-soon { display: inline-block; margin-top: 18px; padding: 10px 16px; border: 1px solid var(--line); border-radius: 12px; font-weight: 650; color: var(--text); }
-      .fc-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
-      .fc-chips li { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.9rem; color: var(--muted); }
-      .fc-shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 22px 0 0; padding: 0; list-style: none; }
-      .fc-shots img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
-      @media (max-width: 560px) {
-        .fc-shots { grid-template-columns: repeat(3, 70%); overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; }
-        .fc-shots li { scroll-snap-align: start; }
-      }
-      .section .fc-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; max-width: none; }
-      .section .fc-list strong { color: var(--text); }
-      .fc-faq details { border-top: 1px solid var(--line); padding: 10px 0; }
-      .fc-faq details:first-of-type { border-top: 0; padding-top: 0; }
-      .fc-faq summary { cursor: pointer; font-weight: 650; color: var(--text); }
-      .section.fc-faq details p { margin: 8px 0 0; }
-    </style>
+    <link rel="stylesheet" href="/fonts/fonts.css?v=20260930-1" />
+    <link rel="stylesheet" href="/styles.css?v=20260930-1" />
   </head>
   <body>
     <main>
@@ -94,7 +78,7 @@
               <p class="eyebrow">FUSECORE · Android game</p>
               <h1 class="title">Idle tower defense, fused</h1>
             </div>
-            <p class="brand-mark">SILLAPPS</p>
+            <img class="app-mark" src="/fusecore/icon-192.png" alt="" width="76" height="76" />
           </div>
 
           <p class="intro">
@@ -102,14 +86,14 @@
             towers on a 3×3 grid around the core, fuse neighbouring elements into chain reactions
             and let the reactor hold the line — wave after wave, even while you are offline.
           </p>
-          <p class="fc-soon">Coming soon to Google Play</p>
-          <ul class="fc-chips">
+          <p class="soon-badge">Coming soon to Google Play</p>
+          <ul class="chips">
             <li>Plays offline</li>
             <li>No forced ads</li>
             <li>No energy timers</li>
             <li>English · Français · Español · Deutsch</li>
           </ul>
-          <ul class="fc-shots">
+          <ul class="shots">
             <li><img src="shot-hero.jpg" width="540" height="1080" alt="Enemies converging on the reactor while six reaction weapons fire from the core" /></li>
             <li><img src="shot-grid.jpg" width="540" height="1080" alt="The 3×3 build grid with reaction badges between adjacent elemental towers" loading="lazy" /></li>
             <li><img src="shot-run.jpg" width="540" height="1080" alt="End of run screen with Flux earned and damage by source" loading="lazy" /></li>
@@ -118,7 +102,7 @@
           <div class="section-grid">
             <section class="section">
               <h2>Four elements, six reactions</h2>
-              <ul class="fc-list">
+              <ul class="feature-list">
                 <li><strong>Pulse</strong> — a continuous beam that shocks what it touches.</li>
                 <li><strong>Photon</strong> — heavy shots that leave enemies exposed to extra damage.</li>
                 <li><strong>Nova</strong> — rapid salvos that burn.</li>
@@ -140,7 +124,7 @@
               </ul>
             </section>
 
-            <section class="section fc-faq">
+            <section class="section faq">
               <h2>FAQ</h2>
               <details>
                 <summary>Can I play offline?</summary>

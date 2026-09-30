@@ -58,7 +58,8 @@ BASE_URL = "https://sillapps.com"
 APP_URL = f"{BASE_URL}/placa-hoy/"
 PLAY_URL = "https://play.google.com/store/apps/details?id=com.sillapps.placahoy"
 PLAY_BADGE = "https://play.google.com/intl/es-419/badges/static/images/badges/es-419_badge_web_generic.png"
-CSS = "/styles.css?v=20260928-1"
+CSS = "/styles.css?v=20260930-1"
+FONTS_CSS = "/fonts/fonts.css?v=20260930-1"
 START = "placa-hoy:cities:start"
 END = "placa-hoy:cities:end"
 
@@ -80,22 +81,16 @@ ORDINALS = ["1.er", "2.º", "3.er", "4.º", "5.º"]
 HOLIDAY_WORDS = {"CO": "festivos", "EC": "feriados"}
 
 PAGE_CSS = """
-      .ph-badge { display: inline-block; margin-top: 18px; line-height: 0; }
-      .ph-badge img { display: block; width: 186px; height: auto; margin: -12px; }
-      .ph-table { width: 100%; border-collapse: collapse; font-size: 0.94rem; margin: 0 0 12px; }
-      .ph-table th, .ph-table td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
-      .ph-table th { color: var(--text); }
-      .ph-table td { color: var(--muted); }
       .ph-table td.ph-d { color: var(--text); font-weight: 650; font-variant-numeric: tabular-nums; }
-      .ph-table td.ph-free { color: #6be3a9; }
+      .ph-table td.ph-free { color: var(--free); }
       .ph-src { font-size: 0.92rem; }
       .ph-tag { display: inline-block; margin-left: 8px; padding: 0 8px; border-radius: 999px; font-size: 0.72rem;
-        font-weight: 800; letter-spacing: 0.06em; vertical-align: middle; color: #0b1119; background: #f5c451; }
+        font-weight: 800; letter-spacing: 0.06em; vertical-align: middle; color: var(--accent-ink); background: var(--accent); }
       .ph-cities { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
       .section .ph-cities { max-width: none; padding-left: 0; }
-      .ph-cities a { display: inline-block; padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px;
+      .ph-cities a { display: inline-block; padding: 5px 12px; border: 1px solid var(--line-strong); border-radius: 999px;
         font-size: 0.9rem; color: var(--text); text-decoration: none; }
-      .ph-cities a:hover, .ph-cities a:focus-visible { border-color: rgba(140, 200, 255, 0.42); }
+      .ph-cities a:hover, .ph-cities a:focus-visible { border-color: var(--accent); }
 """
 
 
@@ -223,7 +218,7 @@ def rotation_table(period: dict, country: dict) -> str:
         for d, what, h, free in rows
     )
     return (
-        '<table class="ph-table">\n'
+        '<table class="data-table ph-table">\n'
         f'<thead><tr><th scope="col">Día</th><th scope="col">{e(head)}</th><th scope="col">Horario</th></tr></thead>\n'
         f"<tbody>\n{body}\n</tbody>\n</table>"
     )
@@ -382,7 +377,7 @@ def verification_section(rules: dict, city: dict) -> str:
     return "\n".join([
         '<section class="section" id="verificacion">',
         "<h2>Calendario de verificación por color de engomado</h2>",
-        '<table class="ph-table">',
+        '<table class="data-table ph-table">',
         '<thead><tr><th scope="col">Engomado</th><th scope="col">Meses para verificar</th></tr></thead>',
         f"<tbody>\n{rows}\n</tbody>",
         "</table>",
@@ -460,11 +455,11 @@ def city_page(rules: dict, city: dict, country: dict, slug: str,
     region = f" ({e(city['region'])})" if city.get("region") and city["region"] != city["name"] else ""
 
     return f"""<!doctype html>
-<html lang="es">
+<html lang="es" data-app="placa-hoy">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b1119" />
+    <meta name="theme-color" content="#0d1015" />
     <title>{e(title)}</title>
     <meta name="description" content="{e(desc)}" />
     <link rel="canonical" href="{e(url)}" />
@@ -482,6 +477,7 @@ def city_page(rules: dict, city: dict, country: dict, slug: str,
     <script type="application/ld+json">
 {json.dumps(breadcrumb, ensure_ascii=False, indent=2)}
     </script>
+    <link rel="stylesheet" href="{FONTS_CSS}" />
     <link rel="stylesheet" href="{CSS}" />
     <style>{PAGE_CSS}    </style>
   </head>
@@ -499,7 +495,7 @@ def city_page(rules: dict, city: dict, country: dict, slug: str,
               <p class="eyebrow">Placa Hoy · {e(country['name'])}</p>
               <h1 class="title">{e(scheme)} en {e(short)} {today.year}{beta}</h1>
             </div>
-            <p class="brand-mark">SILLAPPS</p>
+            <img class="app-mark" src="/placa-hoy/icon-192.png" alt="" width="76" height="76" />
           </div>
 
           <p class="intro">
@@ -513,7 +509,7 @@ def city_page(rules: dict, city: dict, country: dict, slug: str,
               Esta página resume las reglas que usa la app; la norma oficial es la que manda.</p>
           </div>
           {beta_text}
-          <a class="ph-badge" href="{PLAY_URL}&amp;hl=es_419">
+          <a class="play-badge" href="{PLAY_URL}&amp;hl=es_419">
             <img src="{PLAY_BADGE}" alt="Disponible en Google Play" width="646" height="250" referrerpolicy="no-referrer" />
           </a>
 

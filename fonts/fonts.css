@@ -1,0 +1,25 @@
+/* Fonts of the Sillapps apps, served from this site (no third-party font CDN).
+   Subset to Latin + Latin Extended-A. All fonts: SIL Open Font License 1.1 (see OFL-*.txt). */
+
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/manrope-400.woff2") format("woff2"); }
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/manrope-500.woff2") format("woff2"); }
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/manrope-600.woff2") format("woff2"); }
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/manrope-700.woff2") format("woff2"); }
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/manrope-800.woff2") format("woff2"); }
+@font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/spacegrotesk-600.woff2") format("woff2"); }
+@font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/spacegrotesk-700.woff2") format("woff2"); }
+@font-face { font-family: "Sora"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/sora-600.woff2") format("woff2"); }
+@font-face { font-family: "Sora"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/sora-700.woff2") format("woff2"); }
+@font-face { font-family: "Sora"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/sora-800.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Semi Condensed"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/barlowsc-700.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Semi Condensed"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/barlowsc-800.woff2") format("woff2"); }
+@font-face { font-family: "Anek Latin"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/aneklatin-400.woff2") format("woff2"); }
+@font-face { font-family: "Anek Latin"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/aneklatin-500.woff2") format("woff2"); }
+@font-face { font-family: "Anek Latin"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/aneklatin-600.woff2") format("woff2"); }
+@font-face { font-family: "Anek Latin"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/aneklatin-700.woff2") format("woff2"); }
+@font-face { font-family: "Anek Latin"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/aneklatin-800.woff2") format("woff2"); }
+@font-face { font-family: "Audiowide"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/audiowide-400.woff2") format("woff2"); }
+@font-face { font-family: "Oxanium"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/oxanium-600.woff2") format("woff2"); }
+@font-face { font-family: "Oxanium"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/oxanium-700.woff2") format("woff2"); }
+@font-face { font-family: "Oxanium"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/oxanium-800.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 100 900; font-display: swap; src: url("/fonts/inter-var.woff2") format("woff2"); }

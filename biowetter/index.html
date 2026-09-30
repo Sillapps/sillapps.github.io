@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="de">
+<html lang="de" data-app="biowetter">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b1119" />
+    <meta name="theme-color" content="#f4f1ea" />
     <title>Biowetter für Wetterfühlige · BioWetter Kompass</title>
     <meta name="description" content="Biowetter heute, morgen und übermorgen für Ihre Beschwerden: Migräne, Kreislauf, Rheuma, Gelenke. Dazu Pollenflug und UV-Index. Android-App ohne Werbung, ohne Standortfreigabe, Daten des Deutschen Wetterdienstes." />
     <link rel="canonical" href="https://sillapps.com/biowetter/" />
@@ -74,27 +74,8 @@
       ]
     }
     </script>
-    <link rel="stylesheet" href="/styles.css?v=20260928-1" />
-    <style>
-      .bw-soon {
-        display: inline-flex; align-items: center; gap: 8px; margin-top: 18px;
-        padding: 10px 16px; border: 1px solid var(--line-strong); border-radius: 999px;
-        color: var(--text); font-weight: 650;
-      }
-      .bw-badge { display: inline-block; margin-top: 18px; line-height: 0; }
-      .bw-badge img { display: block; width: 186px; height: auto; margin: -12px; }
-      .bw-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
-      .bw-chips li { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.9rem; color: var(--muted); }
-      .bw-shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 0; }
-      .bw-shots figure { margin: 0; }
-      .bw-shots img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); border: 1px solid var(--line); }
-      .bw-shots figcaption { margin-top: 6px; font-size: 0.88rem; color: var(--muted); }
-      .bw-faq details { border-top: 1px solid var(--line); padding: 10px 0; }
-      .bw-faq details:first-of-type { border-top: 0; padding-top: 0; }
-      .bw-faq summary { cursor: pointer; font-weight: 650; color: var(--text); }
-      .section.bw-faq details p { margin: 8px 0 0; }
-      .notice-card a { color: var(--accent); }
-    </style>
+    <link rel="stylesheet" href="/fonts/fonts.css?v=20260930-1" />
+    <link rel="stylesheet" href="/styles.css?v=20260930-1" />
   </head>
   <body>
     <main>
@@ -109,7 +90,7 @@
               <p class="eyebrow">BioWetter Kompass · App für Android</p>
               <h1 class="title">Biowetter für Wetterfühlige</h1>
             </div>
-            <p class="brand-mark">SILLAPPS</p>
+            <img class="app-mark" src="/biowetter/icon-192.png" alt="" width="76" height="76" />
           </div>
 
           <p class="intro">
@@ -119,15 +100,15 @@
             ohne Werbung.
           </p>
 
-          <p class="bw-soon">Bald bei Google Play</p>
+          <p class="soon-badge">Bald bei Google Play</p>
           <!-- Beim Start den Hinweis oben durch das Badge ersetzen:
-          <a class="bw-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.biowetter&amp;referrer=utm_source%3Dsillapps.com%26utm_medium%3Dwebsite">
+          <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.biowetter&amp;referrer=utm_source%3Dsillapps.com%26utm_medium%3Dwebsite">
             <img src="https://play.google.com/intl/de_de/badges/static/images/badges/de_badge_web_generic.png"
                  alt="Jetzt bei Google Play" width="646" height="250" referrerpolicy="no-referrer" />
           </a>
           -->
 
-          <ul class="bw-chips">
+          <ul class="chips">
             <li>Heute, morgen, übermorgen</li>
             <li>11 Beschwerden</li>
             <li>Pollenflug &amp; UV-Index</li>
@@ -161,7 +142,7 @@
             </section>
 
             <section class="section" id="bilder" aria-label="Bildschirmfotos">
-              <div class="bw-shots">
+              <div class="shots">
                 <figure>
                   <img src="shot-home.jpg" width="540" height="960" loading="lazy"
                        alt="Startseite von BioWetter Kompass: Starke Wetterbelastung, hohe Gefährdung für Allgemeinbefinden und Kopfschmerzen und Migräne" />
@@ -227,7 +208,7 @@
               </p>
             </section>
 
-            <section class="section bw-faq" id="faq">
+            <section class="section faq" id="faq">
               <h2>Häufige Fragen</h2>
               <details>
                 <summary>Was bedeutet „geringe“ oder „hohe Gefährdung“?</summary>
