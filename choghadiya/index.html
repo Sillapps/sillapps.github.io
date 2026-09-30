@@ -28,6 +28,7 @@
       "url": "https://sillapps.com/choghadiya/",
       "installUrl": "https://play.google.com/store/apps/details?id=com.sillapps.choghadiya",
       "image": "https://sillapps.com/choghadiya/icon-192.png",
+      "screenshot": "https://sillapps.com/choghadiya/shot-home.jpg",
       "description": "Today's choghadiya, Rahu Kaal, Yamaganda, Gulika, Abhijit and Brahma muhurat, calculated on the phone for your city and shown on its local clock.",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
       "publisher": { "@type": "Organization", "name": "Sillapps", "url": "https://sillapps.com/" }
@@ -39,6 +40,10 @@
       .ss-badge img { display: block; width: 186px; height: auto; margin: -12px; }
       .ss-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
       .ss-chips li { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.9rem; color: var(--muted); }
+      .ss-shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 0; }
+      .ss-shots figure { margin: 0; }
+      .ss-shots img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); border: 1px solid var(--line); }
+      .ss-shots figcaption { margin-top: 6px; font-size: 0.88rem; color: var(--muted); }
     </style>
   </head>
   <body>
@@ -76,6 +81,21 @@
           </ul>
 
           <div class="section-grid">
+            <section class="section" id="screenshots" aria-label="Screenshots">
+              <div class="ss-shots">
+                <figure>
+                  <img src="shot-home.jpg" width="540" height="1200" loading="lazy"
+                       alt="Shubh Samay home screen: the day as a dial of 8 choghadiya, Labh running in Ahmedabad with 1 h 8 min left, next auspicious Amrit at 12:28 PM" />
+                  <figcaption>The day's choghadiya as a dial, live</figcaption>
+                </figure>
+                <figure>
+                  <img src="shot-widgets.jpg" width="540" height="1200" loading="lazy"
+                       alt="Shubh Samay home screen widgets: the current choghadiya, and today's timeline with Rahu Kaal" />
+                  <figcaption>Free widget, and today's timeline with Pro</figcaption>
+                </figure>
+              </div>
+            </section>
+
             <section class="section">
               <h2>What's inside</h2>
               <ul>
@@ -84,6 +104,7 @@
                 <li>Today's tithi with its end time, the Hindu month and the Vikram Samvat year.</li>
                 <li>100+ built-in cities in India and abroad (London, New Jersey, Toronto, Dubai…), your phone's location or typed coordinates.</li>
                 <li>Daylight saving time handled for cities abroad.</li>
+                <li>Checked to the minute against a published panchang, over 37 days in 7 cities (London included).</li>
                 <li>A free home screen widget: the running choghadiya, when it ends and the next auspicious one.</li>
                 <li>Pro (one-time purchase, 7-day free trial): the full-day timeline widget, Rahu Kaal and choghadiya alerts, no ads.</li>
               </ul>
