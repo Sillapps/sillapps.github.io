@@ -20,7 +20,7 @@ These URLs are used outside the site: keep them exactly where they are.
 - `index.html`: neutral Sillapps home page, one card per app. Each card is themed like its app (`data-app` on the card).
 - `<app>/`: app page (`index.html`), privacy policy, `icon-192.png`, `og.jpg` (share image), screenshots.
 - `legal.html` (FR/ES/EN legal notice), `impressum.html` (German Impressum): neutral theme.
-- `brand/`: Sillapps logo. `mark.svg` (favicon and logo, the "S" of linked nodes on the indigo-to-cyan gradient of the first logo), `mark-mono.svg` (one color), `mark-180.png` / `mark-512.png`, `og.jpg` (home share image).
+- `brand/`: Sillapps logo ("A2", chosen 2026-09-30): a white "S" of linked nodes on an ink square, the nodes in app colors (cyan, yellow, pink, green), with a light outline so the square stays visible on dark backgrounds. `mark.svg` (logo), `favicon.svg` (simplified for 16-32 px: thicker S, two nodes; also used for the small "Sillapps" pills), `mark-mono.svg` (one color), `mark-180.png` (apple-touch, full bleed), `mark-512.png` (structured data), `og.jpg` (home share image). `/favicon.ico` (16/32/48) at the root for browsers that ask for it. Name: "Sillapps" in Space Grotesk 700.
 - `fonts/`: the apps' fonts as subset woff2, declared in `fonts/fonts.css`. Served from here on purpose: no Google Fonts, so no visitor IP goes to a third party.
 - `styles.css`: shared layout and components, then one theme per app.
 

@@ -397,7 +397,7 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
     <main data-day="{today.isoformat()}">
       <header>
         <a class="brand" href="/scioperi/"><img src="/scioperi/icon-192.png" alt="" width="40" height="40" /> Scioperi Oggi</a>
-        <a class="home" href="/"><img src="/brand/mark.svg" alt="" width="18" height="18" /> Sillapps</a>
+        <a class="home" href="/"><img src="/brand/favicon.svg" alt="" width="18" height="18" /> Sillapps</a>
       </header>
       <p class="warn" id="old" hidden>Questa pagina è di {e(long_date(today))}: l'aggiornamento è in corso. Nel frattempo controlla il <a href="{SOURCE_URL}">sito del Ministero</a>.</p>
       {stale_html}
