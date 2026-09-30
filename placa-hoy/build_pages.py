@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Static city pages of Placa Hoy on sillapps.com, generated from rules.json.
+"""Static city pages of Placa Hoy on sillapps.com, generated from rules-v2.json.
 
 One page per city (never one page per date), in Spanish:
     placa-hoy/<slug>/index.html   e.g. placa-hoy/pico-y-placa-medellin/
@@ -17,9 +17,13 @@ The script also rewrites two generated blocks, between the markers
     - the city URLs in sitemap.xml.
 Everything outside these markers is hand-written and left untouched.
 
-HOW TO RERUN (after every update of placa-hoy/rules.json):
-    1. Copy the new rules.json into placa-hoy/rules.json (built by
-       tool/build_rules.py in the app repository).
+The source is placa-hoy/rules-v2.json (schema 2, every city, periods may
+have `zones`); placa-hoy/rules.json is the schema-1 copy for older app
+versions, without the cities that have zones, and is only a fallback here.
+
+HOW TO RERUN (after every update of placa-hoy/rules-v2.json):
+    1. Publish the new rules with tool/publish_rules.sh in the app
+       repository (it writes rules-v2.json and rules.json here).
     2. From the root of the site repository:
            python3 placa-hoy/build_pages.py
        (Python 3.9+, standard library only.)
@@ -259,6 +263,8 @@ def period_section(period: dict, city: dict, country: dict) -> str:
         out.append(f"<p><strong>Exentos por combustible:</strong> vehículos {e(fuels)}.</p>")
     if period.get("zone"):
         out.append(f"<p><strong>Dónde aplica:</strong> {e(period['zone'])}</p>")
+    for zone in period.get("zones") or []:
+        out.append(zone_section(zone, period, country))
     if period.get("notes"):
         out.append("<ul>" + "".join(f"<li>{e(n)}</li>" for n in period["notes"]) + "</ul>")
     out.append(
@@ -269,6 +275,22 @@ def period_section(period: dict, city: dict, country: dict) -> str:
     )
     out.append("</section>")
     return "\n".join(out)
+
+
+def zone_section(zone: dict, period: dict, country: dict) -> str:
+    """A zone of the period (schema 2): its own digits and hours, same validity.
+
+    Inside the zone the city-wide rule still applies and the zone adds to it
+    (the app's engine takes the union), so the page says so."""
+    name = zone["name"]
+    table = rotation_table({"type": "weekday", "days": zone.get("days"), "hours": zone.get("hours"),
+                            "digit": period.get("digit")}, country)
+    return "\n".join([
+        f"<h3>En {e(name)}</h3>",
+        f"<p><strong>Zona:</strong> {e(zone['area'][0].upper() + zone['area'][1:])}. "
+        "Dentro de esta zona también aplica la regla general de arriba: se suman las dos.</p>",
+        table,
+    ])
 
 
 def source_label(url: str) -> str:
@@ -587,7 +609,10 @@ def main() -> int:
     ap.add_argument("--check", action="store_true")
     args = ap.parse_args()
 
-    rules = json.loads((HERE / "rules.json").read_text(encoding="utf-8"))
+    source = HERE / "rules-v2.json"
+    if not source.exists():
+        source = HERE / "rules.json"
+    rules = json.loads(source.read_text(encoding="utf-8"))
     countries = {c["id"]: c for c in rules["countries"]}
     cities = [(c, countries[c["country"]], city_slug(c, countries[c["country"]])) for c in rules["cities"]]
     slugs = [s for _, _, s in cities]
