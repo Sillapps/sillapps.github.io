@@ -713,6 +713,22 @@ main {
   margin-top: 28px;
 }
 
+.section-grid > *,
+.pill-row > *,
+.stack > * {
+  min-width: 0;
+}
+
+.intro,
+.section,
+.meta-card,
+.notice-card,
+.note,
+.stack-link,
+.pill-link {
+  overflow-wrap: anywhere;
+}
+
 .section {
   padding: clamp(18px, 3vw, 24px);
   border: 1px solid var(--line);
@@ -985,6 +1001,19 @@ code {
   background: #fff1cc;
 }
 
+/* Shubh Samay: Anek Latin has a small x-height, scale its text up to match the other apps. */
+html[data-app="choghadiya"] {
+  font-size: 106.25%;
+}
+
+[data-app="choghadiya"].app-card p {
+  font-size: 1.04rem;
+}
+
+[data-app="choghadiya"].app-card .app-card-go {
+  font-size: 0.96rem;
+}
+
 /* ------------------------------------------------------------ home page */
 
 .home main {
@@ -1127,7 +1156,7 @@ code {
 }
 
 .app-grid.wide {
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
 }
 
 .app-grid.wide .app-card {
@@ -1197,22 +1226,22 @@ code {
 }
 
 .app-card-where {
-  padding: 4px 10px;
-  border: 1px solid var(--line-strong);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--surface) 70%, transparent);
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--muted);
-  white-space: nowrap;
+  display: block;
+  margin-top: 18px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--faint);
 }
 
 .app-card h3 {
-  margin: 18px 0 6px;
+  margin: 4px 0 6px;
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: var(--display-weight);
-  line-height: 1.05;
+  line-height: 2rem;
   letter-spacing: calc(var(--display-tracking) * 0.7);
   text-transform: var(--display-case);
   text-shadow: var(--title-glow);
@@ -1256,7 +1285,7 @@ code {
 
 [data-app="placa-hoy"].app-card h3 {
   text-transform: uppercase;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
 }
 
 .home-about {
