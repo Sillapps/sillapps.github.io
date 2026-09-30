@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 2026092801,
- "published": "2026-09-28",
+ "version": 2026093001,
+ "published": "2026-09-30",
  "countries": [
   {
    "code": "BR",
@@ -1206,7 +1206,7 @@
       "Y",
       "Z"
      ],
-     "official_url": "https://www.gob.mx/bienestar",
+     "official_url": "https://www.programasparaelbienestar.gob.mx/programas/adultos-mayores/pension-para-personas-adultas-mayores/",
      "calendars": [
       {
        "id": "mx_adultos_mayores_2026_ene_feb",
@@ -1574,7 +1574,7 @@
       "Y",
       "Z"
      ],
-     "official_url": "https://www.gob.mx/bienestar",
+     "official_url": "https://www.programasparaelbienestar.gob.mx/programas/personas-con-discapacidad/pension-para-personas-con-discapacidad/",
      "calendars": [
       {
        "id": "mx_discapacidad_2026_ene_feb",
@@ -1942,7 +1942,7 @@
       "Y",
       "Z"
      ],
-     "official_url": "https://www.gob.mx/bienestar",
+     "official_url": "https://www.programasparaelbienestar.gob.mx/programas/mujeres/pension-mujeres-bienestar/",
      "calendars": [
       {
        "id": "mx_mujeres_bienestar_2026_ene_feb",
@@ -2310,7 +2310,7 @@
       "Y",
       "Z"
      ],
-     "official_url": "https://www.gob.mx/bienestar",
+     "official_url": "https://www.programasparaelbienestar.gob.mx/programas/mujeres/programa-de-madres-trabajadoras/",
      "calendars": [
       {
        "id": "mx_madres_trabajadoras_2026_ene_feb",
@@ -2678,7 +2678,7 @@
       "Y",
       "Z"
      ],
-     "official_url": "https://www.gob.mx/becasbenitojuarez",
+     "official_url": "https://www.programasparaelbienestar.gob.mx/programas/infancias/beca-rita-cetina/",
      "calendars": [
       {
        "id": "mx_beca_rita_cetina_2026_ene_feb",
@@ -2888,7 +2888,7 @@
       "Y",
       "Z"
      ],
-     "official_url": "https://www.gob.mx/becasbenitojuarez",
+     "official_url": "https://www.programasparaelbienestar.gob.mx/programas/infancias/beca-rita-cetina/",
      "calendars": [
       {
        "id": "mx_beca_rita_cetina_primaria_2026_anual_2026_27",
@@ -2991,7 +2991,7 @@
       "Y",
       "Z"
      ],
-     "official_url": "https://www.gob.mx/becasbenitojuarez",
+     "official_url": "https://www.programasparaelbienestar.gob.mx/programas/jovenes/beca-benito-juarez/",
      "calendars": [
       {
        "id": "mx_beca_benito_juarez_2026_ene_abr",
@@ -3147,7 +3147,7 @@
       "Y",
       "Z"
      ],
-     "official_url": "https://www.gob.mx/becasbenitojuarez",
+     "official_url": "https://www.programasparaelbienestar.gob.mx/programas/jovenes/beca-jovenes-escribiendo-el-futuro/",
      "calendars": [
       {
        "id": "mx_beca_jovenes_escribiendo_el_futuro_2026_ene_abr",
@@ -3303,7 +3303,7 @@
       "Y",
       "Z"
      ],
-     "official_url": "https://www.gob.mx/becasbenitojuarez",
+     "official_url": "https://www.programasparaelbienestar.gob.mx/programas/jovenes/beca-gertrudis-bocanegra/",
      "calendars": [
       {
        "id": "mx_beca_gertrudis_bocanegra_2026_ene_abr",
