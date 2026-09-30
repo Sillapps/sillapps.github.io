@@ -5,18 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0a0d1b" />
     <link rel="icon" type="image/png" href="/fuel-alert/icon-192.png" />
-    <title>Pompada</title>
-    <meta name="description" content="Pompada: fuel prices today and tomorrow from official sources for Türkiye, Thailand and Malaysia, with an alert when the price of your fuel changes." />
+    <title>Fuel prices today and tomorrow in Türkiye, Thailand and Malaysia · Pompada</title>
+    <meta name="description" content="Pompada shows petrol, diesel and LPG prices by province in Türkiye, Thailand and Malaysia, tomorrow's as soon as they are announced, and alerts you when the price of your fuel changes." />
     <link rel="canonical" href="https://sillapps.com/fuel-alert/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Sillapps" />
     <meta property="og:title" content="Pompada · Fuel prices today and tomorrow" />
-    <meta property="og:description" content="Fuel prices from official sources for Türkiye, Thailand and Malaysia, with price change alerts." />
+    <meta property="og:description" content="Petrol, diesel and LPG prices by province in Türkiye, Thailand and Malaysia, tomorrow's as soon as they are announced, with price change alerts." />
     <meta property="og:url" content="https://sillapps.com/fuel-alert/" />
     <meta property="og:image" content="https://sillapps.com/fuel-alert/og.jpg" />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="500" />
     <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Pompada",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "TravelApplication",
+      "inLanguage": ["en", "tr", "th", "ms"],
+      "url": "https://sillapps.com/fuel-alert/",
+      "image": "https://sillapps.com/fuel-alert/icon-192.png",
+      "description": "Fuel prices in Türkiye, Thailand and Malaysia, today and tomorrow, by province, with alerts when the price of your fuel changes.",
+      "publisher": { "@type": "Organization", "name": "Sillapps", "url": "https://sillapps.com/" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where do Pompada's prices come from?",
+          "acceptedAnswer": { "@type": "Answer", "text": "From public price services: the EPDK web services in Türkiye, PTT OR and Bangchak in Thailand, and data.gov.my (Ministry of Finance) in Malaysia. Every screen shows the source, the download time and a link." }
+        },
+        {
+          "@type": "Question",
+          "name": "When does Pompada show tomorrow's fuel price?",
+          "acceptedAnswer": { "@type": "Answer", "text": "As soon as it is announced: in Türkiye when distributors declare it to EPDK, in Thailand with the evening announcement (effective 05:00), in Malaysia on Wednesday evening (effective Thursday at 00:01)." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Pompada predict price hikes?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Pompada never predicts: it only shows prices published by the sources." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Pompada an official app?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Pompada is an independent app by Sillapps. It is not affiliated with EPDK, PTT OR, Bangchak, the Government of Malaysia, the Ministry of Finance, any fuel distributor or government agency." }
+        }
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="/fonts/fonts.css?v=20260930-1" />
     <link rel="stylesheet" href="/styles.css?v=20260930-3" />
   </head>
@@ -30,28 +72,126 @@
 
           <div class="masthead">
             <div>
-              <p class="eyebrow">Mobile App</p>
-              <h1 class="title">Pompada</h1>
+              <p class="eyebrow">Pompada · Android app</p>
+              <h1 class="title">Tomorrow's fuel price, as soon as it's out</h1>
             </div>
             <img class="app-mark" src="/fuel-alert/icon-192.png" alt="" width="76" height="76" />
           </div>
 
           <p class="intro">
-            This page provides the public legal entry for the mobile app
-            <strong>Pompada</strong> (fuel prices from official sources for Turkey, Thailand and Malaysia, with price change alerts) and supports app store compliance
-            and listing requirements.
+            <strong>Pompada</strong> shows petrol, diesel and LPG prices by province in
+            Türkiye, Thailand and Malaysia, tomorrow's as soon as they are announced, and can
+            alert you when the price of your fuel changes. No account, no location permission.
           </p>
+          <p class="soon-badge">Coming soon to Google Play</p>
+          <ul class="chips">
+            <li>Türkiye · 81 provinces</li>
+            <li>Thailand · 77 provinces</li>
+            <li>Malaysia · weekly prices</li>
+            <li>English · Türkçe · ไทย · Bahasa Melayu</li>
+          </ul>
+          <ul class="shots">
+            <li><img src="shot-tomorrow.jpg" width="540" height="960" alt="Bursa: tomorrow's diesel and petrol prices announced, with the change" /></li>
+            <li><img src="shot-malaysia.jpg" width="540" height="960" alt="Peninsular Malaysia: next week's RON95, RON97 and diesel prices" loading="lazy" decoding="async" /></li>
+            <li><img src="shot-widget.jpg" width="540" height="960" alt="The home screen widget with today's price and tomorrow's" loading="lazy" decoding="async" /></li>
+          </ul>
 
-          <div class="pill-row">
-            <a class="pill-link" href="privacy.html">
-              <strong>Privacy Policy</strong>
-              <span>Read the public privacy policy for Pompada.</span>
-            </a>
-            <a class="pill-link" href="/legal.html">
-              <strong>Legal Notice</strong>
-              <span>Publisher and hosting information.</span>
-            </a>
+          <div class="section-grid">
+            <section class="section" id="countries">
+              <h2>Three countries, every province</h2>
+              <h3>Türkiye</h3>
+              <ul>
+                <li>Petrol (95), diesel (motorin) and LPG (autogas) in all 81 provinces, İstanbul Asian and European sides separately.</li>
+                <li>Province price = median of the prices distributors declared, with the range, the cheapest distributor and the full list.</li>
+                <li>Tomorrow's price, labelled "Yarın", once distributors declare it; last change and a 30-day chart.</li>
+              </ul>
+              <h3>Thailand</h3>
+              <ul>
+                <li>Gasohol 95, 91, E20, E85 (Bangkok), diesel B7, B20, premium diesel and benzine 95.</li>
+                <li>Bangkok and every other province, with the price in each district.</li>
+                <li>Tomorrow's prices once a change is announced in the evening, effective from 05:00.</li>
+              </ul>
+              <h3>Malaysia</h3>
+              <ul>
+                <li>RON95 without subsidy, RON95 BUDI95 (subsidised price for eligible Malaysians), RON97 and diesel.</li>
+                <li>Peninsular Malaysia, and Sabah, Sarawak and Labuan (own diesel price).</li>
+                <li>Next week's prices as soon as they are published on Wednesday evening, effective Thursday at 00:01.</li>
+              </ul>
+            </section>
+
+            <section class="section" id="pro">
+              <h2>Free, and Pro when you want alerts</h2>
+              <p>
+                The free version has every price for one province, with one small banner ad at the
+                bottom of the home screen after the first day. Without a connection, the last
+                downloaded prices stay available, with their download time.
+              </p>
+              <ul class="feature-list">
+                <li><strong>Alerts</strong> when your fuel's price changes: when a new price appears in Türkiye, the evening before a change in Thailand, on Wednesday evening in Malaysia.</li>
+                <li><strong>Home screen widget</strong> with today's price, and tomorrow's once announced.</li>
+                <li><strong>Up to 5 provinces</strong> and several fuels.</li>
+                <li><strong>No ads.</strong></li>
+              </ul>
+              <p>Pompada Pro is a one-time purchase, no subscription. Try it free for 7 days, no account needed.</p>
+            </section>
+
+            <section class="section" id="languages">
+              <h2>In your language</h2>
+              <p lang="tr"><strong>Türkçe:</strong> Benzin, motorin (mazot), LPG fiyatı iline göre, bugün ve yarın. Zam bildirimi.</p>
+              <p lang="th"><strong>ไทย:</strong> ราคาน้ำมันพรุ่งนี้และวันนี้ ทุกจังหวัด แก๊สโซฮอล์ ดีเซล แจ้งเตือนน้ำมันขึ้นลง</p>
+              <p lang="ms"><strong>Bahasa Melayu:</strong> Harga minyak minggu ini &amp; esok: RON95, RON97, diesel, BUDI95, dengan amaran.</p>
+            </section>
+
+            <section class="section" id="sources">
+              <h2>Sources</h2>
+              <p>
+                <a href="https://www.epdk.gov.tr/Detay/Icerik/3-0-226/web-servisler" rel="noopener">EPDK web services</a> (Türkiye),
+                <a href="https://www.pttor.com/th/oil_price" rel="noopener">PTT OR</a> and
+                <a href="https://www.bangchak.co.th/th/oilprice" rel="noopener">Bangchak</a> prices (Thailand),
+                <a href="https://data.gov.my/data-catalogue/fuelprice" rel="noopener">data.gov.my fuel prices</a> of the Ministry of Finance Malaysia (CC BY 4.0).
+              </p>
+              <p>
+                Province prices in Türkiye are medians computed by Pompada from the distributors'
+                declarations; outside Bangkok, tomorrow's price is today's provincial price plus the
+                announced change. These sources publish no LPG or NGV prices for Thailand. Station
+                prices can differ slightly. Pompada never predicts price hikes.
+              </p>
+              <p>
+                Pompada is for information only. It is not a government app and is not affiliated
+                with EPDK, PTT OR, Bangchak, the Government of Malaysia, the Ministry of Finance, any
+                fuel distributor or government agency.
+              </p>
+            </section>
+
+            <section class="section faq" id="faq">
+              <h2>FAQ</h2>
+              <details>
+                <summary>Where do the prices come from?</summary>
+                <p>From public price services: EPDK in Türkiye, PTT OR and Bangchak in Thailand, and data.gov.my in Malaysia. Every screen shows the source, the download time and a link.</p>
+              </details>
+              <details>
+                <summary>When does tomorrow's price appear?</summary>
+                <p>As soon as it is announced: in Türkiye when distributors declare it to EPDK, in Thailand with the evening announcement (effective 05:00), in Malaysia on Wednesday evening (effective Thursday at 00:01).</p>
+              </details>
+              <details>
+                <summary>Does Pompada predict price hikes?</summary>
+                <p>No. It only shows prices published by the sources, never guesses.</p>
+              </details>
+              <details>
+                <summary>Do I need an account or to share my location?</summary>
+                <p>No. There is no account and no location permission: you pick your province, and your settings stay on your phone.</p>
+              </details>
+            </section>
+
+            <section class="section" id="legal">
+              <h2>Legal</h2>
+              <p>Read the <a href="privacy.html">privacy policy</a> and the <a href="/legal.html">legal notice</a>. Questions: <a href="mailto:contact@sillapps.com">contact@sillapps.com</a></p>
+            </section>
           </div>
+
+          <footer class="site-footer">
+            <p>© 2026 Sillapps. Google Play is a trademark of Google LLC.</p>
+          </footer>
         </div>
       </section>
     </main>
