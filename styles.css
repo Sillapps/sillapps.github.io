@@ -729,6 +729,16 @@ main {
   overflow-wrap: anywhere;
 }
 
+/* Table cells keep whole words (the table grows instead of cutting "Lunes" in two). */
+.section table {
+  overflow-wrap: break-word;
+}
+
+/* First column (day, time) never splits. */
+.data-table tr > :first-child {
+  white-space: nowrap;
+}
+
 .section {
   padding: clamp(18px, 3vw, 24px);
   border: 1px solid var(--line);
@@ -1317,6 +1327,15 @@ html[data-app="choghadiya"] {
   color: var(--link);
 }
 
+.home-values a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.home-values li:has(a):hover {
+  border-color: var(--accent);
+}
+
 .home-footer {
   margin-top: 40px;
   padding: 20px 0 0;
@@ -1390,6 +1409,49 @@ html[data-app="choghadiya"] {
 @media (max-width: 420px) {
   .site-header nav a:not(:first-child) {
     display: none;
+  }
+
+  main {
+    width: calc(100% - 24px);
+  }
+
+  .panel-inner {
+    padding: 20px 16px;
+  }
+
+  .section {
+    padding: 16px 14px;
+  }
+
+  /* Tables: compact, hyphenated, and scrollable sideways as a last resort. */
+  .data-table {
+    display: block;
+    overflow-x: auto;
+    font-size: 0.88rem;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 8px 5px;
+  }
+}
+
+@media (max-width: 340px) {
+  .panel-inner {
+    padding: 18px 12px;
+  }
+
+  .section {
+    padding: 14px 10px;
+  }
+
+  .data-table {
+    font-size: 0.82rem;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 7px 3px;
   }
 }
 

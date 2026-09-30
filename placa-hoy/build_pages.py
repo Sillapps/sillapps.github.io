@@ -57,8 +57,8 @@ SITE = HERE.parent  # site root
 BASE_URL = "https://sillapps.com"
 APP_URL = f"{BASE_URL}/placa-hoy/"
 PLAY_URL = "https://play.google.com/store/apps/details?id=com.sillapps.placahoy"
-PLAY_BADGE = "https://play.google.com/intl/es-419/badges/static/images/badges/es-419_badge_web_generic.png"
-CSS = "/styles.css?v=20260930-2"
+PLAY_BADGE = "/brand/badges/google-play-es-419.png"
+CSS = "/styles.css?v=20260930-3"
 FONTS_CSS = "/fonts/fonts.css?v=20260930-1"
 START = "placa-hoy:cities:start"
 END = "placa-hoy:cities:end"
@@ -84,6 +84,7 @@ PAGE_CSS = """
       .ph-table td.ph-d { color: var(--text); font-weight: 650; font-variant-numeric: tabular-nums; }
       .ph-table td.ph-free { color: var(--free); }
       .ph-src { font-size: 0.92rem; }
+      .nw { white-space: nowrap; }
       .ph-tag { display: inline-block; margin-left: 8px; padding: 0 8px; border-radius: 999px; font-size: 0.72rem;
         font-weight: 800; letter-spacing: 0.06em; vertical-align: middle; color: var(--accent-ink); background: var(--accent); }
       .ph-cities { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
@@ -98,6 +99,11 @@ PAGE_CSS = """
 
 def e(text) -> str:
     return html.escape(str(text), quote=True)
+
+
+def keep_ranges(escaped: str) -> str:
+    """Keeps each time range (6:00–19:00) on one line in narrow tables."""
+    return re.sub(r"\d{1,2}:\d{2}\s*[–-]\s*\d{1,2}:\d{2}", lambda m: f'<span class="nw">{m.group(0)}</span>', escaped)
 
 
 def slugify(text: str) -> str:
@@ -214,7 +220,7 @@ def rotation_table(period: dict, country: dict) -> str:
         head = f"No circulan placas con {digit} dígito"
 
     body = "\n".join(
-        f"<tr><td>{e(d)}</td><td class=\"{'ph-free' if free else 'ph-d'}\">{e(what)}</td><td>{e(h)}</td></tr>"
+        f"<tr><td>{e(d)}</td><td class=\"{'ph-free' if free else 'ph-d'}\">{e(what)}</td><td>{keep_ranges(e(h))}</td></tr>"
         for d, what, h, free in rows
     )
     return (
@@ -510,7 +516,7 @@ def city_page(rules: dict, city: dict, country: dict, slug: str,
           </div>
           {beta_text}
           <a class="play-badge" href="{PLAY_URL}&amp;hl=es_419">
-            <img src="{PLAY_BADGE}" alt="Disponible en Google Play" width="646" height="250" referrerpolicy="no-referrer" />
+            <img src="{PLAY_BADGE}" alt="Disponible en Google Play" width="646" height="250" />
           </a>
 
           <div class="section-grid">
