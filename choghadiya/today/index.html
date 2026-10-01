@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" data-app="choghadiya">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0820" />
+    <title>Today's Choghadiya and Rahu Kaal Today for Your City · Shubh Samay</title>
+    <meta name="description" content="Aaj ka choghadiya: today's day and night choghadiya, Rahu Kaal today, Yamaganda, Gulika, Abhijit and Brahma muhurat for your city, on its local clock." />
+    <link rel="canonical" href="https://sillapps.com/choghadiya/today/" />
+    <link rel="icon" type="image/png" href="/choghadiya/icon-192.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sillapps" />
+    <meta property="og:title" content="Today's Choghadiya and Rahu Kaal for your city" />
+    <meta property="og:description" content="Aaj ka choghadiya: the running choghadiya, the 16 of the day and night, Rahu Kaal, Yamaganda, Gulika, Abhijit and Brahma muhurat, on your city's clock." />
+    <meta property="og:url" content="https://sillapps.com/choghadiya/today/" />
+    <meta property="og:image" content="https://sillapps.com/choghadiya/og.jpg" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="500" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "name": "Today's Choghadiya",
+          "url": "https://sillapps.com/choghadiya/today/",
+          "description": "Today's day and night choghadiya, Rahu Kaal, Yamaganda, Gulika Kaal, Abhijit and Brahma muhurat for a chosen city, calculated in the browser from sunrise and sunset and shown on the city's local clock.",
+          "applicationCategory": "LifestyleApplication",
+          "operatingSystem": "Any (web browser)",
+          "browserRequirements": "Requires JavaScript",
+          "inLanguage": "en",
+          "isAccessibleForFree": true,
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+          "image": "https://sillapps.com/choghadiya/og.jpg",
+          "publisher": { "@type": "Organization", "name": "Sillapps", "url": "https://sillapps.com/" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Sillapps", "item": "https://sillapps.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Shubh Samay", "item": "https://sillapps.com/choghadiya/" },
+            { "@type": "ListItem", "position": 3, "name": "Today's choghadiya", "item": "https://sillapps.com/choghadiya/today/" }
+          ]
+        }
+      ]
+    }
+    </script>
+    <link rel="stylesheet" href="/fonts/fonts.css?v=20260930-1" />
+    <link rel="stylesheet" href="/styles.css?v=20260930-3" />
+    <link rel="stylesheet" href="today.css?v=20260930-1" />
+    <!-- today.js: the app's own calculation (lib/src/astro), compiled from Dart by
+         sillapps-choghadiya/tool/build_web_today.sh, which also bumps its ?v=. Do not edit by hand. -->
+    <script defer src="today.js?v=0b9b8e2eb1"></script>
+    <script defer src="page.js?v=20260930-1"></script>
+  </head>
+  <body>
+    <main>
+      <section class="panel hero">
+        <div class="panel-inner">
+          <div class="nav-row">
+            <a class="back-link" href="/choghadiya/">Shubh Samay app</a>
+            <a class="back-link" href="/">Sillapps</a>
+          </div>
+
+          <div class="masthead">
+            <div>
+              <p class="eyebrow">Aaj ka choghadiya</p>
+              <h1 class="title">Today's choghadiya</h1>
+            </div>
+            <img class="app-mark" src="/choghadiya/icon-192.png" alt="" width="76" height="76" />
+          </div>
+
+          <div class="tc-controls" aria-label="Place and date">
+            <div class="tc-place">
+              <p class="tc-place-name" id="place-name">Choose your city</p>
+              <p class="tc-place-detail" id="place-detail"></p>
+            </div>
+            <div class="tc-buttons">
+              <button type="button" class="tc-btn" id="change-city" aria-expanded="false" aria-controls="city-picker">Change city</button>
+              <button type="button" class="tc-btn" id="use-location">Use my location</button>
+            </div>
+            <p class="tc-status" id="locate-status" role="status" hidden></p>
+            <div class="tc-picker" id="city-picker" hidden>
+              <label class="tc-visually-hidden" for="city-search">Search a city</label>
+              <input type="search" id="city-search" autocomplete="off" spellcheck="false"
+                     placeholder="Search: Baroda, NYC, अहमदाबाद…" />
+              <ul class="tc-results" id="city-results" role="listbox" aria-label="Cities"></ul>
+            </div>
+            <div class="tc-dates" role="group" aria-label="Date">
+              <button type="button" class="tc-chip" data-day="today" aria-pressed="true">Today</button>
+              <button type="button" class="tc-chip" data-day="tomorrow" aria-pressed="false">Tomorrow</button>
+              <label class="tc-date">
+                <span class="tc-visually-hidden">Pick a date</span>
+                <input type="date" id="date-input" min="1950-01-01" max="2100-12-31" />
+              </label>
+            </div>
+          </div>
+
+          <noscript>
+            <div class="notice-card"><p>The timings are calculated in your browser: please turn on JavaScript, or use the <a href="/choghadiya/">Shubh Samay app</a>.</p></div>
+          </noscript>
+
+          <div id="today-app" class="tc-app" aria-live="polite"></div>
+
+          <div class="tc-cta">
+            <p>Widgets, Rahu Kaal alerts, Hindi and Gujarati, offline: the same timings in the <strong>Shubh Samay</strong> app for Android.</p>
+            <!-- The Play link opens only once the app is published on Google Play (closed test for now). -->
+            <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.choghadiya&amp;referrer=utm_source%3Dsillapps.com%26utm_medium%3Dtoday">
+              <img src="/brand/badges/google-play-en.png"
+                   alt="Get it on Google Play" width="646" height="250" />
+            </a>
+          </div>
+
+          <div class="section-grid">
+            <section class="section">
+              <h2>What a choghadiya is</h2>
+              <p>The choghadiya (also written chaughadiya, from <em>chau</em>, four, and <em>ghadi</em>, a 24-minute unit) cut the day from sunrise to sunset into 8 equal parts, and the night from sunset to the next sunrise into 8 more. Each part is about four ghadis long, an hour and a half around the equinoxes, longer by day in summer and by night in winter. Families in Gujarat, Rajasthan and across the diaspora check them before starting a journey, a purchase, a puja or new work.</p>
+              <table class="data-table">
+                <thead><tr><th>Choghadiya</th><th>Ruler</th><th>Nature</th></tr></thead>
+                <tbody>
+                  <tr><td><span class="tc-dot good"></span>Amrit</td><td>Moon</td><td>Auspicious, the best</td></tr>
+                  <tr><td><span class="tc-dot good"></span>Shubh</td><td>Jupiter</td><td>Auspicious</td></tr>
+                  <tr><td><span class="tc-dot good"></span>Labh</td><td>Mercury</td><td>Auspicious, for gain and trade</td></tr>
+                  <tr><td><span class="tc-dot neutral"></span>Char</td><td>Venus</td><td>Neutral, said to suit travel</td></tr>
+                  <tr><td><span class="tc-dot bad"></span>Rog</td><td>Mars</td><td>Inauspicious</td></tr>
+                  <tr><td><span class="tc-dot bad"></span>Kaal</td><td>Saturn</td><td>Inauspicious</td></tr>
+                  <tr><td><span class="tc-dot bad"></span>Udveg</td><td>Sun</td><td>Inauspicious</td></tr>
+                </tbody>
+              </table>
+              <p>The first choghadiya of the day belongs to the ruler of the weekday (Amrit on Monday, Udveg on Sunday…) and the others follow in that order; the night starts five places further on. <strong>Vaar Vela</strong> and <strong>Kaal Vela</strong> mark day choghadiya traditionally avoided for new work (Vaar Vela even when it falls on a good one), and <strong>Kaal Ratri</strong> marks the night&rsquo;s Labh.</p>
+            </section>
+
+            <section class="section">
+              <h2>Rahu Kaal today, Yamaganda and Gulika</h2>
+              <p>Rahu Kaal, Yamaganda and Gulika Kaal are each one eighth of the daytime, at a fixed place for every weekday. They move with sunrise and sunset, so they differ from city to city and through the year. For a day running from 6:00 AM to 6:00 PM, Rahu Kaal falls at:</p>
+              <table class="data-table">
+                <thead><tr><th>Day</th><th>Rahu Kaal (6 AM sunrise)</th></tr></thead>
+                <tbody>
+                  <tr><td>Monday</td><td>7:30 – 9:00 AM</td></tr>
+                  <tr><td>Tuesday</td><td>3:00 – 4:30 PM</td></tr>
+                  <tr><td>Wednesday</td><td>12:00 – 1:30 PM</td></tr>
+                  <tr><td>Thursday</td><td>1:30 – 3:00 PM</td></tr>
+                  <tr><td>Friday</td><td>10:30 AM – 12:00 PM</td></tr>
+                  <tr><td>Saturday</td><td>9:00 – 10:30 AM</td></tr>
+                  <tr><td>Sunday</td><td>4:30 – 6:00 PM</td></tr>
+                </tbody>
+              </table>
+              <p>The real times are the ones above for your city. Abhijit muhurat is the eighth of the fifteen muhurtas of the day, around local noon (not observed on Wednesdays); Brahma muhurat is the fourteenth muhurta of the night, ending about 48 minutes before sunrise.</p>
+            </section>
+
+            <section class="section">
+              <h2>How these times are calculated</h2>
+              <p>This page runs the calculation of the Shubh Samay app itself, compiled for the browser: sunrise and sunset are the moments the upper edge of the Sun meets a flat horizon with standard refraction, the convention of the major printed panchangs. Every time is shown on the chosen city's own clock, daylight saving time included, wherever you are reading from.</p>
+              <p>The calculation is checked against 1,752 timings published by a panchang (37 days, 7 cities from Chennai to London): all agree within one minute, and 1,671 to the minute. The tithi is the one running at sunrise. These are traditional timings, given for information: no predictions.</p>
+            </section>
+
+            <section class="section">
+              <h2>आज का चौघड़िया · આજના ચોઘડિયા</h2>
+              <p lang="hi">आज का चौघड़िया, आज का राहु काल, यमगण्ड, गुलिक काल, अभिजित मुहूर्त और ब्रह्म मुहूर्त, आपके शहर के सूर्योदय और सूर्यास्त के अनुसार।</p>
+              <p lang="gu">આજના ચોઘડિયા, આજનો રાહુ કાળ, યમઘંટ, ગુલિક કાળ, અભિજિત મુહૂર્ત અને બ્રહ્મ મુહૂર્ત, તમારા શહેરના સૂર્યોદય અને સૂર્યાસ્ત મુજબ.</p>
+            </section>
+
+            <section class="section">
+              <h2>Privacy</h2>
+              <p>Everything is calculated in your browser: no account, no cookie, no analytics. &ldquo;Use my location&rdquo; asks your browser for your position only when you tap it, and the position never leaves your device. Your city is remembered in this browser only. Details in the <a href="/choghadiya/privacy.html">privacy policy</a>. Questions: <code>contact@sillapps.com</code></p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

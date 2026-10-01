@@ -1,0 +1,513 @@
+/* Today's choghadiya (choghadiya/today/): page components on top of /styles.css and the
+   [data-app="choghadiya"] theme. Quality colors from the app (lib/src/core/theme.dart, Palette):
+   good emerald, neutral sapphire, bad ruby; text tint = 18% lighter (Palette.inkFor). */
+
+[data-app="choghadiya"] {
+  --good: #3dd68c;
+  --neutral: #7fb2ff;
+  --bad: #ff6b7a;
+  --good-ink: #60dda1;
+  --neutral-ink: #96c0ff;
+  --bad-ink: #ff8692;
+}
+
+.tc-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ------------------------------------------------------------ place and date */
+
+.tc-controls {
+  display: grid;
+  gap: 14px;
+}
+
+.tc-place-name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.tc-place-detail {
+  margin: 2px 0 0;
+  font-size: 0.92rem;
+  color: var(--faint);
+}
+
+.tc-buttons,
+.tc-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tc-btn,
+.tc-chip,
+.tc-date input {
+  min-height: 42px;
+  padding: 8px 15px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface-2) 80%, transparent);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.tc-btn:hover,
+.tc-chip:hover,
+.tc-date input:hover {
+  border-color: var(--accent);
+}
+
+.tc-chip[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: #ffd29a;
+}
+
+.tc-date input {
+  color-scheme: dark;
+  padding: 7px 12px;
+  max-width: 100%;
+}
+
+.tc-date input.is-picked {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.tc-status {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.tc-picker {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+}
+
+.tc-picker[hidden] {
+  display: none;
+}
+
+.tc-picker input {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  font-size: 1rem;
+}
+
+.tc-results {
+  max-height: 300px;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.tc-results button {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 8px;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: none;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tc-results button:hover,
+.tc-results button:focus-visible {
+  background: var(--accent-soft);
+}
+
+.tc-results span {
+  color: var(--faint);
+  font-size: 0.88rem;
+  text-align: right;
+}
+
+/* ------------------------------------------------------------ timings */
+
+.tc-app {
+  display: grid;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.tc-app:empty {
+  display: none;
+}
+
+.tc-card {
+  padding: clamp(16px, 3vw, 22px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface-2);
+  min-width: 0;
+}
+
+.tc-card h2 {
+  margin: 0 0 4px;
+  font-family: var(--font-display);
+  font-size: 1.22rem;
+  font-weight: var(--display-weight);
+  line-height: 1.2;
+}
+
+.tc-hint {
+  margin: 0 0 10px;
+  font-size: 0.88rem;
+  color: var(--faint);
+}
+
+.tc-now {
+  text-align: center;
+  background: radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--q) 16%, transparent), transparent 70%), var(--surface-2);
+  border-color: color-mix(in srgb, var(--q) 35%, transparent);
+}
+
+.tc-now-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.tc-now-top .tc-pulse {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--q);
+  box-shadow: 0 0 10px var(--q);
+}
+
+.tc-quality {
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--q) 16%, transparent);
+  color: var(--q);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.tc-now-name {
+  margin: 6px 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 12vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.05;
+  color: var(--qi);
+  text-shadow: 0 0 28px color-mix(in srgb, var(--qi) 35%, transparent);
+}
+
+.tc-now-marker {
+  margin: 4px 0 0;
+  color: var(--bad);
+  font-weight: 700;
+}
+
+.tc-now-left {
+  margin: 6px 0 0;
+  font-size: 1.08rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.tc-now-left span {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.tc-lines {
+  display: grid;
+  gap: 6px;
+  margin: 14px 0 0;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--bg) 40%, transparent);
+  list-style: none;
+  text-align: left;
+}
+
+.tc-lines li {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.tc-lines li::before {
+  content: "";
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--c, var(--muted));
+  transform: translateY(-1px);
+}
+
+.tc-day-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.tc-day-sub {
+  margin: 2px 0 0;
+  font-size: 0.92rem;
+  color: var(--faint);
+}
+
+.tc-tithi {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.tc-tithi strong {
+  color: var(--text);
+}
+
+/* Timing rows: label left, time right; the time drops under the label on narrow screens. */
+.tc-rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tc-rows li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px 12px;
+  padding: 9px 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.tc-rows li:last-child {
+  border-bottom: 0;
+}
+
+.tc-rows .tc-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.tc-rows .tc-name {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.tc-rows .tc-note {
+  display: block;
+  font-size: 0.84rem;
+  color: var(--faint);
+}
+
+.tc-rows .tc-note.is-bad {
+  color: var(--bad-ink);
+}
+
+.tc-rows .tc-time {
+  margin-left: auto;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.tc-rows li.is-now {
+  border-radius: 12px;
+  border-bottom-color: transparent;
+  background: color-mix(in srgb, var(--q) 14%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--q) 45%, transparent);
+}
+
+.tc-rows li.is-now .tc-time {
+  color: var(--text);
+}
+
+.tc-now-tag {
+  margin-left: 6px;
+  padding: 1px 7px;
+  border-radius: 10px;
+  background: var(--q);
+  color: #0a0820;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  vertical-align: 1px;
+}
+
+.tc-rows li.is-kaal .tc-name {
+  color: var(--bad-ink);
+}
+
+.tc-plus {
+  margin-left: 3px;
+  font-size: 0.78em;
+  color: var(--faint);
+  vertical-align: 2px;
+}
+
+.tc-dot {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background: var(--neutral);
+}
+
+.tc-rows .tc-dot {
+  margin-right: 0;
+}
+
+.tc-dot.good {
+  background: var(--good);
+}
+
+.tc-dot.neutral {
+  background: var(--neutral);
+}
+
+.tc-dot.bad {
+  background: var(--bad);
+}
+
+.tc-dot.sun {
+  background: #ff9933;
+}
+
+.tc-dot.kaal {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px var(--bad);
+}
+
+.tc-dot.muhurat {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px var(--good);
+}
+
+.q-good {
+  --q: var(--good);
+  --qi: var(--good-ink);
+}
+
+.q-neutral {
+  --q: var(--neutral);
+  --qi: var(--neutral-ink);
+}
+
+.q-bad {
+  --q: var(--bad);
+  --qi: var(--bad-ink);
+}
+
+.tc-grid {
+  display: grid;
+  gap: 14px;
+}
+
+@media (min-width: 760px) {
+  .tc-grid.two {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.tc-error {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* ------------------------------------------------------------ app link */
+
+.tc-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 22px;
+  margin-top: 20px;
+  padding: 16px 20px 20px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-lg);
+  background: var(--accent-soft);
+}
+
+.tc-cta p {
+  flex: 1 1 260px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.tc-cta p strong {
+  color: var(--text);
+}
+
+.tc-cta .play-badge {
+  margin-top: 12px;
+}
+
+.section .tc-dot {
+  vertical-align: 0;
+}
+
+@media (max-width: 420px) {
+  .tc-card {
+    padding: 14px 12px;
+  }
+
+  .tc-rows li {
+    padding: 8px 4px;
+  }
+
+  .tc-rows li.is-now {
+    padding: 8px 6px;
+  }
+
+  .tc-cta {
+    padding: 14px 14px 18px;
+  }
+}
