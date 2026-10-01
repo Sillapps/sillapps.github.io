@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 2026093001,
- "published": "2026-09-30",
+ "version": 2026100103,
+ "published": "2026-10-01",
  "countries": [
   {
    "code": "BR",
@@ -29,162 +29,18 @@
       "9",
       "0"
      ],
-     "official_url": "https://www.caixa.gov.br/atendimento/aplicativos/bolsa-familia/Paginas/default.aspx",
+     "official_url": "https://www.caixa.gov.br/programas-sociais/bolsa-familia/Paginas/default.aspx",
      "calendars": [
       {
        "id": "br_bolsa_familia_2026",
-       "source_url": "https://www.gov.br/mds/pt-br/noticias-e-conteudos/desenvolvimento-social/noticias-desenvolvimento-social/confira-o-calendario-de-pagamentos-do-bolsa-familia-de-2026/calendario_bolsa_familia_cartaz2026.pdf",
-       "source_title": "Programa Bolsa Família – Calendário de Pagamento 2026 (cartaz MDS/Caixa)",
+       "source_url": "https://www.caixa.gov.br/programas-sociais/bolsa-familia/Paginas/default.aspx",
+       "source_title": "Calendário de pagamento Bolsa Família 2026 (Caixa)",
        "published": "2025-12-23",
-       "valid_from": "2026-01-19",
+       "valid_from": "2026-10-01",
        "valid_to": "2026-12-23",
-       "last_verified": "2026-09-27",
+       "last_verified": "2026-10-01",
        "status": "official",
        "payments": [
-        {
-         "period": "2026-01",
-         "label": "Janeiro",
-         "by_key": {
-          "1": "2026-01-19",
-          "2": "2026-01-20",
-          "3": "2026-01-21",
-          "4": "2026-01-22",
-          "5": "2026-01-23",
-          "6": "2026-01-26",
-          "7": "2026-01-27",
-          "8": "2026-01-28",
-          "9": "2026-01-29",
-          "0": "2026-01-30"
-         }
-        },
-        {
-         "period": "2026-02",
-         "label": "Fevereiro",
-         "by_key": {
-          "1": "2026-02-12",
-          "2": "2026-02-13",
-          "3": "2026-02-18",
-          "4": "2026-02-19",
-          "5": "2026-02-20",
-          "6": "2026-02-23",
-          "7": "2026-02-24",
-          "8": "2026-02-25",
-          "9": "2026-02-26",
-          "0": "2026-02-27"
-         }
-        },
-        {
-         "period": "2026-03",
-         "label": "Março",
-         "by_key": {
-          "1": "2026-03-18",
-          "2": "2026-03-19",
-          "3": "2026-03-20",
-          "4": "2026-03-23",
-          "5": "2026-03-24",
-          "6": "2026-03-25",
-          "7": "2026-03-26",
-          "8": "2026-03-27",
-          "9": "2026-03-30",
-          "0": "2026-03-31"
-         }
-        },
-        {
-         "period": "2026-04",
-         "label": "Abril",
-         "by_key": {
-          "1": "2026-04-16",
-          "2": "2026-04-17",
-          "3": "2026-04-20",
-          "4": "2026-04-22",
-          "5": "2026-04-23",
-          "6": "2026-04-24",
-          "7": "2026-04-27",
-          "8": "2026-04-28",
-          "9": "2026-04-29",
-          "0": "2026-04-30"
-         }
-        },
-        {
-         "period": "2026-05",
-         "label": "Maio",
-         "by_key": {
-          "1": "2026-05-18",
-          "2": "2026-05-19",
-          "3": "2026-05-20",
-          "4": "2026-05-21",
-          "5": "2026-05-22",
-          "6": "2026-05-25",
-          "7": "2026-05-26",
-          "8": "2026-05-27",
-          "9": "2026-05-28",
-          "0": "2026-05-29"
-         }
-        },
-        {
-         "period": "2026-06",
-         "label": "Junho",
-         "by_key": {
-          "1": "2026-06-17",
-          "2": "2026-06-18",
-          "3": "2026-06-19",
-          "4": "2026-06-22",
-          "5": "2026-06-23",
-          "6": "2026-06-24",
-          "7": "2026-06-25",
-          "8": "2026-06-26",
-          "9": "2026-06-29",
-          "0": "2026-06-30"
-         }
-        },
-        {
-         "period": "2026-07",
-         "label": "Julho",
-         "by_key": {
-          "1": "2026-07-20",
-          "2": "2026-07-21",
-          "3": "2026-07-22",
-          "4": "2026-07-23",
-          "5": "2026-07-24",
-          "6": "2026-07-27",
-          "7": "2026-07-28",
-          "8": "2026-07-29",
-          "9": "2026-07-30",
-          "0": "2026-07-31"
-         }
-        },
-        {
-         "period": "2026-08",
-         "label": "Agosto",
-         "by_key": {
-          "1": "2026-08-18",
-          "2": "2026-08-19",
-          "3": "2026-08-20",
-          "4": "2026-08-21",
-          "5": "2026-08-24",
-          "6": "2026-08-25",
-          "7": "2026-08-26",
-          "8": "2026-08-27",
-          "9": "2026-08-28",
-          "0": "2026-08-31"
-         }
-        },
-        {
-         "period": "2026-09",
-         "label": "Setembro",
-         "by_key": {
-          "1": "2026-09-17",
-          "2": "2026-09-18",
-          "3": "2026-09-21",
-          "4": "2026-09-22",
-          "5": "2026-09-23",
-          "6": "2026-09-24",
-          "7": "2026-09-25",
-          "8": "2026-09-28",
-          "9": "2026-09-29",
-          "0": "2026-09-30"
-         }
-        },
         {
          "period": "2026-10",
          "label": "Outubro",
@@ -266,16 +122,16 @@
       "9",
       "0"
      ],
-     "official_url": "https://meu.inss.gov.br/",
+     "official_url": "https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamentos-do-inss-de-2026-esta-disponivel",
      "calendars": [
       {
        "id": "br_inss_ate_1sm_2026",
-       "source_url": "https://www.gov.br/inss/pt-br/assuntos/calendario-de-pagamentos-do-inss-de-2026-esta-disponivel/TabeladePagamentodeBenefcios20261.pdf",
-       "source_title": "Tabela de Pagamento de Benefícios 2026 (INSS) – Benefícios até 01 salário mínimo",
+       "source_url": "https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamentos-do-inss-de-2026-esta-disponivel",
+       "source_title": "Calendário de pagamentos do INSS de 2026 (INSS) – benefícios até 1 salário mínimo",
        "published": "2025-12-24",
        "valid_from": "2025-12-22",
        "valid_to": "2027-01-08",
-       "last_verified": "2026-09-27",
+       "last_verified": "2026-10-01",
        "status": "official",
        "payments": [
         {
@@ -520,16 +376,16 @@
       "9",
       "0"
      ],
-     "official_url": "https://meu.inss.gov.br/",
+     "official_url": "https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamentos-do-inss-de-2026-esta-disponivel",
      "calendars": [
       {
        "id": "br_inss_acima_1sm_2026",
-       "source_url": "https://www.gov.br/inss/pt-br/assuntos/calendario-de-pagamentos-do-inss-de-2026-esta-disponivel/TabeladePagamentodeBenefcios20261.pdf",
-       "source_title": "Tabela de Pagamento de Benefícios 2026 (INSS) – Acima de 01 salário mínimo",
+       "source_url": "https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamentos-do-inss-de-2026-esta-disponivel",
+       "source_title": "Calendário de pagamentos do INSS de 2026 (INSS) – benefícios acima de 1 salário mínimo",
        "published": "2025-12-24",
        "valid_from": "2026-01-02",
        "valid_to": "2027-01-08",
-       "last_verified": "2026-09-27",
+       "last_verified": "2026-10-01",
        "status": "official",
        "payments": [
         {
@@ -780,12 +636,12 @@
      "calendars": [
       {
        "id": "br_abono_salarial_2026",
-       "source_url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/legislacao/resolucoes/resolucao_no_1032_de_16-12-2025_as.pdf",
-       "source_title": "Resolução Codefat/MTE nº 1.032/2025, art. 15 (datas conforme tabelas MTE e Caixa)",
+       "source_url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/trabalhador/abono-salarial",
+       "source_title": "Abono Salarial – calendário de pagamento 2026 (Ministério do Trabalho e Emprego)",
        "published": "2025-12-31",
        "valid_from": "2026-02-16",
        "valid_to": "2026-12-30",
-       "last_verified": "2026-09-27",
+       "last_verified": "2026-10-01",
        "status": "official",
        "payments": [
         {
@@ -847,8 +703,7 @@
         "Calendário único pelo mês de nascimento, igual para PIS (Caixa) e Pasep (Banco do Brasil).",
         "Ano-base 2024: quem trabalhou com carteira assinada em 2024 e cumpre as regras do programa.",
         "O saque fica disponível a partir da data indicada até 30/12/2026.",
-        "Consulte se tem direito na Carteira de Trabalho Digital ou no gov.br.",
-        "Juiz de Fora, Matias Barbosa e Ubá (MG): nascidos de março a dezembro tiveram o pagamento antecipado para 16/03/2026 (Resolução Codefat nº 1.037/2026)."
+        "Consulte se tem direito na Carteira de Trabalho Digital ou no gov.br."
        ]
       }
      ],
@@ -865,7 +720,7 @@
      "summary": "Estudantes do ensino médio regular, pagos em janelas de datas.",
      "key": "none",
      "key_values": [],
-     "official_url": "https://www.gov.br/mec/pt-br/pe-de-meia",
+     "official_url": "https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos",
      "calendars": [
       {
        "id": "br_pe_de_meia_2026_regular",
@@ -874,7 +729,7 @@
        "published": "2026-02-19",
        "valid_from": "2026-03-23",
        "valid_to": "2027-03-01",
-       "last_verified": "2026-09-27",
+       "last_verified": "2026-10-01",
        "status": "official",
        "payments": [
         {
@@ -987,7 +842,7 @@
      "summary": "Estudantes do ensino médio na EJA, pagos em janelas de datas por semestre.",
      "key": "none",
      "key_values": [],
-     "official_url": "https://www.gov.br/mec/pt-br/pe-de-meia",
+     "official_url": "https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos",
      "calendars": [
       {
        "id": "br_pe_de_meia_2026_eja",
@@ -996,7 +851,7 @@
        "published": "2026-02-19",
        "valid_from": "2026-03-23",
        "valid_to": "2027-03-01",
-       "last_verified": "2026-09-27",
+       "last_verified": "2026-10-01",
        "status": "official",
        "payments": [
         {
@@ -1100,16 +955,16 @@
      "summary": "Novos vales-recarga liberados todo dia 10. Cada família recebe 1 vale a cada 2 ou 3 meses.",
      "key": "none",
      "key_values": [],
-     "official_url": "https://www.gov.br/pt-br/servicos/programa-gas-do-povo",
+     "official_url": "https://www.gov.br/mds/pt-br/acoes-e-programas/gas-do-povo",
      "calendars": [
       {
        "id": "br_gas_do_povo_2026",
-       "source_url": "https://www.caixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas/default.aspx",
-       "source_title": "Programa Gás do Povo – Calendário (Caixa)",
+       "source_url": "https://www.gov.br/mds/pt-br/acoes-e-programas/gas-do-povo",
+       "source_title": "Gás do Povo: novos vales todo dia 10 (MDS)",
        "published": "2026-05-08",
        "valid_from": "2026-06-01",
        "valid_to": "2026-12-31",
-       "last_verified": "2026-09-27",
+       "last_verified": "2026-10-01",
        "status": "official",
        "payments": [
         {
@@ -1209,266 +1064,13 @@
      "official_url": "https://www.programasparaelbienestar.gob.mx/programas/adultos-mayores/pension-para-personas-adultas-mayores/",
      "calendars": [
       {
-       "id": "mx_adultos_mayores_2026_ene_feb",
-       "source_url": "https://www.gob.mx/bienestar/prensa/del-5-al-28-de-enero-se-realiza-el-pago-del-bimestre-enero-febrero-de-pensiones-y-programas-de-bienestar-ariadna-montiel",
-       "source_title": "Del 5 al 28 de enero, se realiza el pago del bimestre enero-febrero de Pensiones y Programas de Bienestar (Comunicado 001)",
-       "published": "2026-01-05",
-       "valid_from": "2026-01-01",
-       "valid_to": "2026-02-28",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-01",
-         "label": "Bimestre enero-febrero",
-         "by_key": {
-          "A": "2026-01-05",
-          "B": "2026-01-06",
-          "C": {
-           "from": "2026-01-07",
-           "to": "2026-01-08"
-          },
-          "D": "2026-01-09",
-          "E": "2026-01-09",
-          "F": "2026-01-09",
-          "G": {
-           "from": "2026-01-12",
-           "to": "2026-01-13"
-          },
-          "H": "2026-01-14",
-          "I": "2026-01-14",
-          "J": "2026-01-14",
-          "K": "2026-01-14",
-          "L": "2026-01-15",
-          "M": {
-           "from": "2026-01-16",
-           "to": "2026-01-19"
-          },
-          "N": "2026-01-20",
-          "Ñ": "2026-01-20",
-          "O": "2026-01-20",
-          "P": "2026-01-21",
-          "Q": "2026-01-21",
-          "R": {
-           "from": "2026-01-22",
-           "to": "2026-01-23"
-          },
-          "S": "2026-01-26",
-          "T": "2026-01-27",
-          "U": "2026-01-27",
-          "V": "2026-01-27",
-          "W": "2026-01-28",
-          "X": "2026-01-28",
-          "Y": "2026-01-28",
-          "Z": "2026-01-28"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras."
-       ]
-      },
-      {
-       "id": "mx_adultos_mayores_2026_mar_abr",
-       "source_url": "https://www.gob.mx/bienestar/prensa/del-2-al-26-de-marzo-se-realiza-pago-del-bimestre-marzo-abril-de-los-programas-para-el-bienestar-ariadna-montiel",
-       "source_title": "Del 2 al 26 de marzo se realiza pago del bimestre marzo-abril de los Programas para el Bienestar (Comunicado 021)",
-       "published": "2026-03-02",
-       "valid_from": "2026-03-01",
-       "valid_to": "2026-04-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-03",
-         "label": "Bimestre marzo-abril",
-         "by_key": {
-          "A": "2026-03-02",
-          "B": "2026-03-03",
-          "C": {
-           "from": "2026-03-04",
-           "to": "2026-03-05"
-          },
-          "D": "2026-03-06",
-          "E": "2026-03-06",
-          "F": "2026-03-06",
-          "G": {
-           "from": "2026-03-09",
-           "to": "2026-03-10"
-          },
-          "H": "2026-03-11",
-          "I": "2026-03-11",
-          "J": "2026-03-11",
-          "K": "2026-03-11",
-          "L": "2026-03-12",
-          "M": {
-           "from": "2026-03-13",
-           "to": "2026-03-17"
-          },
-          "N": "2026-03-18",
-          "Ñ": "2026-03-18",
-          "O": "2026-03-18",
-          "P": "2026-03-19",
-          "Q": "2026-03-19",
-          "R": {
-           "from": "2026-03-20",
-           "to": "2026-03-23"
-          },
-          "S": "2026-03-24",
-          "T": "2026-03-25",
-          "U": "2026-03-25",
-          "V": "2026-03-25",
-          "W": "2026-03-26",
-          "X": "2026-03-26",
-          "Y": "2026-03-26",
-          "Z": "2026-03-26"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras.",
-        "La letra M se paga el viernes 13 y el martes 17 de marzo; el lunes 16 fue día feriado y no hubo depósitos."
-       ]
-      },
-      {
-       "id": "mx_adultos_mayores_2026_may_jun",
-       "source_url": "https://www.gob.mx/bienestar/prensa/del-4-al-27-de-mayo-se-realiza-pago-de-los-programas-para-el-bienestar-informa-la-secretaria-leticia-ramirez",
-       "source_title": "Del 4 al 27 de mayo se realiza pago de los Programas para el Bienestar, informa la secretaria Leticia Ramírez",
-       "published": "2026-05-05",
-       "valid_from": "2026-05-01",
-       "valid_to": "2026-06-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-05",
-         "label": "Bimestre mayo-junio",
-         "by_key": {
-          "A": "2026-05-04",
-          "B": "2026-05-05",
-          "C": {
-           "from": "2026-05-06",
-           "to": "2026-05-07"
-          },
-          "D": "2026-05-08",
-          "E": "2026-05-08",
-          "F": "2026-05-08",
-          "G": {
-           "from": "2026-05-11",
-           "to": "2026-05-12"
-          },
-          "H": "2026-05-13",
-          "I": "2026-05-13",
-          "J": "2026-05-13",
-          "K": "2026-05-13",
-          "L": "2026-05-14",
-          "M": {
-           "from": "2026-05-15",
-           "to": "2026-05-18"
-          },
-          "N": "2026-05-19",
-          "Ñ": "2026-05-19",
-          "O": "2026-05-19",
-          "P": "2026-05-20",
-          "Q": "2026-05-20",
-          "R": {
-           "from": "2026-05-21",
-           "to": "2026-05-22"
-          },
-          "S": "2026-05-25",
-          "T": "2026-05-26",
-          "U": "2026-05-26",
-          "V": "2026-05-26",
-          "W": "2026-05-27",
-          "X": "2026-05-27",
-          "Y": "2026-05-27",
-          "Z": "2026-05-27"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras."
-       ]
-      },
-      {
-       "id": "mx_adultos_mayores_2026_jul_ago",
-       "source_url": "https://www.gob.mx/presidencia/prensa/hoy-inicia-deposito-de-las-pensiones-y-programas-para-el-bienestar-del-bimestre-julio-agosto-presidenta-claudia-sheinbaum",
-       "source_title": "Hoy inicia depósito de las Pensiones y Programas para el Bienestar del bimestre julio-agosto: Presidenta Claudia Sheinbaum",
-       "published": "2026-07-06",
-       "valid_from": "2026-07-01",
-       "valid_to": "2026-08-31",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-07",
-         "label": "Bimestre julio-agosto",
-         "by_key": {
-          "A": "2026-07-06",
-          "B": "2026-07-07",
-          "C": {
-           "from": "2026-07-08",
-           "to": "2026-07-09"
-          },
-          "D": "2026-07-10",
-          "E": "2026-07-10",
-          "F": "2026-07-10",
-          "G": {
-           "from": "2026-07-13",
-           "to": "2026-07-14"
-          },
-          "H": "2026-07-15",
-          "I": "2026-07-15",
-          "J": "2026-07-15",
-          "K": "2026-07-15",
-          "L": "2026-07-16",
-          "M": {
-           "from": "2026-07-17",
-           "to": "2026-07-20"
-          },
-          "N": "2026-07-21",
-          "Ñ": "2026-07-21",
-          "O": "2026-07-21",
-          "P": "2026-07-22",
-          "Q": "2026-07-22",
-          "R": {
-           "from": "2026-07-23",
-           "to": "2026-07-24"
-          },
-          "S": "2026-07-27",
-          "T": "2026-07-28",
-          "U": "2026-07-28",
-          "V": "2026-07-28",
-          "W": "2026-07-29",
-          "X": "2026-07-29",
-          "Y": "2026-07-29",
-          "Z": "2026-07-29"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras."
-       ]
-      },
-      {
        "id": "mx_adultos_mayores_2026_sep_oct",
        "source_url": "https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noticia/pensiones-bienestar-este-es-el-calendario-de-pagos-en-septiembre-de-2026/",
        "source_title": "Pensiones Bienestar: este es el calendario de pagos en septiembre de 2026",
        "published": "2026-08-31",
        "valid_from": "2026-09-01",
        "valid_to": "2026-10-31",
-       "last_verified": "2026-09-27",
+       "last_verified": "2026-10-01",
        "status": "official",
        "payments": [
         {
@@ -1577,266 +1179,13 @@
      "official_url": "https://www.programasparaelbienestar.gob.mx/programas/personas-con-discapacidad/pension-para-personas-con-discapacidad/",
      "calendars": [
       {
-       "id": "mx_discapacidad_2026_ene_feb",
-       "source_url": "https://www.gob.mx/bienestar/prensa/del-5-al-28-de-enero-se-realiza-el-pago-del-bimestre-enero-febrero-de-pensiones-y-programas-de-bienestar-ariadna-montiel",
-       "source_title": "Del 5 al 28 de enero, se realiza el pago del bimestre enero-febrero de Pensiones y Programas de Bienestar (Comunicado 001)",
-       "published": "2026-01-05",
-       "valid_from": "2026-01-01",
-       "valid_to": "2026-02-28",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-01",
-         "label": "Bimestre enero-febrero",
-         "by_key": {
-          "A": "2026-01-05",
-          "B": "2026-01-06",
-          "C": {
-           "from": "2026-01-07",
-           "to": "2026-01-08"
-          },
-          "D": "2026-01-09",
-          "E": "2026-01-09",
-          "F": "2026-01-09",
-          "G": {
-           "from": "2026-01-12",
-           "to": "2026-01-13"
-          },
-          "H": "2026-01-14",
-          "I": "2026-01-14",
-          "J": "2026-01-14",
-          "K": "2026-01-14",
-          "L": "2026-01-15",
-          "M": {
-           "from": "2026-01-16",
-           "to": "2026-01-19"
-          },
-          "N": "2026-01-20",
-          "Ñ": "2026-01-20",
-          "O": "2026-01-20",
-          "P": "2026-01-21",
-          "Q": "2026-01-21",
-          "R": {
-           "from": "2026-01-22",
-           "to": "2026-01-23"
-          },
-          "S": "2026-01-26",
-          "T": "2026-01-27",
-          "U": "2026-01-27",
-          "V": "2026-01-27",
-          "W": "2026-01-28",
-          "X": "2026-01-28",
-          "Y": "2026-01-28",
-          "Z": "2026-01-28"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras."
-       ]
-      },
-      {
-       "id": "mx_discapacidad_2026_mar_abr",
-       "source_url": "https://www.gob.mx/bienestar/prensa/del-2-al-26-de-marzo-se-realiza-pago-del-bimestre-marzo-abril-de-los-programas-para-el-bienestar-ariadna-montiel",
-       "source_title": "Del 2 al 26 de marzo se realiza pago del bimestre marzo-abril de los Programas para el Bienestar (Comunicado 021)",
-       "published": "2026-03-02",
-       "valid_from": "2026-03-01",
-       "valid_to": "2026-04-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-03",
-         "label": "Bimestre marzo-abril",
-         "by_key": {
-          "A": "2026-03-02",
-          "B": "2026-03-03",
-          "C": {
-           "from": "2026-03-04",
-           "to": "2026-03-05"
-          },
-          "D": "2026-03-06",
-          "E": "2026-03-06",
-          "F": "2026-03-06",
-          "G": {
-           "from": "2026-03-09",
-           "to": "2026-03-10"
-          },
-          "H": "2026-03-11",
-          "I": "2026-03-11",
-          "J": "2026-03-11",
-          "K": "2026-03-11",
-          "L": "2026-03-12",
-          "M": {
-           "from": "2026-03-13",
-           "to": "2026-03-17"
-          },
-          "N": "2026-03-18",
-          "Ñ": "2026-03-18",
-          "O": "2026-03-18",
-          "P": "2026-03-19",
-          "Q": "2026-03-19",
-          "R": {
-           "from": "2026-03-20",
-           "to": "2026-03-23"
-          },
-          "S": "2026-03-24",
-          "T": "2026-03-25",
-          "U": "2026-03-25",
-          "V": "2026-03-25",
-          "W": "2026-03-26",
-          "X": "2026-03-26",
-          "Y": "2026-03-26",
-          "Z": "2026-03-26"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras.",
-        "La letra M se paga el viernes 13 y el martes 17 de marzo; el lunes 16 fue día feriado y no hubo depósitos."
-       ]
-      },
-      {
-       "id": "mx_discapacidad_2026_may_jun",
-       "source_url": "https://www.gob.mx/bienestar/prensa/del-4-al-27-de-mayo-se-realiza-pago-de-los-programas-para-el-bienestar-informa-la-secretaria-leticia-ramirez",
-       "source_title": "Del 4 al 27 de mayo se realiza pago de los Programas para el Bienestar, informa la secretaria Leticia Ramírez",
-       "published": "2026-05-05",
-       "valid_from": "2026-05-01",
-       "valid_to": "2026-06-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-05",
-         "label": "Bimestre mayo-junio",
-         "by_key": {
-          "A": "2026-05-04",
-          "B": "2026-05-05",
-          "C": {
-           "from": "2026-05-06",
-           "to": "2026-05-07"
-          },
-          "D": "2026-05-08",
-          "E": "2026-05-08",
-          "F": "2026-05-08",
-          "G": {
-           "from": "2026-05-11",
-           "to": "2026-05-12"
-          },
-          "H": "2026-05-13",
-          "I": "2026-05-13",
-          "J": "2026-05-13",
-          "K": "2026-05-13",
-          "L": "2026-05-14",
-          "M": {
-           "from": "2026-05-15",
-           "to": "2026-05-18"
-          },
-          "N": "2026-05-19",
-          "Ñ": "2026-05-19",
-          "O": "2026-05-19",
-          "P": "2026-05-20",
-          "Q": "2026-05-20",
-          "R": {
-           "from": "2026-05-21",
-           "to": "2026-05-22"
-          },
-          "S": "2026-05-25",
-          "T": "2026-05-26",
-          "U": "2026-05-26",
-          "V": "2026-05-26",
-          "W": "2026-05-27",
-          "X": "2026-05-27",
-          "Y": "2026-05-27",
-          "Z": "2026-05-27"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras."
-       ]
-      },
-      {
-       "id": "mx_discapacidad_2026_jul_ago",
-       "source_url": "https://www.gob.mx/presidencia/prensa/hoy-inicia-deposito-de-las-pensiones-y-programas-para-el-bienestar-del-bimestre-julio-agosto-presidenta-claudia-sheinbaum",
-       "source_title": "Hoy inicia depósito de las Pensiones y Programas para el Bienestar del bimestre julio-agosto: Presidenta Claudia Sheinbaum",
-       "published": "2026-07-06",
-       "valid_from": "2026-07-01",
-       "valid_to": "2026-08-31",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-07",
-         "label": "Bimestre julio-agosto",
-         "by_key": {
-          "A": "2026-07-06",
-          "B": "2026-07-07",
-          "C": {
-           "from": "2026-07-08",
-           "to": "2026-07-09"
-          },
-          "D": "2026-07-10",
-          "E": "2026-07-10",
-          "F": "2026-07-10",
-          "G": {
-           "from": "2026-07-13",
-           "to": "2026-07-14"
-          },
-          "H": "2026-07-15",
-          "I": "2026-07-15",
-          "J": "2026-07-15",
-          "K": "2026-07-15",
-          "L": "2026-07-16",
-          "M": {
-           "from": "2026-07-17",
-           "to": "2026-07-20"
-          },
-          "N": "2026-07-21",
-          "Ñ": "2026-07-21",
-          "O": "2026-07-21",
-          "P": "2026-07-22",
-          "Q": "2026-07-22",
-          "R": {
-           "from": "2026-07-23",
-           "to": "2026-07-24"
-          },
-          "S": "2026-07-27",
-          "T": "2026-07-28",
-          "U": "2026-07-28",
-          "V": "2026-07-28",
-          "W": "2026-07-29",
-          "X": "2026-07-29",
-          "Y": "2026-07-29",
-          "Z": "2026-07-29"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras."
-       ]
-      },
-      {
        "id": "mx_discapacidad_2026_sep_oct",
        "source_url": "https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noticia/pensiones-bienestar-este-es-el-calendario-de-pagos-en-septiembre-de-2026/",
        "source_title": "Pensiones Bienestar: este es el calendario de pagos en septiembre de 2026",
        "published": "2026-08-31",
        "valid_from": "2026-09-01",
        "valid_to": "2026-10-31",
-       "last_verified": "2026-09-27",
+       "last_verified": "2026-10-01",
        "status": "official",
        "payments": [
         {
@@ -1945,266 +1294,13 @@
      "official_url": "https://www.programasparaelbienestar.gob.mx/programas/mujeres/pension-mujeres-bienestar/",
      "calendars": [
       {
-       "id": "mx_mujeres_bienestar_2026_ene_feb",
-       "source_url": "https://www.gob.mx/bienestar/prensa/del-5-al-28-de-enero-se-realiza-el-pago-del-bimestre-enero-febrero-de-pensiones-y-programas-de-bienestar-ariadna-montiel",
-       "source_title": "Del 5 al 28 de enero, se realiza el pago del bimestre enero-febrero de Pensiones y Programas de Bienestar (Comunicado 001)",
-       "published": "2026-01-05",
-       "valid_from": "2026-01-01",
-       "valid_to": "2026-02-28",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-01",
-         "label": "Bimestre enero-febrero",
-         "by_key": {
-          "A": "2026-01-05",
-          "B": "2026-01-06",
-          "C": {
-           "from": "2026-01-07",
-           "to": "2026-01-08"
-          },
-          "D": "2026-01-09",
-          "E": "2026-01-09",
-          "F": "2026-01-09",
-          "G": {
-           "from": "2026-01-12",
-           "to": "2026-01-13"
-          },
-          "H": "2026-01-14",
-          "I": "2026-01-14",
-          "J": "2026-01-14",
-          "K": "2026-01-14",
-          "L": "2026-01-15",
-          "M": {
-           "from": "2026-01-16",
-           "to": "2026-01-19"
-          },
-          "N": "2026-01-20",
-          "Ñ": "2026-01-20",
-          "O": "2026-01-20",
-          "P": "2026-01-21",
-          "Q": "2026-01-21",
-          "R": {
-           "from": "2026-01-22",
-           "to": "2026-01-23"
-          },
-          "S": "2026-01-26",
-          "T": "2026-01-27",
-          "U": "2026-01-27",
-          "V": "2026-01-27",
-          "W": "2026-01-28",
-          "X": "2026-01-28",
-          "Y": "2026-01-28",
-          "Z": "2026-01-28"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras."
-       ]
-      },
-      {
-       "id": "mx_mujeres_bienestar_2026_mar_abr",
-       "source_url": "https://www.gob.mx/bienestar/prensa/del-2-al-26-de-marzo-se-realiza-pago-del-bimestre-marzo-abril-de-los-programas-para-el-bienestar-ariadna-montiel",
-       "source_title": "Del 2 al 26 de marzo se realiza pago del bimestre marzo-abril de los Programas para el Bienestar (Comunicado 021)",
-       "published": "2026-03-02",
-       "valid_from": "2026-03-01",
-       "valid_to": "2026-04-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-03",
-         "label": "Bimestre marzo-abril",
-         "by_key": {
-          "A": "2026-03-02",
-          "B": "2026-03-03",
-          "C": {
-           "from": "2026-03-04",
-           "to": "2026-03-05"
-          },
-          "D": "2026-03-06",
-          "E": "2026-03-06",
-          "F": "2026-03-06",
-          "G": {
-           "from": "2026-03-09",
-           "to": "2026-03-10"
-          },
-          "H": "2026-03-11",
-          "I": "2026-03-11",
-          "J": "2026-03-11",
-          "K": "2026-03-11",
-          "L": "2026-03-12",
-          "M": {
-           "from": "2026-03-13",
-           "to": "2026-03-17"
-          },
-          "N": "2026-03-18",
-          "Ñ": "2026-03-18",
-          "O": "2026-03-18",
-          "P": "2026-03-19",
-          "Q": "2026-03-19",
-          "R": {
-           "from": "2026-03-20",
-           "to": "2026-03-23"
-          },
-          "S": "2026-03-24",
-          "T": "2026-03-25",
-          "U": "2026-03-25",
-          "V": "2026-03-25",
-          "W": "2026-03-26",
-          "X": "2026-03-26",
-          "Y": "2026-03-26",
-          "Z": "2026-03-26"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras.",
-        "La letra M se paga el viernes 13 y el martes 17 de marzo; el lunes 16 fue día feriado y no hubo depósitos."
-       ]
-      },
-      {
-       "id": "mx_mujeres_bienestar_2026_may_jun",
-       "source_url": "https://www.gob.mx/bienestar/prensa/del-4-al-27-de-mayo-se-realiza-pago-de-los-programas-para-el-bienestar-informa-la-secretaria-leticia-ramirez",
-       "source_title": "Del 4 al 27 de mayo se realiza pago de los Programas para el Bienestar, informa la secretaria Leticia Ramírez",
-       "published": "2026-05-05",
-       "valid_from": "2026-05-01",
-       "valid_to": "2026-06-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-05",
-         "label": "Bimestre mayo-junio",
-         "by_key": {
-          "A": "2026-05-04",
-          "B": "2026-05-05",
-          "C": {
-           "from": "2026-05-06",
-           "to": "2026-05-07"
-          },
-          "D": "2026-05-08",
-          "E": "2026-05-08",
-          "F": "2026-05-08",
-          "G": {
-           "from": "2026-05-11",
-           "to": "2026-05-12"
-          },
-          "H": "2026-05-13",
-          "I": "2026-05-13",
-          "J": "2026-05-13",
-          "K": "2026-05-13",
-          "L": "2026-05-14",
-          "M": {
-           "from": "2026-05-15",
-           "to": "2026-05-18"
-          },
-          "N": "2026-05-19",
-          "Ñ": "2026-05-19",
-          "O": "2026-05-19",
-          "P": "2026-05-20",
-          "Q": "2026-05-20",
-          "R": {
-           "from": "2026-05-21",
-           "to": "2026-05-22"
-          },
-          "S": "2026-05-25",
-          "T": "2026-05-26",
-          "U": "2026-05-26",
-          "V": "2026-05-26",
-          "W": "2026-05-27",
-          "X": "2026-05-27",
-          "Y": "2026-05-27",
-          "Z": "2026-05-27"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras."
-       ]
-      },
-      {
-       "id": "mx_mujeres_bienestar_2026_jul_ago",
-       "source_url": "https://www.gob.mx/presidencia/prensa/hoy-inicia-deposito-de-las-pensiones-y-programas-para-el-bienestar-del-bimestre-julio-agosto-presidenta-claudia-sheinbaum",
-       "source_title": "Hoy inicia depósito de las Pensiones y Programas para el Bienestar del bimestre julio-agosto: Presidenta Claudia Sheinbaum",
-       "published": "2026-07-06",
-       "valid_from": "2026-07-01",
-       "valid_to": "2026-08-31",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-07",
-         "label": "Bimestre julio-agosto",
-         "by_key": {
-          "A": "2026-07-06",
-          "B": "2026-07-07",
-          "C": {
-           "from": "2026-07-08",
-           "to": "2026-07-09"
-          },
-          "D": "2026-07-10",
-          "E": "2026-07-10",
-          "F": "2026-07-10",
-          "G": {
-           "from": "2026-07-13",
-           "to": "2026-07-14"
-          },
-          "H": "2026-07-15",
-          "I": "2026-07-15",
-          "J": "2026-07-15",
-          "K": "2026-07-15",
-          "L": "2026-07-16",
-          "M": {
-           "from": "2026-07-17",
-           "to": "2026-07-20"
-          },
-          "N": "2026-07-21",
-          "Ñ": "2026-07-21",
-          "O": "2026-07-21",
-          "P": "2026-07-22",
-          "Q": "2026-07-22",
-          "R": {
-           "from": "2026-07-23",
-           "to": "2026-07-24"
-          },
-          "S": "2026-07-27",
-          "T": "2026-07-28",
-          "U": "2026-07-28",
-          "V": "2026-07-28",
-          "W": "2026-07-29",
-          "X": "2026-07-29",
-          "Y": "2026-07-29",
-          "Z": "2026-07-29"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras."
-       ]
-      },
-      {
        "id": "mx_mujeres_bienestar_2026_sep_oct",
        "source_url": "https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noticia/pensiones-bienestar-este-es-el-calendario-de-pagos-en-septiembre-de-2026/",
        "source_title": "Pensiones Bienestar: este es el calendario de pagos en septiembre de 2026",
        "published": "2026-08-31",
        "valid_from": "2026-09-01",
        "valid_to": "2026-10-31",
-       "last_verified": "2026-09-27",
+       "last_verified": "2026-10-01",
        "status": "official",
        "payments": [
         {
@@ -2313,266 +1409,13 @@
      "official_url": "https://www.programasparaelbienestar.gob.mx/programas/mujeres/programa-de-madres-trabajadoras/",
      "calendars": [
       {
-       "id": "mx_madres_trabajadoras_2026_ene_feb",
-       "source_url": "https://www.gob.mx/bienestar/prensa/del-5-al-28-de-enero-se-realiza-el-pago-del-bimestre-enero-febrero-de-pensiones-y-programas-de-bienestar-ariadna-montiel",
-       "source_title": "Del 5 al 28 de enero, se realiza el pago del bimestre enero-febrero de Pensiones y Programas de Bienestar (Comunicado 001)",
-       "published": "2026-01-05",
-       "valid_from": "2026-01-01",
-       "valid_to": "2026-02-28",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-01",
-         "label": "Bimestre enero-febrero",
-         "by_key": {
-          "A": "2026-01-05",
-          "B": "2026-01-06",
-          "C": {
-           "from": "2026-01-07",
-           "to": "2026-01-08"
-          },
-          "D": "2026-01-09",
-          "E": "2026-01-09",
-          "F": "2026-01-09",
-          "G": {
-           "from": "2026-01-12",
-           "to": "2026-01-13"
-          },
-          "H": "2026-01-14",
-          "I": "2026-01-14",
-          "J": "2026-01-14",
-          "K": "2026-01-14",
-          "L": "2026-01-15",
-          "M": {
-           "from": "2026-01-16",
-           "to": "2026-01-19"
-          },
-          "N": "2026-01-20",
-          "Ñ": "2026-01-20",
-          "O": "2026-01-20",
-          "P": "2026-01-21",
-          "Q": "2026-01-21",
-          "R": {
-           "from": "2026-01-22",
-           "to": "2026-01-23"
-          },
-          "S": "2026-01-26",
-          "T": "2026-01-27",
-          "U": "2026-01-27",
-          "V": "2026-01-27",
-          "W": "2026-01-28",
-          "X": "2026-01-28",
-          "Y": "2026-01-28",
-          "Z": "2026-01-28"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras."
-       ]
-      },
-      {
-       "id": "mx_madres_trabajadoras_2026_mar_abr",
-       "source_url": "https://www.gob.mx/bienestar/prensa/del-2-al-26-de-marzo-se-realiza-pago-del-bimestre-marzo-abril-de-los-programas-para-el-bienestar-ariadna-montiel",
-       "source_title": "Del 2 al 26 de marzo se realiza pago del bimestre marzo-abril de los Programas para el Bienestar (Comunicado 021)",
-       "published": "2026-03-02",
-       "valid_from": "2026-03-01",
-       "valid_to": "2026-04-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-03",
-         "label": "Bimestre marzo-abril",
-         "by_key": {
-          "A": "2026-03-02",
-          "B": "2026-03-03",
-          "C": {
-           "from": "2026-03-04",
-           "to": "2026-03-05"
-          },
-          "D": "2026-03-06",
-          "E": "2026-03-06",
-          "F": "2026-03-06",
-          "G": {
-           "from": "2026-03-09",
-           "to": "2026-03-10"
-          },
-          "H": "2026-03-11",
-          "I": "2026-03-11",
-          "J": "2026-03-11",
-          "K": "2026-03-11",
-          "L": "2026-03-12",
-          "M": {
-           "from": "2026-03-13",
-           "to": "2026-03-17"
-          },
-          "N": "2026-03-18",
-          "Ñ": "2026-03-18",
-          "O": "2026-03-18",
-          "P": "2026-03-19",
-          "Q": "2026-03-19",
-          "R": {
-           "from": "2026-03-20",
-           "to": "2026-03-23"
-          },
-          "S": "2026-03-24",
-          "T": "2026-03-25",
-          "U": "2026-03-25",
-          "V": "2026-03-25",
-          "W": "2026-03-26",
-          "X": "2026-03-26",
-          "Y": "2026-03-26",
-          "Z": "2026-03-26"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras.",
-        "La letra M se paga el viernes 13 y el martes 17 de marzo; el lunes 16 fue día feriado y no hubo depósitos."
-       ]
-      },
-      {
-       "id": "mx_madres_trabajadoras_2026_may_jun",
-       "source_url": "https://www.gob.mx/bienestar/prensa/del-4-al-27-de-mayo-se-realiza-pago-de-los-programas-para-el-bienestar-informa-la-secretaria-leticia-ramirez",
-       "source_title": "Del 4 al 27 de mayo se realiza pago de los Programas para el Bienestar, informa la secretaria Leticia Ramírez",
-       "published": "2026-05-05",
-       "valid_from": "2026-05-01",
-       "valid_to": "2026-06-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-05",
-         "label": "Bimestre mayo-junio",
-         "by_key": {
-          "A": "2026-05-04",
-          "B": "2026-05-05",
-          "C": {
-           "from": "2026-05-06",
-           "to": "2026-05-07"
-          },
-          "D": "2026-05-08",
-          "E": "2026-05-08",
-          "F": "2026-05-08",
-          "G": {
-           "from": "2026-05-11",
-           "to": "2026-05-12"
-          },
-          "H": "2026-05-13",
-          "I": "2026-05-13",
-          "J": "2026-05-13",
-          "K": "2026-05-13",
-          "L": "2026-05-14",
-          "M": {
-           "from": "2026-05-15",
-           "to": "2026-05-18"
-          },
-          "N": "2026-05-19",
-          "Ñ": "2026-05-19",
-          "O": "2026-05-19",
-          "P": "2026-05-20",
-          "Q": "2026-05-20",
-          "R": {
-           "from": "2026-05-21",
-           "to": "2026-05-22"
-          },
-          "S": "2026-05-25",
-          "T": "2026-05-26",
-          "U": "2026-05-26",
-          "V": "2026-05-26",
-          "W": "2026-05-27",
-          "X": "2026-05-27",
-          "Y": "2026-05-27",
-          "Z": "2026-05-27"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras."
-       ]
-      },
-      {
-       "id": "mx_madres_trabajadoras_2026_jul_ago",
-       "source_url": "https://www.gob.mx/presidencia/prensa/hoy-inicia-deposito-de-las-pensiones-y-programas-para-el-bienestar-del-bimestre-julio-agosto-presidenta-claudia-sheinbaum",
-       "source_title": "Hoy inicia depósito de las Pensiones y Programas para el Bienestar del bimestre julio-agosto: Presidenta Claudia Sheinbaum",
-       "published": "2026-07-06",
-       "valid_from": "2026-07-01",
-       "valid_to": "2026-08-31",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-07",
-         "label": "Bimestre julio-agosto",
-         "by_key": {
-          "A": "2026-07-06",
-          "B": "2026-07-07",
-          "C": {
-           "from": "2026-07-08",
-           "to": "2026-07-09"
-          },
-          "D": "2026-07-10",
-          "E": "2026-07-10",
-          "F": "2026-07-10",
-          "G": {
-           "from": "2026-07-13",
-           "to": "2026-07-14"
-          },
-          "H": "2026-07-15",
-          "I": "2026-07-15",
-          "J": "2026-07-15",
-          "K": "2026-07-15",
-          "L": "2026-07-16",
-          "M": {
-           "from": "2026-07-17",
-           "to": "2026-07-20"
-          },
-          "N": "2026-07-21",
-          "Ñ": "2026-07-21",
-          "O": "2026-07-21",
-          "P": "2026-07-22",
-          "Q": "2026-07-22",
-          "R": {
-           "from": "2026-07-23",
-           "to": "2026-07-24"
-          },
-          "S": "2026-07-27",
-          "T": "2026-07-28",
-          "U": "2026-07-28",
-          "V": "2026-07-28",
-          "W": "2026-07-29",
-          "X": "2026-07-29",
-          "Y": "2026-07-29",
-          "Z": "2026-07-29"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
-        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
-        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
-        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras."
-       ]
-      },
-      {
        "id": "mx_madres_trabajadoras_2026_sep_oct",
        "source_url": "https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noticia/pensiones-bienestar-este-es-el-calendario-de-pagos-en-septiembre-de-2026/",
        "source_title": "Pensiones Bienestar: este es el calendario de pagos en septiembre de 2026",
        "published": "2026-08-31",
        "valid_from": "2026-09-01",
        "valid_to": "2026-10-31",
-       "last_verified": "2026-09-27",
+       "last_verified": "2026-10-01",
        "status": "official",
        "payments": [
         {
@@ -2647,7 +1490,7 @@
      "name": "Beca Universal Rita Cetina de Educación Básica",
      "short_name": "Beca Rita Cetina",
      "agency": "Coordinación Nacional de Becas para el Bienestar Benito Juárez (SEP)",
-     "summary": "Educación básica, pago bimestral por letra del primer apellido del titular. En primaria el apoyo 2026-2027 es un pago anual: ver «Rita Cetina útiles».",
+     "summary": "Educación básica, pago bimestral por letra del primer apellido del titular. En primaria el apoyo 2026-2027 es un pago anual.",
      "key": "surname_letter",
      "key_values": [
       "A",
@@ -2679,161 +1522,7 @@
       "Z"
      ],
      "official_url": "https://www.programasparaelbienestar.gob.mx/programas/infancias/beca-rita-cetina/",
-     "calendars": [
-      {
-       "id": "mx_beca_rita_cetina_2026_ene_feb",
-       "source_url": "https://www.gob.mx/becasbenitojuarez/es/articulos/calendario-de-pagos-bimestre-enero-febrero-beca-rita-cetina-para-familias-de-continuidad-preescolar-primaria-y-secundaria",
-       "source_title": "Calendario de pagos – bimestre enero-febrero – Beca Rita Cetina para familias de continuidad",
-       "published": "2026-02-17",
-       "valid_from": "2026-01-01",
-       "valid_to": "2026-02-28",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-02",
-         "label": "Bimestre enero-febrero (pago en febrero)",
-         "by_key": {
-          "A": "2026-02-16",
-          "B": "2026-02-16",
-          "C": "2026-02-17",
-          "D": "2026-02-18",
-          "E": "2026-02-18",
-          "F": "2026-02-18",
-          "G": "2026-02-19",
-          "H": "2026-02-20",
-          "I": "2026-02-20",
-          "J": "2026-02-20",
-          "K": "2026-02-20",
-          "L": "2026-02-20",
-          "M": "2026-02-23",
-          "N": "2026-02-24",
-          "Ñ": "2026-02-24",
-          "O": "2026-02-24",
-          "P": "2026-02-24",
-          "Q": "2026-02-24",
-          "R": "2026-02-25",
-          "S": "2026-02-26",
-          "T": "2026-02-27",
-          "U": "2026-02-27",
-          "V": "2026-02-27",
-          "W": "2026-02-27",
-          "X": "2026-02-27",
-          "Y": "2026-02-27",
-          "Z": "2026-02-27"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la tarjeta del Banco del Bienestar; los pagos son escalonados y se depositan a partir de la fecha del calendario, ten paciencia.",
-        "La letra es la inicial del primer apellido de la o el titular de la tarjeta.",
-        "En la Beca Rita Cetina la letra es la del primer apellido de la madre, padre, tutora o tutor registrado como titular.",
-        "Calendario para familias de continuidad (preescolar, primaria y secundaria), ciclo escolar 2025-2026."
-       ]
-      },
-      {
-       "id": "mx_beca_rita_cetina_2026_mar_abr",
-       "source_url": "https://www.gob.mx/becasbenitojuarez/es/articulos/calendario-de-pagos-de-la-beca-universal-rita-cetina-benito-juarez-jovenes-escribiendo-el-futuro-y-gertrudis-bocanegra",
-       "source_title": "Calendario de pagos de la Beca Universal Rita Cetina, Benito Juárez, Jóvenes Escribiendo el Futuro y Gertrudis Bocanegra (abril 2026)",
-       "published": "2026-04-01",
-       "valid_from": "2026-03-01",
-       "valid_to": "2026-04-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-04",
-         "label": "Bimestre marzo-abril (pago en abril)",
-         "by_key": {
-          "A": "2026-04-01",
-          "B": "2026-04-01",
-          "C": "2026-04-06",
-          "D": "2026-04-07",
-          "E": "2026-04-07",
-          "F": "2026-04-07",
-          "G": "2026-04-08",
-          "H": "2026-04-09",
-          "I": "2026-04-09",
-          "J": "2026-04-09",
-          "K": "2026-04-09",
-          "L": "2026-04-09",
-          "M": "2026-04-10",
-          "N": "2026-04-13",
-          "Ñ": "2026-04-13",
-          "O": "2026-04-13",
-          "P": "2026-04-13",
-          "Q": "2026-04-13",
-          "R": "2026-04-14",
-          "S": "2026-04-15",
-          "T": "2026-04-16",
-          "U": "2026-04-16",
-          "V": "2026-04-16",
-          "W": "2026-04-16",
-          "X": "2026-04-16",
-          "Y": "2026-04-16",
-          "Z": "2026-04-16"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la tarjeta del Banco del Bienestar; los pagos son escalonados y se depositan a partir de la fecha del calendario, ten paciencia.",
-        "La letra es la inicial del primer apellido de la o el titular de la tarjeta.",
-        "En la Beca Rita Cetina la letra es la del primer apellido de la madre, padre, tutora o tutor registrado como titular.",
-        "Calendario para familias de continuidad."
-       ]
-      },
-      {
-       "id": "mx_beca_rita_cetina_2026_may_jun",
-       "source_url": "https://www.gob.mx/becasbenitojuarez/es/articulos/calendario-de-pagos-bimestre-mayo-junio-de-becas-bienestar",
-       "source_title": "Calendario de pagos bimestre mayo-junio de Becas Bienestar",
-       "published": "2026-06-01",
-       "valid_from": "2026-05-01",
-       "valid_to": "2026-06-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-06",
-         "label": "Bimestre mayo-junio (pago en junio)",
-         "by_key": {
-          "A": "2026-06-01",
-          "B": "2026-06-01",
-          "C": "2026-06-02",
-          "D": "2026-06-03",
-          "E": "2026-06-03",
-          "F": "2026-06-03",
-          "G": "2026-06-04",
-          "H": "2026-06-05",
-          "I": "2026-06-05",
-          "J": "2026-06-05",
-          "K": "2026-06-05",
-          "L": "2026-06-05",
-          "M": "2026-06-08",
-          "N": "2026-06-09",
-          "Ñ": "2026-06-09",
-          "O": "2026-06-09",
-          "P": "2026-06-09",
-          "Q": "2026-06-09",
-          "R": "2026-06-10",
-          "S": "2026-06-11",
-          "T": "2026-06-12",
-          "U": "2026-06-12",
-          "V": "2026-06-12",
-          "W": "2026-06-12",
-          "X": "2026-06-12",
-          "Y": "2026-06-12",
-          "Z": "2026-06-12"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la tarjeta del Banco del Bienestar; los pagos son escalonados y se depositan a partir de la fecha del calendario, ten paciencia.",
-        "La letra es la inicial del primer apellido de la o el titular de la tarjeta.",
-        "En la Beca Rita Cetina la letra es la del primer apellido de la madre, padre, tutora o tutor registrado como titular.",
-        "Calendario para familias de continuidad."
-       ]
-      }
-     ],
+     "calendars": [],
      "notes": [],
      "next_label": "",
      "day_note": "",
@@ -2841,116 +1530,13 @@
       {
        "period": "2026-09",
        "label": "Bimestre septiembre-octubre (pago en octubre)",
-       "expected": "Becas Bienestar informó que el próximo depósito será en octubre, 'en fechas calendarizadas por determinar'; el calendario por letra suele publicarse en gob.mx/becasbenitojuarez el día en que inicia el pago.",
+       "expected": "Becas Bienestar informó que el próximo depósito será en octubre, 'en fechas calendarizadas por determinar'; el calendario por letra suele publicarse el día en que inicia el pago.",
        "months": 2
       },
       {
        "period": "2026-11",
        "label": "Bimestre noviembre-diciembre",
-       "expected": "En 2025 el calendario del bimestre noviembre-diciembre se publicó el 1 de diciembre en gob.mx/becasbenitojuarez.",
-       "months": 2
-      }
-     ]
-    },
-    {
-     "id": "mx_beca_rita_cetina_primaria",
-     "name": "Beca de Apoyo para Uniformes y Útiles Rita Cetina (Primaria)",
-     "short_name": "Rita Cetina útiles",
-     "agency": "Coordinación Nacional de Becas para el Bienestar Benito Juárez (SEP)",
-     "summary": "Pago anual de uniformes y útiles, primaria pública.",
-     "key": "surname_letter",
-     "key_values": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E",
-      "F",
-      "G",
-      "H",
-      "I",
-      "J",
-      "K",
-      "L",
-      "M",
-      "N",
-      "Ñ",
-      "O",
-      "P",
-      "Q",
-      "R",
-      "S",
-      "T",
-      "U",
-      "V",
-      "W",
-      "X",
-      "Y",
-      "Z"
-     ],
-     "official_url": "https://www.programasparaelbienestar.gob.mx/programas/infancias/beca-rita-cetina/",
-     "calendars": [
-      {
-       "id": "mx_beca_rita_cetina_primaria_2026_anual_2026_27",
-       "source_url": "https://www.gob.mx/becasbenitojuarez/es/articulos/calendario-de-pagos-de-la-beca-de-apoyo-para-uniformes-y-utiles-rita-cetina-primaria",
-       "source_title": "Calendario de pagos de la Beca de Apoyo para Uniformes y Útiles Rita Cetina Primaria",
-       "published": "2026-08-03",
-       "valid_from": "2026-08-01",
-       "valid_to": "2026-08-31",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-08",
-         "label": "Pago único anual ciclo 2026-2027 (agosto)",
-         "by_key": {
-          "A": "2026-08-03",
-          "B": "2026-08-03",
-          "C": "2026-08-04",
-          "D": "2026-08-05",
-          "E": "2026-08-05",
-          "F": "2026-08-05",
-          "G": "2026-08-06",
-          "H": "2026-08-07",
-          "I": "2026-08-07",
-          "J": "2026-08-07",
-          "K": "2026-08-07",
-          "L": "2026-08-07",
-          "M": "2026-08-10",
-          "N": "2026-08-11",
-          "Ñ": "2026-08-11",
-          "O": "2026-08-11",
-          "P": "2026-08-11",
-          "Q": "2026-08-11",
-          "R": "2026-08-12",
-          "S": "2026-08-13",
-          "T": "2026-08-14",
-          "U": "2026-08-14",
-          "V": "2026-08-14",
-          "W": "2026-08-14",
-          "X": "2026-08-14",
-          "Y": "2026-08-14",
-          "Z": "2026-08-14"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la tarjeta del Banco del Bienestar; los pagos son escalonados y se depositan a partir de la fecha del calendario, ten paciencia.",
-        "La letra es la inicial del primer apellido de la o el titular de la tarjeta.",
-        "En la Beca Rita Cetina la letra es la del primer apellido de la madre, padre, tutora o tutor registrado como titular.",
-        "Pago único de 2 mil 500 pesos por estudiante de primaria pública.",
-        "En Coahuila este pago se pospuso hasta nuevo aviso por la reprogramación de entrega de tarjetas por periodo electoral."
-       ]
-      }
-     ],
-     "notes": [],
-     "next_label": "",
-     "day_note": "",
-     "pending": [
-      {
-       "period": "2026-08",
-       "label": "Pago pendiente en Coahuila",
-       "expected": "En Coahuila el pago anual se pospuso hasta nuevo aviso por el periodo electoral.",
+       "expected": "En 2025 el calendario del bimestre noviembre-diciembre se publicó el 1 de diciembre.",
        "months": 2
       }
      ]
@@ -2992,107 +1578,7 @@
       "Z"
      ],
      "official_url": "https://www.programasparaelbienestar.gob.mx/programas/jovenes/beca-benito-juarez/",
-     "calendars": [
-      {
-       "id": "mx_beca_benito_juarez_2026_ene_abr",
-       "source_url": "https://www.gob.mx/becasbenitojuarez/es/articulos/calendario-de-pagos-de-la-beca-universal-rita-cetina-benito-juarez-jovenes-escribiendo-el-futuro-y-gertrudis-bocanegra",
-       "source_title": "Calendario de pagos de la Beca Universal Rita Cetina, Benito Juárez, Jóvenes Escribiendo el Futuro y Gertrudis Bocanegra (abril 2026)",
-       "published": "2026-04-01",
-       "valid_from": "2026-01-01",
-       "valid_to": "2026-04-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-04",
-         "label": "Bimestres enero-febrero y marzo-abril (pago en abril)",
-         "by_key": {
-          "A": "2026-04-13",
-          "B": "2026-04-13",
-          "C": "2026-04-14",
-          "D": "2026-04-15",
-          "E": "2026-04-15",
-          "F": "2026-04-15",
-          "G": "2026-04-16",
-          "H": "2026-04-17",
-          "I": "2026-04-17",
-          "J": "2026-04-17",
-          "K": "2026-04-17",
-          "L": "2026-04-17",
-          "M": "2026-04-20",
-          "N": "2026-04-21",
-          "Ñ": "2026-04-21",
-          "O": "2026-04-21",
-          "P": "2026-04-21",
-          "Q": "2026-04-21",
-          "R": "2026-04-22",
-          "S": "2026-04-23",
-          "T": "2026-04-24",
-          "U": "2026-04-24",
-          "V": "2026-04-24",
-          "W": "2026-04-24",
-          "X": "2026-04-24",
-          "Y": "2026-04-24",
-          "Z": "2026-04-24"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la tarjeta del Banco del Bienestar; los pagos son escalonados y se depositan a partir de la fecha del calendario, ten paciencia.",
-        "La letra es la inicial del primer apellido de la o el titular de la tarjeta.",
-        "Este pago de abril cubre dos bimestres: enero-febrero y marzo-abril."
-       ]
-      },
-      {
-       "id": "mx_beca_benito_juarez_2026_may_jun",
-       "source_url": "https://www.gob.mx/becasbenitojuarez/es/articulos/calendario-de-pagos-bimestre-mayo-junio-de-becas-bienestar",
-       "source_title": "Calendario de pagos bimestre mayo-junio de Becas Bienestar",
-       "published": "2026-06-01",
-       "valid_from": "2026-05-01",
-       "valid_to": "2026-06-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-06",
-         "label": "Bimestre mayo-junio (pago en junio)",
-         "by_key": {
-          "A": "2026-06-15",
-          "B": "2026-06-15",
-          "C": "2026-06-16",
-          "D": "2026-06-17",
-          "E": "2026-06-17",
-          "F": "2026-06-17",
-          "G": "2026-06-18",
-          "H": "2026-06-19",
-          "I": "2026-06-19",
-          "J": "2026-06-19",
-          "K": "2026-06-19",
-          "L": "2026-06-19",
-          "M": "2026-06-22",
-          "N": "2026-06-23",
-          "Ñ": "2026-06-23",
-          "O": "2026-06-23",
-          "P": "2026-06-23",
-          "Q": "2026-06-23",
-          "R": "2026-06-24",
-          "S": "2026-06-25",
-          "T": "2026-06-26",
-          "U": "2026-06-26",
-          "V": "2026-06-26",
-          "W": "2026-06-26",
-          "X": "2026-06-26",
-          "Y": "2026-06-26",
-          "Z": "2026-06-26"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la tarjeta del Banco del Bienestar; los pagos son escalonados y se depositan a partir de la fecha del calendario, ten paciencia.",
-        "La letra es la inicial del primer apellido de la o el titular de la tarjeta."
-       ]
-      }
-     ],
+     "calendars": [],
      "notes": [],
      "next_label": "",
      "day_note": "",
@@ -3100,13 +1586,13 @@
       {
        "period": "2026-09",
        "label": "Bimestre septiembre-octubre (pago en octubre)",
-       "expected": "Becas Bienestar informó que el próximo depósito será en octubre, 'en fechas calendarizadas por determinar'; el calendario por letra suele publicarse en gob.mx/becasbenitojuarez el día en que inicia el pago.",
+       "expected": "Becas Bienestar informó que el próximo depósito será en octubre, 'en fechas calendarizadas por determinar'; el calendario por letra suele publicarse el día en que inicia el pago.",
        "months": 2
       },
       {
        "period": "2026-11",
        "label": "Bimestre noviembre-diciembre",
-       "expected": "En 2025 el calendario del bimestre noviembre-diciembre se publicó el 1 de diciembre en gob.mx/becasbenitojuarez.",
+       "expected": "En 2025 el calendario del bimestre noviembre-diciembre se publicó el 1 de diciembre.",
        "months": 2
       }
      ]
@@ -3148,107 +1634,7 @@
       "Z"
      ],
      "official_url": "https://www.programasparaelbienestar.gob.mx/programas/jovenes/beca-jovenes-escribiendo-el-futuro/",
-     "calendars": [
-      {
-       "id": "mx_beca_jovenes_escribiendo_el_futuro_2026_ene_abr",
-       "source_url": "https://www.gob.mx/becasbenitojuarez/es/articulos/calendario-de-pagos-de-la-beca-universal-rita-cetina-benito-juarez-jovenes-escribiendo-el-futuro-y-gertrudis-bocanegra",
-       "source_title": "Calendario de pagos de la Beca Universal Rita Cetina, Benito Juárez, Jóvenes Escribiendo el Futuro y Gertrudis Bocanegra (abril 2026)",
-       "published": "2026-04-01",
-       "valid_from": "2026-01-01",
-       "valid_to": "2026-04-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-04",
-         "label": "Bimestres enero-febrero y marzo-abril (pago en abril)",
-         "by_key": {
-          "A": "2026-04-13",
-          "B": "2026-04-13",
-          "C": "2026-04-14",
-          "D": "2026-04-15",
-          "E": "2026-04-15",
-          "F": "2026-04-15",
-          "G": "2026-04-16",
-          "H": "2026-04-17",
-          "I": "2026-04-17",
-          "J": "2026-04-17",
-          "K": "2026-04-17",
-          "L": "2026-04-17",
-          "M": "2026-04-20",
-          "N": "2026-04-21",
-          "Ñ": "2026-04-21",
-          "O": "2026-04-21",
-          "P": "2026-04-21",
-          "Q": "2026-04-21",
-          "R": "2026-04-22",
-          "S": "2026-04-23",
-          "T": "2026-04-24",
-          "U": "2026-04-24",
-          "V": "2026-04-24",
-          "W": "2026-04-24",
-          "X": "2026-04-24",
-          "Y": "2026-04-24",
-          "Z": "2026-04-24"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la tarjeta del Banco del Bienestar; los pagos son escalonados y se depositan a partir de la fecha del calendario, ten paciencia.",
-        "La letra es la inicial del primer apellido de la o el titular de la tarjeta.",
-        "Este pago de abril cubre dos bimestres: enero-febrero y marzo-abril."
-       ]
-      },
-      {
-       "id": "mx_beca_jovenes_escribiendo_el_futuro_2026_may_jun",
-       "source_url": "https://www.gob.mx/becasbenitojuarez/es/articulos/calendario-de-pagos-bimestre-mayo-junio-de-becas-bienestar",
-       "source_title": "Calendario de pagos bimestre mayo-junio de Becas Bienestar",
-       "published": "2026-06-01",
-       "valid_from": "2026-05-01",
-       "valid_to": "2026-06-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-06",
-         "label": "Bimestre mayo-junio (pago en junio)",
-         "by_key": {
-          "A": "2026-06-15",
-          "B": "2026-06-15",
-          "C": "2026-06-16",
-          "D": "2026-06-17",
-          "E": "2026-06-17",
-          "F": "2026-06-17",
-          "G": "2026-06-18",
-          "H": "2026-06-19",
-          "I": "2026-06-19",
-          "J": "2026-06-19",
-          "K": "2026-06-19",
-          "L": "2026-06-19",
-          "M": "2026-06-22",
-          "N": "2026-06-23",
-          "Ñ": "2026-06-23",
-          "O": "2026-06-23",
-          "P": "2026-06-23",
-          "Q": "2026-06-23",
-          "R": "2026-06-24",
-          "S": "2026-06-25",
-          "T": "2026-06-26",
-          "U": "2026-06-26",
-          "V": "2026-06-26",
-          "W": "2026-06-26",
-          "X": "2026-06-26",
-          "Y": "2026-06-26",
-          "Z": "2026-06-26"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la tarjeta del Banco del Bienestar; los pagos son escalonados y se depositan a partir de la fecha del calendario, ten paciencia.",
-        "La letra es la inicial del primer apellido de la o el titular de la tarjeta."
-       ]
-      }
-     ],
+     "calendars": [],
      "notes": [],
      "next_label": "",
      "day_note": "",
@@ -3256,13 +1642,13 @@
       {
        "period": "2026-09",
        "label": "Bimestre septiembre-octubre (pago en octubre)",
-       "expected": "Becas Bienestar informó que el próximo depósito será en octubre, 'en fechas calendarizadas por determinar'; el calendario por letra suele publicarse en gob.mx/becasbenitojuarez el día en que inicia el pago.",
+       "expected": "Becas Bienestar informó que el próximo depósito será en octubre, 'en fechas calendarizadas por determinar'; el calendario por letra suele publicarse el día en que inicia el pago.",
        "months": 2
       },
       {
        "period": "2026-11",
        "label": "Bimestre noviembre-diciembre",
-       "expected": "En 2025 el calendario del bimestre noviembre-diciembre se publicó el 1 de diciembre en gob.mx/becasbenitojuarez.",
+       "expected": "En 2025 el calendario del bimestre noviembre-diciembre se publicó el 1 de diciembre.",
        "months": 2
       }
      ]
@@ -3304,107 +1690,7 @@
       "Z"
      ],
      "official_url": "https://www.programasparaelbienestar.gob.mx/programas/jovenes/beca-gertrudis-bocanegra/",
-     "calendars": [
-      {
-       "id": "mx_beca_gertrudis_bocanegra_2026_ene_abr",
-       "source_url": "https://www.gob.mx/becasbenitojuarez/es/articulos/calendario-de-pagos-de-la-beca-universal-rita-cetina-benito-juarez-jovenes-escribiendo-el-futuro-y-gertrudis-bocanegra",
-       "source_title": "Calendario de pagos de la Beca Universal Rita Cetina, Benito Juárez, Jóvenes Escribiendo el Futuro y Gertrudis Bocanegra (abril 2026)",
-       "published": "2026-04-01",
-       "valid_from": "2026-01-01",
-       "valid_to": "2026-04-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-04",
-         "label": "Bimestres enero-febrero y marzo-abril (pago en abril)",
-         "by_key": {
-          "A": "2026-04-13",
-          "B": "2026-04-13",
-          "C": "2026-04-14",
-          "D": "2026-04-15",
-          "E": "2026-04-15",
-          "F": "2026-04-15",
-          "G": "2026-04-16",
-          "H": "2026-04-17",
-          "I": "2026-04-17",
-          "J": "2026-04-17",
-          "K": "2026-04-17",
-          "L": "2026-04-17",
-          "M": "2026-04-20",
-          "N": "2026-04-21",
-          "Ñ": "2026-04-21",
-          "O": "2026-04-21",
-          "P": "2026-04-21",
-          "Q": "2026-04-21",
-          "R": "2026-04-22",
-          "S": "2026-04-23",
-          "T": "2026-04-24",
-          "U": "2026-04-24",
-          "V": "2026-04-24",
-          "W": "2026-04-24",
-          "X": "2026-04-24",
-          "Y": "2026-04-24",
-          "Z": "2026-04-24"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la tarjeta del Banco del Bienestar; los pagos son escalonados y se depositan a partir de la fecha del calendario, ten paciencia.",
-        "La letra es la inicial del primer apellido de la o el titular de la tarjeta.",
-        "Este pago de abril cubre dos bimestres: enero-febrero y marzo-abril."
-       ]
-      },
-      {
-       "id": "mx_beca_gertrudis_bocanegra_2026_may_jun",
-       "source_url": "https://www.gob.mx/becasbenitojuarez/es/articulos/calendario-de-pagos-bimestre-mayo-junio-de-becas-bienestar",
-       "source_title": "Calendario de pagos bimestre mayo-junio de Becas Bienestar",
-       "published": "2026-06-01",
-       "valid_from": "2026-05-01",
-       "valid_to": "2026-06-30",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-06",
-         "label": "Bimestre mayo-junio (pago en junio)",
-         "by_key": {
-          "A": "2026-06-15",
-          "B": "2026-06-15",
-          "C": "2026-06-16",
-          "D": "2026-06-17",
-          "E": "2026-06-17",
-          "F": "2026-06-17",
-          "G": "2026-06-18",
-          "H": "2026-06-19",
-          "I": "2026-06-19",
-          "J": "2026-06-19",
-          "K": "2026-06-19",
-          "L": "2026-06-19",
-          "M": "2026-06-22",
-          "N": "2026-06-23",
-          "Ñ": "2026-06-23",
-          "O": "2026-06-23",
-          "P": "2026-06-23",
-          "Q": "2026-06-23",
-          "R": "2026-06-24",
-          "S": "2026-06-25",
-          "T": "2026-06-26",
-          "U": "2026-06-26",
-          "V": "2026-06-26",
-          "W": "2026-06-26",
-          "X": "2026-06-26",
-          "Y": "2026-06-26",
-          "Z": "2026-06-26"
-         }
-        }
-       ],
-       "notes": [
-        "El depósito llega a la tarjeta del Banco del Bienestar; los pagos son escalonados y se depositan a partir de la fecha del calendario, ten paciencia.",
-        "La letra es la inicial del primer apellido de la o el titular de la tarjeta."
-       ]
-      }
-     ],
+     "calendars": [],
      "notes": [],
      "next_label": "",
      "day_note": "",
@@ -3418,7 +1704,7 @@
       {
        "period": "2026-11",
        "label": "Bimestre noviembre-diciembre",
-       "expected": "En 2025 el calendario del bimestre noviembre-diciembre se publicó el 1 de diciembre en gob.mx/becasbenitojuarez.",
+       "expected": "En 2025 el calendario del bimestre noviembre-diciembre se publicó el 1 de diciembre.",
        "months": 2
       }
      ]
@@ -3444,51 +1730,8 @@
       "disability",
       "children"
      ],
-     "official_url": "https://www.sassa.gov.za",
+     "official_url": "https://www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-confirms-2026-2027-social-grant-payment-schedule-and-increases",
      "calendars": [
-      {
-       "id": "za_sassa_2025_26",
-       "source_url": "https://x.com/OfficialSASSA/status/2001631942287273988",
-       "source_title": "SASSA official X account (@OfficialSASSA) monthly payment-date posts: January 2026 (18 Dec 2025), February 2026 (27 Jan 2026), March 2026 (26 Feb 2026)",
-       "published": "2025-12-18",
-       "valid_from": "2026-01-01",
-       "valid_to": "2026-03-31",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-01",
-         "label": "January 2026",
-         "by_key": {
-          "older_persons": "2026-01-06",
-          "disability": "2026-01-07",
-          "children": "2026-01-08"
-         }
-        },
-        {
-         "period": "2026-02",
-         "label": "February 2026",
-         "by_key": {
-          "older_persons": "2026-02-03",
-          "disability": "2026-02-04",
-          "children": "2026-02-05"
-         }
-        },
-        {
-         "period": "2026-03",
-         "label": "March 2026",
-         "by_key": {
-          "older_persons": "2026-03-03",
-          "disability": "2026-03-04",
-          "children": "2026-03-05"
-         }
-        }
-       ],
-       "notes": [
-        "Last three months of the 2025/26 financial year (January to March 2026). These months are in the past.",
-        "Amounts in this period (from October 2025): Older Persons R2 320 (R2 340 from age 75), Disability R2 320, Care Dependency R2 320, War Veterans R2 340, Foster Child R1 250, Child Support R560, Grant-in-Aid R560."
-       ]
-      },
       {
        "id": "za_sassa_2026_27",
        "source_url": "https://www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-confirms-2026-2027-social-grant-payment-schedule-and-increases",
@@ -3496,7 +1739,7 @@
        "published": "2026-03-23",
        "valid_from": "2026-04-01",
        "valid_to": "2027-03-31",
-       "last_verified": "2026-09-27",
+       "last_verified": "2026-10-01",
        "status": "official",
        "payments": [
         {
@@ -3605,15 +1848,14 @@
         "SASSA rules: no payment on the 1st of the month, on a weekend, on a public holiday or on the day after a public holiday (April 2026 is an official exception: Disability is paid on Tuesday 7 April, the day after Family Day).",
         "November 2026: the schedule published in March had Older Persons on 3 November, Disability on 4 November and Children's grants on 5 November. On 15 September 2026 the President declared Wednesday 4 November (local government elections) a public holiday, so the November dates are shown as \"to be confirmed\" until SASSA confirms them (usually at the end of October).",
         "Care Dependency, War Veterans and Grant-in-Aid: the official statement does not say which payment day they share. Check your SASSA SMS or ask your SASSA office.",
-        "If your grant is under review, SASSA pays it on a fourth payment day instead (officially confirmed: Friday 7 August 2026 and Monday 7 September 2026). Check your SMS from SASSA.",
-        "Amounts from April 2026: Older Persons R2 400, Disability R2 400, Care Dependency R2 400, War Veterans R2 420, Foster Child R1 290 (R1 300 from October 2026), Child Support R580, Grant-in-Aid R580.",
+        "Amounts from April 2026: Older Persons R2 400, Disability R2 400, Care Dependency R2 400, War Veterans R2 420, Foster Child R1 290, Child Support R580, Grant-in-Aid R580.",
         "If you did not receive your grant on your date, visit your nearest SASSA office for assistance."
        ]
       }
      ],
      "notes": [],
      "next_label": "",
-     "day_note": "Grant under review? SASSA may pay it on a later day: check your SMS from SASSA.",
+     "day_note": "Not paid on your date? Check your SMS from SASSA or visit your nearest SASSA office.",
      "pending": [
       {
        "period": "2026-11",
@@ -3637,122 +1879,7 @@
      "key": "none",
      "key_values": [],
      "official_url": "https://srd.sassa.gov.za",
-     "calendars": [
-      {
-       "id": "za_srd_2025_26",
-       "source_url": "https://x.com/OfficialSASSA/status/2015682629392015480",
-       "source_title": "SASSA official monthly 'COVID-19 SRD payment dates' posts for January and February 2026",
-       "published": "2026-01-26",
-       "valid_from": "2026-01-01",
-       "valid_to": "2026-03-31",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-01",
-         "label": "January 2026",
-         "all": {
-          "from": "2026-01-23",
-          "to": "2026-01-28"
-         }
-        },
-        {
-         "period": "2026-02",
-         "label": "February 2026",
-         "all": {
-          "from": "2026-02-20",
-          "to": "2026-02-25"
-         }
-        }
-       ],
-       "notes": [
-        "March 2026 SRD dates: no official SASSA post found, not included."
-       ]
-      },
-      {
-       "id": "za_srd_2026_27",
-       "source_url": "https://x.com/OfficialSASSA/status/2069288485853278295",
-       "source_title": "SASSA official monthly 'COVID-19 SRD payment dates' posts (@OfficialSASSA on X, SASSA News and Department of Social Development on Facebook)",
-       "published": "2026-04-23",
-       "valid_from": "2026-04-01",
-       "valid_to": "2027-03-31",
-       "last_verified": "2026-09-27",
-       "status": "official",
-       "payments": [
-        {
-         "period": "2026-04",
-         "label": "April 2026",
-         "all": {
-          "from": "2026-04-23",
-          "to": "2026-04-30"
-         }
-        },
-        {
-         "period": "2026-05",
-         "label": "May 2026",
-         "all": {
-          "from": "2026-05-21",
-          "to": "2026-05-28"
-         }
-        },
-        {
-         "period": "2026-06",
-         "label": "June 2026",
-         "all": {
-          "from": "2026-06-24",
-          "to": "2026-06-25"
-         }
-        },
-        {
-         "period": "2026-07",
-         "label": "July 2026",
-         "all": {
-          "from": "2026-07-23",
-          "to": "2026-07-24"
-         }
-        },
-        {
-         "period": "2026-09",
-         "label": "September 2026",
-         "all": {
-          "from": "2026-09-23",
-          "to": "2026-09-25"
-         }
-        }
-       ],
-       "notes": [
-        "The SRD grant is R370 per month and is extended until 31 March 2027.",
-        "There is no fixed SRD pay date: SASSA announces the SRD payment dates each month, a few days before. In 2026 SRD has been paid in the second half of each month (from about the 20th).",
-        "Only approved applicants are paid for a month. Check your application status on srd.sassa.gov.za.",
-        "April 2026 was paid on 23-24 and 29-30 April; May 2026 on 21-22 and 27-28 May; September 2026 on 23 and 25 September (24 September is Heritage Day).",
-        "August 2026 (24-26 August) and March 2026 dates were not found in an official SASSA post; see the press-reported calendar.",
-        "October 2026 onwards: dates not yet announced (as of 27 September 2026)."
-       ]
-      },
-      {
-       "id": "za_srd_2026_27_press",
-       "source_url": "https://iol.co.za/news/south-africa/2026-08-20-sassa-confirms-august-srd-grant-payment-dates/",
-       "source_title": "Press reports (IOL 20 Aug 2026, The Witness 20 Aug 2026) quoting SASSA on August 2026 SRD payment dates",
-       "published": "2026-08-20",
-       "valid_from": "2026-08-01",
-       "valid_to": "2026-08-31",
-       "last_verified": "2026-09-27",
-       "status": "press",
-       "payments": [
-        {
-         "period": "2026-08",
-         "label": "August 2026",
-         "all": {
-          "from": "2026-08-24",
-          "to": "2026-08-26"
-         }
-        }
-       ],
-       "notes": [
-        "Press-reported: SASSA's own post for August 2026 SRD dates could not be retrieved. Past month."
-       ]
-      }
-     ],
+     "calendars": [],
      "notes": [],
      "next_label": "",
      "day_note": "",
