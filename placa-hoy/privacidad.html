@@ -38,7 +38,7 @@
           <div class="meta-card">
             <p class="meta-line">Aplicación: Placa Hoy (Android, com.sillapps.placahoy)</p>
             <p class="meta-line">Desarrollador: Sillapps</p>
-            <p class="meta-line">Última actualización: 28 de septiembre de 2026</p>
+            <p class="meta-line">Última actualización: 1 de octubre de 2026</p>
             <p class="meta-line" lang="en">English version: <a href="privacy.html">Privacy policy</a></p>
           </div>
 
@@ -56,8 +56,9 @@
               <h2>Datos que se guardan en tu teléfono</h2>
               <p>Para funcionar, la app guarda estos datos <strong>solo en tu dispositivo</strong>. Sillapps no los recibe:</p>
               <ul>
-                <li><strong>Tus vehículos:</strong> nombre, placa, ciudad, tipo (carro o moto), combustible, holograma (México), si la placa es foránea o local, y la fecha de fin de un permiso (Pico y Placa Solidario, pase turístico) si la indicas.</li>
-                <li><strong>Tus ajustes:</strong> alertas activadas o no, horas de las alertas, recordatorios de verificación.</li>
+                <li><strong>Tus vehículos:</strong> nombre, placa, ciudad, tipo (carro o moto), combustible, holograma (México), si la placa es foránea o local, la fecha de fin de un permiso (Pico y Placa Solidario, pase turístico) y las fechas de vencimiento del SOAT y de la revisión técnico-mecánica, si las indicas.</li>
+                <li><strong>Tus ajustes:</strong> alertas activadas o no, horas de las alertas, recordatorios de verificación, tema claro u oscuro.</li>
+                <li><strong>Registro de errores:</strong> los cinco últimos errores técnicos de la app (mensaje y lugar en el código, sin datos personales). Solo salen de tu teléfono si tú los envías con «Contacto o reportar un error», que abre un correo a contact@sillapps.com que puedes revisar antes de enviarlo.</li>
                 <li><strong>Contadores de uso locales:</strong> fecha de instalación, número de días de uso, inicio de la prueba gratuita de Pro, y fechas en que la app te mostró por última vez la propuesta de Pro y la solicitud de valoración. Sirven solo para no insistir: por ejemplo, para no pedirte una valoración más de una vez cada varios meses.</li>
                 <li><strong>Datos técnicos:</strong> una copia de las reglas de circulación, el último estado de la contingencia ambiental consultado (México), las alertas programadas y si Placa Hoy Pro está desbloqueado.</li>
               </ul>
@@ -67,7 +68,7 @@
               <h2>Conexiones a internet</h2>
               <p>La app hace dos tipos de peticiones, que nunca incluyen tu placa, tus vehículos ni ningún dato personal:</p>
               <ol>
-                <li>Descarga las reglas vigentes desde <code>https://sillapps.com/placa-hoy/rules.json</code>, un archivo estático alojado en GitHub Pages.</li>
+                <li>Descarga las reglas vigentes desde <code>https://sillapps.com/placa-hoy/rules-v2.json</code>, un archivo estático alojado en GitHub Pages.</li>
                 <li>Para los vehículos de la zona metropolitana del Valle de México, consulta la página pública de calidad del aire del Gobierno de la Ciudad de México (<code>aire.cdmx.gob.mx</code>) para saber si hay una contingencia ambiental.</li>
               </ol>
               <p>Como en cualquier visita a una página web, esos servidores pueden ver tu dirección IP y datos técnicos de la conexión. Su tratamiento se rige por sus propias políticas (GitHub y el Gobierno de la Ciudad de México).</p>
@@ -82,7 +83,7 @@
             </section>
             <section class="section">
               <h2>Notificaciones y widget</h2>
-              <p>Las alertas (Pro o prueba gratuita) y los recordatorios de verificación son notificaciones locales, programadas en tu propio teléfono. El widget de la pantalla de inicio lee las respuestas que la app guarda en el dispositivo. Ninguna de las dos funciones envía datos a ninguna parte.</p>
+              <p>Las alertas (Pro o prueba gratuita), los recordatorios (verificación, vencimientos del SOAT y de la revisión técnico-mecánica, fin de un permiso, cambio de rotación) y el aviso de fin de la prueba son notificaciones locales, programadas en tu propio teléfono. El widget de la pantalla de inicio lee las respuestas que la app guarda en el dispositivo. Con Pro o la prueba, una tarea en segundo plano de Android vuelve a descargar las reglas (y, en México, el estado de la contingencia) para mantener al día el widget y las alertas, con las mismas peticiones descritas arriba. Ninguna de estas funciones envía datos a ninguna parte.</p>
             </section>
             <section class="section">
               <h2>Publicidad y analítica</h2>

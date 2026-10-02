@@ -37,7 +37,7 @@
           <div class="meta-card">
             <p class="meta-line">App name: Placa Hoy (Android, com.sillapps.placahoy)</p>
             <p class="meta-line">Developer: Sillapps</p>
-            <p class="meta-line">Last updated: September 28, 2026</p>
+            <p class="meta-line">Last updated: October 1, 2026</p>
             <p class="meta-line" lang="es">Versión en español: <a href="privacidad.html">Política de privacidad</a></p>
           </div>
 
@@ -55,8 +55,9 @@
               <h2>Data stored on your phone</h2>
               <p>To work, the app stores the following data <strong>only on your device</strong>. Sillapps does not receive it:</p>
               <ul>
-                <li><strong>Your vehicles:</strong> name, plate, city, type (car or motorcycle), fuel, holograma (Mexico), whether the plate is foreign or local, and the end date of a permit (Pico y Placa Solidario, pase turístico) if you enter one.</li>
-                <li><strong>Your settings:</strong> alerts on or off, alert times, verification reminders.</li>
+                <li><strong>Your vehicles:</strong> name, plate, city, type (car or motorcycle), fuel, holograma (Mexico), whether the plate is foreign or local, the end date of a permit (Pico y Placa Solidario, pase turístico) and the expiry dates of the SOAT and of the technical inspection, if you enter them.</li>
+                <li><strong>Your settings:</strong> alerts on or off, alert times, verification reminders, light or dark theme.</li>
+                <li><strong>Error log:</strong> the last five technical errors of the app (message and place in the code, no personal data). They only leave your phone if you send them with "Contacto o reportar un error", which opens an e-mail to contact@sillapps.com that you can review before sending.</li>
                 <li><strong>Local usage counters:</strong> install date, number of days of use, start of the Pro free trial, and when the app last showed you the Pro offer and the rating request. They only exist so the app does not insist: for example, so it does not ask you for a rating more than once every few months.</li>
                 <li><strong>Technical data:</strong> a copy of the driving rules, the last environmental contingency status checked (Mexico), the scheduled alerts and whether Placa Hoy Pro is unlocked.</li>
               </ul>
@@ -66,7 +67,7 @@
               <h2>Network requests</h2>
               <p>The app makes two kinds of requests, which never include your plate, your vehicles or any personal data:</p>
               <ol>
-                <li>It downloads the current rules from <code>https://sillapps.com/placa-hoy/rules.json</code>, a static file hosted on GitHub Pages.</li>
+                <li>It downloads the current rules from <code>https://sillapps.com/placa-hoy/rules-v2.json</code>, a static file hosted on GitHub Pages.</li>
                 <li>For vehicles in the Valley of Mexico metropolitan area, it reads the public air quality page of the Government of Mexico City (<code>aire.cdmx.gob.mx</code>) to check whether an environmental contingency is active.</li>
               </ol>
               <p>As with any visit to a web page, these servers can see your IP address and technical connection data. Their processing is governed by their own policies (GitHub and the Government of Mexico City).</p>
@@ -81,7 +82,7 @@
             </section>
             <section class="section">
               <h2>Notifications and widget</h2>
-              <p>Alerts (Pro or free trial) and verification reminders are local notifications, scheduled on your own phone. The home screen widget reads the answers the app stores on the device. Neither feature sends data anywhere.</p>
+              <p>Alerts (Pro or free trial), reminders (verification, SOAT and technical inspection expiry, end of a permit, rotation change) and the end-of-trial notice are local notifications, scheduled on your own phone. The home screen widget reads the answers the app stores on the device. With Pro or the trial, an Android background task downloads the rules again (and, in Mexico, the contingency status) to keep the widget and alerts up to date, with the same requests described above. None of these features sends data anywhere.</p>
             </section>
             <section class="section">
               <h2>Advertising and analytics</h2>
