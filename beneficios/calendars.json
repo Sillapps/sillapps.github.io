@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 2026100103,
- "published": "2026-10-01",
+ "version": 2026100902,
+ "published": "2026-10-09",
  "countries": [
   {
    "code": "BR",
@@ -15,7 +15,7 @@
      "name": "Bolsa Família",
      "short_name": "Bolsa Família",
      "agency": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS)",
-     "summary": "Pago nos últimos 10 dias úteis do mês, pelo último dígito do NIS.",
+     "summary": "Últimos 10 dias úteis do mês, pelo final do NIS.",
      "key": "nis_last_digit",
      "key_values": [
       "1",
@@ -106,9 +106,9 @@
     {
      "id": "br_inss_ate_1sm",
      "name": "INSS e BPC — até 1 salário mínimo",
-     "short_name": "INSS até 1 SM",
+     "short_name": "INSS até 1 salário mínimo",
      "agency": "Instituto Nacional do Seguro Social (INSS)",
-     "summary": "Aposentadorias, pensões, auxílios e BPC/LOAS de até 1 salário mínimo, pelo final do benefício.",
+     "summary": "Aposentadoria, pensão e BPC de até 1 salário mínimo.",
      "key": "benefit_last_digit",
      "key_values": [
       "1",
@@ -360,9 +360,9 @@
     {
      "id": "br_inss_acima_1sm",
      "name": "INSS — acima de 1 salário mínimo",
-     "short_name": "INSS acima 1 SM",
+     "short_name": "INSS acima de 1 salário mínimo",
      "agency": "Instituto Nacional do Seguro Social (INSS)",
-     "summary": "Benefícios acima de 1 salário mínimo, pagos nos primeiros dias úteis do mês.",
+     "summary": "Aposentadorias e pensões de valor maior.",
      "key": "benefit_last_digit",
      "key_values": [
       "1",
@@ -616,7 +616,7 @@
      "name": "Abono Salarial PIS/Pasep",
      "short_name": "Abono PIS/Pasep",
      "agency": "Ministério do Trabalho e Emprego (MTE) / Codefat – pago pela Caixa (PIS) e Banco do Brasil (Pasep)",
-     "summary": "Abono salarial 2026 (ano-base 2024), liberado pelo mês de nascimento.",
+     "summary": "Abono salarial 2026, pelo mês de nascimento.",
      "key": "birth_month",
      "key_values": [
       "1",
@@ -709,7 +709,7 @@
      ],
      "notes": [],
      "next_label": "",
-     "day_note": "Só recebe quem tem direito ao abono de 2026 (trabalhou com carteira assinada em 2024 e cumpre as regras). Consulte na Carteira de Trabalho Digital.",
+     "day_note": "Só para quem tem direito ao abono de 2026.",
      "pending": []
     },
     {
@@ -717,7 +717,7 @@
      "name": "Pé-de-Meia – ensino médio regular",
      "short_name": "Pé-de-Meia",
      "agency": "Ministério da Educação (MEC)",
-     "summary": "Estudantes do ensino médio regular, pagos em janelas de datas.",
+     "summary": "Ensino médio regular, pago em períodos de alguns dias.",
      "key": "none",
      "key_values": [],
      "official_url": "https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos",
@@ -831,7 +831,7 @@
      ],
      "notes": [],
      "next_label": "",
-     "day_note": "O dia exato dentro da janela varia para cada estudante. Confira no app Jornada do Estudante.",
+     "day_note": "O dia exato varia para cada estudante.",
      "pending": []
     },
     {
@@ -839,7 +839,7 @@
      "name": "Pé-de-Meia – EJA (educação de jovens e adultos)",
      "short_name": "Pé-de-Meia EJA",
      "agency": "Ministério da Educação (MEC)",
-     "summary": "Estudantes do ensino médio na EJA, pagos em janelas de datas por semestre.",
+     "summary": "Ensino médio na EJA, pago por semestre.",
      "key": "none",
      "key_values": [],
      "official_url": "https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos",
@@ -944,7 +944,7 @@
      ],
      "notes": [],
      "next_label": "",
-     "day_note": "O dia exato dentro da janela varia para cada estudante. Confira no app Jornada do Estudante.",
+     "day_note": "O dia exato varia para cada estudante.",
      "pending": []
     },
     {
@@ -952,7 +952,7 @@
      "name": "Gás do Povo",
      "short_name": "Gás do Povo",
      "agency": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS) e Ministério de Minas e Energia (MME)",
-     "summary": "Novos vales-recarga liberados todo dia 10. Cada família recebe 1 vale a cada 2 ou 3 meses.",
+     "summary": "Vales-recarga liberados todo dia 10.",
      "key": "none",
      "key_values": [],
      "official_url": "https://www.gov.br/mds/pt-br/acoes-e-programas/gas-do-povo",
@@ -1013,7 +1013,7 @@
      ],
      "notes": [],
      "next_label": "Próxima liberação de vales",
-     "day_note": "Nem todo mês é o seu: famílias com 4 ou mais pessoas recebem 1 vale a cada 2 meses; com 2 ou 3 pessoas, a cada 3 meses. Confira no app Meu Social.",
+     "day_note": "1 vale a cada 2 ou 3 meses, conforme a família.",
      "pending": []
     }
    ]
@@ -1030,7 +1030,7 @@
      "name": "Pensión para el Bienestar de las Personas Adultas Mayores",
      "short_name": "Adultos Mayores",
      "agency": "Secretaría de Bienestar",
-     "summary": "Pensión bimestral, 65 años o más. Pago por letra del primer apellido.",
+     "summary": "Pensión bimestral desde los 65 años.",
      "key": "surname_letter",
      "key_values": [
       "A",
@@ -1145,7 +1145,7 @@
      "name": "Pensión para el Bienestar de las Personas con Discapacidad",
      "short_name": "Discapacidad",
      "agency": "Secretaría de Bienestar",
-     "summary": "Pensión bimestral para personas con discapacidad. Pago por letra del primer apellido.",
+     "summary": "Pensión bimestral, por discapacidad permanente.",
      "key": "surname_letter",
      "key_values": [
       "A",
@@ -1260,7 +1260,7 @@
      "name": "Pensión Mujeres Bienestar",
      "short_name": "Mujeres Bienestar",
      "agency": "Secretaría de Bienestar",
-     "summary": "Pensión bimestral para mujeres de 60 a 64 años. Pago por letra del primer apellido.",
+     "summary": "Pensión bimestral para mujeres de 60 a 64 años.",
      "key": "surname_letter",
      "key_values": [
       "A",
@@ -1375,7 +1375,7 @@
      "name": "Programa para el Bienestar de las Niñas y Niños, Hijos de Madres Trabajadoras",
      "short_name": "Madres Trabajadoras",
      "agency": "Secretaría de Bienestar",
-     "summary": "Apoyo bimestral para hijas e hijos de madres trabajadoras. Pago por letra del primer apellido.",
+     "summary": "Apoyo bimestral para hijas e hijos de madres trabajadoras.",
      "key": "surname_letter",
      "key_values": [
       "A",
@@ -1490,7 +1490,7 @@
      "name": "Beca Universal Rita Cetina de Educación Básica",
      "short_name": "Beca Rita Cetina",
      "agency": "Coordinación Nacional de Becas para el Bienestar Benito Juárez (SEP)",
-     "summary": "Educación básica, pago bimestral por letra del primer apellido del titular. En primaria el apoyo 2026-2027 es un pago anual.",
+     "summary": "Para estudiantes de primaria y secundaria.",
      "key": "surname_letter",
      "key_values": [
       "A",
@@ -1523,7 +1523,9 @@
      ],
      "official_url": "https://www.programasparaelbienestar.gob.mx/programas/infancias/beca-rita-cetina/",
      "calendars": [],
-     "notes": [],
+     "notes": [
+      "Primaria: en 2026-2027 el apoyo es un pago anual; secundaria: pago por bimestre."
+     ],
      "next_label": "",
      "day_note": "",
      "pending": [
@@ -1546,7 +1548,7 @@
      "name": "Beca Universal Benito Juárez de Educación Media Superior",
      "short_name": "Beca Benito Juárez",
      "agency": "Coordinación Nacional de Becas para el Bienestar Benito Juárez (SEP)",
-     "summary": "Educación media superior. Pago por letra del primer apellido.",
+     "summary": "Para estudiantes de bachillerato.",
      "key": "surname_letter",
      "key_values": [
       "A",
@@ -1602,7 +1604,7 @@
      "name": "Beca Jóvenes Escribiendo el Futuro (Educación Superior)",
      "short_name": "Jóvenes Escribiendo",
      "agency": "Coordinación Nacional de Becas para el Bienestar Benito Juárez (SEP)",
-     "summary": "Educación superior. Pago por letra del primer apellido.",
+     "summary": "Para estudiantes de universidad.",
      "key": "surname_letter",
      "key_values": [
       "A",
@@ -1658,7 +1660,7 @@
      "name": "Beca de Apoyo para Transporte Gertrudis Bocanegra (Educación Superior)",
      "short_name": "Beca Gertrudis Bocanegra",
      "agency": "Coordinación Nacional de Becas para el Bienestar Benito Juárez (SEP)",
-     "summary": "Apoyo de transporte, educación superior. Pago por letra.",
+     "summary": "Transporte para estudiantes de universidad.",
      "key": "surname_letter",
      "key_values": [
       "A",
@@ -1723,7 +1725,7 @@
      "name": "SASSA social grants",
      "short_name": "SASSA grant",
      "agency": "South African Social Security Agency (SASSA)",
-     "summary": "Monthly grants paid early in the month: Older Persons first, then Disability, then Children's grants.",
+     "summary": "Monthly grants, paid early in the month by grant type.",
      "key": "grant_type",
      "key_values": [
       "older_persons",
@@ -1855,7 +1857,7 @@
      ],
      "notes": [],
      "next_label": "",
-     "day_note": "Not paid on your date? Check your SMS from SASSA or visit your nearest SASSA office.",
+     "day_note": "Not paid on your date? Check your SASSA SMS.",
      "pending": [
       {
        "period": "2026-11",
@@ -1875,7 +1877,7 @@
      "name": "SRD R370 grant",
      "short_name": "SRD R370",
      "agency": "SASSA",
-     "summary": "Paid in the second half of the month to approved applicants. No fixed date.",
+     "summary": "Paid to approved applicants, with no fixed date.",
      "key": "none",
      "key_values": [],
      "official_url": "https://srd.sassa.gov.za",
