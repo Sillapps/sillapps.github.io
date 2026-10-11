@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 2026100902,
- "published": "2026-10-09",
+ "version": 2026101101,
+ "published": "2026-10-11",
  "countries": [
   {
    "code": "BR",
@@ -105,7 +105,7 @@
     },
     {
      "id": "br_inss_ate_1sm",
-     "name": "INSS e BPC — até 1 salário mínimo",
+     "name": "INSS e BPC (até 1 salário mínimo)",
      "short_name": "INSS até 1 salário mínimo",
      "agency": "Instituto Nacional do Seguro Social (INSS)",
      "summary": "Aposentadoria, pensão e BPC de até 1 salário mínimo.",
@@ -127,7 +127,7 @@
       {
        "id": "br_inss_ate_1sm_2026",
        "source_url": "https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamentos-do-inss-de-2026-esta-disponivel",
-       "source_title": "Calendário de pagamentos do INSS de 2026 (INSS) – benefícios até 1 salário mínimo",
+       "source_title": "Calendário de pagamentos do INSS de 2026 (INSS): benefícios até 1 salário mínimo",
        "published": "2025-12-24",
        "valid_from": "2025-12-22",
        "valid_to": "2027-01-08",
@@ -359,7 +359,7 @@
     },
     {
      "id": "br_inss_acima_1sm",
-     "name": "INSS — acima de 1 salário mínimo",
+     "name": "INSS (acima de 1 salário mínimo)",
      "short_name": "INSS acima de 1 salário mínimo",
      "agency": "Instituto Nacional do Seguro Social (INSS)",
      "summary": "Aposentadorias e pensões de valor maior.",
@@ -381,7 +381,7 @@
       {
        "id": "br_inss_acima_1sm_2026",
        "source_url": "https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamentos-do-inss-de-2026-esta-disponivel",
-       "source_title": "Calendário de pagamentos do INSS de 2026 (INSS) – benefícios acima de 1 salário mínimo",
+       "source_title": "Calendário de pagamentos do INSS de 2026 (INSS): benefícios acima de 1 salário mínimo",
        "published": "2025-12-24",
        "valid_from": "2026-01-02",
        "valid_to": "2027-01-08",
@@ -615,7 +615,7 @@
      "id": "br_abono_salarial_pis_pasep",
      "name": "Abono Salarial PIS/Pasep",
      "short_name": "Abono PIS/Pasep",
-     "agency": "Ministério do Trabalho e Emprego (MTE) / Codefat – pago pela Caixa (PIS) e Banco do Brasil (Pasep)",
+     "agency": "Ministério do Trabalho e Emprego (MTE) / Codefat, pago pela Caixa (PIS) e pelo Banco do Brasil (Pasep)",
      "summary": "Abono salarial 2026, pelo mês de nascimento.",
      "key": "birth_month",
      "key_values": [
@@ -637,7 +637,7 @@
       {
        "id": "br_abono_salarial_2026",
        "source_url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/trabalhador/abono-salarial",
-       "source_title": "Abono Salarial – calendário de pagamento 2026 (Ministério do Trabalho e Emprego)",
+       "source_title": "Abono Salarial: calendário de pagamento 2026 (Ministério do Trabalho e Emprego)",
        "published": "2025-12-31",
        "valid_from": "2026-02-16",
        "valid_to": "2026-12-30",
@@ -714,7 +714,7 @@
     },
     {
      "id": "br_pe_de_meia",
-     "name": "Pé-de-Meia – ensino médio regular",
+     "name": "Pé-de-Meia (ensino médio regular)",
      "short_name": "Pé-de-Meia",
      "agency": "Ministério da Educação (MEC)",
      "summary": "Ensino médio regular, pago em períodos de alguns dias.",
@@ -725,7 +725,7 @@
       {
        "id": "br_pe_de_meia_2026_regular",
        "source_url": "https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos",
-       "source_title": "Calendário de pagamentos do Pé-de-Meia em 2026 – Ensino Médio Regular (MEC; Portaria MEC nº 169/2026)",
+       "source_title": "Calendário de pagamentos do Pé-de-Meia em 2026, Ensino Médio Regular (MEC; Portaria MEC nº 169/2026)",
        "published": "2026-02-19",
        "valid_from": "2026-03-23",
        "valid_to": "2027-03-01",
@@ -836,7 +836,7 @@
     },
     {
      "id": "br_pe_de_meia_eja",
-     "name": "Pé-de-Meia – EJA (educação de jovens e adultos)",
+     "name": "Pé-de-Meia EJA (educação de jovens e adultos)",
      "short_name": "Pé-de-Meia EJA",
      "agency": "Ministério da Educação (MEC)",
      "summary": "Ensino médio na EJA, pago por semestre.",
@@ -847,7 +847,7 @@
       {
        "id": "br_pe_de_meia_2026_eja",
        "source_url": "https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos",
-       "source_title": "Calendário de pagamentos do Pé-de-Meia em 2026 – Ensino Médio EJA (MEC; Portaria MEC nº 169/2026)",
+       "source_title": "Calendário de pagamentos do Pé-de-Meia em 2026, Ensino Médio EJA (MEC; Portaria MEC nº 169/2026)",
        "published": "2026-02-19",
        "valid_from": "2026-03-23",
        "valid_to": "2027-03-01",
@@ -856,7 +856,7 @@
        "payments": [
         {
          "period": "2026-03",
-         "label": "1º semestre – 1ª parcela",
+         "label": "1º semestre, 1ª parcela",
          "all": {
           "from": "2026-03-23",
           "to": "2026-03-30"
@@ -864,7 +864,7 @@
         },
         {
          "period": "2026-04",
-         "label": "1º semestre – 2ª parcela",
+         "label": "1º semestre, 2ª parcela",
          "all": {
           "from": "2026-04-27",
           "to": "2026-05-04"
@@ -872,7 +872,7 @@
         },
         {
          "period": "2026-05",
-         "label": "1º semestre – 3ª parcela",
+         "label": "1º semestre, 3ª parcela",
          "all": {
           "from": "2026-05-25",
           "to": "2026-06-01"
@@ -880,7 +880,7 @@
         },
         {
          "period": "2026-06",
-         "label": "1º semestre – 4ª parcela",
+         "label": "1º semestre, 4ª parcela",
          "all": {
           "from": "2026-06-29",
           "to": "2026-07-06"
@@ -896,7 +896,7 @@
         },
         {
          "period": "2026-09",
-         "label": "2º semestre – 1ª parcela",
+         "label": "2º semestre, 1ª parcela",
          "all": {
           "from": "2026-09-21",
           "to": "2026-09-28"
@@ -904,7 +904,7 @@
         },
         {
          "period": "2026-10",
-         "label": "2º semestre – 2ª parcela",
+         "label": "2º semestre, 2ª parcela",
          "all": {
           "from": "2026-10-19",
           "to": "2026-10-26"
@@ -912,7 +912,7 @@
         },
         {
          "period": "2026-11",
-         "label": "2º semestre – 3ª parcela",
+         "label": "2º semestre, 3ª parcela",
          "all": {
           "from": "2026-11-23",
           "to": "2026-11-30"
@@ -920,7 +920,7 @@
         },
         {
          "period": "2026-12",
-         "label": "2º semestre – 4ª parcela",
+         "label": "2º semestre, 4ª parcela",
          "all": {
           "from": "2026-12-21",
           "to": "2026-12-28"
