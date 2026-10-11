@@ -19,7 +19,7 @@ stays visible on dark backgrounds. Name: "Sillapps" in Space Grotesk Bold (never
 | `mark-180.png` | Apple touch icon (full bleed). `mark-512.png`: logo in the site's structured data. |
 | `social/avatar-1080.png` | Profile picture for YouTube, Instagram, TikTok, LinkedIn (full bleed, round crop). |
 | `social/youtube-banner-2560x1440.jpg` | YouTube channel art (logo in the 1546×423 safe area). |
-| `play/developer-icon-512.png`, `play/developer-header.jpg` | Google Play developer page (uploaded 2026-09-30). |
+| `play/developer-icon-512.png`, `play/developer-header.jpg` | Google Play developer page (icon uploaded 2026-09-30, header with the current app icons 2026-10-11). |
 | `badges/google-play-*.png` | Official Google Play badges, unmodified, served from here. |
 | `og.jpg` | Share image of the home page (1200×630). |
 

@@ -101,39 +101,40 @@
   --stripe: linear-gradient(90deg, #2af6ff, #58b8ff 45%, #ff4fd8);
 }
 
-/* FUSECORE: same neon family, Oxanium, fusion rings (sillapps-fusecore lib/shared/neon_palette.dart) */
+/* FUSECORE: graphite hull, chamfered steel plates, amber actions, no title glow (sillapps-fusecore lib/shared/ui/reactor_ui.dart, Rx) */
 [data-app="fusecore"] {
   color-scheme: dark;
-  --bg: #060d1a;
-  --bg-2: #04080f;
-  --surface: #080f1f;
-  --surface-2: #0b1628;
-  --surface-3: #0d1a2e;
-  --text: #ffffff;
-  --muted: rgba(255, 255, 255, 0.7);
-  --faint: rgba(255, 255, 255, 0.58);
-  --line: rgba(123, 255, 213, 0.14);
-  --line-strong: rgba(123, 255, 213, 0.32);
-  --accent: #7bffd5;
-  --accent-ink: #04140f;
-  --accent-soft: rgba(123, 255, 213, 0.1);
-  --link: #7bffd5;
-  --eyebrow: #ffb347;
+  --bg: #0b0d18;
+  --bg-2: #10131f;
+  --surface: #161a2a;
+  --surface-2: #1c2134;
+  --surface-3: #1e2337;
+  --text: #eef1fa;
+  --muted: #bcc3d8;
+  --faint: #8d95b3;
+  --line: #2c3352;
+  --line-strong: #46507a;
+  --accent: #ffb238;
+  --accent-ink: #160d02;
+  --accent-soft: rgba(255, 178, 56, 0.1);
+  --link: #ffb238;
+  --eyebrow: #3fe0f5;
   --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
   --font-display: "Oxanium", "Inter", system-ui, sans-serif;
   --display-weight: 800;
   --display-tracking: 0.01em;
   --display-case: uppercase;
   --title-size: clamp(2.1rem, 6vw, 3.8rem);
-  --title-glow: 0 0 24px rgba(42, 246, 255, 0.45);
-  --radius-xl: 22px;
-  --radius-lg: 16px;
-  --radius-md: 12px;
-  --shadow: 0 0 0 1px rgba(123, 255, 213, 0.07), 0 30px 80px rgba(0, 0, 0, 0.55);
-  --art: repeating-radial-gradient(circle at 86% 4%, rgba(42, 246, 255, 0.1) 0 2px, transparent 2px 30px),
-    radial-gradient(circle at 86% 4%, rgba(42, 246, 255, 0.3), transparent 30%),
-    radial-gradient(circle at 10% 0%, rgba(255, 79, 216, 0.14), transparent 40%);
-  --stripe: linear-gradient(90deg, #2af6ff, #7bffd5 35%, #ffb347 70%, #ff4fd8);
+  --title-glow: none;
+  --radius-xl: 16px 0;
+  --radius-lg: 12px 0;
+  --radius-md: 8px 0;
+  --shadow: 0 0 0 1px #2c3352, 0 30px 80px rgba(0, 0, 0, 0.55);
+  --art: repeating-linear-gradient(0deg, rgba(70, 80, 122, 0.12) 0 1px, transparent 1px 24px),
+    repeating-linear-gradient(90deg, rgba(70, 80, 122, 0.12) 0 1px, transparent 1px 24px),
+    radial-gradient(ellipse at 50% -15%, #151827, transparent 60%),
+    radial-gradient(circle at 50% 20%, rgba(255, 138, 61, 0.075), rgba(255, 138, 61, 0.025) 45%, transparent 75%);
+  --stripe: linear-gradient(90deg, #ffb238, #ff8a3d);
 }
 
 /* Hora Barata: night navy, indigo accent, price colors (sillapps-elec-es lib/src/core/theme.dart) */
@@ -174,13 +175,13 @@
   --surface-3: #212835;
   --text: #f4f5f7;
   --muted: #aab2c0;
-  --faint: #8e97a8;
+  --faint: #858e9f;
   --line: rgba(255, 255, 255, 0.1);
   --line-strong: rgba(255, 255, 255, 0.2);
   --accent: #ffd23f;
   --accent-ink: #0d1015;
   --accent-soft: rgba(255, 210, 63, 0.12);
-  --link: #ffd23f;
+  --link: #d5dce6;
   --eyebrow: #0d1015;
   --free: #2fd27e;
   --restricted: #ff5a5f;
@@ -188,7 +189,7 @@
   --display-weight: 800;
   --display-tracking: -0.005em;
   --title-size: clamp(2.4rem, 7vw, 4.4rem);
-  --radius-xl: 22px;
+  --radius-xl: 26px;
   --shadow: 0 28px 80px rgba(0, 0, 0, 0.45);
   --art: radial-gradient(ellipse at 90% -18%, rgba(255, 210, 63, 0.2), transparent 48%);
   --stripe: repeating-linear-gradient(135deg, #ffd23f 0 14px, #0d1015 14px 28px);
@@ -246,7 +247,7 @@
   }
 }
 
-/* Shubh Samay (Choghadiya): indigo night, dawn gradient, saffron, Anek Latin (sillapps-choghadiya lib/src/core/theme.dart) */
+/* Shubh Samay (Choghadiya): indigo night sky (lib/src/core/surfaces.dart nightSky), saffron, Anek Latin (sillapps-choghadiya lib/src/core/theme.dart) */
 [data-app="choghadiya"] {
   color-scheme: dark;
   --bg: #0a0820;
@@ -272,8 +273,7 @@
   --radius-lg: 22px;
   --radius-md: 16px;
   --shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
-  --art: radial-gradient(circle at 84% 64%, rgba(255, 230, 176, 0.5), rgba(255, 153, 51, 0.22) 9%, transparent 26%),
-    linear-gradient(180deg, #34196a 0%, rgba(184, 64, 110, 0.5) 42%, rgba(255, 153, 51, 0.3) 62%, transparent 86%);
+  --art: radial-gradient(ellipse at 50% -10%, #2b1a55, rgba(20, 16, 53, 0.85) 45%, transparent 85%);
   --stripe: linear-gradient(90deg, #34196a, #b8406e 45%, #ff9933 80%, #ffe6b0);
 }
 
@@ -287,7 +287,7 @@
   --surface-3: #212a3b;
   --text: #f3f5f9;
   --muted: #a9b3c6;
-  --faint: #8c96ab;
+  --faint: #8590a9;
   --line: rgba(255, 255, 255, 0.1);
   --line-strong: rgba(255, 255, 255, 0.2);
   --accent: #4da3ff;
@@ -295,8 +295,8 @@
   --accent-soft: rgba(77, 163, 255, 0.14);
   --link: #6db5ff;
   --eyebrow: #ff5a5f;
-  --art: radial-gradient(circle at 90% -10%, rgba(255, 90, 95, 0.2), transparent 42%),
-    radial-gradient(circle at 4% 0%, rgba(77, 163, 255, 0.12), transparent 40%);
+  --art: radial-gradient(circle at 90% -10%, rgba(255, 90, 95, 0.18), transparent 42%),
+    radial-gradient(ellipse at 30% -20%, rgba(40, 28, 86, 0.75), rgba(22, 24, 72, 0.35) 40%, transparent 70%);
   --stripe: linear-gradient(90deg, #ff5a5f, #ffb020 50%, #2fd27e);
 }
 
@@ -319,7 +319,7 @@
   --link: #0b6e4f;
   --eyebrow: #8a5300;
   --title: #07432f;
-  --radius-xl: 26px;
+  --radius-xl: 24px;
   --radius-lg: 20px;
   --shadow: 0 22px 60px rgba(21, 32, 27, 0.08);
   --art: radial-gradient(circle at 90% -4%, rgba(244, 179, 33, 0.3), transparent 36%),
@@ -967,14 +967,17 @@ code {
 
 /* ------------------------------------------------------------ per-app signature details */
 
-[data-app="neon-overload"] .eyebrow,
-[data-app="fusecore"] .eyebrow {
+[data-app="neon-overload"] .eyebrow {
   text-shadow: 0 0 12px currentColor;
 }
 
-[data-app="neon-overload"] .section,
-[data-app="fusecore"] .section {
+[data-app="neon-overload"] .section {
   background: linear-gradient(180deg, rgba(13, 26, 46, 0.9), rgba(8, 15, 31, 0.9));
+}
+
+/* Fusecore: steel plates, top-left and bottom-right corners cut like the app's chamfer. */
+[data-app="fusecore"] .section {
+  background: linear-gradient(180deg, #1c2134, #161a2a);
 }
 
 [data-app="neon-overload"] .section h2,

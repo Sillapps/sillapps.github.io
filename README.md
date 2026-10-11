@@ -34,7 +34,7 @@ These URLs are used outside the site: keep them exactly where they are.
 A page picks its app theme with `<html lang="…" data-app="<slug>">` and loads
 `/fonts/fonts.css` then `/styles.css`. The `[data-app="<slug>"]` block of `styles.css` holds the app's
 colors, fonts, radius, hero art (`--art`) and top stripe (`--stripe`), copied from the app's
-`lib/src/core/theme.dart` (or `lib/shared/neon_palette.dart` for the games). Without `data-app`,
+`lib/src/core/theme.dart` (Neon Overload: `lib/shared/neon_palette.dart`; Fusecore: `lib/shared/ui/reactor_ui.dart`). Without `data-app`,
 the neutral Sillapps theme applies (light, dark when the device is dark).
 
 Shared components: `.play-badge`, `.soon-badge`, `.chips`, `.shots`, `.shot-wide`, `.faq`,
