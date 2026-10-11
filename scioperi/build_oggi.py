@@ -307,7 +307,7 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
         ("C'è sciopero domani?", f"{answer_text(n_tomorrow, 'Domani, ' + long_date(tomorrow) + ',', 'in Italia')}."),
         ("Quando è il prossimo sciopero dei treni?", train_answer),
         ("Quando è il prossimo sciopero generale?", general_answer),
-        ("Cosa sono le fasce di garanzia?", "Sono le ore in cui i servizi minimi sono garantiti anche durante lo sciopero. Per i treni regionali nei giorni feriali: dalle 6 alle 9 e dalle 18 alle 21. Per bus, metro e tram dipendono dall'azienda locale."),
+        ("Cosa sono le fasce di garanzia?", "Sono le ore in cui i servizi minimi sono garantiti anche durante lo sciopero. Per i treni regionali nei giorni feriali: dalle 6 alle 9 e dalle 18 alle 21. Per gli aerei: dalle 7 alle 10 e dalle 18 alle 21. Per bus, metro e tram dipendono dall'azienda locale."),
         ("Da dove vengono i dati?", "Dall'elenco pubblico degli scioperi dell'Osservatorio del Ministero delle Infrastrutture e dei Trasporti (scioperi.mit.gov.it), letto ogni ora. Questa pagina e l'app Scioperi Oggi non sono ufficiali e non sono affiliate al Ministero."),
     ]
     faq_html = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in faq)
@@ -412,12 +412,12 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
       {section("dopo", "Più avanti", later, "Nessun altro sciopero in elenco.")}
       <section class="cta">
         {cta}
-        <p>L'app dice subito se c'è sciopero oggi o domani nella tua regione, con gli orari e le fasce di garanzia. Con Pro: avviso la sera prima e widget.</p>
+        <p>L'app dice subito se c'è sciopero oggi o domani nella tua regione, con gli orari e le fasce di garanzia. Con Pro, pagamento unico e nessun abbonamento: avviso la sera prima, avviso di nuovi scioperi e revoche nella tua zona, widget, più zone insieme, niente pubblicità. Avvisi e widget si provano gratis per 14 giorni.</p>
       </section>
       <h2>Domande frequenti</h2>
       {faq_html}
       <footer>
-        Dati: elenco degli scioperi del Ministero delle Infrastrutture e dei Trasporti, riportati senza modifiche. Gli orari e l'adesione possono cambiare: in caso di dubbio fa fede l'azienda di trasporto.
+        Dati: elenco degli scioperi del Ministero delle Infrastrutture e dei Trasporti (licenza CC BY 3.0 IT), rielaborati da Sillapps. Gli orari e l'adesione possono cambiare: in caso di dubbio fa fede l'azienda di trasporto.
         <br /><a href="privacy.html">Privacy</a> <a href="/legal.html">Note legali</a> <a href="mailto:contact@sillapps.com">contact@sillapps.com</a>
       </footer>
     </main>
