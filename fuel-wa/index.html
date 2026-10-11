@@ -27,7 +27,6 @@
       "applicationCategory": "TravelApplication",
       "inLanguage": "en-AU",
       "url": "https://sillapps.com/fuel-wa/",
-      "installUrl": "https://play.google.com/store/apps/details?id=com.sillapps.fuelwa",
       "image": "https://sillapps.com/fuel-wa/icon-192.png",
       "description": "Western Australia fuel prices today and tomorrow from FuelWatch, and a clear answer: fill up today or wait.",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "AUD" },
@@ -52,12 +51,12 @@
         {
           "@type": "Question",
           "name": "Is Tuesday still the cheapest day for petrol in Perth?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Often, but not always: Perth prices follow a weekly cycle that shifts from time to time. Since tomorrow's prices are published in advance, comparing the real prices beats guessing the day." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Often, but not always: Perth prices follow a weekly cycle that shifts from time to time. Since tomorrow's prices are published in advance, comparing the real prices beats guessing the day. Fuel Tomorrow WA also shows the cheapest price in your area over the last 2 weeks and, once it has saved a few weeks of prices, which weekday is usually cheapest there." }
         },
         {
           "@type": "Question",
           "name": "Is Fuel Tomorrow WA free? Does it have ads?",
-          "acceptedAnswer": { "@type": "Answer", "text": "It is free, with no ads, no account and no tracking. Fuel Tomorrow Pro, a one-time purchase with a 7-day free trial, adds the home screen widget, the alert around 2:35pm, favourite stations and several suburbs." }
+          "acceptedAnswer": { "@type": "Answer", "text": "It is free, with no ads, no account and no tracking. Fuel Tomorrow Pro, a one-time purchase with a 7-day free trial, adds the home screen widget, the alert around 2:35pm, your discounts (take a shopper docket or fuel card discount off that brand), favourite stations and several suburbs." }
         },
         {
           "@type": "Question",
@@ -68,7 +67,7 @@
     }
     </script>
     <link rel="stylesheet" href="/fonts/fonts.css?v=20260930-1" />
-    <link rel="stylesheet" href="/styles.css?v=20260930-3" />
+    <link rel="stylesheet" href="/styles.css?v=20261011-1" />
     <style>.fw-table th { white-space: nowrap; }</style>
   </head>
   <body>
@@ -91,15 +90,17 @@
             compares today and tomorrow for your suburb and your fuel, and gives you a straight
             answer. Free, no ads, no account.
           </p>
-          <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.fuelwa&amp;hl=en_AU">
-            <img src="/brand/badges/google-play-en.png"
-                 alt="Get it on Google Play" width="646" height="250" />
-          </a>
+          <p class="soon-badge">Coming soon to Google Play</p>
           <ul class="chips">
             <li>Today and tomorrow, side by side</li>
-            <li>Perth and regional WA</li>
-            <li>ULP, 95, 98, diesel, LPG, E85</li>
+            <li>Over 500 WA suburbs and towns</li>
+            <li>ULP, 95, 98, diesel, brand diesel, LPG, E85</li>
             <li>No ads, ever</li>
+          </ul>
+          <ul class="shots">
+            <li><img src="shot-fill.jpg" width="540" height="960" alt="Mandurah and nearby, Unleaded 91: the gauge says Fill up today, 6.0c/L dearer tomorrow, about $3.00 on a 50 L tank" /></li>
+            <li><img src="shot-wait.jpg" width="540" height="960" alt="Morley and nearby, Unleaded 91: the gauge says Wait for tomorrow, 2.0c/L cheaper, about $1.00 on a 50 L tank" loading="lazy" decoding="async" /></li>
+            <li><img src="shot-widget.jpg" width="540" height="960" alt="The Pro home screen widget for Morley, ULP: Wait, today's and tomorrow's cheapest price and station" loading="lazy" decoding="async" /></li>
           </ul>
 
           <div class="section-grid">
@@ -119,17 +120,27 @@
 
             <section class="section" id="app">
               <h2>What the app tells you</h2>
-              <img class="shot-wide" src="og.jpg" alt="Fuel Tomorrow WA: the verdict card, today's and tomorrow's cheapest" width="1024" height="500" loading="lazy" decoding="async" />
+              <img class="shot-wide" src="og.jpg" alt="Fuel Tomorrow WA: fill up today or wait? The gauge points to Wait, 2.0c/L cheaper tomorrow" width="1024" height="500" loading="lazy" decoding="async" />
               <ul>
-                <li><strong>Wait</strong>: tomorrow is cheaper, and where.</li>
+                <li><strong>Wait</strong>: tomorrow is cheaper, and where, with the saving on your tank.</li>
                 <li><strong>Fill up today</strong>: tomorrow is dearer (before 6am: "fill up before 6am").</li>
                 <li><strong>Same</strong>: within 1c/L, and what most servos around you do.</li>
                 <li>Before 2:30pm: how today compares with yesterday, and when tomorrow's prices are due.</li>
                 <li>The list of servos with price, change, opening hours and distance; a map; directions.</li>
+                <li>The cheapest price in your area over the last 2 weeks, and the weekday that is usually cheapest there.</li>
+                <li>Hide the brands you never use: they leave the list, the map and "cheapest".</li>
+                <li>Share the verdict with family or friends in one tap.</li>
               </ul>
               <p>
+                Over 500 suburbs and towns with prices on FuelWatch, from the Perth metro area and
+                Mandurah to Bunbury, Albany, Geraldton, Kalgoorlie and the Pilbara. Pick your suburb,
+                or use your location if you want to: it is optional.
+              </p>
+              <p>
                 <strong>Fuel Tomorrow Pro</strong> (one-time purchase, 7-day free trial): home screen
-                widget, an alert around 2:35pm, favourite stations, several suburbs.
+                widget, an alert around 2:35pm, your discounts (a shopper docket or fuel card discount taken off that brand, so
+                "cheapest" and the verdict use the price you actually pay),
+                favourite stations, several suburbs.
               </p>
             </section>
 
@@ -145,7 +156,7 @@
               </details>
               <details>
                 <summary>Is Tuesday still the cheapest day in Perth?</summary>
-                <p>Often, but not always: the weekly cycle shifts from time to time. Since tomorrow's prices are published in advance, comparing the real prices beats guessing the day.</p>
+                <p>Often, but not always: the weekly cycle shifts from time to time. Since tomorrow's prices are published in advance, comparing the real prices beats guessing the day. Once it has saved a few weeks of prices, the app shows which weekday is usually cheapest in your area.</p>
               </details>
               <details>
                 <summary>Is it free? Does it have ads?</summary>
