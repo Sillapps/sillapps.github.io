@@ -56,9 +56,7 @@ HERE = Path(__file__).resolve().parent  # placa-hoy/
 SITE = HERE.parent  # site root
 BASE_URL = "https://sillapps.com"
 APP_URL = f"{BASE_URL}/placa-hoy/"
-PLAY_URL = "https://play.google.com/store/apps/details?id=com.sillapps.placahoy"
-PLAY_BADGE = "/brand/badges/google-play-es-419.png"
-CSS = "/styles.css?v=20260930-3"
+CSS = "/styles.css?v=20261011-1"
 FONTS_CSS = "/fonts/fonts.css?v=20260930-1"
 START = "placa-hoy:cities:start"
 END = "placa-hoy:cities:end"
@@ -515,9 +513,7 @@ def city_page(rules: dict, city: dict, country: dict, slug: str,
               Esta página resume las reglas que usa la app; la norma oficial es la que manda.</p>
           </div>
           {beta_text}
-          <a class="play-badge" href="{PLAY_URL}&amp;hl=es_419">
-            <img src="{PLAY_BADGE}" alt="Disponible en Google Play" width="646" height="250" />
-          </a>
+          <p class="soon-badge">Próximamente en Google Play</p>
 
           <div class="section-grid">
 {chr(10).join(body)}
@@ -527,8 +523,7 @@ def city_page(rules: dict, city: dict, country: dict, slug: str,
               <p>Guarda tu placa una vez y <strong>Placa Hoy</strong> te dice cada día si puedes circular,
                 con el horario, la norma y el enlace a la fuente oficial. Sin anuncios, sin cuenta y sin rastreo.
                 Con Placa Hoy Pro (pago único): widget en la pantalla de inicio y alertas la noche anterior y la mañana.</p>
-              <p><a href="{PLAY_URL}&amp;hl=es_419">Descargar Placa Hoy en Google Play</a> ·
-                <a href="/placa-hoy/">Más sobre la app</a></p>
+              <p>Placa Hoy llegará pronto a Google Play. <a href="/placa-hoy/">Más sobre la app</a></p>
             </section>
 
             <section class="section" id="ciudades">
@@ -546,7 +541,7 @@ def city_page(rules: dict, city: dict, country: dict, slug: str,
             </nav>
             <p>Reglas de Placa Hoy versión {e(rules['version'])}, publicadas el {e(fmt_date(rules['published']))}.
               Esta página no usa cookies ni analítica. © {today.year} Sillapps.
-              Google Play y el logotipo de Google Play son marcas de Google LLC.</p>
+              Google Play es una marca de Google LLC.</p>
           </footer>
         </div>
       </section>
