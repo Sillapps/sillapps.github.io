@@ -1,0 +1,85 @@
+# Placa Hoy: one push per environmental contingency communiqué (Mexico City
+# and Edomex), read on aire.cdmx.gob.mx. Runs every 10 minutes from 10:00 to
+# 22:30 Mexico City time (UTC-6, no daylight saving) = 16:00 to 04:30 UTC.
+# The cache key of each communiqué stops the later runs. Free: public repo
+# minutes and FCM. See push/README.md and push/placa_hoy.py.
+#
+# Until the Google side is set up (repo variable PUSH_WIF_PROVIDER, see
+# push/setup_wif.sh), every run stops before sending, without failing.
+name: push-placa-hoy
+on:
+  schedule:
+    - cron: "*/10 16-23 * * *"
+    - cron: "*/10 0-3 * * *"
+    - cron: "0,10,20,30 4 * * *"
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Topic (placahoy-test reaches debug builds only)"
+        default: placahoy-test
+      force:
+        description: "Send a Fase I test message whatever the page says (test topic only)"
+        type: boolean
+        default: false
+permissions:
+  contents: read
+  id-token: write
+concurrency:
+  group: push-placa-hoy
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      TOPIC: ${{ inputs.topic || 'placahoy-contingency' }}
+      FORCE: ${{ inputs.force && inputs.topic == 'placahoy-test' && '--force' || '' }}
+    steps:
+      - name: Configured?
+        id: conf
+        run: |
+          if [ -z "${{ vars.PUSH_WIF_PROVIDER }}" ]; then echo "push not configured yet (push/setup_wif.sh)"; echo "ok=false" >> "$GITHUB_OUTPUT"; else echo "ok=true" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@v4
+        if: steps.conf.outputs.ok == 'true'
+        with:
+          sparse-checkout: push
+      - name: Contingency announced?
+        if: steps.conf.outputs.ok == 'true'
+        id: check
+        run: |
+          python3 push/placa_hoy.py --check $FORCE | tee check.txt
+          if grep -q "due=true" check.txt; then
+            echo "due=true" >> "$GITHUB_OUTPUT"
+            key=$(grep -o 'key=[A-Za-z0-9_-]*' check.txt | cut -d= -f2)
+            if [ -n "$FORCE" ]; then key="force-${{ github.run_id }}"; fi
+            echo "key=$key" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Already sent?
+        if: steps.check.outputs.due == 'true'
+        id: sent
+        uses: actions/cache/restore@v4
+        with:
+          path: .push-sent
+          key: placahoy-sent-${{ env.TOPIC }}-${{ steps.check.outputs.key }}
+          lookup-only: true
+      - name: Google token
+        if: steps.check.outputs.due == 'true' && steps.sent.outputs.cache-hit != 'true'
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.PUSH_WIF_PROVIDER }}
+          service_account: ${{ vars.PUSH_SERVICE_ACCOUNT }}
+          token_format: access_token
+          access_token_scopes: https://www.googleapis.com/auth/firebase.messaging
+      - name: Send
+        if: steps.check.outputs.due == 'true' && steps.sent.outputs.cache-hit != 'true'
+        env:
+          FCM_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+        run: |
+          python3 push/placa_hoy.py --send --topic "$TOPIC" $FORCE
+          mkdir -p .push-sent && date -u > .push-sent/at
+      - name: Remember the communiqué
+        if: steps.check.outputs.due == 'true' && steps.sent.outputs.cache-hit != 'true' && env.FORCE == ''
+        uses: actions/cache/save@v4
+        with:
+          path: .push-sent
+          key: placahoy-sent-${{ env.TOPIC }}-${{ steps.check.outputs.key }}

@@ -19,9 +19,10 @@ data is out. Cost: 0 $ (FCM is free, Actions minutes are free on a public repo).
 | App | Script | Workflow | Topic (debug builds) | When |
 |---|---|---|---|---|
 | Fuel Tomorrow WA | `fuel_wa.py` | `push-fuel-wa.yml` | `fuelwa-tomorrow` (`fuelwa-test`) | FuelWatch publishes tomorrow's prices, 2:30pm Perth |
+| Placa Hoy | `placa_hoy.py` | `push-placa-hoy.yml` | `placahoy-contingency` (`placahoy-test`) | Each new contingency communiqué on aire.cdmx.gob.mx, checked every 10 min, 10:00-22:30 Mexico City |
 
 Test without touching users: `gh workflow run push-fuel-wa.yml -f topic=fuelwa-test -f force=true`
-reaches debug builds only. Locally: `python3 push/fuel_wa.py --check`.
+(or `push-placa-hoy.yml -f topic=placahoy-test -f force=true`) reaches debug builds only. Locally: `python3 push/fuel_wa.py --check`, `python3 push/placa_hoy.py --check`.
 
 A new app: a script next to `fuel_wa.py` (check the source, build the message,
 `fcm.send`), a workflow copied from `push-fuel-wa.yml`, its Android and iOS apps
