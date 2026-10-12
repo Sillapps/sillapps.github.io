@@ -1,0 +1,83 @@
+# Scioperi Oggi: one push when the MIT strike list changes (a strike added,
+# revoked, or removed before its start). Runs every 30 minutes from 05:07 to
+# 19:37 UTC (7:07-21:37 Rome in summer, 6:07-20:37 in winter): never at
+# night, the app notifies as soon as it wakes. The previous state of the list
+# is kept in the Actions cache (latest entry). Free: public repo minutes and
+# FCM. See push/README.md and push/scioperi.py.
+#
+# Until the Google side is set up (repo variable PUSH_WIF_PROVIDER, see
+# push/setup_wif.sh), every run stops before sending, without failing.
+name: push-scioperi
+on:
+  schedule:
+    - cron: "7,37 5-19 * * *"
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Topic (scioperi-test reaches debug builds only)"
+        default: scioperi-test
+      force:
+        description: "Send even if the list did not change (test topic only)"
+        type: boolean
+        default: false
+permissions:
+  contents: read
+  id-token: write
+concurrency:
+  group: push-scioperi
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      TOPIC: ${{ inputs.topic || 'scioperi-list' }}
+    steps:
+      - name: Configured?
+        id: conf
+        run: |
+          if [ -z "${{ vars.PUSH_WIF_PROVIDER }}" ]; then echo "push not configured yet (push/setup_wif.sh)"; echo "ok=false" >> "$GITHUB_OUTPUT"; else echo "ok=true" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@v4
+        if: steps.conf.outputs.ok == 'true'
+        with:
+          sparse-checkout: |
+            push
+            scioperi
+      - name: Previous list
+        if: steps.conf.outputs.ok == 'true'
+        uses: actions/cache/restore@v4
+        with:
+          path: .scioperi-state
+          key: scioperi-state-${{ github.run_id }}
+          restore-keys: scioperi-state-
+      - name: List changed?
+        if: steps.conf.outputs.ok == 'true'
+        id: check
+        run: |
+          mkdir -p .scioperi-state
+          [ -f .scioperi-state/list.json ] && cp .scioperi-state/list.json before.json || true
+          python3 push/scioperi.py --check --state .scioperi-state/list.json | tee check.txt
+          if grep -q "due=true" check.txt || [ "${{ inputs.force && env.TOPIC == 'scioperi-test' }}" = "true" ]; then echo "due=true" >> "$GITHUB_OUTPUT"; fi
+          # Saved only when the list changed: few cache entries.
+          if ! cmp -s before.json .scioperi-state/list.json; then echo "save=true" >> "$GITHUB_OUTPUT"; fi
+      - name: Google token
+        if: steps.check.outputs.due == 'true'
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.PUSH_WIF_PROVIDER }}
+          service_account: ${{ vars.PUSH_SERVICE_ACCOUNT }}
+          token_format: access_token
+          access_token_scopes: https://www.googleapis.com/auth/firebase.messaging
+      - name: Send
+        if: steps.check.outputs.due == 'true'
+        env:
+          FCM_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+        run: python3 push/scioperi.py --send --topic "$TOPIC"
+      # A test run (other topic) never uses up a change: the next scheduled
+      # run still sends it to users.
+      - name: Remember the list
+        if: steps.check.outputs.save == 'true' && env.TOPIC == 'scioperi-list'
+        uses: actions/cache/save@v4
+        with:
+          path: .scioperi-state
+          key: scioperi-state-${{ github.run_id }}
