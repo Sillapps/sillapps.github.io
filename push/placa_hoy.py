@@ -140,7 +140,13 @@ def _tls() -> ssl.SSLContext:
     refuses by default (DH_KEY_TOO_SMALL on the Actions runners). Lower the
     security level for this one page; the certificate is still verified."""
     ctx = ssl.create_default_context()
-    ctx.set_ciphers("DEFAULT@SECLEVEL=1")
+    try:
+        ctx.set_ciphers("DEFAULT@SECLEVEL=1")
+        # LibreSSL (macOS) takes the string but then has no cipher left.
+        if not ctx.get_ciphers():
+            raise ssl.SSLError("no cipher")
+    except ssl.SSLError:
+        ctx = ssl.create_default_context()
     return ctx
 
 
