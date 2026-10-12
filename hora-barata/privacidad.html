@@ -38,7 +38,7 @@
           <div class="meta-card">
             <p class="meta-line">Aplicación: Hora Barata (antes Eco Claims Pocket)</p>
             <p class="meta-line">Desarrollador: Sillapps</p>
-            <p class="meta-line">Fecha de entrada en vigor: 11 de octubre de 2026</p>
+            <p class="meta-line">Fecha de entrada en vigor: 12 de octubre de 2026</p>
             <p class="meta-line" lang="en">English version: <a href="privacy.html">Privacy policy</a></p>
           </div>
 
@@ -53,7 +53,7 @@
             </section>
             <section class="section">
               <h2>Datos que se recogen</h2>
-              <p>Hora Barata no recoge datos personales, no los guarda en ningún servidor y no los comparte. No hay cuenta de usuario, ni SDK de analítica, ni SDK de publicidad.</p>
+              <p>Hora Barata no recoge datos personales, no los guarda en ningún servidor y no los comparte. No hay cuenta de usuario, ni SDK de analítica, ni SDK de publicidad. La única excepción es el identificador de notificaciones push descrito en «Alerta por notificación push», que solo se crea si activas las alertas de Pro.</p>
               <p>La app guarda unos pocos datos solo en tu dispositivo: tus preferencias (idioma, mostrar impuestos, duración del electrodoméstico, alertas activadas o no), una copia de los precios recientes, si Hora Barata Pro está desbloqueado (o hay una prueba activa) y cuándo te pidió por última vez que la valoraras.</p>
             </section>
             <section class="section">
@@ -66,11 +66,16 @@
             </section>
             <section class="section">
               <h2>Valoraciones y reseñas</h2>
-              <p>De vez en cuando, la app puede pedirte que la valores mediante la API oficial de valoraciones integradas de Google Play (In-App Review). Google Play muestra y gestiona esa ventana: el desarrollador no recibe tu valoración ni tu reseña a través de la app, y lo que publiques aparece en Google Play con tu cuenta de Google, según las políticas de Google.</p>
+              <p>De vez en cuando, la app puede pedirte que la valores mediante la ventana oficial de la tienda (la API In-App Review de Google Play, o la de la App Store en iPhone). La tienda muestra y gestiona esa ventana: el desarrollador no recibe tu valoración ni tu reseña a través de la app, y lo que publiques aparece en la tienda con tu cuenta, según sus políticas.</p>
             </section>
             <section class="section">
               <h2>Notificaciones y widget</h2>
-              <p>El recordatorio gratis «Avísame» del planificador y las alertas de Pro son notificaciones locales: se programan en tu propio dispositivo. El widget de la pantalla de inicio lee los precios que la app guarda en el dispositivo. Ninguna de estas funciones envía datos a ninguna parte.</p>
+              <p>El recordatorio gratis «Avísame» del planificador y las alertas de Pro son notificaciones locales: se programan en tu propio dispositivo, salvo el aviso «Ya están los precios de mañana», descrito a continuación. El widget de la pantalla de inicio lee los precios que la app guarda en el dispositivo. Ninguna de estas funciones envía datos a ninguna parte.</p>
+            </section>
+            <section class="section">
+              <h2>Alerta por notificación push</h2>
+              <p>Con las alertas de Pro activadas, la app te avisa una vez al día, en cuanto Red Eléctrica publica los precios de mañana (hacia las 20:15), de la hora más barata de mañana. Al activar las alertas, la app se registra en Firebase Cloud Messaging de Google (y, en iPhone, en el servicio de notificaciones push de Apple), que da a tu teléfono un identificador de notificaciones push, y lo suscribe a un único tema compartido por todas las personas que usan las alertas. Una vez al día, poco después de la publicación, un proceso automático envía un mensaje a ese tema. El mensaje es el mismo para todos: contiene los precios públicos de mañana y ningún dato personal. Después, tu teléfono redacta el aviso con tus propios ajustes (idioma, impuestos, hora de Canarias) y programa las alertas de mañana.</p>
+              <p>El desarrollador nunca recibe los identificadores y no guarda ninguna lista de usuarios. Google guarda el identificador para entregar los mensajes, como encargado del tratamiento por cuenta del desarrollador, según las condiciones de Firebase (<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>); Google también puede ver tu dirección IP cuando tu teléfono se conecta. Al desactivar las alertas, o al terminar la prueba gratis, tu teléfono se da de baja del tema y su identificador se borra. Si nunca activas las alertas, no se crea ningún identificador.</p>
             </section>
             <section class="section">
               <h2>Registro de errores</h2>
@@ -78,11 +83,11 @@
             </section>
             <section class="section">
               <h2>Google Play</h2>
-              <p>La descarga y las actualizaciones de la app, las compras y las reseñas pasan por Google Play, que gestiona Google con su propia política de privacidad. Google puede facilitar al desarrollador estadísticas agregadas (por ejemplo, instalaciones e informes de fallos) a través de Play Console; no te identifican.</p>
+              <p>La descarga y las actualizaciones de la app, las compras y las reseñas pasan por Google Play, que gestiona Google con su propia política de privacidad, o por la App Store en iPhone, que gestiona Apple con la suya. Las tiendas pueden facilitar al desarrollador estadísticas agregadas (por ejemplo, instalaciones e informes de fallos) a través de sus consolas; no te identifican.</p>
             </section>
             <section class="section">
               <h2>Conservación y eliminación de los datos</h2>
-              <p>Todos los datos de la app se quedan en tu dispositivo. Puedes borrarlos cuando quieras limpiando el almacenamiento de la app o desinstalándola.</p>
+              <p>Todos los datos de la app se quedan en tu dispositivo. Puedes borrarlos cuando quieras limpiando el almacenamiento de la app o desinstalándola. El identificador de notificaciones push, si existe, se borra al desactivar las alertas; Google borra por su cuenta los identificadores que dejan de usarse tras un tiempo.</p>
             </section>
             <section class="section">
               <h2>Tus derechos</h2>

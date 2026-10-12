@@ -37,7 +37,7 @@
           <div class="meta-card">
             <p class="meta-line">App name: Hora Barata (formerly Eco Claims Pocket)</p>
             <p class="meta-line">Developer: Sillapps</p>
-            <p class="meta-line">Effective date: October 11, 2026</p>
+            <p class="meta-line">Effective date: October 12, 2026</p>
             <p class="meta-line" lang="es">Versión en español: <a href="privacidad.html">Política de privacidad</a></p>
           </div>
 
@@ -52,7 +52,7 @@
             </section>
             <section class="section">
               <h2>Data collected</h2>
-              <p>Hora Barata does not collect, store on a server, or share personal data. There is no account, no analytics SDK and no advertising SDK.</p>
+              <p>Hora Barata does not collect, store on a server, or share personal data. There is no account, no analytics SDK and no advertising SDK. The only exception is the push token described under &ldquo;Alert by push notification&rdquo;, created only if you turn on the Pro alerts.</p>
               <p>The app stores a small amount of data locally on your device: your preferences (language, taxes display, appliance duration, alerts on or off), a cache of recent electricity prices, whether Hora Barata Pro is unlocked (or a trial is active), and when the app last asked you to rate it.</p>
             </section>
             <section class="section">
@@ -65,11 +65,16 @@
             </section>
             <section class="section">
               <h2>Ratings and reviews</h2>
-              <p>The app may occasionally ask you to rate it using Google Play's official In-App Review API. The rating dialog is shown and handled by Google Play: the developer does not receive your rating or review through the app, and any review you post is published on Google Play under your Google account, according to Google's policies.</p>
+              <p>The app may occasionally ask you to rate it using the store's official rating prompt (Google Play's In-App Review API, or the App Store's on iPhone). The prompt is shown and handled by the store: the developer does not receive your rating or review through the app, and any review you post is published on the store under your account, according to the store's policies.</p>
             </section>
             <section class="section">
               <h2>Notifications and widget</h2>
-              <p>The free "Avísame" reminder of the planner and the Pro alerts are local notifications, scheduled on your own device. The home screen widget reads prices stored locally by the app. None of these features sends data anywhere.</p>
+              <p>The free "Avísame" reminder of the planner and the Pro alerts are local notifications, scheduled on your own device, except the "tomorrow's prices are out" alert described below. The home screen widget reads prices stored locally by the app. None of these features sends data anywhere.</p>
+            </section>
+            <section class="section">
+              <h2>Alert by push notification</h2>
+              <p>With the Pro alerts on, the app tells you once a day, as soon as Red Eléctrica publishes tomorrow's prices (around 20:15), the cheapest hour of tomorrow. When you turn the alerts on, the app registers with Google's Firebase Cloud Messaging (and, on iPhone, Apple's push notification service), which gives your phone a push token, and subscribes it to one topic shared by everyone who uses the alerts. Once a day, shortly after publication, an automated job sends one message to that topic. The message is the same for everyone: it contains tomorrow's public prices and no personal data. Your phone then words the alert with your own settings (language, taxes, Canary Islands time) and schedules tomorrow's alerts.</p>
+              <p>The developer never receives the tokens and keeps no list of users. Google stores the token to deliver the messages, as a processor on the developer's behalf, under the Firebase terms (<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>); Google can also see your IP address when your phone connects to it. Turning the alerts off, or the end of the free trial, unsubscribes your phone and deletes its token. If you never turn the alerts on, no push token is created.</p>
             </section>
             <section class="section">
               <h2>Error log</h2>
@@ -77,11 +82,11 @@
             </section>
             <section class="section">
               <h2>Google Play</h2>
-              <p>Downloading and updating the app, purchases and reviews go through Google Play, which is operated by Google under its own privacy policy. Google may provide the developer with aggregated statistics (such as installs and crash reports) through the Play Console; these do not identify you.</p>
+              <p>Downloading and updating the app, purchases and reviews go through Google Play, which is operated by Google under its own privacy policy, or through the App Store on iPhone, operated by Apple under its own privacy policy. The stores may provide the developer with aggregated statistics (such as installs and crash reports) through their consoles; these do not identify you.</p>
             </section>
             <section class="section">
               <h2>Data retention and deletion</h2>
-              <p>All app data stays on your device. You can delete it at any time by clearing the app storage or uninstalling the app.</p>
+              <p>All app data stays on your device. You can delete it at any time by clearing the app storage or uninstalling the app. The push token, if any, is deleted when you turn the alerts off; Google deletes unused tokens on its own after a period of inactivity.</p>
             </section>
             <section class="section">
               <h2>Your rights</h2>
