@@ -1,0 +1,84 @@
+# Hora Barata: one push a day when Red Eléctrica publishes tomorrow's PVPC
+# prices (around 20:15 Madrid). Runs every few minutes from 18:05 to 21:30 UTC,
+# which covers 20:05-22:30 Madrid in summer and winter time; the script keeps
+# to that window. The first run that finds the whole day sends, and the cache
+# key of the day stops the later runs. Free: public repo minutes and FCM.
+# See push/README.md.
+#
+# Until the Google side is set up (repo variable PUSH_WIF_PROVIDER, see
+# push/setup_wif.sh), every run stops before sending, without failing.
+name: push-hora-barata
+on:
+  schedule:
+    - cron: "5,10,15,20,25,30,35,40,45,50,55 18 * * *"
+    - cron: "0,5,10,15,20,25,30,35,40,45,50,55 19,20 * * *"
+    - cron: "0,5,10,15,20,25,30 21 * * *"
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Topic (horabarata-test reaches debug builds only)"
+        default: horabarata-test
+      force:
+        description: "Send even outside 20:05-22:30 Madrid (test topic only)"
+        type: boolean
+        default: false
+      day:
+        description: "Another published day, with force (YYYY-MM-DD)"
+        default: ""
+permissions:
+  contents: read
+  id-token: write
+concurrency:
+  group: push-hora-barata
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      TOPIC: ${{ inputs.topic || 'horabarata-tomorrow' }}
+    steps:
+      - name: Configured?
+        id: conf
+        run: |
+          if [ -z "${{ vars.PUSH_WIF_PROVIDER }}" ]; then echo "push not configured yet (push/setup_wif.sh)"; echo "ok=false" >> "$GITHUB_OUTPUT"; else echo "ok=true" >> "$GITHUB_OUTPUT"; fi
+          echo "day=$(TZ=Europe/Madrid date -d tomorrow +%F)" >> "$GITHUB_OUTPUT"
+      - name: Already sent today?
+        if: steps.conf.outputs.ok == 'true' && !inputs.force
+        id: sent
+        uses: actions/cache/restore@v4
+        with:
+          path: .push-sent
+          key: horabarata-sent-${{ env.TOPIC }}-${{ steps.conf.outputs.day }}
+          lookup-only: true
+      - uses: actions/checkout@v4
+        if: steps.conf.outputs.ok == 'true' && steps.sent.outputs.cache-hit != 'true'
+        with:
+          sparse-checkout: push
+      - name: Prices out?
+        if: steps.conf.outputs.ok == 'true' && steps.sent.outputs.cache-hit != 'true'
+        id: check
+        run: |
+          python3 push/hora_barata.py --check ${{ inputs.force && env.TOPIC == 'horabarata-test' && '--force' || '' }} ${{ inputs.day && format('--day {0}', inputs.day) || '' }} | tee check.txt
+          if grep -q "due=true" check.txt; then echo "due=true" >> "$GITHUB_OUTPUT"; fi
+      - name: Google token
+        if: steps.check.outputs.due == 'true'
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.PUSH_WIF_PROVIDER }}
+          service_account: ${{ vars.PUSH_SERVICE_ACCOUNT }}
+          token_format: access_token
+          access_token_scopes: https://www.googleapis.com/auth/firebase.messaging
+      - name: Send
+        if: steps.check.outputs.due == 'true'
+        env:
+          FCM_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+        run: |
+          python3 push/hora_barata.py --send --topic "$TOPIC" ${{ inputs.force && env.TOPIC == 'horabarata-test' && '--force' || '' }} ${{ inputs.day && format('--day {0}', inputs.day) || '' }}
+          mkdir -p .push-sent && date -u > .push-sent/at
+      - name: Remember the day
+        if: steps.check.outputs.due == 'true' && !inputs.force
+        uses: actions/cache/save@v4
+        with:
+          path: .push-sent
+          key: horabarata-sent-${{ env.TOPIC }}-${{ steps.conf.outputs.day }}

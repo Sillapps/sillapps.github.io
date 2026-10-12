@@ -19,6 +19,7 @@ data is out. Cost: 0 $ (FCM is free, Actions minutes are free on a public repo).
 | App | Script | Workflow | Topic (debug builds) | When |
 |---|---|---|---|---|
 | Fuel Tomorrow WA | `fuel_wa.py` | `push-fuel-wa.yml` | `fuelwa-tomorrow` (`fuelwa-test`) | FuelWatch publishes tomorrow's prices, 2:30pm Perth |
+| Hora Barata | `hora_barata.py` | `push-hora-barata.yml` | `horabarata-tomorrow` (`horabarata-test`) | Red Eléctrica publishes tomorrow's PVPC, around 20:15 Madrid; the message carries the prices |
 | Placa Hoy | `placa_hoy.py` | `push-placa-hoy.yml` | `placahoy-contingency` (`placahoy-test`) | Each new contingency communiqué on aire.cdmx.gob.mx, checked every 10 min, 10:00-22:30 Mexico City |
 | Scioperi Oggi | `scioperi.py` | `push-scioperi.yml` | `scioperi-list` (`scioperi-test`) | A strike added, revoked or removed from the MIT list, checked every 30 min, about 7:00-21:30 Rome. The push only wakes the app (Android data, iOS background): the app decides what to tell |
 | Dia do Pagamento | `beneficios.py` | `push-beneficios.yml` | `beneficios-<program id>` (`beneficios-test-<program id>`) | Each publication of `beneficios/calendars.json` that adds payment dates to a program; test: `gh workflow run push-beneficios.yml -f program=br_bolsa_familia` |
