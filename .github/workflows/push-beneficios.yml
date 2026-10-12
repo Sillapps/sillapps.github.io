@@ -1,0 +1,77 @@
+# Dia do Pagamento (Beneficios): one push per program that gained payment
+# dates, each time beneficios/calendars.json is published (tool/publish_site.sh
+# in sillapps-beneficios). Compares with the file of the previous push, waits
+# for sillapps.com to serve the new one, then sends. Free: public repo minutes
+# and FCM. See push/README.md and push/beneficios.py.
+#
+# Until the Google side is set up (repo variable PUSH_WIF_PROVIDER, see
+# push/setup_wif.sh), every run stops before sending, without failing.
+name: push-beneficios
+on:
+  push:
+    branches: [main]
+    paths: [beneficios/calendars.json]
+  workflow_dispatch:
+    inputs:
+      program:
+        description: "Program id: one test message to beneficios-test-<id> (debug builds only)"
+        default: br_bolsa_familia
+permissions:
+  contents: read
+  id-token: write
+concurrency:
+  group: push-beneficios
+  cancel-in-progress: false
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Configured?
+        id: conf
+        run: |
+          if [ -z "${{ vars.PUSH_WIF_PROVIDER }}" ]; then echo "push not configured yet (push/setup_wif.sh)"; echo "ok=false" >> "$GITHUB_OUTPUT"; else echo "ok=true" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@v4
+        if: steps.conf.outputs.ok == 'true'
+        with:
+          sparse-checkout: |
+            push
+            beneficios/calendars.json
+          sparse-checkout-cone-mode: false
+      - name: New dates?
+        if: steps.conf.outputs.ok == 'true'
+        id: check
+        env:
+          BEFORE: ${{ github.event.before }}
+          TEST: ${{ github.event_name == 'workflow_dispatch' && inputs.program || '' }}
+        run: |
+          if [ -n "$TEST" ]; then
+            python3 push/beneficios.py --test "$TEST" | tee check.txt
+          else
+            # The file as it was before this push (absent for a new branch).
+            curl -fsS "https://raw.githubusercontent.com/${{ github.repository }}/$BEFORE/beneficios/calendars.json" -o old.json || rm -f old.json
+            python3 push/beneficios.py --old old.json | tee check.txt
+          fi
+          if grep -q "due=true" check.txt; then echo "due=true" >> "$GITHUB_OUTPUT"; fi
+      - name: Google token
+        if: steps.check.outputs.due == 'true'
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.PUSH_WIF_PROVIDER }}
+          service_account: ${{ vars.PUSH_SERVICE_ACCOUNT }}
+          token_format: access_token
+          access_token_scopes: https://www.googleapis.com/auth/firebase.messaging
+          # The send waits up to 15 minutes for sillapps.com to serve the file.
+          access_token_lifetime: 1800s
+      - name: Send
+        if: steps.check.outputs.due == 'true'
+        env:
+          FCM_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+          TEST: ${{ github.event_name == 'workflow_dispatch' && inputs.program || '' }}
+        run: |
+          if [ -n "$TEST" ]; then
+            python3 push/beneficios.py --test "$TEST" --send --no-wait
+          else
+            python3 push/beneficios.py --old old.json --send
+          fi

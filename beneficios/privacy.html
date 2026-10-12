@@ -38,7 +38,7 @@
             <p class="meta-line">App name: Dia do Pagamento (Brazil), Calendario de Pagos (Mexico), Grant Payment Dates (South Africa)</p>
             <p class="meta-line">Package: com.sillapps.beneficios</p>
             <p class="meta-line">Controller: Maxime Silla Pellicer, trading as Sillapps · 19 Rue des Causses, 91940 Les Ulis, France · contact@sillapps.com</p>
-            <p class="meta-line">Effective date: October 11, 2026</p>
+            <p class="meta-line">Effective date: October 12, 2026</p>
             <p class="meta-line"><a href="#en">English</a> · <a href="#pt">Português</a> · <a href="#es">Español</a></p>
           </div>
 
@@ -56,7 +56,7 @@
               <h2>Data you enter, kept on your phone</h2>
               <p>The app never asks for a CPF, NIS, CURP, ID number, card, bank account, password or any document number. It only needs the one thing the official calendar uses: the last digit of a number, a birth month, the first letter of a surname or a grant group, plus an optional nickname for each person you follow.</p>
               <p>These choices, your country, alert preferences, Pro and trial status, local usage counters (first day of use, days opened, when a reminder or rating prompt was shown) and a short local log of unexpected errors are stored only on your device. They are not sent to the developer.</p>
-              <p>Android backup: if backup is on in your phone settings, Android may copy these settings to your Google account so they come back after a reinstall. This is handled by Google under your account settings.</p>
+              <p>Android backup: if backup is on in your phone settings, Android may copy these settings to your Google account so they come back after a reinstall. This is handled by Google under your account settings. On iPhone, app data is part of your device backup (iCloud or computer) like any app&#x27;s, under your control and Apple&#x27;s policies; the developer has no access to it.</p>
             </section>
             <section class="section">
               <h2>Network requests</h2>
@@ -65,15 +65,16 @@
             <section class="section">
               <h2>Advertising (free version)</h2>
               <p>The free version shows one banner ad on the main screen (not on the first day of use; never in notifications, the widget or the purchase screen). Ads are served by Google AdMob (Google Mobile Ads SDK). Google may collect and share the device advertising ID, approximate location derived from the IP address, app interaction data and diagnostics, to serve and measure ads, for analytics and to prevent fraud (see https://policies.google.com/technologies/partner-sites).</p>
-              <p>Where the law requires it (for example in the EEA, the UK and Switzerland), the app asks for your consent with Google&#x27;s User Messaging Platform before ads are requested, and Settings &gt; Ad privacy choices lets you change it. Elsewhere, ads are shown on the basis of the developer&#x27;s legitimate interest in funding a free app; you can limit personalized ads and reset or delete your advertising ID in your Android settings. Buying Pro removes ads.</p>
+              <p>Where the law requires it (for example in the EEA, the UK and Switzerland), the app asks for your consent with Google&#x27;s User Messaging Platform before ads are requested, and Settings &gt; Ad privacy choices lets you change it. Elsewhere, ads are shown on the basis of the developer&#x27;s legitimate interest in funding a free app; you can limit personalized ads and reset or delete your advertising ID in your Android settings. On iPhone, the app never asks to track you and ads are served without the advertising identifier (IDFA). Buying Pro removes ads.</p>
             </section>
             <section class="section">
               <h2>Purchases</h2>
-              <p>Pro is a one-time in-app purchase processed by Google Play. Payment details are handled entirely by Google; the developer does not receive them. The app only asks Google Play whether Pro is owned. The free trial is stored on your device and needs no account or card.</p>
+              <p>Pro is a one-time in-app purchase processed by Google Play, or by the App Store on iPhone. Payment details are handled entirely by the store; the developer does not receive them. The app only asks the store whether Pro is owned. On Android, the free trial is stored on your device and needs no account or card; on iPhone, it is a free App Store purchase (nothing is charged), so the App Store remembers when it started.</p>
             </section>
             <section class="section">
               <h2>Notifications and widget</h2>
-              <p>Alerts are scheduled locally on your device and the home screen widget reads dates stored locally by the app. Neither sends data anywhere.</p>
+              <p>Payment alerts are scheduled locally on your device and the home screen widget reads dates stored locally by the app. Neither sends data anywhere.</p>
+              <p>New dates alert (Pro or free trial): when your alerts are on, the app registers with Google&#x27;s Firebase Cloud Messaging (and, on iPhone, Apple&#x27;s push notification service), which gives your phone a push token, and subscribes it to one topic per program you follow (for example Bolsa Família), shared by everyone who follows that program. When an official calendar adds payment dates, an automated job sends one message to that topic. The message is the same for everyone and contains no personal data: your phone then downloads the calendars and works out your own dates. The developer never receives the tokens and keeps no list of users. Google stores the token and its topics to deliver the messages, as a processor, under the Firebase terms (https://firebase.google.com/support/privacy), so Google can tell which programs&#x27; topics a token follows, not who you are; it also sees your IP address when your phone connects. Turning the alerts off, or the end of the free trial, unsubscribes your phone and deletes its token. If you never turn the alerts on, no push token is created.</p>
             </section>
             <section class="section">
               <h2>Contacting us</h2>
@@ -81,19 +82,19 @@
             </section>
             <section class="section">
               <h2>Ratings and reviews</h2>
-              <p>From time to time, the app may ask you to rate it through the Google Play In-App Review API. Google Play shows and handles that window: the developer does not receive your rating or review through the app, and what you post appears on Google Play under your Google account, under Google&#x27;s policies.</p>
+              <p>From time to time, the app may ask you to rate it through the Google Play In-App Review API, or Apple&#x27;s rating prompt on iPhone. The store shows and handles that window: the developer does not receive your rating or review through the app, and what you post appears on the store under your account, under the store&#x27;s policies.</p>
             </section>
             <section class="section">
               <h2>Legal bases</h2>
-              <p>Local data: needed to provide the app you use (performance of a contract). Calendar download: legitimate interest in keeping dates up to date. Advertising: your consent where required, otherwise legitimate interest. Purchases: performance of a contract and legal obligations.</p>
+              <p>Local data: needed to provide the app you use (performance of a contract). Calendar download: legitimate interest in keeping dates up to date. Advertising: your consent where required, otherwise legitimate interest. Purchases: performance of a contract and legal obligations. New dates alert: performance of the service you turned on.</p>
             </section>
             <section class="section">
               <h2>International transfers</h2>
-              <p>Google and GitHub may process data in the United States and other countries, under their own safeguards (such as standard contractual clauses).</p>
+              <p>Google, Apple and GitHub may process data in the United States and other countries, under their own safeguards (such as standard contractual clauses).</p>
             </section>
             <section class="section">
               <h2>Retention and deletion</h2>
-              <p>Data on your phone stays until you remove a person in the app, clear the app storage or uninstall it. Google&#x27;s retention of advertising and purchase data is described in Google&#x27;s privacy policy.</p>
+              <p>Data on your phone stays until you remove a person in the app, clear the app storage or uninstall it. Google&#x27;s and Apple&#x27;s retention of advertising, purchase and push data is described in their privacy policies.</p>
             </section>
             <section class="section">
               <h2>Your rights</h2>
@@ -123,7 +124,7 @@
               <h2>Dados que você informa, guardados no celular</h2>
               <p>O app nunca pede CPF, NIS completo, CURP, documento, cartão, conta bancária ou senha. Ele só usa o que o calendário oficial usa: o último dígito, o mês de nascimento, a inicial do sobrenome ou o grupo do benefício, e um apelido opcional para cada pessoa acompanhada.</p>
               <p>Essas escolhas, o país, os horários dos avisos, o status do Pro e do teste, contadores de uso locais e um registro local curto de erros ficam só no seu celular. Não são enviados ao desenvolvedor.</p>
-              <p>Backup do Android: se o backup estiver ativado, o Android pode copiar esses ajustes para a sua conta Google, sob as regras da sua conta.</p>
+              <p>Backup do Android: se o backup estiver ativado, o Android pode copiar esses ajustes para a sua conta Google, sob as regras da sua conta. No iPhone, os dados do app entram no backup do aparelho (iCloud ou computador), como os de qualquer app, sob o seu controle e as regras da Apple; o desenvolvedor não tem acesso.</p>
             </section>
             <section class="section">
               <h2>Conexões</h2>
@@ -132,11 +133,16 @@
             <section class="section">
               <h2>Publicidade (versão grátis)</h2>
               <p>A versão grátis mostra um banner na tela principal (não no primeiro dia de uso; nunca nos avisos, no widget ou na tela de compra), servido pelo Google AdMob. O Google pode coletar e compartilhar o ID de publicidade, a localização aproximada pelo IP, interações e diagnósticos, para exibir e medir anúncios, para estatísticas e para prevenir fraudes.</p>
-              <p>Onde a lei exige (por exemplo na Europa), o app pede o seu consentimento antes dos anúncios. No Brasil, os anúncios se baseiam no legítimo interesse de manter o app gratuito; você pode limitar anúncios personalizados e redefinir ou excluir o ID de publicidade nos ajustes do Android. O Pro remove os anúncios.</p>
+              <p>Onde a lei exige (por exemplo na Europa), o app pede o seu consentimento antes dos anúncios. No Brasil, os anúncios se baseiam no legítimo interesse de manter o app gratuito; você pode limitar anúncios personalizados e redefinir ou excluir o ID de publicidade nos ajustes do Android. No iPhone, o app nunca pede para rastrear você e os anúncios são servidos sem o identificador de publicidade (IDFA). O Pro remove os anúncios.</p>
             </section>
             <section class="section">
               <h2>Compras</h2>
-              <p>O Pro é uma compra única processada pelo Google Play. Os dados de pagamento ficam com o Google; o desenvolvedor não os recebe. O app só pergunta ao Google Play se o Pro foi comprado. O teste grátis fica no celular, sem conta nem cartão.</p>
+              <p>O Pro é uma compra única processada pelo Google Play, ou pela App Store no iPhone. Os dados de pagamento ficam com a loja; o desenvolvedor não os recebe. O app só pergunta à loja se o Pro foi comprado. No Android, o teste grátis fica no celular, sem conta nem cartão; no iPhone, é uma compra grátis na App Store (nada é cobrado), e a App Store guarda quando ele começou.</p>
+            </section>
+            <section class="section">
+              <h2>Avisos e widget</h2>
+              <p>Os avisos de pagamento são agendados no próprio celular e o widget lê datas guardadas pelo app. Nenhum dos dois envia dados.</p>
+              <p>Aviso de novas datas (Pro ou teste grátis): com os avisos ligados, o app se registra no Firebase Cloud Messaging do Google (e, no iPhone, no serviço de notificações da Apple), que dá ao celular um token de push, e o inscreve em um tópico por benefício acompanhado (por exemplo Bolsa Família), comum a todos que acompanham esse benefício. Quando um calendário oficial ganha novas datas, um processo automático envia uma mensagem a esse tópico. A mensagem é igual para todos e não tem dado pessoal: o celular baixa os calendários e calcula as suas datas. O desenvolvedor nunca recebe os tokens e não tem lista de usuários. O Google guarda o token e os tópicos para entregar as mensagens, como operador, conforme os termos do Firebase (https://firebase.google.com/support/privacy): sabe quais tópicos um token segue, não quem você é, e vê o seu IP quando o celular se conecta. Desligar os avisos, ou o fim do teste grátis, tira o celular dos tópicos e apaga o token. Sem avisos ligados, nenhum token é criado.</p>
             </section>
             <section class="section">
               <h2>Contato e erros</h2>
@@ -144,15 +150,15 @@
             </section>
             <section class="section">
               <h2>Avaliações</h2>
-              <p>De vez em quando, o app pode pedir que você o avalie pela API de avaliações no app do Google Play (In-App Review). O Google Play mostra e cuida dessa janela: o desenvolvedor não recebe a sua nota nem o seu comentário pelo app, e o que você publicar aparece no Google Play com a sua conta Google, sob as regras do Google.</p>
+              <p>De vez em quando, o app pode pedir que você o avalie pela API de avaliações no app do Google Play (In-App Review), ou pela janela de avaliação da Apple no iPhone. A loja mostra e cuida dessa janela: o desenvolvedor não recebe a sua nota nem o seu comentário pelo app, e o que você publicar aparece na loja com a sua conta, sob as regras da loja.</p>
             </section>
             <section class="section">
               <h2>Bases legais</h2>
-              <p>Dados locais: execução do serviço que você usa. Download dos calendários: legítimo interesse. Publicidade: consentimento onde exigido, senão legítimo interesse. Compras: execução de contrato e obrigações legais.</p>
+              <p>Dados locais: execução do serviço que você usa. Download dos calendários: legítimo interesse. Publicidade: consentimento onde exigido, senão legítimo interesse. Compras: execução de contrato e obrigações legais. Aviso de novas datas: execução do serviço que você ligou.</p>
             </section>
             <section class="section">
               <h2>Transferência internacional</h2>
-              <p>Google e GitHub podem tratar dados nos Estados Unidos e em outros países, com as garantias deles (como cláusulas contratuais padrão).</p>
+              <p>Google, Apple e GitHub podem tratar dados nos Estados Unidos e em outros países, com as garantias deles (como cláusulas contratuais padrão).</p>
             </section>
             <section class="section">
               <h2>Seus direitos (LGPD, art. 18)</h2>
@@ -178,7 +184,7 @@
               <h2>Datos que eliges, guardados en tu teléfono</h2>
               <p>La app nunca pide tu CURP, número de tarjeta, identificación, cuenta bancaria ni contraseña. Solo usa lo que usa el calendario oficial: la primera letra del primer apellido (u otro dato de una sola cifra o grupo), y un apodo opcional para cada persona que sigues.</p>
               <p>Estas elecciones, el país, los horarios de avisos, el estado de Pro y de la prueba, contadores de uso locales y un registro local breve de errores se quedan solo en tu teléfono. No se envían al desarrollador.</p>
-              <p>Respaldo de Android: si está activado, Android puede copiar estos ajustes a tu cuenta de Google, según la configuración de tu cuenta.</p>
+              <p>Respaldo de Android: si está activado, Android puede copiar estos ajustes a tu cuenta de Google, según la configuración de tu cuenta. En iPhone, los datos de la app forman parte del respaldo del dispositivo (iCloud o computadora), como los de cualquier app, bajo tu control y las políticas de Apple; el desarrollador no tiene acceso.</p>
             </section>
             <section class="section">
               <h2>Conexiones</h2>
@@ -187,11 +193,16 @@
             <section class="section">
               <h2>Publicidad (versión gratuita)</h2>
               <p>La versión gratuita muestra un banner en la pantalla principal (no el primer día de uso; nunca en avisos, widget ni pantalla de compra), servido por Google AdMob. Google puede recopilar y compartir el ID de publicidad, la ubicación aproximada por IP, interacciones y diagnósticos, para mostrar y medir anuncios, para estadísticas y para prevenir fraudes.</p>
-              <p>Donde la ley lo exige (por ejemplo en Europa), la app pide tu consentimiento antes de los anuncios. En México, los anuncios se basan en el interés legítimo de mantener la app gratuita; puedes limitar los anuncios personalizados y restablecer o borrar tu ID de publicidad en los ajustes de Android. Pro quita los anuncios.</p>
+              <p>Donde la ley lo exige (por ejemplo en Europa), la app pide tu consentimiento antes de los anuncios. En México, los anuncios se basan en el interés legítimo de mantener la app gratuita; puedes limitar los anuncios personalizados y restablecer o borrar tu ID de publicidad en los ajustes de Android. En iPhone, la app nunca pide rastrearte y los anuncios se sirven sin el identificador de publicidad (IDFA). Pro quita los anuncios.</p>
             </section>
             <section class="section">
               <h2>Compras</h2>
-              <p>Pro es una compra única procesada por Google Play. Los datos de pago los maneja Google; el desarrollador no los recibe. La app solo pregunta a Google Play si Pro está comprado. La prueba gratis se guarda en tu teléfono, sin cuenta ni tarjeta.</p>
+              <p>Pro es una compra única procesada por Google Play, o por la App Store en iPhone. Los datos de pago los maneja la tienda; el desarrollador no los recibe. La app solo pregunta a la tienda si Pro está comprado. En Android, la prueba gratis se guarda en tu teléfono, sin cuenta ni tarjeta; en iPhone, es una compra gratuita en la App Store (no se cobra nada), y la App Store guarda cuándo empezó.</p>
+            </section>
+            <section class="section">
+              <h2>Avisos y widget</h2>
+              <p>Los avisos de pago se programan en tu propio teléfono y el widget lee fechas guardadas por la app. Ninguno de los dos envía datos.</p>
+              <p>Aviso de nuevas fechas (Pro o prueba gratis): con los avisos activados, la app se registra en Firebase Cloud Messaging de Google (y, en iPhone, en el servicio de notificaciones de Apple), que le da a tu teléfono un token de notificaciones, y lo suscribe a un tema por programa que sigues (por ejemplo Adultos Mayores), común a todos los que siguen ese programa. Cuando un calendario oficial agrega fechas de pago, un proceso automático envía un mensaje a ese tema. El mensaje es igual para todos y no contiene datos personales: tu teléfono descarga los calendarios y calcula tus fechas. El desarrollador nunca recibe los tokens ni tiene una lista de usuarios. Google guarda el token y sus temas para entregar los mensajes, como encargado, según los términos de Firebase (https://firebase.google.com/support/privacy): sabe qué temas sigue un token, no quién eres, y ve tu dirección IP cuando tu teléfono se conecta. Desactivar los avisos, o el fin de la prueba gratis, saca tu teléfono de los temas y borra su token. Si nunca activas los avisos, no se crea ningún token.</p>
             </section>
             <section class="section">
               <h2>Contacto y errores</h2>
@@ -199,11 +210,11 @@
             </section>
             <section class="section">
               <h2>Calificaciones</h2>
-              <p>De vez en cuando, la app puede pedirte que la califiques con la API de reseñas integradas de Google Play (In-App Review). Google Play muestra y gestiona esa ventana: el desarrollador no recibe tu calificación ni tu reseña a través de la app, y lo que publiques aparece en Google Play con tu cuenta de Google, según las políticas de Google.</p>
+              <p>De vez en cuando, la app puede pedirte que la califiques con la API de reseñas integradas de Google Play (In-App Review), o con la ventana de calificación de Apple en iPhone. La tienda muestra y gestiona esa ventana: el desarrollador no recibe tu calificación ni tu reseña a través de la app, y lo que publiques aparece en la tienda con tu cuenta, según las políticas de la tienda.</p>
             </section>
             <section class="section">
               <h2>Transferencias</h2>
-              <p>Google y GitHub pueden tratar datos en Estados Unidos y otros países, con sus propias garantías.</p>
+              <p>Google, Apple y GitHub pueden tratar datos en Estados Unidos y otros países, con sus propias garantías.</p>
             </section>
             <section class="section">
               <h2>Tus derechos ARCO</h2>
