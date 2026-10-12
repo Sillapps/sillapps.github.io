@@ -14,8 +14,9 @@ nothing about the user):
     usual alert ("ULP in Morley: 4.0c cheaper tomorrow") or nothing on a
     quiet day. Its hourly background task stays as a fallback; the app
     tells a day once.
-  - iOS shows the alert below (an app cannot run before its notification
-    there) and refreshes the widget when iOS gives it a moment.
+  - iOS shows the alert below, rewritten on the phone by the app's
+    notification service extension ("ULP in Morley: wait, tomorrow is 4.0c
+    cheaper"), and refreshes the widget when iOS gives it a moment.
 
 The app subscribes to the topic only while the alert is on (Pro); debug
 builds use the test topic. App side: lib/src/push/ in sillapps-fuel-au.
@@ -102,6 +103,9 @@ def message(day: date, topic: str, now: datetime) -> dict:
                     "sound": "default",
                     "thread-id": "tomorrow",
                     "content-available": 1,
+                    # The app's notification service extension rewrites the
+                    # alert for the user's suburb (ios/FuelAlert).
+                    "mutable-content": 1,
                 },
             },
         },
