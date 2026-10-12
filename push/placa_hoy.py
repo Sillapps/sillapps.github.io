@@ -34,6 +34,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import ssl
 import sys
 import time
 import urllib.request
@@ -134,10 +135,19 @@ def parse(page: str) -> dict:
     }
 
 
+def _tls() -> ssl.SSLContext:
+    """The site's server offers a 1024-bit Diffie-Hellman key, which OpenSSL 3
+    refuses by default (DH_KEY_TOO_SMALL on the Actions runners). Lower the
+    security level for this one page; the certificate is still verified."""
+    ctx = ssl.create_default_context()
+    ctx.set_ciphers("DEFAULT@SECLEVEL=1")
+    return ctx
+
+
 def fetch() -> str:
     for attempt in range(3):
         try:
-            with urllib.request.urlopen(urllib.request.Request(PAGE, headers=UA), timeout=30) as r:
+            with urllib.request.urlopen(urllib.request.Request(PAGE, headers=UA), timeout=30, context=_tls()) as r:
                 # Served as ISO-8859-1 (the page says windows-1252); markers are ASCII.
                 return r.read().decode("latin-1")
         except OSError as e:
