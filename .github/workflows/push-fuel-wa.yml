@@ -1,0 +1,78 @@
+# Fuel Tomorrow WA: one push a day when FuelWatch publishes tomorrow's prices
+# (2:30pm Perth = 06:30 UTC). Runs every few minutes from 2:31pm until 5pm
+# Perth; the first run that finds the prices sends, and the cache key of the
+# day stops the later runs. Free: public repo minutes and FCM. See push/README.md.
+#
+# Until the Google side is set up (repo variable PUSH_WIF_PROVIDER, see
+# push/setup_wif.sh), every run stops before sending, without failing.
+name: push-fuel-wa
+on:
+  schedule:
+    - cron: "31,35,39,43,47,51,55,59 6 * * *"
+    - cron: "4,12,20,28,36,44,52 7,8 * * *"
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Topic (fuelwa-test reaches debug builds only)"
+        default: fuelwa-test
+      force:
+        description: "Send even if not due (test topic only)"
+        type: boolean
+        default: false
+permissions:
+  contents: read
+  id-token: write
+concurrency:
+  group: push-fuel-wa
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      TOPIC: ${{ inputs.topic || 'fuelwa-tomorrow' }}
+    steps:
+      - name: Configured?
+        id: conf
+        run: |
+          if [ -z "${{ vars.PUSH_WIF_PROVIDER }}" ]; then echo "push not configured yet (push/setup_wif.sh)"; echo "ok=false" >> "$GITHUB_OUTPUT"; else echo "ok=true" >> "$GITHUB_OUTPUT"; fi
+          echo "day=$(TZ=Australia/Perth date -d tomorrow +%F)" >> "$GITHUB_OUTPUT"
+      - name: Already sent today?
+        if: steps.conf.outputs.ok == 'true' && !inputs.force
+        id: sent
+        uses: actions/cache/restore@v4
+        with:
+          path: .push-sent
+          key: fuelwa-sent-${{ env.TOPIC }}-${{ steps.conf.outputs.day }}
+          lookup-only: true
+      - uses: actions/checkout@v4
+        if: steps.conf.outputs.ok == 'true' && steps.sent.outputs.cache-hit != 'true'
+        with:
+          sparse-checkout: push
+      - name: Prices out?
+        if: steps.conf.outputs.ok == 'true' && steps.sent.outputs.cache-hit != 'true'
+        id: check
+        run: |
+          python3 push/fuel_wa.py --check | tee check.txt
+          if grep -q "due=true" check.txt || [ "${{ inputs.force && env.TOPIC == 'fuelwa-test' }}" = "true" ]; then echo "due=true" >> "$GITHUB_OUTPUT"; fi
+      - name: Google token
+        if: steps.check.outputs.due == 'true'
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.PUSH_WIF_PROVIDER }}
+          service_account: ${{ vars.PUSH_SERVICE_ACCOUNT }}
+          token_format: access_token
+          access_token_scopes: https://www.googleapis.com/auth/firebase.messaging
+      - name: Send
+        if: steps.check.outputs.due == 'true'
+        env:
+          FCM_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+        run: |
+          python3 push/fuel_wa.py --send --topic "$TOPIC" ${{ inputs.force && env.TOPIC == 'fuelwa-test' && '--force' || '' }}
+          mkdir -p .push-sent && date -u > .push-sent/at
+      - name: Remember the day
+        if: steps.check.outputs.due == 'true' && !inputs.force
+        uses: actions/cache/save@v4
+        with:
+          path: .push-sent
+          key: fuelwa-sent-${{ env.TOPIC }}-${{ steps.conf.outputs.day }}

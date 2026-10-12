@@ -46,6 +46,10 @@ top right of every page (`.app-mark`). Bump `?v=` on both stylesheet links when 
 - `scioperi/index.html`: rebuilt every hour by `scioperi/build_oggi.py` (`.github/workflows/scioperi-oggi.yml`). Edit the script, not the HTML.
 - `placa-hoy/<city>/index.html`, the city list of `placa-hoy/index.html` and the city block of `sitemap.xml`: `python3 placa-hoy/build_pages.py`.
 
+## Push
+
+`push/`: server side of the apps' push alerts (Firebase Cloud Messaging topics, project sillapps-push, 0 $), sent by scheduled workflows (`push-fuel-wa.yml`). See `push/README.md`. The workflows authenticate with Workload Identity Federation (`push/setup_wif.sh`, run once): no key in the repo or its secrets.
+
 ## Local preview
 
 ```bash
