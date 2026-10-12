@@ -37,7 +37,7 @@
           <div class="meta-card">
             <p class="meta-line">App name: Placa Hoy (Android, com.sillapps.placahoy)</p>
             <p class="meta-line">Developer: Sillapps</p>
-            <p class="meta-line">Last updated: October 1, 2026</p>
+            <p class="meta-line">Last updated: October 12, 2026</p>
             <p class="meta-line" lang="es">Versión en español: <a href="privacidad.html">Política de privacidad</a></p>
           </div>
 
@@ -70,7 +70,7 @@
                 <li>It downloads the current rules from <code>https://sillapps.com/placa-hoy/rules-v2.json</code>, a static file hosted on GitHub Pages.</li>
                 <li>For vehicles in the Valley of Mexico metropolitan area, it reads the public air quality page of the Government of Mexico City (<code>aire.cdmx.gob.mx</code>) to check whether an environmental contingency is active.</li>
               </ol>
-              <p>As with any visit to a web page, these servers can see your IP address and technical connection data. Their processing is governed by their own policies (GitHub and the Government of Mexico City).</p>
+              <p>As with any visit to a web page, these servers can see your IP address and technical connection data. Their processing is governed by their own policies (GitHub and the Government of Mexico City). The contingency alert also uses Google's Firebase Cloud Messaging (see "Notifications and widget").</p>
             </section>
             <section class="section">
               <h2>Purchases</h2>
@@ -83,6 +83,7 @@
             <section class="section">
               <h2>Notifications and widget</h2>
               <p>Alerts (Pro or free trial), reminders (verification, SOAT and technical inspection expiry, end of a permit, rotation change) and the end-of-trial notice are local notifications, scheduled on your own phone. The home screen widget reads the answers the app stores on the device. With Pro or the trial, an Android background task downloads the rules again (and, in Mexico, the contingency status) to keep the widget and alerts up to date, with the same requests described above. None of these features sends data anywhere.</p>
+              <p>Contingency alert (Pro or free trial, with a vehicle in the Valley of Mexico metropolitan area): when your alerts are on, the app registers with Google's Firebase Cloud Messaging, which gives your phone a push token, and subscribes it to one topic shared by everyone who gets this alert. When the air quality page publishes an environmental contingency communiqué, an automated job sends one message to that topic. The message is the same for everyone and contains no personal data: your phone then reads the page and works out the answer for your vehicles. The developer never receives the tokens and keeps no list of users. Google stores the token and its topic to deliver the messages, as a processor, under the Firebase terms (https://firebase.google.com/support/privacy): it can tell which topic a token follows, not who you are, and it sees your IP address when your phone connects. Turning the alerts off, removing your Mexican vehicles or the end of the free trial unsubscribes your phone and deletes its token. If you never turn the alerts on, no token is created.</p>
             </section>
             <section class="section">
               <h2>Advertising and analytics</h2>
@@ -94,7 +95,7 @@
             </section>
             <section class="section">
               <h2>Data retention and deletion</h2>
-              <p>All app data stays on your phone. You can delete a vehicle in the app, or delete everything by clearing the app storage or uninstalling the app: uninstalling deletes all of its data from the phone. If your data is in an Android backup, you can manage or delete it in your Google account settings.</p>
+              <p>All app data (vehicles, plates and settings) stays on your phone; the contingency alert's token is deleted when you turn the alerts off. You can delete a vehicle in the app, or delete everything by clearing the app storage or uninstalling the app: uninstalling deletes all of its data from the phone. If your data is in an Android backup, you can manage or delete it in your Google account settings.</p>
             </section>
             <section class="section">
               <h2>Your rights</h2>

@@ -38,7 +38,7 @@
           <div class="meta-card">
             <p class="meta-line">Aplicación: Placa Hoy (Android, com.sillapps.placahoy)</p>
             <p class="meta-line">Desarrollador: Sillapps</p>
-            <p class="meta-line">Última actualización: 1 de octubre de 2026</p>
+            <p class="meta-line">Última actualización: 12 de octubre de 2026</p>
             <p class="meta-line" lang="en">English version: <a href="privacy.html">Privacy policy</a></p>
           </div>
 
@@ -71,7 +71,7 @@
                 <li>Descarga las reglas vigentes desde <code>https://sillapps.com/placa-hoy/rules-v2.json</code>, un archivo estático alojado en GitHub Pages.</li>
                 <li>Para los vehículos de la zona metropolitana del Valle de México, consulta la página pública de calidad del aire del Gobierno de la Ciudad de México (<code>aire.cdmx.gob.mx</code>) para saber si hay una contingencia ambiental.</li>
               </ol>
-              <p>Como en cualquier visita a una página web, esos servidores pueden ver tu dirección IP y datos técnicos de la conexión. Su tratamiento se rige por sus propias políticas (GitHub y el Gobierno de la Ciudad de México).</p>
+              <p>Como en cualquier visita a una página web, esos servidores pueden ver tu dirección IP y datos técnicos de la conexión. Su tratamiento se rige por sus propias políticas (GitHub y el Gobierno de la Ciudad de México). El aviso de contingencia usa además Firebase Cloud Messaging de Google (ver «Notificaciones y widget»).</p>
             </section>
             <section class="section">
               <h2>Compras</h2>
@@ -84,6 +84,7 @@
             <section class="section">
               <h2>Notificaciones y widget</h2>
               <p>Las alertas (Pro o prueba gratuita), los recordatorios (verificación, vencimientos del SOAT y de la revisión técnico-mecánica, fin de un permiso, cambio de rotación) y el aviso de fin de la prueba son notificaciones locales, programadas en tu propio teléfono. El widget de la pantalla de inicio lee las respuestas que la app guarda en el dispositivo. Con Pro o la prueba, una tarea en segundo plano de Android vuelve a descargar las reglas (y, en México, el estado de la contingencia) para mantener al día el widget y las alertas, con las mismas peticiones descritas arriba. Ninguna de estas funciones envía datos a ninguna parte.</p>
+              <p>Aviso de contingencia (Pro o prueba gratuita, con un vehículo de la zona metropolitana del Valle de México): con las alertas activadas, la app se registra en Firebase Cloud Messaging de Google, que le da a tu teléfono un token de notificaciones, y lo suscribe a un tema común a todos los usuarios de este aviso. Cuando la página de calidad del aire publica un comunicado de contingencia ambiental, un proceso automático envía un mensaje a ese tema. El mensaje es igual para todos y no contiene datos personales: tu teléfono consulta la página y calcula la respuesta para tus vehículos. El desarrollador nunca recibe los tokens ni tiene una lista de usuarios. Google guarda el token y su tema para entregar los mensajes, como encargado, según los términos de Firebase (https://firebase.google.com/support/privacy): sabe qué tema sigue un token, no quién eres, y ve tu dirección IP cuando tu teléfono se conecta. Desactivar las alertas, quitar tus vehículos de México o el fin de la prueba gratuita saca tu teléfono del tema y borra su token. Si nunca activas las alertas, no se crea ningún token.</p>
             </section>
             <section class="section">
               <h2>Publicidad y analítica</h2>
@@ -95,7 +96,7 @@
             </section>
             <section class="section">
               <h2>Conservación y eliminación</h2>
-              <p>Todos los datos de la app se quedan en tu teléfono. Puedes borrar un vehículo desde la app, o borrarlo todo limpiando el almacenamiento de la app o desinstalándola: desinstalar la app borra todos sus datos del teléfono. Si tus datos están en una copia de seguridad de Android, puedes gestionarla o borrarla desde la configuración de tu cuenta de Google.</p>
+              <p>Todos los datos de la app (vehículos, placas y ajustes) se quedan en tu teléfono; el token del aviso de contingencia se borra al desactivar las alertas. Puedes borrar un vehículo desde la app, o borrarlo todo limpiando el almacenamiento de la app o desinstalándola: desinstalar la app borra todos sus datos del teléfono. Si tus datos están en una copia de seguridad de Android, puedes gestionarla o borrarla desde la configuración de tu cuenta de Google.</p>
             </section>
             <section class="section">
               <h2>Tus derechos</h2>
