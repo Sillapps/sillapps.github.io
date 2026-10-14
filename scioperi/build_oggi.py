@@ -37,6 +37,8 @@ NOTES_URL = "https://scioperi.mit.gov.it/mit2/public/scioperi"
 SOURCE_URL = "https://scioperi.mit.gov.it/mit2/public/scioperi"
 # Set to the Play URL once the app is in production.
 PLAY_URL: str | None = None
+APP_STORE_ID = "6822546328"
+APP_STORE_URL = f"https://apps.apple.com/it/app/id{APP_STORE_ID}"
 ROME = ZoneInfo("Europe/Rome")
 OUT = Path(__file__).resolve().parent / "index.html"
 STALE_AFTER = dt.timedelta(hours=36)
@@ -318,17 +320,18 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
         },
         {
             "@context": "https://schema.org", "@type": "MobileApplication", "name": "Scioperi Oggi",
-            "operatingSystem": "ANDROID", "applicationCategory": "TravelApplication", "inLanguage": "it",
+            "operatingSystem": "ANDROID, IOS", "applicationCategory": "TravelApplication", "inLanguage": "it",
             "url": "https://sillapps.com/scioperi/", "image": "https://sillapps.com/scioperi/icon-192.png",
             "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
             "publisher": {"@type": "Organization", "name": "Sillapps", "url": "https://sillapps.com/"},
-            **({"installUrl": PLAY_URL} if PLAY_URL else {}),
+            "installUrl": [u for u in (PLAY_URL, APP_STORE_URL) if u],
         },
     ]
     ld_html = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)
-    cta = (
-        f'<a class="play" href="{e(PLAY_URL)}">Scarica Scioperi Oggi su Google Play</a>'
-        if PLAY_URL else '<p class="soon">L\'app Android <strong>Scioperi Oggi</strong> arriva presto su Google Play.</p>'
+    cta = '<p class="stores">' + (
+        f'<a class="play" href="{e(PLAY_URL)}">Scarica su Google Play</a>' if PLAY_URL else ""
+    ) + f'<a class="play" href="{e(APP_STORE_URL)}">Scarica su App Store</a></p>' + (
+        "" if PLAY_URL else '<p class="soon">La versione Android arriva presto su Google Play.</p>'
     )
     list_line = f"Elenco ufficiale aggiornato al {list_date:%d/%m/%Y}" if list_date else "Elenco ufficiale"
     stale_list = list_date is not None and (today - list_date).days > 2
@@ -342,6 +345,7 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0b0f17" />
+    <meta name="apple-itunes-app" content="app-id={APP_STORE_ID}" />
     <title>{e(title)}</title>
     <meta name="description" content="{e(desc)}" />
     <link rel="canonical" href="https://sillapps.com/scioperi/" />
@@ -386,6 +390,7 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
       .empty {{ color: var(--soft); }}
       .cta {{ background: var(--card); border-radius: 16px; padding: 16px; margin-top: 32px; }}
       .cta p {{ margin: 4px 0; }}
+      .stores {{ display: flex; flex-wrap: wrap; gap: 10px; }}
       .play {{ display: inline-block; min-height: 48px; padding: 12px 18px; background: var(--accent); color: #06121f; font-weight: 800; border-radius: 12px; text-decoration: none; }}
       details {{ background: var(--card); border-radius: 12px; padding: 10px 14px; margin: 8px 0; }}
       summary {{ cursor: pointer; font-weight: 700; min-height: 28px; }}
