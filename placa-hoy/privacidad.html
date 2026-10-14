@@ -36,9 +36,9 @@
           </div>
 
           <div class="meta-card">
-            <p class="meta-line">Aplicación: Placa Hoy (Android, com.sillapps.placahoy)</p>
+            <p class="meta-line">Aplicación: Placa Hoy (Android y iPhone, com.sillapps.placahoy)</p>
             <p class="meta-line">Desarrollador: Sillapps</p>
-            <p class="meta-line">Última actualización: 12 de octubre de 2026</p>
+            <p class="meta-line">Última actualización: 13 de octubre de 2026</p>
             <p class="meta-line" lang="en">English version: <a href="privacy.html">Privacy policy</a></p>
           </div>
 
@@ -62,7 +62,7 @@
                 <li><strong>Contadores de uso locales:</strong> fecha de instalación, número de días de uso, inicio de la prueba gratuita de Pro, y fechas en que la app te mostró por última vez la propuesta de Pro y la solicitud de valoración. Sirven solo para no insistir: por ejemplo, para no pedirte una valoración más de una vez cada varios meses.</li>
                 <li><strong>Datos técnicos:</strong> una copia de las reglas de circulación, el último estado de la contingencia ambiental consultado (México), las alertas programadas y si Placa Hoy Pro está desbloqueado.</li>
               </ul>
-              <p>Si tienes activada la copia de seguridad de Android, estos datos pueden incluirse en ella. Esa copia la gestiona Google en tu cuenta de Google, según su política de privacidad; Sillapps no tiene acceso a ella.</p>
+              <p>Si tienes activada la copia de seguridad de Android, o la de iCloud en iPhone, estos datos pueden incluirse en ella. Esa copia la gestiona Google en tu cuenta de Google, o Apple en tu cuenta de Apple, según su política de privacidad; Sillapps no tiene acceso a ella.</p>
             </section>
             <section class="section">
               <h2>Conexiones a internet</h2>
@@ -71,32 +71,32 @@
                 <li>Descarga las reglas vigentes desde <code>https://sillapps.com/placa-hoy/rules-v2.json</code>, un archivo estático alojado en GitHub Pages.</li>
                 <li>Para los vehículos de la zona metropolitana del Valle de México, consulta la página pública de calidad del aire del Gobierno de la Ciudad de México (<code>aire.cdmx.gob.mx</code>) para saber si hay una contingencia ambiental.</li>
               </ol>
-              <p>Como en cualquier visita a una página web, esos servidores pueden ver tu dirección IP y datos técnicos de la conexión. Su tratamiento se rige por sus propias políticas (GitHub y el Gobierno de la Ciudad de México). El aviso de contingencia usa además Firebase Cloud Messaging de Google (ver «Notificaciones y widget»).</p>
+              <p>Como en cualquier visita a una página web, esos servidores pueden ver tu dirección IP y datos técnicos de la conexión. Su tratamiento se rige por sus propias políticas (GitHub y el Gobierno de la Ciudad de México). El aviso de contingencia usa además Firebase Cloud Messaging de Google (y, en iPhone, el servicio de notificaciones de Apple; ver «Notificaciones y widget»).</p>
             </section>
             <section class="section">
               <h2>Compras</h2>
-              <p>Placa Hoy Pro es una compra única dentro de la app que gestiona Google Play Billing. Google trata el pago y tus datos de pago; el desarrollador no los recibe. La app solo recibe de Google Play el estado de la compra (si tienes Pro o no). La prueba gratuita de 7 días se guarda en tu teléfono, sin cuenta.</p>
+              <p>Placa Hoy Pro es una compra única dentro de la app que gestiona Google Play Billing en Android y el App Store de Apple en iPhone. Google o Apple tratan el pago y tus datos de pago; el desarrollador no los recibe. La app solo recibe de la tienda el estado de la compra (si tienes Pro o no). En Android, la prueba gratuita de 7 días se guarda en tu teléfono, sin cuenta. En iPhone, la prueba gratuita es una compra gratuita del App Store llamada «Prueba de 7 días»: el App Store la registra en tu cuenta de Apple y la prueba se ofrece una vez por cuenta.</p>
             </section>
             <section class="section">
               <h2>Valoraciones</h2>
-              <p>De vez en cuando, la app puede pedirte que la valores con la API oficial de valoraciones integradas de Google Play (In-App Review). Google Play muestra y gestiona esa ventana: el desarrollador no recibe tu valoración a través de la app, y lo que publiques aparece en Google Play con tu cuenta de Google, según las políticas de Google.</p>
+              <p>De vez en cuando, la app puede pedirte que la valores con la ventana oficial de valoración de Google Play (In-App Review) en Android, o la del App Store en iPhone. La tienda muestra y gestiona esa ventana: el desarrollador no recibe tu valoración a través de la app, y lo que publiques aparece en Google Play o en el App Store con tu cuenta, según las políticas de Google o de Apple.</p>
             </section>
             <section class="section">
               <h2>Notificaciones y widget</h2>
-              <p>Las alertas (Pro o prueba gratuita), los recordatorios (verificación, vencimientos del SOAT y de la revisión técnico-mecánica, fin de un permiso, cambio de rotación) y el aviso de fin de la prueba son notificaciones locales, programadas en tu propio teléfono. El widget de la pantalla de inicio lee las respuestas que la app guarda en el dispositivo. Con Pro o la prueba, una tarea en segundo plano de Android vuelve a descargar las reglas (y, en México, el estado de la contingencia) para mantener al día el widget y las alertas, con las mismas peticiones descritas arriba. Ninguna de estas funciones envía datos a ninguna parte.</p>
-              <p>Aviso de contingencia (Pro o prueba gratuita, con un vehículo de la zona metropolitana del Valle de México): con las alertas activadas, la app se registra en Firebase Cloud Messaging de Google, que le da a tu teléfono un token de notificaciones, y lo suscribe a un tema común a todos los usuarios de este aviso. Cuando la página de calidad del aire publica un comunicado de contingencia ambiental, un proceso automático envía un mensaje a ese tema. El mensaje es igual para todos y no contiene datos personales: tu teléfono consulta la página y calcula la respuesta para tus vehículos. El desarrollador nunca recibe los tokens ni tiene una lista de usuarios. Google guarda el token y su tema para entregar los mensajes, como encargado, según los términos de Firebase (https://firebase.google.com/support/privacy): sabe qué tema sigue un token, no quién eres, y ve tu dirección IP cuando tu teléfono se conecta. Desactivar las alertas, quitar tus vehículos de México o el fin de la prueba gratuita saca tu teléfono del tema y borra su token. Si nunca activas las alertas, no se crea ningún token.</p>
+              <p>Las alertas (Pro o prueba gratuita), los recordatorios (verificación, vencimientos del SOAT y de la revisión técnico-mecánica, fin de un permiso, cambio de rotación) y el aviso de fin de la prueba son notificaciones locales, programadas en tu propio teléfono. El widget de la pantalla de inicio lee las respuestas que la app guarda en el dispositivo. Con Pro o la prueba, una tarea en segundo plano (en Android) o una actualización en segundo plano (en iPhone, cuando el sistema lo permite) vuelve a descargar las reglas (y, en México, el estado de la contingencia) para mantener al día el widget y las alertas, con las mismas peticiones descritas arriba. Ninguna de estas funciones envía datos a ninguna parte.</p>
+              <p>Aviso de contingencia (Pro o prueba gratuita, con un vehículo de la zona metropolitana del Valle de México): con las alertas activadas, la app se registra en Firebase Cloud Messaging de Google (y, en iPhone, en el servicio de notificaciones de Apple, por el que pasan los mensajes), que le da a tu teléfono un token de notificaciones, y lo suscribe a un tema común a todos los usuarios de este aviso. Cuando la página de calidad del aire publica un comunicado de contingencia ambiental, un proceso automático envía un mensaje a ese tema. El mensaje es igual para todos y no contiene datos personales: tu teléfono consulta la página y calcula la respuesta para tus vehículos. En iPhone, una extensión de la app añade esa respuesta a la notificación con los datos ya guardados en el teléfono, sin enviar nada. El desarrollador nunca recibe los tokens ni tiene una lista de usuarios. Google guarda el token y su tema para entregar los mensajes, como encargado, según los términos de Firebase (https://firebase.google.com/support/privacy): sabe qué tema sigue un token, no quién eres, y ve tu dirección IP cuando tu teléfono se conecta. Desactivar las alertas, quitar tus vehículos de México o el fin de la prueba gratuita saca tu teléfono del tema y borra su token. Si nunca activas las alertas, no se crea ningún token.</p>
             </section>
             <section class="section">
               <h2>Publicidad y analítica</h2>
               <p>Placa Hoy no muestra anuncios y no integra ningún SDK de publicidad, de analítica ni de seguimiento.</p>
             </section>
             <section class="section">
-              <h2>Google Play</h2>
-              <p>La descarga y las actualizaciones de la app, las compras y las valoraciones pasan por Google Play, que gestiona Google con su propia política de privacidad. Google puede facilitar al desarrollador estadísticas agregadas (por ejemplo, número de instalaciones e informes de fallos) a través de Play Console; esas estadísticas no te identifican.</p>
+              <h2>Google Play y App Store</h2>
+              <p>La descarga y las actualizaciones de la app, las compras y las valoraciones pasan por Google Play (Android) o por el App Store (iPhone), que gestionan Google y Apple con sus propias políticas de privacidad. Google y Apple pueden facilitar al desarrollador estadísticas agregadas (por ejemplo, número de instalaciones e informes de fallos) a través de Play Console y App Store Connect; esas estadísticas no te identifican.</p>
             </section>
             <section class="section">
               <h2>Conservación y eliminación</h2>
-              <p>Todos los datos de la app (vehículos, placas y ajustes) se quedan en tu teléfono; el token del aviso de contingencia se borra al desactivar las alertas. Puedes borrar un vehículo desde la app, o borrarlo todo limpiando el almacenamiento de la app o desinstalándola: desinstalar la app borra todos sus datos del teléfono. Si tus datos están en una copia de seguridad de Android, puedes gestionarla o borrarla desde la configuración de tu cuenta de Google.</p>
+              <p>Todos los datos de la app (vehículos, placas y ajustes) se quedan en tu teléfono; el token del aviso de contingencia se borra al desactivar las alertas. Puedes borrar un vehículo desde la app, o borrarlo todo limpiando el almacenamiento de la app o desinstalándola: desinstalar la app borra todos sus datos del teléfono. Si tus datos están en una copia de seguridad de Android o de iCloud, puedes gestionarla o borrarla desde la configuración de tu cuenta de Google o de Apple.</p>
             </section>
             <section class="section">
               <h2>Tus derechos</h2>

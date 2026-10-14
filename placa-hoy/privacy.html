@@ -35,9 +35,9 @@
           </div>
 
           <div class="meta-card">
-            <p class="meta-line">App name: Placa Hoy (Android, com.sillapps.placahoy)</p>
+            <p class="meta-line">App name: Placa Hoy (Android and iPhone, com.sillapps.placahoy)</p>
             <p class="meta-line">Developer: Sillapps</p>
-            <p class="meta-line">Last updated: October 12, 2026</p>
+            <p class="meta-line">Last updated: October 13, 2026</p>
             <p class="meta-line" lang="es">Versión en español: <a href="privacidad.html">Política de privacidad</a></p>
           </div>
 
@@ -61,7 +61,7 @@
                 <li><strong>Local usage counters:</strong> install date, number of days of use, start of the Pro free trial, and when the app last showed you the Pro offer and the rating request. They only exist so the app does not insist: for example, so it does not ask you for a rating more than once every few months.</li>
                 <li><strong>Technical data:</strong> a copy of the driving rules, the last environmental contingency status checked (Mexico), the scheduled alerts and whether Placa Hoy Pro is unlocked.</li>
               </ul>
-              <p>If Android backup is turned on, this data may be included in it. That backup is managed by Google in your Google account, under Google's privacy policy; Sillapps has no access to it.</p>
+              <p>If Android backup, or iCloud Backup on iPhone, is turned on, this data may be included in it. That backup is managed by Google in your Google account, or by Apple in your Apple Account, under their privacy policies; Sillapps has no access to it.</p>
             </section>
             <section class="section">
               <h2>Network requests</h2>
@@ -70,32 +70,32 @@
                 <li>It downloads the current rules from <code>https://sillapps.com/placa-hoy/rules-v2.json</code>, a static file hosted on GitHub Pages.</li>
                 <li>For vehicles in the Valley of Mexico metropolitan area, it reads the public air quality page of the Government of Mexico City (<code>aire.cdmx.gob.mx</code>) to check whether an environmental contingency is active.</li>
               </ol>
-              <p>As with any visit to a web page, these servers can see your IP address and technical connection data. Their processing is governed by their own policies (GitHub and the Government of Mexico City). The contingency alert also uses Google's Firebase Cloud Messaging (see "Notifications and widget").</p>
+              <p>As with any visit to a web page, these servers can see your IP address and technical connection data. Their processing is governed by their own policies (GitHub and the Government of Mexico City). The contingency alert also uses Google's Firebase Cloud Messaging (and, on iPhone, Apple's push notification service; see "Notifications and widget").</p>
             </section>
             <section class="section">
               <h2>Purchases</h2>
-              <p>Placa Hoy Pro is a one-time in-app purchase handled by Google Play Billing. Google processes the payment and your payment details; the developer does not receive them. The app only receives the purchase status (whether you own Pro) from Google Play. The 7-day free trial is stored on your phone, with no account.</p>
+              <p>Placa Hoy Pro is a one-time in-app purchase handled by Google Play Billing on Android and by Apple&rsquo;s App Store on iPhone. Google or Apple processes the payment and your payment details; the developer does not receive them. The app only receives the purchase status (whether you own Pro) from the store. On Android, the 7-day free trial is stored on your phone, with no account. On iPhone, the free trial is a free App Store purchase named &ldquo;Prueba de 7 días&rdquo;: the App Store records it on your Apple Account and the trial is offered once per account.</p>
             </section>
             <section class="section">
               <h2>Ratings</h2>
-              <p>From time to time, the app may ask you to rate it through the official Google Play In-App Review API. Google Play shows and handles that dialog: the developer does not receive your rating through the app, and anything you post appears on Google Play under your Google account, according to Google's policies.</p>
+              <p>From time to time, the app may ask you to rate it through the official rating dialog of Google Play (In-App Review) on Android, or of the App Store on iPhone. The store shows and handles that dialog: the developer does not receive your rating through the app, and anything you post appears on Google Play or the App Store under your account, according to Google's or Apple's policies.</p>
             </section>
             <section class="section">
               <h2>Notifications and widget</h2>
-              <p>Alerts (Pro or free trial), reminders (verification, SOAT and technical inspection expiry, end of a permit, rotation change) and the end-of-trial notice are local notifications, scheduled on your own phone. The home screen widget reads the answers the app stores on the device. With Pro or the trial, an Android background task downloads the rules again (and, in Mexico, the contingency status) to keep the widget and alerts up to date, with the same requests described above. None of these features sends data anywhere.</p>
-              <p>Contingency alert (Pro or free trial, with a vehicle in the Valley of Mexico metropolitan area): when your alerts are on, the app registers with Google's Firebase Cloud Messaging, which gives your phone a push token, and subscribes it to one topic shared by everyone who gets this alert. When the air quality page publishes an environmental contingency communiqué, an automated job sends one message to that topic. The message is the same for everyone and contains no personal data: your phone then reads the page and works out the answer for your vehicles. The developer never receives the tokens and keeps no list of users. Google stores the token and its topic to deliver the messages, as a processor, under the Firebase terms (https://firebase.google.com/support/privacy): it can tell which topic a token follows, not who you are, and it sees your IP address when your phone connects. Turning the alerts off, removing your Mexican vehicles or the end of the free trial unsubscribes your phone and deletes its token. If you never turn the alerts on, no token is created.</p>
+              <p>Alerts (Pro or free trial), reminders (verification, SOAT and technical inspection expiry, end of a permit, rotation change) and the end-of-trial notice are local notifications, scheduled on your own phone. The home screen widget reads the answers the app stores on the device. With Pro or the trial, an Android background task (or, on iPhone, a background refresh when the system allows it) downloads the rules again (and, in Mexico, the contingency status) to keep the widget and alerts up to date, with the same requests described above. None of these features sends data anywhere.</p>
+              <p>Contingency alert (Pro or free trial, with a vehicle in the Valley of Mexico metropolitan area): when your alerts are on, the app registers with Google's Firebase Cloud Messaging (and, on iPhone, with Apple's push notification service, which carries the messages), which gives your phone a push token, and subscribes it to one topic shared by everyone who gets this alert. When the air quality page publishes an environmental contingency communiqué, an automated job sends one message to that topic. The message is the same for everyone and contains no personal data: your phone then reads the page and works out the answer for your vehicles. On iPhone, an extension of the app adds that answer to the notification from the data already stored on the phone, without sending anything. The developer never receives the tokens and keeps no list of users. Google stores the token and its topic to deliver the messages, as a processor, under the Firebase terms (https://firebase.google.com/support/privacy): it can tell which topic a token follows, not who you are, and it sees your IP address when your phone connects. Turning the alerts off, removing your Mexican vehicles or the end of the free trial unsubscribes your phone and deletes its token. If you never turn the alerts on, no token is created.</p>
             </section>
             <section class="section">
               <h2>Advertising and analytics</h2>
               <p>Placa Hoy shows no ads and includes no advertising, analytics or tracking SDK.</p>
             </section>
             <section class="section">
-              <h2>Google Play</h2>
-              <p>App downloads and updates, purchases and ratings go through Google Play, operated by Google under its own privacy policy. Google may provide the developer with aggregated statistics (for example, install counts and crash reports) through Play Console; these statistics do not identify you.</p>
+              <h2>Google Play and App Store</h2>
+              <p>App downloads and updates, purchases and ratings go through Google Play (Android) or the App Store (iPhone), operated by Google and Apple under their own privacy policies. Google and Apple may provide the developer with aggregated statistics (for example, install counts and crash reports) through Play Console and App Store Connect; these statistics do not identify you.</p>
             </section>
             <section class="section">
               <h2>Data retention and deletion</h2>
-              <p>All app data (vehicles, plates and settings) stays on your phone; the contingency alert's token is deleted when you turn the alerts off. You can delete a vehicle in the app, or delete everything by clearing the app storage or uninstalling the app: uninstalling deletes all of its data from the phone. If your data is in an Android backup, you can manage or delete it in your Google account settings.</p>
+              <p>All app data (vehicles, plates and settings) stays on your phone; the contingency alert's token is deleted when you turn the alerts off. You can delete a vehicle in the app, or delete everything by clearing the app storage or uninstalling the app: uninstalling deletes all of its data from the phone. If your data is in an Android or iCloud backup, you can manage or delete it in your Google or Apple account settings.</p>
             </section>
             <section class="section">
               <h2>Your rights</h2>
