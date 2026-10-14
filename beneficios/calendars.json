@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 2026101101,
- "published": "2026-10-11",
+ "version": 2026101401,
+ "published": "2026-10-14",
  "countries": [
   {
    "code": "BR",
@@ -1522,19 +1522,66 @@
       "Z"
      ],
      "official_url": "https://www.programasparaelbienestar.gob.mx/programas/infancias/beca-rita-cetina/",
-     "calendars": [],
+     "calendars": [
+      {
+       "id": "mx_beca_rita_cetina_2026_sep_oct",
+       "source_url": "https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noticia/beca-rita-cetina-inicia-depositos-para-secundaria-este-es-es-calendario-de-pagos/",
+       "source_title": "Beca Rita Cetina inicia depósitos para secundaria; este es el calendario de pagos",
+       "published": "2026-10-05",
+       "valid_from": "2026-09-01",
+       "valid_to": "2026-10-31",
+       "last_verified": "2026-10-14",
+       "status": "official",
+       "payments": [
+        {
+         "period": "2026-10",
+         "label": "Bimestre septiembre-octubre (pago en octubre)",
+         "by_key": {
+          "A": "2026-10-05",
+          "B": "2026-10-05",
+          "C": "2026-10-06",
+          "D": "2026-10-07",
+          "E": "2026-10-07",
+          "F": "2026-10-07",
+          "G": "2026-10-08",
+          "H": "2026-10-09",
+          "I": "2026-10-09",
+          "J": "2026-10-09",
+          "K": "2026-10-09",
+          "L": "2026-10-09",
+          "M": "2026-10-12",
+          "N": "2026-10-13",
+          "Ñ": "2026-10-13",
+          "O": "2026-10-13",
+          "P": "2026-10-13",
+          "Q": "2026-10-13",
+          "R": "2026-10-14",
+          "S": "2026-10-15",
+          "T": "2026-10-16",
+          "U": "2026-10-16",
+          "V": "2026-10-16",
+          "W": "2026-10-16",
+          "X": "2026-10-16",
+          "Y": "2026-10-16",
+          "Z": "2026-10-16"
+         }
+        }
+       ],
+       "notes": [
+        "El depósito llega a la tarjeta del Banco del Bienestar; los pagos son escalonados y se depositan a partir de la fecha del calendario, ten paciencia.",
+        "La letra es la inicial del primer apellido de la o el titular de la tarjeta.",
+        "En la Beca Rita Cetina la letra es la del primer apellido de la madre, padre, tutora o tutor registrado como titular.",
+        "Calendario para familias de continuidad.",
+        "Calendario de secundaria, primer bimestre del ciclo escolar 2026-2027. En primaria el apoyo es anual (útiles y uniformes) y se pagó en agosto."
+       ]
+      }
+     ],
      "notes": [
       "Primaria: en 2026-2027 el apoyo es un pago anual; secundaria: pago por bimestre."
      ],
      "next_label": "",
      "day_note": "",
      "pending": [
-      {
-       "period": "2026-09",
-       "label": "Bimestre septiembre-octubre (pago en octubre)",
-       "expected": "Becas Bienestar informó que el próximo depósito será en octubre, 'en fechas calendarizadas por determinar'; el calendario por letra suele publicarse el día en que inicia el pago.",
-       "months": 2
-      },
       {
        "period": "2026-11",
        "label": "Bimestre noviembre-diciembre",
