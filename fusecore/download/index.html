@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-app="fusecore">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Get Fusecore</title>
+  <link rel="canonical" href="https://sillapps.com/fusecore/">
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0b0f1a; color: #e8edf7;
+           font: 16px/1.5 -apple-system, system-ui, sans-serif; text-align: center; padding: 24px; box-sizing: border-box; }
+    a { color: #2af6ff; } p { margin: 8px 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <p>Opening the store…</p>
+    <p><a id="play" href="https://play.google.com/store/apps/details?id=com.sillapps.fusecore">Google Play</a> · <a id="ios" href="https://apps.apple.com/app/id6822546292">App Store</a></p>
+    <p><a href="/fusecore/">About Fusecore</a></p>
+  </main>
+  <script>
+    // One link for every bio (TikTok, Instagram, YouTube): Android goes to
+    // Google Play with the source in the install referrer (Play Console,
+    // acquisition reports), iPhone and iPad to the App Store once the app is
+    // live there (checked live, so nothing to change on the day it ships),
+    // anything else to the app's page.
+    (function () {
+      var ua = navigator.userAgent || '';
+      var q = new URLSearchParams(location.search);
+      var source = q.get('s') || (/Instagram/i.test(ua) ? 'instagram' : /musical_ly|BytedanceWebview|TikTok/i.test(ua) ? 'tiktok'
+        : /YouTube/i.test(ua) ? 'youtube' : /FBAN|FBAV/i.test(ua) ? 'facebook' : 'web');
+      var referrer = encodeURIComponent('utm_source=' + source + '&utm_medium=bio&utm_campaign=social');
+      var play = 'https://play.google.com/store/apps/details?id=com.sillapps.fusecore&referrer=' + referrer;
+      var appStore = 'https://apps.apple.com/app/id6822546292';
+      var page = '/fusecore/';
+      document.getElementById('play').href = play;
+      var iOS = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      if (/Android/i.test(ua)) {
+        // The Play app itself: in-app browsers keep web links inside.
+        location.href = 'market://details?id=com.sillapps.fusecore&referrer=' + referrer;
+        setTimeout(function () { location.href = play; }, 1200);
+      } else if (iOS) {
+        var done = false;
+        var go = function (url) { if (!done) { done = true; location.href = url; } };
+        window.storeLookup = function (r) { go(r && r.resultCount > 0 ? appStore : page); };
+        var s = document.createElement('script');
+        s.src = 'https://itunes.apple.com/lookup?id=6822546292&callback=storeLookup';
+        s.onerror = function () { go(page); };
+        document.head.appendChild(s);
+        setTimeout(function () { go(page); }, 3000);
+      } else {
+        location.href = page;
+      }
+    })();
+  </script>
+</body>
+</html>
