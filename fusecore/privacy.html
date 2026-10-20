@@ -37,7 +37,7 @@
           <div class="meta-card">
             <p class="meta-line">App name: Fusecore: Idle Tower Defense</p>
             <p class="meta-line">Data controller: Maxime Silla Pellicer, entrepreneur individuel (France), publishing as Sillapps, 19 Rue des Causses, 91940 Les Ulis, France. Contact: <a href="mailto:contact@sillapps.com">contact@sillapps.com</a></p>
-            <p class="meta-line">Effective date: October 11, 2026</p>
+            <p class="meta-line">Effective date: October 20, 2026</p>
           </div>
 
           <div class="section-grid">
@@ -63,13 +63,14 @@
                 and notification preferences.
               </p>
               <p>
-                If you are signed in to Google Play Games, a copy of the same
-                data is also stored as a saved game in your Google account
-                (see below).
+                On Android, if you are signed in to Google Play Games, a copy of
+                the same data is also stored as a saved game in your Google
+                account. On iPhone, a copy is kept in your iCloud account
+                (iCloud key-value storage) if iCloud is on (see below).
               </p>
               <p>
-                If Android backup is enabled on your device, this save file is
-                included in your Google account's device backup so it can be
+                If Android backup or iCloud Backup is enabled on your device,
+                this save file is included in your device backup so it can be
                 restored on a new phone. Opponents in the league are simulated on
                 your device; no other player's data is shown or collected.
               </p>
@@ -78,8 +79,8 @@
             <section class="section">
               <h2>Data processed by third-party services</h2>
               <p>
-                Fusecore uses the following Google services. Depending on the
-                service, they process pseudonymous technical data such as an app
+                Fusecore uses the following Google and Apple services. Depending
+                on the service, they process pseudonymous technical data such as an app
                 instance or advertising identifier, device model and operating
                 system, IP address (from which an approximate location is
                 derived), in-app events, crash diagnostics and purchase status.
@@ -105,9 +106,12 @@
                 <li>
                   <strong>Google AdMob and Google User Messaging Platform</strong>:
                   deliver the optional rewarded ads and record your advertising
-                  privacy choices. AdMob uses the advertising identifier and may
-                  share data with Google's advertising partners as described in
-                  Google's policies.
+                  privacy choices. On Android, AdMob uses the advertising
+                  identifier and may share data with Google's advertising
+                  partners as described in Google's policies. On iPhone, Fusecore
+                  never asks for permission to track you, so AdMob does not
+                  receive the advertising identifier (IDFA); ad attribution goes
+                  through Apple's SKAdNetwork.
                 </li>
                 <li>
                   <strong>Google Play Games Services</strong>: if you use
@@ -118,14 +122,28 @@
                   Google account.
                 </li>
                 <li>
-                  <strong>Google Play Billing</strong>: processes optional in-app
-                  purchases and restores them on a new install.
+                  <strong>Google Play Billing</strong> (Android) and
+                  <strong>App Store purchases, StoreKit</strong> (iPhone):
+                  process optional in-app purchases and subscriptions and restore
+                  them on a new install. Fusecore never sees your payment details.
                 </li>
                 <li>
-                  <strong>Google Play In-App Review</strong>: the game may ask
-                  Google Play to show its rating card. The card is provided by
-                  Google Play; Fusecore does not receive your rating or review
-                  through it.
+                  <strong>Google Play In-App Review</strong> (Android) and the
+                  <strong>App Store rating prompt</strong> (iPhone): the game may
+                  ask the store to show its rating card. Fusecore does not receive
+                  your rating or review through it.
+                </li>
+                <li>
+                  <strong>Apple iCloud</strong> (iPhone): if iCloud is on, keeps a
+                  copy of your game save in your iCloud account so you can
+                  continue on another iPhone. You can delete it in your iCloud
+                  settings.
+                </li>
+                <li>
+                  <strong>Apple Game Center</strong> (iPhone): if you are signed
+                  in, posts your scores to the leaderboards and processes your
+                  Game Center player identifier. On Android, the leaderboards use
+                  Google Play Games Services.
                 </li>
               </ul>
               <p>
@@ -136,7 +154,9 @@
                 <a href="https://policies.google.com/privacy">Google Privacy Policy</a>,
                 <a href="https://policies.google.com/technologies/partner-sites">How Google uses data from partner apps</a>
                 and
-                <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.
+                <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>
+                and the
+                <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.
               </p>
             </section>
 
@@ -147,8 +167,8 @@
                 <li><strong>Crash reporting</strong>: our legitimate interest in fixing bugs (art. 6(1)(f)); no advertising identifier is used.</li>
                 <li><strong>Analytics</strong>: your consent (art. 6(1)(a)), where required; you can withdraw it at any time.</li>
                 <li><strong>Personalized ads</strong>: your consent, collected through Google's consent form; if you refuse, ads are non-personalized.</li>
-                <li><strong>Cloud save (Google Play Games)</strong>: performance of the service you requested (art. 6(1)(b)).</li>
-                <li><strong>Purchases</strong>: performance of the contract, and our legal obligations (accounting, handled by Google Play).</li>
+                <li><strong>Cloud save (Google Play Games or iCloud) and leaderboards (Google Play Games or Game Center)</strong>: performance of the service you requested (art. 6(1)(b)).</li>
+                <li><strong>Purchases</strong>: performance of the contract, and our legal obligations (accounting, handled by Google Play or the App Store).</li>
               </ul>
             </section>
 
@@ -178,7 +198,8 @@
                 analytics, crash and advertising data are not linked to your
                 identity, and uninstalling the app resets the app instance
                 identifier. The optional cloud save is tied to your Google Play
-                Games profile and can be deleted from it. Write to
+                Games profile (Android) or your iCloud account (iPhone) and can
+                be deleted from it. Write to
                 us for any request and we will help. You also have the right to lodge a complaint with your data
                 protection authority (in France: the CNIL, 3 Place de Fontenoy, TSA 80715, 75334 Paris Cedex 07, <a href="https://www.cnil.fr">www.cnil.fr</a>).
               </p>
@@ -194,22 +215,23 @@
                 Local game data remains on your device until you delete it, by
                 uninstalling the app or clearing its storage in your device
                 settings (and, if you use it, removing the app's backup from your
-                Google account).
+                Google account or iCloud).
               </p>
               <p>
                 Analytics event data is kept for at most 14 months, then deleted.
                 Crash reports are kept by Crashlytics for 90 days. Advertising and
-                billing data are retained by Google according to its own policies.
+                billing data are retained by Google or Apple according to their own policies.
               </p>
             </section>
 
             <section class="section">
               <h2>International transfers</h2>
               <p>
-                Google may process data outside the European Economic Area,
-                including in the United States. These transfers rely on the
-                EU-US Data Privacy Framework, to which Google LLC is certified,
-                and on the European Commission's standard contractual clauses.
+                Google and Apple may process data outside the European Economic
+                Area, including in the United States. These transfers rely on the
+                EU-US Data Privacy Framework, to which Google LLC and Apple Inc.
+                are certified, and on the European Commission's standard
+                contractual clauses.
               </p>
             </section>
 
