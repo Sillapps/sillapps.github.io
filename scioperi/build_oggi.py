@@ -36,7 +36,7 @@ RSS_URL = "https://scioperi.mit.gov.it/mit2/public/scioperi/rss"
 NOTES_URL = "https://scioperi.mit.gov.it/mit2/public/scioperi"
 SOURCE_URL = "https://scioperi.mit.gov.it/mit2/public/scioperi"
 # Set to the Play URL once the app is in production.
-PLAY_URL: str | None = None
+PLAY_URL: str | None = "https://play.google.com/store/apps/details?id=com.sillapps.scioperi&referrer=utm_source%3Dsillapps.com%26utm_medium%3Dwebsite"
 APP_STORE_ID = "6822546328"
 APP_STORE_URL = f"https://apps.apple.com/it/app/id{APP_STORE_ID}"
 ROME = ZoneInfo("Europe/Rome")
