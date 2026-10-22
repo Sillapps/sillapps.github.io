@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 2026102001,
- "published": "2026-10-20",
+ "version": 2026102201,
+ "published": "2026-10-22",
  "countries": [
   {
    "code": "BR",
@@ -2031,9 +2031,36 @@
         "Schedule approved by National Treasury on 20 March 2026 and announced by SASSA on 23 March 2026.",
         "Grants are paid early in the month over three days: Older Persons first, then Disability, then Children's grants.",
         "SASSA rules: no payment on the 1st of the month, on a weekend, on a public holiday or on the day after a public holiday (April 2026 is an official exception: Disability is paid on Tuesday 7 April, the day after Family Day).",
-        "November 2026: the schedule published in March had Older Persons on 3 November, Disability on 4 November and Children's grants on 5 November. On 15 September 2026 the President declared Wednesday 4 November (local government elections) a public holiday, so the November dates are shown as \"to be confirmed\" until SASSA confirms them (usually at the end of October).",
+        "November 2026: the schedule published in March had Older Persons on 3 November, Disability on 4 November and Children's grants on 5 November. After 4 November (local government elections) was declared a public holiday, SASSA revised the November dates on 15 October 2026: see the revised November 2026 dates.",
         "Care Dependency, War Veterans and Grant-in-Aid: the official statement does not say which payment day they share. Check your SASSA SMS or ask your SASSA office.",
         "Amounts from April 2026: Older Persons R2 400, Disability R2 400, Care Dependency R2 400, War Veterans R2 420, Foster Child R1 290, Child Support R580, Grant-in-Aid R580.",
+        "If you did not receive your grant on your date, visit your nearest SASSA office for assistance."
+       ]
+      },
+      {
+       "id": "za_sassa_2026_11_revised",
+       "source_url": "https://www.sanews.gov.za/south-africa/sassa-revises-november-grant-payment-dates-ahead-elections",
+       "source_title": "SASSA revises November grant payment dates ahead of elections (SAnews, Government Communication and Information System, 15 October 2026)",
+       "published": "2026-10-15",
+       "valid_from": "2026-10-30",
+       "valid_to": "2026-11-30",
+       "last_verified": "2026-10-22",
+       "status": "official",
+       "payments": [
+        {
+         "period": "2026-11",
+         "label": "November 2026",
+         "by_key": {
+          "older_persons": "2026-10-30",
+          "disability": "2026-11-02",
+          "children": "2026-11-03"
+         }
+        }
+       ],
+       "notes": [
+        "Revised because Wednesday 4 November 2026 (local government elections) is a public holiday. National Treasury approved the revised dates.",
+        "Older Persons Grant: Friday 30 October 2026 (the November grant is paid in October). Disability Grant: Monday 2 November. Children's grants: Tuesday 3 November.",
+        "Thursday 5 November 2026 is set aside for beneficiaries whose grants are under review.",
         "If you did not receive your grant on your date, visit your nearest SASSA office for assistance."
        ]
       }
@@ -2041,14 +2068,7 @@
      "notes": [],
      "next_label": "",
      "day_note": "Not paid on your date? Check your SASSA SMS.",
-     "pending": [
-      {
-       "period": "2026-11",
-       "label": "November 2026",
-       "expected": "4 November 2026 was declared a public holiday (local government elections) after SASSA published its schedule (3, 4 and 5 November). SASSA usually posts the month's dates at the end of the previous month: wait for its confirmation.",
-       "months": 1
-      }
-     ],
+     "pending": [],
      "key_labels": {
       "older_persons": "Older Persons Grant",
       "disability": "Disability Grant",
