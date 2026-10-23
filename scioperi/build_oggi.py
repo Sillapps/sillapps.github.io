@@ -320,7 +320,7 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
         },
         {
             "@context": "https://schema.org", "@type": "MobileApplication", "name": "Scioperi Oggi",
-            "operatingSystem": "ANDROID, IOS", "applicationCategory": "TravelApplication", "inLanguage": "it",
+            "operatingSystem": ", ".join(o for o, u in (("ANDROID", PLAY_URL), ("IOS", APP_STORE_URL)) if u), "applicationCategory": "TravelApplication", "inLanguage": "it",
             "url": "https://sillapps.com/scioperi/", "image": "https://sillapps.com/scioperi/icon-192.png",
             "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
             "publisher": {"@type": "Organization", "name": "Sillapps", "url": "https://sillapps.com/"},
