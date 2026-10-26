@@ -1,0 +1,32 @@
+# Checks store-listing source links from a US runner, the way a store reviewer
+# outside Europe reaches them (Google rejected Dia do Pagamento and Placa Hoy for
+# links that answered from France but not for its reviewers). Started by
+# ~/.claude/sillapps/tools/presubmit.py --from-us; public repo, so no minutes counted.
+name: check-links
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: Space-separated URLs to check
+        required: true
+concurrency:
+  group: check-links
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check each URL
+        env:
+          URLS: ${{ inputs.urls }}
+        run: |
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+          for u in $URLS; do
+            jar=$(mktemp)
+            r=$(curl -s -o /dev/null -L --max-time 25 -c "$jar" -b "$jar" -A "$UA" \
+                -H "Accept: text/html" -H "Accept-Language: en-US,en;q=0.8" \
+                -w "%{http_code} %{time_total}" "$u" || true)
+            echo "RESULT ${r:-000 25} $u"
+            rm -f "$jar"
+          done
