@@ -137,32 +137,35 @@
   --stripe: linear-gradient(90deg, #ffb238, #ff8a3d);
 }
 
-/* Hora Barata: night navy, indigo accent, price colors (sillapps-elec-es lib/src/core/theme.dart) */
+/* Hora Barata "Programador": dark teal graphite, turquoise cheap hours (this app only), ivory, IBM Plex (sillapps-elec-es lib/src/core/theme.dart) */
 [data-app="hora-barata"] {
   color-scheme: dark;
-  --bg: #0a0e1a;
-  --bg-2: #070a13;
-  --surface: #111728;
-  --surface-2: #161d31;
-  --surface-3: #1d2640;
-  --text: #f3f5fb;
-  --muted: #a9b1c7;
-  --faint: #8a93ae;
-  --line: rgba(255, 255, 255, 0.1);
-  --line-strong: rgba(255, 255, 255, 0.2);
-  --accent: #9aa6ff;
-  --accent-ink: #0a0e1a;
-  --accent-soft: rgba(124, 140, 255, 0.16);
-  --link: #a9b3ff;
-  --eyebrow: #3ddc97;
-  --cheap: #3ddc97;
-  --normal: #ffc857;
-  --expensive: #ff6b6b;
-  --radius-xl: 26px;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-display: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --bg: #0b1213;
+  --bg-2: #081011;
+  --surface: #111a1b;
+  --surface-2: #142021;
+  --surface-3: #1c2b2c;
+  --text: #f0f2ee;
+  --muted: #a9b6b3;
+  --faint: #889895;
+  --line: rgba(216, 255, 248, 0.12);
+  --line-strong: rgba(216, 255, 248, 0.22);
+  --accent: #2ee6d3;
+  --accent-ink: #0b1213;
+  --accent-soft: rgba(46, 230, 211, 0.14);
+  --link: #2ee6d3;
+  --eyebrow: #2ee6d3;
+  --cheap: #2ee6d3;
+  --normal: #8fa19e;
+  --expensive: #e8d9b8;
+  --radius-xl: 14px;
   --shadow: 0 28px 80px rgba(0, 0, 0, 0.45);
-  --art: radial-gradient(ellipse at 92% -12%, rgba(124, 140, 255, 0.3), transparent 50%),
-    radial-gradient(circle at 4% 0%, rgba(61, 220, 151, 0.12), transparent 40%);
-  --stripe: linear-gradient(90deg, #3ddc97, #3ddc97 30%, #ffc857 55%, #ff6b6b 85%);
+  --art: radial-gradient(ellipse at 92% -12%, rgba(14, 52, 55, 0.95), transparent 55%),
+    radial-gradient(circle at 4% 0%, rgba(46, 230, 211, 0.1), transparent 40%);
+  --stripe: linear-gradient(90deg, #2ee6d3, #2ee6d3 35%, #8fa19e 60%, #f2eee4 90%);
 }
 
 /* Placa Hoy: plate yellow on night asphalt, Barlow Semi Condensed (sillapps-circula-latam lib/src/core/theme.dart) */

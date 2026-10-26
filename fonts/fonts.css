@@ -26,3 +26,9 @@
 @font-face { font-family: "Saira"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/saira-700.woff2") format("woff2"); }
 @font-face { font-family: "Saira Wide"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/sairawide-700.woff2") format("woff2"); }
 @font-face { font-family: "Saira Wide"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/sairawide-800.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/ibmplexsans-400.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/ibmplexsans-500.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/ibmplexsans-600.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/ibmplexsans-700.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/ibmplexmono-500.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/ibmplexmono-600.woff2") format("woff2"); }
