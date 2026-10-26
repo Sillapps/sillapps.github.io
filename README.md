@@ -44,7 +44,9 @@ top right of every page (`.app-mark`). Bump `?v=` on both stylesheet links when 
 ## Generated pages
 
 - `scioperi/index.html`: rebuilt every hour by `scioperi/build_oggi.py` (`.github/workflows/scioperi-oggi.yml`). Edit the script, not the HTML.
-- `placa-hoy/<city>/index.html`, the city list of `placa-hoy/index.html` and the city block of `sitemap.xml`: `python3 placa-hoy/build_pages.py`.
+- `placa-hoy/<city>/index.html`, the city list of `placa-hoy/index.html` and the city block of `sitemap.xml`: `python3 placa-hoy/build_pages.py` (also run every hour by the same workflow, which drops the periods that ended).
+- `<lastmod>` of the other `sitemap.xml` URLs: `python3 tools/sitemap_lastmod.py` after changing a page (date of the page's last commit, or today if uncommitted). Google only trusts `lastmod` when it is accurate.
+- Links to an app page from its own folder use `./`, never `index.html` (Google indexed `hora-barata/index.html` as a duplicate of `/hora-barata/`).
 
 ## Push
 
