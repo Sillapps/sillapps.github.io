@@ -328,9 +328,12 @@
   --stripe: linear-gradient(90deg, #ff5a5f, #ffb020 50%, #2fd27e);
 }
 
-/* Dia do Pagamento / Beneficios: cream, benefit green and coin gold (sillapps-beneficios lib/src/core/theme.dart) */
+/* Dia do Pagamento / Beneficios: "Agenda da família", cream paper, deep green, gold coins,
+   Nunito Sans only (sillapps-beneficios lib/src/core/theme.dart) */
 [data-app="beneficios"] {
   color-scheme: light;
+  --font-body: "Nunito Sans", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Nunito Sans", "Segoe UI", system-ui, sans-serif;
   --bg: #f5f2ea;
   --bg-2: #ede9df;
   --surface: #ffffff;
@@ -1508,4 +1511,9 @@ html[data-app="choghadiya"] {
     animation: none !important;
     transition: none !important;
   }
+}
+
+/* Dia do Pagamento: headlines in the black weight, as in the app. */
+[data-app="beneficios"] h1 {
+  font-weight: 900;
 }
