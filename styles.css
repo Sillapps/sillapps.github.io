@@ -159,13 +159,13 @@
   --link: #2ee6d3;
   --eyebrow: #2ee6d3;
   --cheap: #2ee6d3;
-  --normal: #8fa19e;
+  --normal: #f2eee4;
   --expensive: #f2a541;
   --radius-xl: 14px;
   --shadow: 0 28px 80px rgba(0, 0, 0, 0.45);
   --art: radial-gradient(ellipse at 92% -12%, rgba(14, 52, 55, 0.95), transparent 55%),
     radial-gradient(circle at 4% 0%, rgba(46, 230, 211, 0.1), transparent 40%);
-  --stripe: linear-gradient(90deg, #2ee6d3, #2ee6d3 35%, #8fa19e 60%, #f2a541 90%);
+  --stripe: linear-gradient(90deg, #2ee6d3, #2ee6d3 35%, #f2eee4 60%, #f2a541 90%);
 }
 
 /* Placa Hoy: "Placa de calle", concrete by day, asphalt at night, plate yellow and black,

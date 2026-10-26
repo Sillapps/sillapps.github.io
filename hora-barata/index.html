@@ -102,16 +102,19 @@
       .section .hb-row .hb-h, .section .hb-row .hb-v, .hb-summary { font-family: var(--font-mono); }
       .hb-track { height: 12px; border-radius: 6px; background: rgba(255, 255, 255, 0.06); overflow: hidden; }
       .hb-fill { display: block; height: 100%; border-radius: 6px; }
-      .hb-cheap .hb-fill { background: var(--cheap); }
-      .hb-mid .hb-fill { background: var(--normal); }
-      .hb-high .hb-fill { background: var(--expensive); }
+      /* Each hour's level colour, as in the app: turquoise, white, amber. */
+      .hb-cheap { --lvl: var(--cheap); }
+      .hb-mid { --lvl: var(--normal); }
+      .hb-high { --lvl: var(--expensive); }
+      .hb-fill { background: var(--lvl); }
       .section .hb-cheap .hb-v { color: var(--cheap); font-weight: 700; }
-      .hb-now { background: var(--accent-soft); outline: 1px solid var(--accent); }
-      .section .hb-now .hb-h { color: var(--accent); font-weight: 700; }
+      /* The current hour takes its own level's colour, not always turquoise. */
+      .hb-now { background: color-mix(in srgb, var(--lvl) 14%, transparent); outline: 1px solid var(--lvl); }
+      .section .hb-now .hb-h { color: var(--lvl); font-weight: 700; }
       .hb-tag {
         position: absolute; right: 4.6em; top: 50%; transform: translateY(-50%);
         font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.5;
-        color: var(--accent-ink); background: var(--accent); padding: 0 6px; border-radius: 999px;
+        color: var(--accent-ink); background: var(--lvl, var(--accent)); padding: 0 6px; border-radius: 999px;
       }
       .hb-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 0.86rem; }
       .section .hb-legend { margin-top: 12px; }
@@ -120,9 +123,10 @@
       .hb-legend .l-mid::before { background: var(--normal); }
       .hb-legend .l-high::before { background: var(--expensive); }
       .hb-p { font-weight: 700; }
-      .hb-p.punta { color: var(--expensive); }
-      .hb-p.llano { color: var(--normal); }
-      .hb-p.valle { color: var(--cheap); }
+      /* Toll periods are not the price: neutral, as in the app. */
+      .hb-p.punta { color: var(--text); }
+      .hb-p.llano { color: var(--muted); }
+      .hb-p.valle { color: var(--faint); }
     </style>
     <noscript><style>.hb-loading { min-height: 0; }</style></noscript>
   </head>
@@ -174,7 +178,7 @@
                 <p>Para ver los precios aquí hace falta JavaScript.
                   <a href="https://play.google.com/store/apps/details?id=com.sillapps.ecoclaimspocket&amp;hl=es">Consulta los precios en la app</a>.</p>
               </noscript>
-              <p class="hb-legend"><span class="l-cheap">Barata</span><span class="l-mid">Media</span><span class="l-high">Cara</span></p>
+              <p class="hb-legend"><span class="l-cheap">Turquesa: barata</span><span class="l-mid">Blanco: normal</span><span class="l-high">Ámbar: cara</span></p>
               <p class="note">
                 Precios en €/kWh del término de energía PVPC 2.0TD (incluye peajes y cargos,
                 sin IVA ni impuesto eléctrico), en hora peninsular. En Canarias es una hora menos:
