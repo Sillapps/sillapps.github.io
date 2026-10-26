@@ -223,55 +223,57 @@
   }
 }
 
-/* BioWetter Kompass: cream + teal, follows the device light/dark mode (sillapps-biowetter-de lib/src/core/theme.dart) */
+/* BioWetter Kompass: "Himmel und Woche", a clear pale sky and a coral pulse, Lexend only; follows the device light/dark mode (sillapps-biowetter-de lib/src/core/theme.dart) */
 [data-app="biowetter"] {
   color-scheme: light;
-  --bg: #f4f1ea;
-  --bg-2: #ede9df;
+  --font-body: "Lexend", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Lexend", "Segoe UI", system-ui, sans-serif;
+  --bg: #f2f7fb;
+  --bg-2: #e6f0f8;
   --surface: #ffffff;
-  --surface-2: #faf8f3;
-  --surface-3: #f1ede4;
-  --text: #1b2830;
-  --muted: #4e5d66;
-  --faint: #636f77;
-  --line: #e4ded2;
-  --line-strong: #cfc7b7;
-  --accent: #0e6b6b;
+  --surface-2: #f6fafd;
+  --surface-3: #ebf3fa;
+  --text: #13283b;
+  --muted: #41566a;
+  --faint: #5a6d7e;
+  --line: #d6e3ee;
+  --line-strong: #bccfdf;
+  --accent: #1d6fa5;
   --accent-ink: #ffffff;
-  --accent-soft: #dceeea;
-  --link: #0e6b6b;
-  --eyebrow: #0e6b6b;
-  --title: #0a4f55;
-  --radius-xl: 26px;
+  --accent-soft: #ddeefa;
+  --link: #1d6fa5;
+  --eyebrow: #11507c;
+  --title: #13283b;
+  --radius-xl: 24px;
   --radius-lg: 18px;
-  --shadow: 0 22px 60px rgba(27, 40, 48, 0.08);
-  --art: radial-gradient(circle at 92% -6%, rgba(224, 103, 79, 0.16), transparent 38%),
-    radial-gradient(circle at 4% 0%, rgba(14, 107, 107, 0.16), transparent 48%);
-  --stripe: linear-gradient(90deg, #0e6b6b, #4fb3ae 55%, #e0674f);
+  --shadow: 0 22px 60px rgba(19, 40, 59, 0.08);
+  --art: radial-gradient(circle at 88% -8%, rgba(255, 255, 255, 0.85), transparent 34%),
+    linear-gradient(180deg, #a9d6f3 0%, rgba(169, 214, 243, 0.45) 22%, rgba(242, 247, 251, 0) 46%);
+  --stripe: linear-gradient(90deg, #a9d6f3, #1d6fa5 55%, #f0694c);
 }
 
 @media (prefers-color-scheme: dark) {
   [data-app="biowetter"] {
     color-scheme: dark;
-    --bg: #12191c;
-    --bg-2: #0e1416;
-    --surface: #172025;
-    --surface-2: #1b2429;
-    --surface-3: #222d33;
-    --text: #e6ecee;
-    --muted: #b7c2c8;
-    --faint: #93a0a7;
-    --line: #2c3840;
-    --line-strong: #3b4952;
-    --accent: #4fb3ae;
-    --accent-ink: #0e1a1d;
-    --accent-soft: #173634;
-    --link: #7fd0cb;
-    --eyebrow: #7fd0cb;
-    --title: #e6ecee;
+    --bg: #0e1822;
+    --bg-2: #0a131b;
+    --surface: #16222e;
+    --surface-2: #121d28;
+    --surface-3: #1d2b38;
+    --text: #e5eef5;
+    --muted: #b3c2cf;
+    --faint: #90a1b0;
+    --line: #263646;
+    --line-strong: #344859;
+    --accent: #6db8ea;
+    --accent-ink: #0e1822;
+    --accent-soft: #173048;
+    --link: #9bd0f3;
+    --eyebrow: #9bd0f3;
+    --title: #e5eef5;
     --shadow: 0 28px 70px rgba(0, 0, 0, 0.4);
-    --art: radial-gradient(circle at 92% -6%, rgba(242, 139, 126, 0.16), transparent 38%),
-      radial-gradient(circle at 4% 0%, rgba(79, 179, 174, 0.18), transparent 48%);
+    --art: radial-gradient(circle at 88% -8%, rgba(255, 255, 255, 0.06), transparent 34%),
+      linear-gradient(180deg, #16324a 0%, rgba(22, 50, 74, 0.45) 22%, rgba(14, 24, 34, 0) 46%);
   }
 }
 
