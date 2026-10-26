@@ -327,33 +327,43 @@
   --stripe: linear-gradient(90deg, #0b6e4f, #0b6e4f 55%, #f4b321 55%, #ffd877);
 }
 
-/* Fuel WA: violet night sky, amber drop, Sora (sillapps-fuel-au lib/src/core/theme.dart) */
+/* Fuel WA: the two-tone gauge, a dashboard at night: graphite, orange = fill up today,
+   violet = wait, Saira and Saira Wide (sillapps-fuel-au lib/src/core/theme.dart) */
 [data-app="fuel-wa"] {
   color-scheme: dark;
-  --bg: #0c0a26;
-  --bg-2: #09071c;
-  --surface: #120f33;
-  --surface-2: #18143f;
-  --surface-3: #221d55;
-  --text: #eef0ff;
-  --muted: #b3b6da;
-  --faint: #9194c2;
+  --bg: #0d0a13;
+  --bg-2: #09070d;
+  --surface: #15111c;
+  --surface-2: #1a1522;
+  --surface-3: #241c30;
+  --text: #f4f0f8;
+  --muted: #bfb6cc;
+  --faint: #968ca6;
   --line: rgba(255, 255, 255, 0.1);
   --line-strong: rgba(255, 255, 255, 0.2);
-  --accent: #ffb23f;
-  --accent-ink: #1a0f00;
-  --accent-soft: rgba(255, 178, 63, 0.13);
-  --link: #ffc25a;
-  --eyebrow: #ffd166;
-  --font-display: "Sora", "Manrope", system-ui, sans-serif;
-  --display-weight: 700;
-  --display-tracking: -0.04em;
+  --accent: #ff7a1a;
+  --accent-ink: #0d0a13;
+  --accent-soft: rgba(255, 122, 26, 0.13);
+  --link: #ff9c55;
+  --eyebrow: #ff7a1a;
+  --font-body: "Saira", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Saira Wide", "Saira", system-ui, sans-serif;
+  --display-weight: 800;
+  --display-tracking: 0;
   --radius-xl: 26px;
-  --shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
-  --art: radial-gradient(circle at 88% 26%, rgba(255, 178, 63, 0.2), transparent 26%),
-    radial-gradient(ellipse at 80% -14%, #2c2272, transparent 58%),
-    radial-gradient(circle at 10% 0%, rgba(58, 39, 87, 0.9), transparent 46%);
-  --stripe: linear-gradient(90deg, #34d399, #5edb9f, #a8e27a, #ffd166, #ffb23f, #ff8c4d, #ff6b5a);
+  --shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+  --art: radial-gradient(ellipse at 50% -30%, rgba(36, 22, 56, 1), transparent 60%),
+    radial-gradient(circle at 8% 4%, rgba(255, 122, 26, 0.14), transparent 34%),
+    radial-gradient(circle at 92% 4%, rgba(168, 140, 255, 0.16), transparent 34%);
+  --stripe: linear-gradient(90deg, #ff5e14, #ff7a2a, #ff9c55, #e8c7c4, #c4b0ff, #a88cff, #8b68ff);
+}
+
+/* The verdict's wide capitals, as in the app. */
+[data-app="fuel-wa"] .title {
+  text-transform: uppercase;
+  line-height: 1.04;
+  /* Wide capitals: "TOMORROW?" stays whole on a phone. */
+  font-size: clamp(1.8rem, 8vw, 3.6rem);
 }
 
 /* Pompada (Fuel Alert): deep navy, pump orange (sillapps-fuel-asia lib/src/core/theme.dart) */

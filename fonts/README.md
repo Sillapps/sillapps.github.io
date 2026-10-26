@@ -5,5 +5,5 @@ subset `woff2` (Latin + Latin Extended-A) with fontTools, and declared in `fonts
 They are served from sillapps.com on purpose: no Google Fonts or other CDN, so no visitor
 IP address is sent to a third party (GDPR).
 
-All fonts are under the SIL Open Font License 1.1: Manrope, Space Grotesk, Sora,
+All fonts are under the SIL Open Font License 1.1: Manrope, Space Grotesk, Saira (and Saira at width 112.5, "Saira Wide"),
 Barlow Semi Condensed, Anek Latin, Audiowide, Inter, Oxanium.
