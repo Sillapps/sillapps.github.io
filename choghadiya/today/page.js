@@ -62,10 +62,10 @@
     return s;
   }
 
-  /** "11:12 PM – 12:43 AM +1": the day mark only once, after the end. */
+  /** "11:12 PM to 12:43 AM +1": the day mark only once, after the end. */
   function rangeNode(span) {
     const start = span.start.d === span.end.d ? { ...span.start, d: 0 } : span.start;
-    return el('span', null, timeNode(start), ' – ', timeNode(span.end));
+    return el('span', null, timeNode(start), ' to ', timeNode(span.end));
   }
 
   function longDate(key) {
@@ -236,7 +236,7 @@
       }
       if (!now.kaal && now.nextRahu) {
         const r = now.nextRahu;
-        lines.append(el('li', null, `Next Rahu Kaal: ${time(r.start)} – ${time(r.end)}${r.start.d > 0 ? ' (tomorrow)' : ''}`));
+        lines.append(el('li', null, `Next Rahu Kaal: ${time(r.start)} to ${time(r.end)}${r.start.d > 0 ? ' (tomorrow)' : ''}`));
       }
       if (lines.childElementCount) card.append(lines);
       card.append(el('p', 'tc-hint', `${time(now.at)} now in ${placeName}`));

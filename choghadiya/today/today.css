@@ -1,14 +1,14 @@
 /* Today's choghadiya (choghadiya/today/): page components on top of /styles.css and the
    [data-app="choghadiya"] theme. Quality colors from the app (lib/src/core/theme.dart, Palette):
-   good emerald, neutral sapphire, bad ruby; text tint = 18% lighter (Palette.inkFor). */
+   good green, neutral ochre, bad vermilion; text tint = 12% toward the ink (Palette.inkFor). */
 
 [data-app="choghadiya"] {
-  --good: #3dd68c;
-  --neutral: #7fb2ff;
-  --bad: #ff6b7a;
-  --good-ink: #60dda1;
-  --neutral-ink: #96c0ff;
-  --bad-ink: #ff8692;
+  --good: #276b31;
+  --neutral: #735c1f;
+  --bad: #a8341f;
+  --good-ink: #275e2c;
+  --neutral-ink: #69531d;
+  --bad-ink: #98301e;
 }
 
 .tc-visually-hidden {
@@ -73,11 +73,11 @@
 .tc-chip[aria-pressed="true"] {
   border-color: var(--accent);
   background: var(--accent-soft);
-  color: #ffd29a;
+  color: #6e3318;
 }
 
 .tc-date input {
-  color-scheme: dark;
+  color-scheme: light;
   padding: 7px 12px;
   max-width: 100%;
 }
@@ -372,7 +372,7 @@
   padding: 1px 7px;
   border-radius: 10px;
   background: var(--q);
-  color: #0a0820;
+  color: #ffffff;
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.06em;
@@ -418,7 +418,7 @@
 }
 
 .tc-dot.sun {
-  background: #ff9933;
+  background: #e08a26;
 }
 
 .tc-dot.kaal {

@@ -277,34 +277,36 @@
   }
 }
 
-/* Shubh Samay (Choghadiya): indigo night sky (lib/src/core/surfaces.dart nightSky), saffron, Anek Latin (sillapps-choghadiya lib/src/core/theme.dart) */
+/* Shubh Samay (Choghadiya): "Sandstone and shadow", the Jaipur sundial, vermilion Rahu Kaal, green auspicious times, Anek Latin (sillapps-choghadiya lib/src/core/theme.dart) */
 [data-app="choghadiya"] {
-  color-scheme: dark;
-  --bg: #0a0820;
-  --bg-2: #070517;
-  --surface: #15112f;
-  --surface-2: #17133a;
-  --surface-3: #241e4e;
-  --text: #f7f4ff;
-  --muted: #bdb6dd;
-  --faint: #9e97c4;
-  --line: rgba(255, 255, 255, 0.09);
-  --line-strong: rgba(255, 255, 255, 0.18);
-  --accent: #ff9933;
-  --accent-ink: #1a0d00;
-  --accent-soft: rgba(255, 153, 51, 0.13);
-  --link: #ffb366;
-  --eyebrow: #ffc857;
-  --font-body: "Anek Latin", "Manrope", system-ui, sans-serif;
-  --font-display: "Anek Latin", "Manrope", system-ui, sans-serif;
+  color-scheme: light;
+  --bg: #f2e3cc;
+  --bg-2: #eedcc0;
+  --surface: #f8eedd;
+  --surface-2: #faf1e2;
+  --surface-3: #e7d1b1;
+  --text: #38200f;
+  --muted: #6c4a34;
+  --faint: #735440;
+  --line: rgba(122, 74, 42, 0.18);
+  --line-strong: rgba(122, 74, 42, 0.32);
+  --accent: #9c4f2c;
+  --accent-ink: #ffffff;
+  --accent-soft: #efd3bd;
+  --link: #6e3318;
+  --eyebrow: #a8341f;
+  --title: #38200f;
+  --font-body: "Anek Latin", system-ui, sans-serif;
+  --font-display: "Anek Latin", system-ui, sans-serif;
   --display-weight: 800;
   --display-tracking: -0.02em;
-  --radius-xl: 30px;
-  --radius-lg: 22px;
-  --radius-md: 16px;
-  --shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
-  --art: radial-gradient(ellipse at 50% -10%, #2b1a55, rgba(20, 16, 53, 0.85) 45%, transparent 85%);
-  --stripe: linear-gradient(90deg, #34196a, #b8406e 45%, #ff9933 80%, #ffe6b0);
+  --radius-xl: 14px;
+  --radius-lg: 12px;
+  --radius-md: 10px;
+  --shadow: 0 22px 60px rgba(56, 32, 15, 0.14);
+  --art: radial-gradient(circle at 92% -6%, rgba(255, 242, 198, 0.9), transparent 38%),
+    linear-gradient(200deg, transparent 52%, rgba(56, 32, 15, 0.06) 60%, transparent 70%);
+  --stripe: linear-gradient(90deg, #a9522e, #9c4f2c 50%, #e08a26 50%, #f4c66a);
 }
 
 /* Scioperi Oggi: night navy, strike red / clear green (sillapps-strike-it lib/src/core/theme.dart) */
