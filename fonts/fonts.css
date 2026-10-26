@@ -8,6 +8,9 @@
 @font-face { font-family: "Manrope"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/manrope-800.woff2") format("woff2"); }
 @font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/spacegrotesk-600.woff2") format("woff2"); }
 @font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/spacegrotesk-700.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Semi Condensed"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/barlowsc-400.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Semi Condensed"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/barlowsc-500.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Semi Condensed"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/barlowsc-600.woff2") format("woff2"); }
 @font-face { font-family: "Barlow Semi Condensed"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/barlowsc-700.woff2") format("woff2"); }
 @font-face { font-family: "Barlow Semi Condensed"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/barlowsc-800.woff2") format("woff2"); }
 @font-face { font-family: "Anek Latin"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/aneklatin-400.woff2") format("woff2"); }

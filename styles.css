@@ -168,34 +168,59 @@
   --stripe: linear-gradient(90deg, #2ee6d3, #2ee6d3 35%, #8fa19e 60%, #f2eee4 90%);
 }
 
-/* Placa Hoy: plate yellow on night asphalt, Barlow Semi Condensed (sillapps-circula-latam lib/src/core/theme.dart) */
+/* Placa Hoy: "Placa de calle", concrete by day, asphalt at night, plate yellow and black,
+   Barlow Semi Condensed only (sillapps-circula-latam lib/src/core/theme.dart, 25 Oct 2026) */
 [data-app="placa-hoy"] {
-  color-scheme: dark;
-  --bg: #0d1015;
-  --bg-2: #090b0f;
-  --surface: #13171e;
-  --surface-2: #181d26;
-  --surface-3: #212835;
-  --text: #f4f5f7;
-  --muted: #aab2c0;
-  --faint: #858e9f;
-  --line: rgba(255, 255, 255, 0.1);
-  --line-strong: rgba(255, 255, 255, 0.2);
-  --accent: #ffd23f;
-  --accent-ink: #0d1015;
-  --accent-soft: rgba(255, 210, 63, 0.12);
-  --link: #d5dce6;
-  --eyebrow: #0d1015;
-  --free: #2fd27e;
-  --restricted: #ff5a5f;
-  --font-display: "Barlow Semi Condensed", "Manrope", system-ui, sans-serif;
+  color-scheme: light;
+  --bg: #f1efea;
+  --bg-2: #e9e6df;
+  --surface: #ffffff;
+  --surface-2: #faf9f6;
+  --surface-3: #e6e3dc;
+  --text: #111111;
+  --muted: #45464b;
+  --faint: #5e6066;
+  --line: rgba(17, 17, 17, 0.12);
+  --line-strong: rgba(17, 17, 17, 0.24);
+  --accent: #ffd000;
+  --accent-ink: #111111;
+  --accent-soft: rgba(255, 208, 0, 0.2);
+  --link: #111111;
+  --eyebrow: #111111;
+  --free: #087a3a;
+  --restricted: #c8102e;
+  --font-display: "Barlow Semi Condensed", system-ui, sans-serif;
+  --font-body: "Barlow Semi Condensed", "Segoe UI", system-ui, sans-serif;
   --display-weight: 800;
-  --display-tracking: -0.005em;
-  --title-size: clamp(2.4rem, 7vw, 4.4rem);
-  --radius-xl: 26px;
-  --shadow: 0 28px 80px rgba(0, 0, 0, 0.45);
-  --art: radial-gradient(ellipse at 90% -18%, rgba(255, 210, 63, 0.2), transparent 48%);
-  --stripe: repeating-linear-gradient(135deg, #ffd23f 0 14px, #0d1015 14px 28px);
+  --display-tracking: 0.01em;
+  --title-size: clamp(2.6rem, 8vw, 4.8rem);
+  --radius-xl: 8px;
+  --radius-lg: 6px;
+  --shadow: 0 18px 50px rgba(17, 17, 17, 0.12);
+  --art: none;
+  --stripe: repeating-linear-gradient(135deg, #ffd000 0 14px, #151515 14px 28px);
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-app="placa-hoy"] {
+    color-scheme: dark;
+    --bg: #141414;
+    --bg-2: #101010;
+    --surface: #1e1e1e;
+    --surface-2: #232323;
+    --surface-3: #2a2a2a;
+    --text: #f2f0ea;
+    --muted: #b4b2ac;
+    --faint: #9a9893;
+    --line: rgba(255, 255, 255, 0.12);
+    --line-strong: rgba(255, 255, 255, 0.24);
+    --accent-soft: rgba(255, 208, 0, 0.14);
+    --link: #e6e3dc;
+    --eyebrow: #111111;
+    --free: #3dd68c;
+    --restricted: #ff5a5f;
+    --shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+  }
 }
 
 /* BioWetter Kompass: cream + teal, follows the device light/dark mode (sillapps-biowetter-de lib/src/core/theme.dart) */
@@ -1005,10 +1030,11 @@ code {
 [data-app="placa-hoy"] .eyebrow {
   display: inline-block;
   padding: 3px 12px 2px;
-  border: 2px solid #0d1015;
-  border-radius: 7px;
-  outline: 2px solid #ffd23f;
-  background: #ffd23f;
+  border: 2px solid #111111;
+  border-radius: 4px;
+  outline: 2px solid #ffd000;
+  color: #111111;
+  background: #ffd000;
   font-family: var(--font-display);
   font-size: 0.95rem;
   letter-spacing: 0.08em;

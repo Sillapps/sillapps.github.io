@@ -463,7 +463,7 @@ def city_page(rules: dict, city: dict, country: dict, slug: str,
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0d1015" />
+    <meta name="theme-color" content="#f1efea" />
     <title>{e(title)}</title>
     <meta name="description" content="{e(desc)}" />
     <link rel="canonical" href="{e(url)}" />
@@ -522,7 +522,7 @@ def city_page(rules: dict, city: dict, country: dict, slug: str,
               <h2>¿Circulo hoy? Pregúntale a Placa Hoy</h2>
               <p>Guarda tu placa una vez y <strong>Placa Hoy</strong> te dice cada día si puedes circular,
                 con el horario, la norma y el enlace a la fuente oficial. Sin anuncios, sin cuenta y sin rastreo.
-                Con Placa Hoy Pro (pago único): widget en la pantalla de inicio y alertas la noche anterior y la mañana.</p>
+                Con Placa Hoy Pro (pago único): Mi viaje para ver tu placa en otra ciudad día por día, alertas la noche anterior y la mañana, y widget.</p>
               <p>Placa Hoy llegará pronto a Google Play. <a href="/placa-hoy/">Más sobre la app</a></p>
             </section>
 
