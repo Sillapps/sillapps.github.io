@@ -40,3 +40,7 @@
 @font-face { font-family: "Nunito Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/nunitosans-700.woff2") format("woff2"); }
 @font-face { font-family: "Nunito Sans"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/nunitosans-800.woff2") format("woff2"); }
 @font-face { font-family: "Nunito Sans"; font-style: normal; font-weight: 900; font-display: swap; src: url("/fonts/nunitosans-900.woff2") format("woff2"); }
+@font-face { font-family: "Chivo"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/chivo-400.woff2") format("woff2"); }
+@font-face { font-family: "Chivo"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/chivo-600.woff2") format("woff2"); }
+@font-face { font-family: "Chivo"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/chivo-800.woff2") format("woff2"); }
+@font-face { font-family: "Chivo"; font-style: normal; font-weight: 900; font-display: swap; src: url("/fonts/chivo-900.woff2") format("woff2"); }
