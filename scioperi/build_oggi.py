@@ -344,7 +344,7 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b0f17" />
+    <meta name="theme-color" content="#141518" />
     <meta name="apple-itunes-app" content="app-id={APP_STORE_ID}" />
     <title>{e(title)}</title>
     <meta name="description" content="{e(desc)}" />
@@ -359,40 +359,46 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
     <meta property="og:image" content="https://sillapps.com/scioperi/og.png" />
     <meta name="twitter:card" content="summary_large_image" />
     {ld_html}
-    <link rel="stylesheet" href="/fonts/fonts.css?v=20260930-1" />
+    <link rel="stylesheet" href="/fonts/fonts.css?v=20261026-3" />
     <style>
-      :root {{ --bg: #0b0f17; --card: #171e2c; --card-high: #212a3b; --ink: #f3f5f9; --soft: #a9b3c6; --line: rgba(255,255,255,.12); --strike: #ff5a5f; --clear: #2fd27e; --caution: #ffb020; --accent: #4da3ff; }}
+      :root {{ --bg: #141518; --card: #1e1f23; --card-high: #2a2c31; --ink: #f4f0e6; --soft: #bdb8ad; --line: rgba(255,255,255,.09); --strike: #e8383f; --clear: #45c17e; --caution: #f2a23a; --accent: #f4f0e6; --flap-top: #2e3035; --flap-bottom: #1f2024; }}
       * {{ box-sizing: border-box; }}
-      body {{ margin: 0; border-top: 4px solid; border-image: linear-gradient(90deg, #ff5a5f, #ffb020 50%, #2fd27e) 1; background: radial-gradient(circle at 92% -6%, rgba(255,90,95,.18), transparent 38%) no-repeat, radial-gradient(circle at 0% 0%, rgba(77,163,255,.1), transparent 40%) no-repeat, var(--bg); color: var(--ink); font: 16px/1.5 "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }}
+      body {{ margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 "Fira Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }}
       main {{ max-width: 760px; margin: 0 auto; padding: 16px 16px 48px; }}
-      a {{ color: var(--accent); }}
+      a {{ color: var(--ink); text-decoration-color: var(--soft); }}
       header {{ display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; }}
-      .brand img {{ width: 40px; height: 40px; border-radius: 10px; }}
-      .home {{ display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-weight: 650; font-size: .92rem; text-decoration: none; }}
-      .home img {{ width: 18px; height: 18px; border-radius: 5px; }}
-      .brand {{ display: flex; align-items: center; gap: 10px; font-family: "Space Grotesk", "Manrope", sans-serif; font-size: 1.1rem; font-weight: 700; letter-spacing: -.02em; text-decoration: none; color: var(--ink); }}
-      h1 {{ font-size: 1.15rem; color: var(--soft); font-weight: 600; margin: 8px 0; }}
-      .answer {{ font-family: "Space Grotesk", "Manrope", sans-serif; font-size: clamp(1.7rem, 6.4vw, 2.6rem); line-height: 1.08; letter-spacing: -.03em; font-weight: 700; margin: 4px 0 8px; overflow-wrap: anywhere; }}
-      .answer.yes {{ color: var(--strike); }} .answer.no {{ color: var(--clear); }}
+      .brand img {{ width: 40px; height: 40px; border-radius: 9px; }}
+      .home {{ display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 6px 14px; border: 1px solid var(--line); border-radius: 6px; color: var(--ink); font-weight: 600; font-size: .92rem; text-decoration: none; }}
+      .home img {{ width: 18px; height: 18px; border-radius: 4px; }}
+      .brand {{ display: flex; align-items: center; gap: 10px; font-family: "Fira Sans Condensed", "Fira Sans", sans-serif; font-size: 1.2rem; font-weight: 700; text-decoration: none; color: var(--ink); }}
+      h1 {{ font-size: .85rem; color: var(--soft); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; margin: 12px 0 8px; }}
+      .flaps {{ margin: 6px 0 12px; }}
+      .flaps .w {{ display: none; gap: 4px; }}
+      .flaps.yes .w-yes, .flaps.no .w-no {{ display: flex; }}
+      .flaps i {{ position: relative; display: grid; place-items: center; width: clamp(28px, 9vw, 46px); aspect-ratio: 1 / 1.4; border-radius: 5px; font: normal 800 clamp(1.25rem, 6vw, 2.1rem)/1 "Fira Sans Condensed", sans-serif; color: var(--ink); background: linear-gradient(var(--flap-top) 0 50%, var(--flap-bottom) 50% 100%); box-shadow: 0 2px 4px rgba(0,0,0,.55); }}
+      .flaps i::after {{ content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: #0b0b0d; }}
+      .flaps .w-yes i {{ background: linear-gradient(#ee454c 0 50%, #b92d33 50% 100%); }}
+      .flaps .w-no i {{ color: var(--clear); }}
+      .answer {{ font-family: "Fira Sans Condensed", "Fira Sans", sans-serif; font-size: clamp(1.7rem, 6.4vw, 2.6rem); line-height: 1.1; font-weight: 700; margin: 4px 0 8px; overflow-wrap: anywhere; }}
       .meta {{ color: var(--soft); font-size: .9rem; margin: 0 0 12px; }}
-      .warn {{ background: rgba(255,176,32,.14); border: 1px solid var(--caution); color: var(--ink); border-radius: 12px; padding: 10px 12px; }}
+      .warn {{ background: rgba(242,162,58,.14); border: 1px solid var(--caution); color: var(--ink); border-radius: 6px; padding: 10px 12px; }}
       label {{ display: block; color: var(--soft); font-size: .9rem; margin: 16px 0 4px; }}
-      select {{ width: 100%; min-height: 48px; font: inherit; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px; }}
-      h2 {{ font-family: "Space Grotesk", "Manrope", sans-serif; font-size: 1.25rem; letter-spacing: -.01em; margin: 28px 0 8px; }}
-      .list {{ list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }}
-      .s {{ background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--strike); border-radius: 14px; padding: 12px 14px; }}
+      select {{ width: 100%; min-height: 48px; font: inherit; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; }}
+      h2 {{ font-family: "Fira Sans Condensed", "Fira Sans", sans-serif; font-size: 1.35rem; font-weight: 700; margin: 28px 0 8px; }}
+      .list {{ list-style: none; padding: 0; margin: 0; display: grid; gap: 0; }}
+      .s {{ border-bottom: 1px solid var(--line); border-left: 6px solid var(--strike); padding: 12px 14px; }}
       .s-off {{ border-left-color: var(--soft); opacity: .8; }}
       .s p {{ margin: 2px 0; overflow-wrap: anywhere; }}
       .s-top {{ display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; }}
-      .s-sector {{ font-weight: 800; }} .s-where {{ color: var(--soft); }}
-      .s-badge {{ background: var(--card-high); border-radius: 8px; padding: 0 8px; font-size: .85rem; }}
+      .s-sector {{ font-family: "Fira Sans Condensed", "Fira Sans", sans-serif; font-weight: 700; font-size: 1.1rem; }} .s-where {{ color: var(--soft); }}
+      .s-badge {{ background: var(--card-high); border-radius: 4px; padding: 0 8px; font-size: .85rem; }}
       .s-hours {{ font-weight: 600; }} .s-unions, .s-notes, .s-days {{ color: var(--soft); font-size: .9rem; }}
       .empty {{ color: var(--soft); }}
-      .cta {{ background: var(--card); border-radius: 16px; padding: 16px; margin-top: 32px; }}
+      .cta {{ background: var(--card); border-radius: 8px; padding: 16px; margin-top: 32px; }}
       .cta p {{ margin: 4px 0; }}
       .stores {{ display: flex; flex-wrap: wrap; gap: 10px; }}
-      .play {{ display: inline-block; min-height: 48px; padding: 12px 18px; background: var(--accent); color: #06121f; font-weight: 800; border-radius: 12px; text-decoration: none; }}
-      details {{ background: var(--card); border-radius: 12px; padding: 10px 14px; margin: 8px 0; }}
+      .play {{ display: inline-block; min-height: 48px; padding: 12px 18px; background: var(--ink); color: var(--bg); font-weight: 700; border-radius: 6px; text-decoration: none; }}
+      details {{ background: var(--card); border-radius: 6px; padding: 10px 14px; margin: 8px 0; }}
       summary {{ cursor: pointer; font-weight: 700; min-height: 28px; }}
       footer {{ color: var(--soft); font-size: .85rem; margin-top: 32px; }}
       footer a {{ display: inline-block; padding: 12px 8px 12px 0; }}
@@ -407,6 +413,7 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
       <p class="warn" id="old" hidden>Questa pagina è di {e(long_date(today))}: l'aggiornamento è in corso. Nel frattempo controlla il <a href="{SOURCE_URL}">sito del Ministero</a>.</p>
       {stale_html}
       <h1>Sciopero oggi, {e(long_date(today))} {today.year}</h1>
+      <p class="flaps {answer_class}" id="flaps" aria-hidden="true"><span class="w w-yes"><i>S</i><i>C</i><i>I</i><i>O</i><i>P</i><i>E</i><i>R</i><i>O</i></span><span class="w w-no"><i>R</i><i>E</i><i>G</i><i>O</i><i>L</i><i>A</i><i>R</i><i>E</i></span></p>
       <p class="answer {answer_class}" id="answer" data-n="{n_today}">{e(answer_text(n_today, "Oggi", "in Italia"))}</p>
       <p class="meta">{e(list_line)} · fonte: <a href="{SOURCE_URL}">scioperi.mit.gov.it</a> · pagina non ufficiale, non affiliata al Ministero</p>
       <label for="region">La tua regione (gli scioperi nazionali restano sempre visibili)</label>
@@ -454,6 +461,7 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
           var place = r ? "in " + names[r] : "in Italia";
           answer.textContent = n === 0 ? "Oggi nessuno sciopero dei trasporti in elenco " + place : "Oggi " + (n === 1 ? "1 sciopero" : n + " scioperi") + " dei trasporti " + place;
           answer.className = "answer " + (n ? "yes" : "no");
+          document.getElementById("flaps").className = "flaps " + (n ? "yes" : "no");
         }}
         select.addEventListener("change", apply);
       }})();

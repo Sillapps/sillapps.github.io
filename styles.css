@@ -309,27 +309,36 @@
   --stripe: linear-gradient(90deg, #a9522e, #9c4f2c 50%, #e08a26 50%, #f4c66a);
 }
 
-/* Scioperi Oggi: night navy, strike red / clear green (sillapps-strike-it lib/src/core/theme.dart) */
+/* Scioperi Oggi: "Solari", the split-flap departure board, anthracite, ivory letters, red SCIOPERO flaps, Fira Sans and Fira Sans Condensed (sillapps-strike-it lib/src/core/theme.dart) */
 [data-app="scioperi"] {
   color-scheme: dark;
-  --bg: #0b0f17;
-  --bg-2: #080b11;
-  --surface: #121826;
-  --surface-2: #171e2c;
-  --surface-3: #212a3b;
-  --text: #f3f5f9;
-  --muted: #a9b3c6;
-  --faint: #8590a9;
-  --line: rgba(255, 255, 255, 0.1);
-  --line-strong: rgba(255, 255, 255, 0.2);
-  --accent: #4da3ff;
-  --accent-ink: #06121f;
-  --accent-soft: rgba(77, 163, 255, 0.14);
-  --link: #6db5ff;
-  --eyebrow: #ff5a5f;
-  --art: radial-gradient(circle at 90% -10%, rgba(255, 90, 95, 0.18), transparent 42%),
-    radial-gradient(ellipse at 30% -20%, rgba(40, 28, 86, 0.75), rgba(22, 24, 72, 0.35) 40%, transparent 70%);
-  --stripe: linear-gradient(90deg, #ff5a5f, #ffb020 50%, #2fd27e);
+  --bg: #141518;
+  --bg-2: #101114;
+  --surface: #1b1c20;
+  --surface-2: #1e1f23;
+  --surface-3: #2a2c31;
+  --text: #f4f0e6;
+  --muted: #bdb8ad;
+  --faint: #959185;
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.18);
+  --accent: #f4f0e6;
+  --accent-ink: #141518;
+  --accent-soft: rgba(244, 240, 230, 0.12);
+  --link: #f4f0e6;
+  --eyebrow: #e8383f;
+  --title: #f4f0e6;
+  --font-body: "Fira Sans", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Fira Sans Condensed", "Fira Sans", "Segoe UI", system-ui, sans-serif;
+  --display-weight: 800;
+  --display-tracking: 0;
+  --radius-xl: 10px;
+  --radius-lg: 8px;
+  --radius-md: 6px;
+  /* A row of blank flaps along the top: the board before it turns. */
+  --art: linear-gradient(90deg, transparent 0 30px, #141518 30px 34px) 0 14px / 34px 44px repeat-x,
+    linear-gradient(180deg, #24262a 0 21.5px, #0b0b0d 21.5px 22.5px, #1c1d21 22.5px 44px) 0 14px / 34px 44px repeat-x;
+  --stripe: linear-gradient(90deg, #e8383f 0 50%, #2e3035 50%);
 }
 
 /* Dia do Pagamento / Beneficios: "Agenda da família", cream paper, deep green, gold coins,

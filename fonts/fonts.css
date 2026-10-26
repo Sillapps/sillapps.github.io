@@ -47,3 +47,9 @@
 @font-face { font-family: "Lexend"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/lexend-400.woff2") format("woff2"); }
 @font-face { font-family: "Lexend"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/lexend-500.woff2") format("woff2"); }
 @font-face { font-family: "Lexend"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/lexend-700.woff2") format("woff2"); }
+@font-face { font-family: "Fira Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/firasans-400.woff2") format("woff2"); }
+@font-face { font-family: "Fira Sans"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/firasans-500.woff2") format("woff2"); }
+@font-face { font-family: "Fira Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/firasans-600.woff2") format("woff2"); }
+@font-face { font-family: "Fira Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/firasans-700.woff2") format("woff2"); }
+@font-face { font-family: "Fira Sans Condensed"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/firasanscondensed-700.woff2") format("woff2"); }
+@font-face { font-family: "Fira Sans Condensed"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/firasanscondensed-800.woff2") format("woff2"); }
