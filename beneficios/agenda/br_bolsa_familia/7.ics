@@ -9,9 +9,9 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:br_bolsa_familia-7-2026-10@sillapps.com
-DTSTAMP:20251223T000000Z
-DTSTART;VALUE=DATE:20261027
-DTEND;VALUE=DATE:20261028
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
 SUMMARY:Pagamento Bolsa Família
 DESCRIPTION:Outubro\nNão é um app do governo.\nFonte oficial: https://www
  .caixa.gov.br/programas-sociais/bolsa-familia/Paginas/default.aspx
@@ -21,9 +21,9 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:br_bolsa_familia-7-2026-11@sillapps.com
-DTSTAMP:20251223T000000Z
-DTSTART;VALUE=DATE:20261125
-DTEND;VALUE=DATE:20261126
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
 SUMMARY:Pagamento Bolsa Família
 DESCRIPTION:Novembro\nNão é um app do governo.\nFonte oficial: https://ww
  w.caixa.gov.br/programas-sociais/bolsa-familia/Paginas/default.aspx
@@ -33,9 +33,9 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:br_bolsa_familia-7-2026-12@sillapps.com
-DTSTAMP:20251223T000000Z
-DTSTART;VALUE=DATE:20261218
-DTEND;VALUE=DATE:20261219
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
 SUMMARY:Pagamento Bolsa Família
 DESCRIPTION:Dezembro\nNão é um app do governo.\nFonte oficial: https://ww
  w.caixa.gov.br/programas-sociais/bolsa-familia/Paginas/default.aspx

@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 2026102501,
- "published": "2026-10-25",
+ "version": 2026102602,
+ "published": "2026-10-26",
  "countries": [
   {
    "code": "BR",
@@ -35,10 +35,10 @@
        "id": "br_bolsa_familia_2026",
        "source_url": "https://www.caixa.gov.br/programas-sociais/bolsa-familia/Paginas/default.aspx",
        "source_title": "Calendário de pagamento Bolsa Família 2026 (Caixa)",
-       "published": "2025-12-23",
+       "published": "2026-10-19",
        "valid_from": "2026-10-01",
        "valid_to": "2026-12-23",
-       "last_verified": "2026-10-01",
+       "last_verified": "2026-10-26",
        "status": "official",
        "payments": [
         {
@@ -48,13 +48,13 @@
           "1": "2026-10-19",
           "2": "2026-10-20",
           "3": "2026-10-21",
-          "4": "2026-10-22",
-          "5": "2026-10-23",
-          "6": "2026-10-26",
-          "7": "2026-10-27",
-          "8": "2026-10-28",
-          "9": "2026-10-29",
-          "0": "2026-10-30"
+          "4": "2026-10-21",
+          "5": "2026-10-21",
+          "6": "2026-10-21",
+          "7": "2026-10-21",
+          "8": "2026-10-21",
+          "9": "2026-10-21",
+          "0": "2026-10-21"
          }
         },
         {
@@ -64,13 +64,13 @@
           "1": "2026-11-16",
           "2": "2026-11-17",
           "3": "2026-11-18",
-          "4": "2026-11-19",
-          "5": "2026-11-23",
-          "6": "2026-11-24",
-          "7": "2026-11-25",
-          "8": "2026-11-26",
-          "9": "2026-11-27",
-          "0": "2026-11-30"
+          "4": "2026-11-18",
+          "5": "2026-11-18",
+          "6": "2026-11-18",
+          "7": "2026-11-18",
+          "8": "2026-11-18",
+          "9": "2026-11-18",
+          "0": "2026-11-18"
          }
         },
         {
@@ -80,19 +80,19 @@
           "1": "2026-12-10",
           "2": "2026-12-11",
           "3": "2026-12-14",
-          "4": "2026-12-15",
-          "5": "2026-12-16",
-          "6": "2026-12-17",
-          "7": "2026-12-18",
-          "8": "2026-12-21",
-          "9": "2026-12-22",
-          "0": "2026-12-23"
+          "4": "2026-12-14",
+          "5": "2026-12-14",
+          "6": "2026-12-14",
+          "7": "2026-12-14",
+          "8": "2026-12-14",
+          "9": "2026-12-14",
+          "0": "2026-12-14"
          }
         }
        ],
        "notes": [
         "A data depende do último dígito do NIS do responsável familiar, impresso no cartão.",
-        "O pagamento ocorre nos últimos 10 dias úteis de cada mês; em dezembro é antecipado (10 a 23/12).",
+        "De outubro a dezembro de 2026 o calendário é unificado (medida do MDS por causa do El Niño, anunciada em 19/10/2026): NIS final 1 no primeiro dia, final 2 no segundo dia e finais 3 a 9 e 0 juntos no terceiro dia.",
         "Em municípios com situação de emergência ou calamidade pública reconhecida pelo Governo Federal, o pagamento pode ser unificado no primeiro dia do calendário do mês.",
         "Confira data e valor no app Bolsa Família ou Caixa Tem. Dúvidas: Disque Social 121 ou Caixa 111."
        ]
@@ -344,7 +344,7 @@
         }
        ],
        "notes": [
-        "Use o último número do benefício antes do traço, sem contar o dígito verificador. Ex.: 0104-7 → final 4.",
+        "Use o último número do benefício antes do traço, sem contar o dígito verificador. Ex.: em 0104-7, o final é 4.",
         "Vale para aposentadorias, pensões e auxílios de até 1 salário mínimo, incluindo o BPC/LOAS.",
         "Competência é o mês de referência do benefício; o pagamento cai entre o fim desse mês e o início do mês seguinte.",
         "Confira valor e data no app ou site Meu INSS (extrato de pagamento) ou pelo telefone 135.",
@@ -598,7 +598,7 @@
         }
        ],
        "notes": [
-        "Use o último número do benefício antes do traço, sem contar o dígito verificador. Ex.: 0104-7 → final 4.",
+        "Use o último número do benefício antes do traço, sem contar o dígito verificador. Ex.: em 0104-7, o final é 4.",
         "Finais pagos no mesmo dia: 1 e 6, 2 e 7, 3 e 8, 4 e 9, 5 e 0.",
         "Competência é o mês de referência do benefício; o pagamento cai entre o fim desse mês e o início do mês seguinte.",
         "Confira valor e data no app ou site Meu INSS (extrato de pagamento) ou pelo telefone 135.",
