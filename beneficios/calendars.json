@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 2026102201,
- "published": "2026-10-22",
+ "version": 2026102501,
+ "published": "2026-10-25",
  "countries": [
   {
    "code": "BR",
@@ -2083,7 +2083,7 @@
      "summary": "Paid to approved applicants, with no fixed date.",
      "key": "none",
      "key_values": [],
-     "official_url": "https://srd.sassa.gov.za",
+     "official_url": "https://www.sanews.gov.za/south-africa/public-comment-sought-special-covid-19-srd-amendments",
      "calendars": [],
      "notes": [],
      "next_label": "",
