@@ -11,7 +11,7 @@ These URLs are used outside the site: keep them exactly where they are.
 - `app-ads.txt`: authorized sellers for AdMob (`google.com, pub-9295141541441834, DIRECT, f08c47fec0942fa0`), must stay at https://sillapps.com/app-ads.txt.
 - `google13ee2aa53b0a0847.html`: Search Console verification. `robots.txt`, `sitemap.xml` (add every new page).
 - `<app>/privacy.html` (and `privacidad.html`): privacy policy URLs declared in the Play Console.
-- Data read by installed apps: `placa-hoy/rules.json`, `placa-hoy/rules-v2.json`, `beneficios/calendars.json`.
+- Data read by installed apps: `placa-hoy/rules.json`, `placa-hoy/rules-v2.json`, `beneficios/calendars.json`, and the calendar feeds `beneficios/agenda/**/*.ics` that iPhones subscribe to (written by `tool/build_calendars.py` of sillapps-beneficios).
 - `neon-overload/download/`: redirect to Google Play, linked from outside.
 - `eco-claims-pocket/`: legacy pages of Hora Barata's package (old name), online but unlisted.
 
