@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sillapps//Dia do Pagamento//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Beca Gertrudis Bocanegra · Apellido con H
+X-WR-TIMEZONE:America/Mexico_City
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:mx_beca_gertrudis_bocanegra-h-2026-10@sillapps.com
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Pago Beca Gertrudis Bocanegra
+DESCRIPTION:Bimestre septiembre-octubre (pago en octubre)\nNo es una app de
+ l gobierno.\nFuente oficial: https://www.programasparaelbienestar.gob.mx/n
+ oticias-y-comunicados/noticia/becas-benito-juarez-jovenes-escribiendo-el-f
+ uturo-y-gertrudis-bocanegra-pagos-del-19-al-30-de-octubre/
+URL:https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noti
+ cia/becas-benito-juarez-jovenes-escribiendo-el-futuro-y-gertrudis-bocanegr
+ a-pagos-del-19-al-30-de-octubre/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

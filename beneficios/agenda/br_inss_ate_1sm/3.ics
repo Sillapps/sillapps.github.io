@@ -1,0 +1,179 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sillapps//Dia do Pagamento//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:INSS até 1 salário mínimo · Benefício final 3
+X-WR-TIMEZONE:America/Sao_Paulo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:br_inss_ate_1sm-3-2025-12@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20251226
+DTEND;VALUE=DATE:20251227
+SUMMARY:Pagamento INSS até 1 salário mínimo
+DESCRIPTION:Competência dezembro/2025 (pago dez/2025 e jan/2026)\nNão é 
+ um app do governo.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/
+ noticias/calendario-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_ate_1sm-3-2026-01@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260128
+DTEND;VALUE=DATE:20260129
+SUMMARY:Pagamento INSS até 1 salário mínimo
+DESCRIPTION:Competência janeiro/2026 (pago jan/fev)\nNão é um app do gov
+ erno.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/cale
+ ndario-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_ate_1sm-3-2026-02@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260225
+DTEND;VALUE=DATE:20260226
+SUMMARY:Pagamento INSS até 1 salário mínimo
+DESCRIPTION:Competência fevereiro/2026 (pago fev/mar)\nNão é um app do g
+ overno.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/ca
+ lendario-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_ate_1sm-3-2026-03@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260327
+DTEND;VALUE=DATE:20260328
+SUMMARY:Pagamento INSS até 1 salário mínimo
+DESCRIPTION:Competência março/2026 (pago mar/abr)\nNão é um app do gove
+ rno.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calen
+ dario-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_ate_1sm-3-2026-04@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260428
+DTEND;VALUE=DATE:20260429
+SUMMARY:Pagamento INSS até 1 salário mínimo
+DESCRIPTION:Competência abril/2026 (pago abr/mai)\nNão é um app do gover
+ no.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calend
+ ario-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_ate_1sm-3-2026-05@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260527
+DTEND;VALUE=DATE:20260528
+SUMMARY:Pagamento INSS até 1 salário mínimo
+DESCRIPTION:Competência maio/2026 (pago mai/jun)\nNão é um app do govern
+ o.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calenda
+ rio-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_ate_1sm-3-2026-06@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260627
+SUMMARY:Pagamento INSS até 1 salário mínimo
+DESCRIPTION:Competência junho/2026 (pago jun/jul)\nNão é um app do gover
+ no.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calend
+ ario-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_ate_1sm-3-2026-07@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260729
+DTEND;VALUE=DATE:20260730
+SUMMARY:Pagamento INSS até 1 salário mínimo
+DESCRIPTION:Competência julho/2026 (pago jul/ago)\nNão é um app do gover
+ no.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calend
+ ario-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_ate_1sm-3-2026-08@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260828
+SUMMARY:Pagamento INSS até 1 salário mínimo
+DESCRIPTION:Competência agosto/2026 (pago ago/set)\nNão é um app do gove
+ rno.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calen
+ dario-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_ate_1sm-3-2026-09@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:Pagamento INSS até 1 salário mínimo
+DESCRIPTION:Competência setembro/2026 (pago set/out)\nNão é um app do go
+ verno.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/cal
+ endario-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_ate_1sm-3-2026-10@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Pagamento INSS até 1 salário mínimo
+DESCRIPTION:Competência outubro/2026 (pago out/nov)\nNão é um app do gov
+ erno.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/cale
+ ndario-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_ate_1sm-3-2026-11@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Pagamento INSS até 1 salário mínimo
+DESCRIPTION:Competência novembro/2026 (pago nov/dez)\nNão é um app do go
+ verno.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/cal
+ endario-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_ate_1sm-3-2026-12@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20261228
+DTEND;VALUE=DATE:20261229
+SUMMARY:Pagamento INSS até 1 salário mínimo
+DESCRIPTION:Competência dezembro/2026 (pago dez/2026 e jan/2027)\nNão é 
+ um app do governo.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/
+ noticias/calendario-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

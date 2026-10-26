@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sillapps//Dia do Pagamento//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Madres Trabajadoras · Apellido con O
+X-WR-TIMEZONE:America/Mexico_City
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:mx_madres_trabajadoras-o-2026-09@sillapps.com
+DTSTAMP:20260831T000000Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:Pago Madres Trabajadoras
+DESCRIPTION:Bimestre septiembre-octubre\nNo es una app del gobierno.\nFuent
+ e oficial: https://www.programasparaelbienestar.gob.mx/noticias-y-comunica
+ dos/noticia/pensiones-bienestar-este-es-el-calendario-de-pagos-en-septiemb
+ re-de-2026/
+URL:https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noti
+ cia/pensiones-bienestar-este-es-el-calendario-de-pagos-en-septiembre-de-20
+ 26/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

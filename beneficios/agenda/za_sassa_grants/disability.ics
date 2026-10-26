@@ -1,0 +1,166 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sillapps//Dia do Pagamento//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SASSA grant · Disability Grant
+X-WR-TIMEZONE:Africa/Johannesburg
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:za_sassa_grants-disability-2026-04@sillapps.com
+DTSTAMP:20260323T000000Z
+DTSTART;VALUE=DATE:20260407
+DTEND;VALUE=DATE:20260408
+SUMMARY:SASSA grant payment
+DESCRIPTION:April 2026\nNot a government app.\nOfficial source: https://www
+ .dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-confirms-2026-2
+ 027-social-grant-payment-schedule-and-increases
+URL:https://www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-c
+ onfirms-2026-2027-social-grant-payment-schedule-and-increases
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:za_sassa_grants-disability-2026-05@sillapps.com
+DTSTAMP:20260323T000000Z
+DTSTART;VALUE=DATE:20260506
+DTEND;VALUE=DATE:20260507
+SUMMARY:SASSA grant payment
+DESCRIPTION:May 2026\nNot a government app.\nOfficial source: https://www.d
+ sd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-confirms-2026-202
+ 7-social-grant-payment-schedule-and-increases
+URL:https://www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-c
+ onfirms-2026-2027-social-grant-payment-schedule-and-increases
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:za_sassa_grants-disability-2026-06@sillapps.com
+DTSTAMP:20260323T000000Z
+DTSTART;VALUE=DATE:20260603
+DTEND;VALUE=DATE:20260604
+SUMMARY:SASSA grant payment
+DESCRIPTION:June 2026\nNot a government app.\nOfficial source: https://www.
+ dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-confirms-2026-20
+ 27-social-grant-payment-schedule-and-increases
+URL:https://www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-c
+ onfirms-2026-2027-social-grant-payment-schedule-and-increases
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:za_sassa_grants-disability-2026-07@sillapps.com
+DTSTAMP:20260323T000000Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260704
+SUMMARY:SASSA grant payment
+DESCRIPTION:July 2026\nNot a government app.\nOfficial source: https://www.
+ dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-confirms-2026-20
+ 27-social-grant-payment-schedule-and-increases
+URL:https://www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-c
+ onfirms-2026-2027-social-grant-payment-schedule-and-increases
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:za_sassa_grants-disability-2026-08@sillapps.com
+DTSTAMP:20260323T000000Z
+DTSTART;VALUE=DATE:20260805
+DTEND;VALUE=DATE:20260806
+SUMMARY:SASSA grant payment
+DESCRIPTION:August 2026\nNot a government app.\nOfficial source: https://ww
+ w.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-confirms-2026-
+ 2027-social-grant-payment-schedule-and-increases
+URL:https://www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-c
+ onfirms-2026-2027-social-grant-payment-schedule-and-increases
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:za_sassa_grants-disability-2026-09@sillapps.com
+DTSTAMP:20260323T000000Z
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260904
+SUMMARY:SASSA grant payment
+DESCRIPTION:September 2026\nNot a government app.\nOfficial source: https:/
+ /www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-confirms-20
+ 26-2027-social-grant-payment-schedule-and-increases
+URL:https://www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-c
+ onfirms-2026-2027-social-grant-payment-schedule-and-increases
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:za_sassa_grants-disability-2026-10@sillapps.com
+DTSTAMP:20260323T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:SASSA grant payment
+DESCRIPTION:October 2026\nNot a government app.\nOfficial source: https://w
+ ww.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-confirms-2026
+ -2027-social-grant-payment-schedule-and-increases
+URL:https://www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-c
+ onfirms-2026-2027-social-grant-payment-schedule-and-increases
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:za_sassa_grants-disability-2026-11@sillapps.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:SASSA grant payment
+DESCRIPTION:November 2026\nNot a government app.\nOfficial source: https://
+ www.sanews.gov.za/south-africa/sassa-revises-november-grant-payment-dates-
+ ahead-elections
+URL:https://www.sanews.gov.za/south-africa/sassa-revises-november-grant-pay
+ ment-dates-ahead-elections
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:za_sassa_grants-disability-2026-12@sillapps.com
+DTSTAMP:20260323T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:SASSA grant payment
+DESCRIPTION:December 2026\nNot a government app.\nOfficial source: https://
+ www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-confirms-202
+ 6-2027-social-grant-payment-schedule-and-increases
+URL:https://www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-c
+ onfirms-2026-2027-social-grant-payment-schedule-and-increases
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:za_sassa_grants-disability-2027-01@sillapps.com
+DTSTAMP:20260323T000000Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+SUMMARY:SASSA grant payment
+DESCRIPTION:January 2027\nNot a government app.\nOfficial source: https://w
+ ww.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-confirms-2026
+ -2027-social-grant-payment-schedule-and-increases
+URL:https://www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-c
+ onfirms-2026-2027-social-grant-payment-schedule-and-increases
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:za_sassa_grants-disability-2027-02@sillapps.com
+DTSTAMP:20260323T000000Z
+DTSTART;VALUE=DATE:20270203
+DTEND;VALUE=DATE:20270204
+SUMMARY:SASSA grant payment
+DESCRIPTION:February 2027\nNot a government app.\nOfficial source: https://
+ www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-confirms-202
+ 6-2027-social-grant-payment-schedule-and-increases
+URL:https://www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-c
+ onfirms-2026-2027-social-grant-payment-schedule-and-increases
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:za_sassa_grants-disability-2027-03@sillapps.com
+DTSTAMP:20260323T000000Z
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270304
+SUMMARY:SASSA grant payment
+DESCRIPTION:March 2027\nNot a government app.\nOfficial source: https://www
+ .dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-confirms-2026-2
+ 027-social-grant-payment-schedule-and-increases
+URL:https://www.dsd.gov.za/index.php/latest-news/21-latest-news/680-SASSA-c
+ onfirms-2026-2027-social-grant-payment-schedule-and-increases
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

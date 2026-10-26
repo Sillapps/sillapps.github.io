@@ -1,0 +1,132 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sillapps//Dia do Pagamento//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Pé-de-Meia
+X-WR-TIMEZONE:America/Sao_Paulo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:br_pe_de_meia-2026-03@sillapps.com
+DTSTAMP:20260219T000000Z
+DTSTART;VALUE=DATE:20260323
+DTEND;VALUE=DATE:20260331
+SUMMARY:Pagamento Pé-de-Meia
+DESCRIPTION:1ª parcela\nNão é um app do governo.\nFonte oficial: https:/
+ /www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+URL:https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_pe_de_meia-2026-04@sillapps.com
+DTSTAMP:20260219T000000Z
+DTSTART;VALUE=DATE:20260427
+DTEND;VALUE=DATE:20260505
+SUMMARY:Pagamento Pé-de-Meia
+DESCRIPTION:2ª parcela\nNão é um app do governo.\nFonte oficial: https:/
+ /www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+URL:https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_pe_de_meia-2026-05@sillapps.com
+DTSTAMP:20260219T000000Z
+DTSTART;VALUE=DATE:20260525
+DTEND;VALUE=DATE:20260602
+SUMMARY:Pagamento Pé-de-Meia
+DESCRIPTION:3ª parcela\nNão é um app do governo.\nFonte oficial: https:/
+ /www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+URL:https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_pe_de_meia-2026-06@sillapps.com
+DTSTAMP:20260219T000000Z
+DTSTART;VALUE=DATE:20260629
+DTEND;VALUE=DATE:20260707
+SUMMARY:Pagamento Pé-de-Meia
+DESCRIPTION:4ª parcela\nNão é um app do governo.\nFonte oficial: https:/
+ /www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+URL:https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_pe_de_meia-2026-08@sillapps.com
+DTSTAMP:20260219T000000Z
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260901
+SUMMARY:Pagamento Pé-de-Meia
+DESCRIPTION:5ª parcela\nNão é um app do governo.\nFonte oficial: https:/
+ /www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+URL:https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_pe_de_meia-2026-09@sillapps.com
+DTSTAMP:20260219T000000Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260929
+SUMMARY:Pagamento Pé-de-Meia
+DESCRIPTION:6ª parcela\nNão é um app do governo.\nFonte oficial: https:/
+ /www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+URL:https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_pe_de_meia-2026-10@sillapps.com
+DTSTAMP:20260219T000000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261027
+SUMMARY:Pagamento Pé-de-Meia
+DESCRIPTION:7ª parcela\nNão é um app do governo.\nFonte oficial: https:/
+ /www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+URL:https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_pe_de_meia-2026-11@sillapps.com
+DTSTAMP:20260219T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261201
+SUMMARY:Pagamento Pé-de-Meia
+DESCRIPTION:8ª parcela\nNão é um app do governo.\nFonte oficial: https:/
+ /www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+URL:https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_pe_de_meia-2026-12@sillapps.com
+DTSTAMP:20260219T000000Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261229
+SUMMARY:Pagamento Pé-de-Meia
+DESCRIPTION:9ª parcela\nNão é um app do governo.\nFonte oficial: https:/
+ /www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+URL:https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_pe_de_meia-2027-01@sillapps.com
+DTSTAMP:20260219T000000Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270202
+SUMMARY:Pagamento Pé-de-Meia
+DESCRIPTION:10ª parcela\nNão é um app do governo.\nFonte oficial: https:
+ //www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+URL:https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_pe_de_meia-2027-02@sillapps.com
+DTSTAMP:20260219T000000Z
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270302
+SUMMARY:Pagamento Pé-de-Meia
+DESCRIPTION:Conclusão (aprovação) + Enem 2026\nNão é um app do governo
+ .\nFonte oficial: https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagam
+ entos
+URL:https://www.gov.br/mec/pt-br/pe-de-meia/calendario-pagamentos
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

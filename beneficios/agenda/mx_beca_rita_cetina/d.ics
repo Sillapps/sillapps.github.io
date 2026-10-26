@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sillapps//Dia do Pagamento//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Beca Rita Cetina · Apellido con D
+X-WR-TIMEZONE:America/Mexico_City
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:mx_beca_rita_cetina-d-2026-10@sillapps.com
+DTSTAMP:20261005T000000Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:Pago Beca Rita Cetina
+DESCRIPTION:Bimestre septiembre-octubre (pago en octubre)\nNo es una app de
+ l gobierno.\nFuente oficial: https://www.programasparaelbienestar.gob.mx/n
+ oticias-y-comunicados/noticia/beca-rita-cetina-inicia-depositos-para-secun
+ daria-este-es-es-calendario-de-pagos/
+URL:https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noti
+ cia/beca-rita-cetina-inicia-depositos-para-secundaria-este-es-es-calendari
+ o-de-pagos/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

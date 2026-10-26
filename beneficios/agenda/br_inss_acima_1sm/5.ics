@@ -1,0 +1,179 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sillapps//Dia do Pagamento//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:INSS acima de 1 salário mínimo · Benefício final 5
+X-WR-TIMEZONE:America/Sao_Paulo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:br_inss_acima_1sm-5-2025-12@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260108
+DTEND;VALUE=DATE:20260109
+SUMMARY:Pagamento INSS acima de 1 salário mínimo
+DESCRIPTION:Competência dezembro/2025 (pago jan/2026)\nNão é um app do g
+ overno.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/ca
+ lendario-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_acima_1sm-5-2026-01@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260206
+DTEND;VALUE=DATE:20260207
+SUMMARY:Pagamento INSS acima de 1 salário mínimo
+DESCRIPTION:Competência janeiro/2026 (pago fev)\nNão é um app do governo
+ .\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calendar
+ io-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_acima_1sm-5-2026-02@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260306
+DTEND;VALUE=DATE:20260307
+SUMMARY:Pagamento INSS acima de 1 salário mínimo
+DESCRIPTION:Competência fevereiro/2026 (pago mar)\nNão é um app do gover
+ no.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calend
+ ario-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_acima_1sm-5-2026-03@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260408
+DTEND;VALUE=DATE:20260409
+SUMMARY:Pagamento INSS acima de 1 salário mínimo
+DESCRIPTION:Competência março/2026 (pago abr)\nNão é um app do governo.
+ \nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calendari
+ o-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_acima_1sm-5-2026-04@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260508
+DTEND;VALUE=DATE:20260509
+SUMMARY:Pagamento INSS acima de 1 salário mínimo
+DESCRIPTION:Competência abril/2026 (pago mai)\nNão é um app do governo.\
+ nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calendario
+ -de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_acima_1sm-5-2026-05@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260608
+DTEND;VALUE=DATE:20260609
+SUMMARY:Pagamento INSS acima de 1 salário mínimo
+DESCRIPTION:Competência maio/2026 (pago jun)\nNão é um app do governo.\n
+ Fonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-
+ de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_acima_1sm-5-2026-06@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260707
+DTEND;VALUE=DATE:20260708
+SUMMARY:Pagamento INSS acima de 1 salário mínimo
+DESCRIPTION:Competência junho/2026 (pago jul)\nNão é um app do governo.\
+ nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calendario
+ -de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_acima_1sm-5-2026-07@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260808
+SUMMARY:Pagamento INSS acima de 1 salário mínimo
+DESCRIPTION:Competência julho/2026 (pago ago)\nNão é um app do governo.\
+ nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calendario
+ -de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_acima_1sm-5-2026-08@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:Pagamento INSS acima de 1 salário mínimo
+DESCRIPTION:Competência agosto/2026 (pago set)\nNão é um app do governo.
+ \nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calendari
+ o-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_acima_1sm-5-2026-09@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:Pagamento INSS acima de 1 salário mínimo
+DESCRIPTION:Competência setembro/2026 (pago out)\nNão é um app do govern
+ o.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calenda
+ rio-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_acima_1sm-5-2026-10@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Pagamento INSS acima de 1 salário mínimo
+DESCRIPTION:Competência outubro/2026 (pago nov)\nNão é um app do governo
+ .\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calendar
+ io-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_acima_1sm-5-2026-11@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Pagamento INSS acima de 1 salário mínimo
+DESCRIPTION:Competência novembro/2026 (pago dez)\nNão é um app do govern
+ o.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/calenda
+ rio-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_inss_acima_1sm-5-2026-12@sillapps.com
+DTSTAMP:20251224T000000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:Pagamento INSS acima de 1 salário mínimo
+DESCRIPTION:Competência dezembro/2026 (pago jan/2027)\nNão é um app do g
+ overno.\nFonte oficial: https://www.gov.br/inss/pt-br/assuntos/noticias/ca
+ lendario-de-pagamentos-do-inss-de-2026-esta-disponivel
+URL:https://www.gov.br/inss/pt-br/assuntos/noticias/calendario-de-pagamento
+ s-do-inss-de-2026-esta-disponivel
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

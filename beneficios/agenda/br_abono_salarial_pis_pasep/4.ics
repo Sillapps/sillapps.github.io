@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sillapps//Dia do Pagamento//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Abono PIS/Pasep · Mês de nascimento: abril
+X-WR-TIMEZONE:America/Sao_Paulo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:br_abono_salarial_pis_pasep-4-2026@sillapps.com
+DTSTAMP:20251231T000000Z
+DTSTART;VALUE=DATE:20260415
+DTEND;VALUE=DATE:20261231
+SUMMARY:Pagamento Abono PIS/Pasep
+DESCRIPTION:Abono salarial 2026 (ano-base 2024)\nNão é um app do governo.
+ \nFonte oficial: https://www.gov.br/trabalho-e-emprego/pt-br/servicos/trab
+ alhador/abono-salarial
+URL:https://www.gov.br/trabalho-e-emprego/pt-br/servicos/trabalhador/abono-
+ salarial
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sillapps//Dia do Pagamento//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Bolsa Família · NIS final 6
+X-WR-TIMEZONE:America/Sao_Paulo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:br_bolsa_familia-6-2026-10@sillapps.com
+DTSTAMP:20251223T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Pagamento Bolsa Família
+DESCRIPTION:Outubro\nNão é um app do governo.\nFonte oficial: https://www
+ .caixa.gov.br/programas-sociais/bolsa-familia/Paginas/default.aspx
+URL:https://www.caixa.gov.br/programas-sociais/bolsa-familia/Paginas/defaul
+ t.aspx
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_bolsa_familia-6-2026-11@sillapps.com
+DTSTAMP:20251223T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Pagamento Bolsa Família
+DESCRIPTION:Novembro\nNão é um app do governo.\nFonte oficial: https://ww
+ w.caixa.gov.br/programas-sociais/bolsa-familia/Paginas/default.aspx
+URL:https://www.caixa.gov.br/programas-sociais/bolsa-familia/Paginas/defaul
+ t.aspx
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:br_bolsa_familia-6-2026-12@sillapps.com
+DTSTAMP:20251223T000000Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Pagamento Bolsa Família
+DESCRIPTION:Dezembro\nNão é um app do governo.\nFonte oficial: https://ww
+ w.caixa.gov.br/programas-sociais/bolsa-familia/Paginas/default.aspx
+URL:https://www.caixa.gov.br/programas-sociais/bolsa-familia/Paginas/defaul
+ t.aspx
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
