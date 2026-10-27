@@ -37,7 +37,7 @@
           <div class="meta-card">
             <p class="meta-line">App name: Placa Hoy (Android and iPhone, com.sillapps.placahoy)</p>
             <p class="meta-line">Developer: Sillapps</p>
-            <p class="meta-line">Last updated: October 13, 2026</p>
+            <p class="meta-line">Last updated: October 27, 2026</p>
             <p class="meta-line" lang="es">Versión en español: <a href="privacidad.html">Política de privacidad</a></p>
           </div>
 
@@ -57,6 +57,7 @@
               <ul>
                 <li><strong>Your vehicles:</strong> name, plate, city, type (car or motorcycle), fuel, holograma (Mexico), whether the plate is foreign or local, the end date of a permit (Pico y Placa Solidario, pase turístico) and the expiry dates of the SOAT and of the technical inspection, if you enter them.</li>
                 <li><strong>Your settings:</strong> alerts on or off, alert times, verification reminders, light or dark theme.</li>
+                <li><strong>Your trips (Mi viaje, Pro or free trial):</strong> the destination city, the vehicle and the departure and return dates you enter. They are deleted automatically once the trip is over.</li>
                 <li><strong>Error log:</strong> the last five technical errors of the app (message and place in the code, no personal data). They only leave your phone if you send them with "Contacto o reportar un error", which opens an e-mail to contact@sillapps.com that you can review before sending.</li>
                 <li><strong>Local usage counters:</strong> install date, number of days of use, start of the Pro free trial, and when the app last showed you the Pro offer and the rating request. They only exist so the app does not insist: for example, so it does not ask you for a rating more than once every few months.</li>
                 <li><strong>Technical data:</strong> a copy of the driving rules, the last environmental contingency status checked (Mexico), the scheduled alerts and whether Placa Hoy Pro is unlocked.</li>
@@ -83,6 +84,7 @@
             <section class="section">
               <h2>Notifications and widget</h2>
               <p>Alerts (Pro or free trial), reminders (verification, SOAT and technical inspection expiry, end of a permit, rotation change) and the end-of-trial notice are local notifications, scheduled on your own phone. The home screen widget reads the answers the app stores on the device. With Pro or the trial, an Android background task (or, on iPhone, a background refresh when the system allows it) downloads the rules again (and, in Mexico, the contingency status) to keep the widget and alerts up to date, with the same requests described above. None of these features sends data anywhere.</p>
+              <p><strong>Quick Settings, shortcuts and Siri.</strong> On Android, the "¿Circulo hoy?" Quick Settings button and the shortcuts on the app icon show the answer the app already worked out and stored on the phone, or open the app on your vehicle. On iPhone, the "¿Puedo circular hoy?" shortcut in Siri and the Shortcuts app answers from the same data stored on the phone, without opening the app and without contacting Sillapps. If you ask Siri by voice, Apple handles your request under its privacy policy; the app only receives the request to answer, not your voice. None of these features sends data to Sillapps.</p>
               <p>Contingency alert (Pro or free trial, with a vehicle in the Valley of Mexico metropolitan area): when your alerts are on, the app registers with Google's Firebase Cloud Messaging (and, on iPhone, with Apple's push notification service, which carries the messages), which gives your phone a push token, and subscribes it to one topic shared by everyone who gets this alert. When the air quality page publishes an environmental contingency communiqué, an automated job sends one message to that topic. The message is the same for everyone and contains no personal data: your phone then reads the page and works out the answer for your vehicles. On iPhone, an extension of the app adds that answer to the notification from the data already stored on the phone, without sending anything. The developer never receives the tokens and keeps no list of users. Google stores the token and its topic to deliver the messages, as a processor, under the Firebase terms (https://firebase.google.com/support/privacy): it can tell which topic a token follows, not who you are, and it sees your IP address when your phone connects. Turning the alerts off, removing your Mexican vehicles or the end of the free trial unsubscribes your phone and deletes its token. If you never turn the alerts on, no token is created.</p>
             </section>
             <section class="section">

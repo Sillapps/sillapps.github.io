@@ -126,14 +126,6 @@
     <lastmod>2026-10-27</lastmod>
   </url>
   <url>
-    <loc>https://sillapps.com/placa-hoy/pico-y-placa-barranquilla/</loc>
-    <lastmod>2026-10-27</lastmod>
-  </url>
-  <url>
-    <loc>https://sillapps.com/placa-hoy/pico-y-placa-pasto/</loc>
-    <lastmod>2026-10-27</lastmod>
-  </url>
-  <url>
     <loc>https://sillapps.com/placa-hoy/pico-y-placa-santa-marta/</loc>
     <lastmod>2026-10-27</lastmod>
   </url>
@@ -164,13 +156,13 @@
   <!-- placa-hoy:cities:end -->
   <url>
     <loc>https://sillapps.com/placa-hoy/privacy.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sillapps.com/placa-hoy/privacy.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://sillapps.com/placa-hoy/privacidad.html" />
   </url>
   <url>
     <loc>https://sillapps.com/placa-hoy/privacidad.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://sillapps.com/placa-hoy/privacidad.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sillapps.com/placa-hoy/privacy.html" />
   </url>
