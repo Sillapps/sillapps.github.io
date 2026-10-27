@@ -34,7 +34,9 @@ from zoneinfo import ZoneInfo
 
 RSS_URL = "https://scioperi.mit.gov.it/mit2/public/scioperi/rss"
 NOTES_URL = "https://scioperi.mit.gov.it/mit2/public/scioperi"
-SOURCE_URL = "https://scioperi.mit.gov.it/mit2/public/scioperi"
+# The Ministry's page on the strike calendar (it links to the list). The list
+# itself (scioperi.mit.gov.it) answers only from Italy since 2026-10-23.
+SOURCE_URL = "https://www.mit.gov.it/calendario-scioperi"
 # Set to the Play URL once the app is in production.
 PLAY_URL: str | None = "https://play.google.com/store/apps/details?id=com.sillapps.scioperi&referrer=utm_source%3Dsillapps.com%26utm_medium%3Dwebsite"
 APP_STORE_ID = "6822546328"
@@ -277,7 +279,10 @@ def answer_text(n: int, when: str, place: str) -> str:
     return f"{when} {'1 sciopero' if n == 1 else f'{n} scioperi'} dei trasporti {place}"
 
 
-def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str:
+def build(strikes: list[dict], list_date: dt.date | None, today: dt.date, unavailable: bool = False) -> str:
+    """The page of [today]. [unavailable]: the list could not be read today, so
+    the page says it cannot answer instead of showing another day's answer
+    ([list_date] is then the last list read)."""
     tomorrow = today + dt.timedelta(days=1)
     week_end = today + dt.timedelta(days=7)
     strikes = sorted((s for s in strikes if s["end"] >= today), key=lambda s: (s["start"], sector_label(s["sector"]), where(s)))
@@ -310,8 +315,10 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
         ("Quando è il prossimo sciopero dei treni?", train_answer),
         ("Quando è il prossimo sciopero generale?", general_answer),
         ("Cosa sono le fasce di garanzia?", "Sono le ore in cui i servizi minimi sono garantiti anche durante lo sciopero. Per i treni regionali nei giorni feriali: dalle 6 alle 9 e dalle 18 alle 21. Per gli aerei: dalle 7 alle 10 e dalle 18 alle 21. Per bus, metro e tram dipendono dall'azienda locale."),
-        ("Da dove vengono i dati?", "Dall'elenco pubblico degli scioperi dell'Osservatorio del Ministero delle Infrastrutture e dei Trasporti (scioperi.mit.gov.it), letto ogni ora. Questa pagina e l'app Scioperi Oggi non sono ufficiali e non sono affiliate al Ministero."),
+        ("Da dove vengono i dati?", "Dall'elenco pubblico degli scioperi dell'Osservatorio del Ministero delle Infrastrutture e dei Trasporti (scioperi.mit.gov.it), letto ogni ora quando è raggiungibile. Questa pagina e l'app Scioperi Oggi non sono ufficiali e non sono affiliate al Ministero."),
     ]
+    if unavailable:
+        faq = faq[-2:]
     faq_html = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in faq)
     ld = [
         {
@@ -334,11 +341,27 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
         "" if PLAY_URL else '<p class="soon">La versione Android arriva presto su Google Play.</p>'
     )
     list_line = f"Elenco ufficiale aggiornato al {list_date:%d/%m/%Y}" if list_date else "Elenco ufficiale"
-    stale_list = list_date is not None and (today - list_date).days > 2
+    stale_list = not unavailable and list_date is not None and (today - list_date).days > 2
     stale_html = f'<p class="warn">L\'elenco ufficiale non risulta aggiornato dal {list_date:%d/%m/%Y}: controlla anche il sito del Ministero.</p>' if stale_list else ""
     desc = f"{answer_text(n_today, 'Oggi', 'in Italia')}. Scioperi di treni, bus, metro, aerei e traghetti oggi, domani e nei prossimi giorni, dall'elenco ufficiale del MIT."
     title = f"Sciopero oggi e domani: treni, bus, aerei · {today.day} {MONTHS[today.month - 1]} {today.year}"
     answer_class = "yes" if n_today else "no"
+    if unavailable:
+        last = f" Ultimo elenco letto: {list_date:%d/%m/%Y}." if list_date else ""
+        desc = "Scioperi di treni, bus, metro, aerei e traghetti in Italia: dove controllare oggi l'elenco ufficiale del Ministero."
+        body = f"""<p class="warn">Oggi questa pagina non riesce a leggere l'elenco ufficiale degli scioperi del Ministero, quindi non può dirti se c'è sciopero.{e(last)}</p>
+      <p>Per saperlo, apri il <a href="{SOURCE_URL}">calendario degli scioperi del Ministero</a> oppure l'app Scioperi Oggi, che legge l'elenco direttamente dal tuo telefono.</p>
+      <p class="meta">Pagina non ufficiale, non affiliata al Ministero</p>"""
+    else:
+        body = f"""<p class="flaps {answer_class}" id="flaps" aria-hidden="true"><span class="w w-yes"><i>S</i><i>C</i><i>I</i><i>O</i><i>P</i><i>E</i><i>R</i><i>O</i></span><span class="w w-no"><i>R</i><i>E</i><i>G</i><i>O</i><i>L</i><i>A</i><i>R</i><i>E</i></span></p>
+      <p class="answer {answer_class}" id="answer" data-n="{n_today}">{e(answer_text(n_today, "Oggi", "in Italia"))}</p>
+      <p class="meta">{e(list_line)} · fonte: <a href="{SOURCE_URL}">Ministero delle Infrastrutture e dei Trasporti</a> · pagina non ufficiale, non affiliata al Ministero</p>
+      <label for="region">La tua regione (gli scioperi nazionali restano sempre visibili)</label>
+      <select id="region"><option value="">Tutta Italia</option>{options}</select>
+      {section("oggi", "Oggi, " + long_date(today), t, "Nessuno sciopero in elenco per oggi.")}
+      {section("domani", "Domani, " + long_date(tomorrow), tm, "Nessuno sciopero in elenco per domani.")}
+      {section("settimana", "Nei prossimi giorni", week, "Nessuno sciopero in elenco nei prossimi 7 giorni.")}
+      {section("dopo", "Più avanti", later, "Nessun altro sciopero in elenco.")}"""
     return f"""<!doctype html>
 <html lang="it" data-app="scioperi">
   <head>
@@ -405,23 +428,15 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
     </style>
   </head>
   <body>
-    <main data-day="{today.isoformat()}">
+    <main data-day="{today.isoformat()}" data-list="{list_date.isoformat() if list_date else ''}">
       <header>
         <a class="brand" href="/scioperi/"><img src="/scioperi/icon-192.png" alt="" width="40" height="40" /> Scioperi Oggi</a>
         <a class="home" href="/"><img src="/brand/favicon.svg" alt="" width="18" height="18" /> Sillapps</a>
       </header>
-      <p class="warn" id="old" hidden>Questa pagina è di {e(long_date(today))}: l'aggiornamento è in corso. Nel frattempo controlla il <a href="{SOURCE_URL}">sito del Ministero</a>.</p>
+      <p class="warn" id="old" hidden>Questa pagina è di {e(long_date(today))} e oggi non è ancora stata aggiornata. Controlla il <a href="{SOURCE_URL}">calendario degli scioperi del Ministero</a>.</p>
       {stale_html}
       <h1>Sciopero oggi, {e(long_date(today))} {today.year}</h1>
-      <p class="flaps {answer_class}" id="flaps" aria-hidden="true"><span class="w w-yes"><i>S</i><i>C</i><i>I</i><i>O</i><i>P</i><i>E</i><i>R</i><i>O</i></span><span class="w w-no"><i>R</i><i>E</i><i>G</i><i>O</i><i>L</i><i>A</i><i>R</i><i>E</i></span></p>
-      <p class="answer {answer_class}" id="answer" data-n="{n_today}">{e(answer_text(n_today, "Oggi", "in Italia"))}</p>
-      <p class="meta">{e(list_line)} · fonte: <a href="{SOURCE_URL}">scioperi.mit.gov.it</a> · pagina non ufficiale, non affiliata al Ministero</p>
-      <label for="region">La tua regione (gli scioperi nazionali restano sempre visibili)</label>
-      <select id="region"><option value="">Tutta Italia</option>{options}</select>
-      {section("oggi", "Oggi, " + long_date(today), t, "Nessuno sciopero in elenco per oggi.")}
-      {section("domani", "Domani, " + long_date(tomorrow), tm, "Nessuno sciopero in elenco per domani.")}
-      {section("settimana", "Nei prossimi giorni", week, "Nessuno sciopero in elenco nei prossimi 7 giorni.")}
-      {section("dopo", "Più avanti", later, "Nessun altro sciopero in elenco.")}
+      {body}
       <section class="cta">
         {cta}
         <p>L'app dice subito se c'è sciopero oggi o domani nella tua regione, con gli orari e le fasce di garanzia. Con Pro, pagamento unico e nessun abbonamento: avviso la sera prima, avviso di nuovi scioperi e revoche nella tua zona, widget, più zone insieme, niente pubblicità. Avvisi e widget si provano gratis per 14 giorni.</p>
@@ -443,6 +458,7 @@ def build(strikes: list[dict], list_date: dt.date | None, today: dt.date) -> str
           if (p.year + "-" + p.month + "-" + p.day !== main.getAttribute("data-day")) document.getElementById("old").hidden = false;
         }} catch (err) {{}}
         var select = document.getElementById("region"), answer = document.getElementById("answer");
+        if (!select) return;
         var names = {{}};
         Array.prototype.forEach.call(select.options, function (o) {{ names[o.value] = o.text; }});
         function apply() {{
@@ -485,9 +501,20 @@ def main() -> int:
         strikes, list_date = parse_rss(rss)
         notes = parse_notes(page)
     except Exception as err:  # noqa: BLE001
-        print(f"[scioperi] list not readable, page left as it is: {err}", file=sys.stderr)
-        m = re.search(r'data-day="(\d{4}-\d{2}-\d{2})"', OUT.read_text()) if OUT.exists() else None
+        print(f"[scioperi] list not readable: {err}", file=sys.stderr)
+        old = OUT.read_text() if OUT.exists() else ""
+        m = re.search(r'data-day="(\d{4}-\d{2}-\d{2})"', old)
         built = dt.datetime.combine(dt.date.fromisoformat(m.group(1)), dt.time(), ROME) if m else None
+        # A new day without the list: never show another day's answer.
+        if built is not None and built.date() < today:
+            last = re.search(r'data-list="(\d{4}-\d{2}-\d{2})"', old) or re.search(r"aggiornato al (\d{2})/(\d{2})/(\d{4})", old)
+            last_date = None
+            if last and last.lastindex == 1:
+                last_date = dt.date.fromisoformat(last.group(1))
+            elif last:
+                last_date = dt.date(int(last.group(3)), int(last.group(2)), int(last.group(1)))
+            OUT.write_text(build([], last_date, today, unavailable=True))
+            print(f"[scioperi] written: list not readable, page of {today} says so (last list {last_date})")
         # Fail (GitHub e-mails the owner) once a day when it lasts.
         if (built is None or now - built > STALE_AFTER) and now.hour == 9:
             return 1
