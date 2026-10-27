@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "published": "2026-10-11",
+ "published": "2026-10-27",
  "countries": [
   {
    "id": "CO",
@@ -648,7 +648,7 @@
      "valid_from": "2026-06-30",
      "valid_to": "2026-10-04",
      "decree": "Decreto 0015 de 2026",
-     "source_url": "https://www.cartagena.gov.co/noticias",
+     "source_url": "https://cartagena.gov.co/noticias/conozca-el-nuevo-pico-placa-para-particulares-sus-rotaciones-durante-el-2026",
      "last_verified": "2026-09-26",
      "summary": "Lunes a viernes hábiles, 7:00–9:00 y 18:00–20:00: lunes 9 y 0, martes 1 y 2, miércoles 3 y 4, jueves 5 y 6, viernes 7 y 8.",
      "days": {
@@ -696,7 +696,7 @@
      "valid_from": "2026-10-05",
      "valid_to": "2026-12-10",
      "decree": "Decreto 0015 de 2026",
-     "source_url": "https://www.cartagena.gov.co/noticias",
+     "source_url": "https://cartagena.gov.co/noticias/conozca-el-nuevo-pico-placa-para-particulares-sus-rotaciones-durante-el-2026",
      "last_verified": "2026-09-26",
      "summary": "Lunes a viernes hábiles, 7:00–9:00 y 18:00–20:00: lunes 1 y 2, martes 3 y 4, miércoles 5 y 6, jueves 7 y 8, viernes 9 y 0.",
      "days": {
@@ -744,7 +744,7 @@
      "valid_from": "2026-12-11",
      "valid_to": "2027-01-22",
      "decree": "Decreto 0015 de 2026",
-     "source_url": "https://www.cartagena.gov.co/noticias",
+     "source_url": "https://cartagena.gov.co/noticias/conozca-el-nuevo-pico-placa-para-particulares-sus-rotaciones-durante-el-2026",
      "last_verified": "2026-09-26",
      "summary": "Temporada: lunes a viernes hábiles, todo el día (de 6:00 a 6:00 del día siguiente): lunes 1 y 2, martes 3 y 4, miércoles 5 y 6, jueves 7 y 8, viernes 9 y 0.",
      "days": {
@@ -2775,7 +2775,7 @@
      "date": "2026-11-20",
      "action": "unconfirmed",
      "note": "El Decreto Ejecutivo 507 suspende la jornada laboral; la AMT aún no ha dicho si se suspende el pico y placa.",
-     "source_url": "https://movilidad.quito.gob.ec/"
+     "source_url": "https://gobernacionloja.gob.ec/suspension-de-jornada-laboral-este-20-de-noviembre-impulsara-el-turismo-y-el-fiavl-2026/"
     }
    ],
    "notices": [
@@ -2783,16 +2783,16 @@
      "date": "2026-12-24",
      "title": "Tarde posiblemente libre",
      "text": "Otros años el alcalde ha suspendido el pico y placa de la tarde este día. Confírmalo en la fuente oficial.",
-     "source_url": "https://movilidad.quito.gob.ec/"
+     "source_url": "https://www.quitoinforma.gob.ec/2025/12/24/pico-y-placa-no-regira-en-feriados-de-navidad-y-ano-nuevo-en-quito/"
     },
     {
      "date": "2026-12-31",
-     "title": "Tarde posiblemente libre",
-     "text": "Otros años el alcalde ha suspendido el pico y placa de la tarde este día. Confírmalo en la fuente oficial.",
-     "source_url": "https://movilidad.quito.gob.ec/"
+     "title": "Día posiblemente libre",
+     "text": "Otros años el alcalde ha suspendido el pico y placa todo este día. Confírmalo en la fuente oficial.",
+     "source_url": "https://www.quitoinforma.gob.ec/2025/12/24/pico-y-placa-no-regira-en-feriados-de-navidad-y-ano-nuevo-en-quito/"
     }
    ]
   }
  ],
- "version": 2026101101
+ "version": 2026102702
 }
