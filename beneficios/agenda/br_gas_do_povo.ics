@@ -13,9 +13,10 @@ DTSTAMP:20260508T000000Z
 DTSTART;VALUE=DATE:20260610
 DTEND;VALUE=DATE:20260611
 SUMMARY:Pagamento Gás do Povo
-DESCRIPTION:Junho\nNão é um app do governo.\nFonte oficial: https://www.g
- ov.br/mds/pt-br/acoes-e-programas/gas-do-povo
-URL:https://www.gov.br/mds/pt-br/acoes-e-programas/gas-do-povo
+DESCRIPTION:Junho\nNão é um app do governo.\nFonte oficial: https://www.c
+ aixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas/default.aspx
+URL:https://www.caixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas
+ /default.aspx
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -24,9 +25,10 @@ DTSTAMP:20260508T000000Z
 DTSTART;VALUE=DATE:20260710
 DTEND;VALUE=DATE:20260711
 SUMMARY:Pagamento Gás do Povo
-DESCRIPTION:Julho\nNão é um app do governo.\nFonte oficial: https://www.g
- ov.br/mds/pt-br/acoes-e-programas/gas-do-povo
-URL:https://www.gov.br/mds/pt-br/acoes-e-programas/gas-do-povo
+DESCRIPTION:Julho\nNão é um app do governo.\nFonte oficial: https://www.c
+ aixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas/default.aspx
+URL:https://www.caixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas
+ /default.aspx
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -36,8 +38,9 @@ DTSTART;VALUE=DATE:20260810
 DTEND;VALUE=DATE:20260811
 SUMMARY:Pagamento Gás do Povo
 DESCRIPTION:Agosto\nNão é um app do governo.\nFonte oficial: https://www.
- gov.br/mds/pt-br/acoes-e-programas/gas-do-povo
-URL:https://www.gov.br/mds/pt-br/acoes-e-programas/gas-do-povo
+ caixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas/default.aspx
+URL:https://www.caixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas
+ /default.aspx
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -47,8 +50,9 @@ DTSTART;VALUE=DATE:20260910
 DTEND;VALUE=DATE:20260911
 SUMMARY:Pagamento Gás do Povo
 DESCRIPTION:Setembro\nNão é um app do governo.\nFonte oficial: https://ww
- w.gov.br/mds/pt-br/acoes-e-programas/gas-do-povo
-URL:https://www.gov.br/mds/pt-br/acoes-e-programas/gas-do-povo
+ w.caixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas/default.aspx
+URL:https://www.caixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas
+ /default.aspx
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -58,8 +62,9 @@ DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:Pagamento Gás do Povo
 DESCRIPTION:Outubro\nNão é um app do governo.\nFonte oficial: https://www
- .gov.br/mds/pt-br/acoes-e-programas/gas-do-povo
-URL:https://www.gov.br/mds/pt-br/acoes-e-programas/gas-do-povo
+ .caixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas/default.aspx
+URL:https://www.caixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas
+ /default.aspx
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -69,8 +74,9 @@ DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Pagamento Gás do Povo
 DESCRIPTION:Novembro\nNão é um app do governo.\nFonte oficial: https://ww
- w.gov.br/mds/pt-br/acoes-e-programas/gas-do-povo
-URL:https://www.gov.br/mds/pt-br/acoes-e-programas/gas-do-povo
+ w.caixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas/default.aspx
+URL:https://www.caixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas
+ /default.aspx
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -80,8 +86,9 @@ DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:Pagamento Gás do Povo
 DESCRIPTION:Dezembro\nNão é um app do governo.\nFonte oficial: https://ww
- w.gov.br/mds/pt-br/acoes-e-programas/gas-do-povo
-URL:https://www.gov.br/mds/pt-br/acoes-e-programas/gas-do-povo
+ w.caixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas/default.aspx
+URL:https://www.caixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas
+ /default.aspx
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

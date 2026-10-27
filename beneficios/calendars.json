@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 2026102602,
- "published": "2026-10-26",
+ "version": 2026102701,
+ "published": "2026-10-27",
  "countries": [
   {
    "code": "BR",
@@ -955,16 +955,16 @@
      "summary": "Vales-recarga liberados todo dia 10.",
      "key": "none",
      "key_values": [],
-     "official_url": "https://www.gov.br/mds/pt-br/acoes-e-programas/gas-do-povo",
+     "official_url": "https://www.caixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas/default.aspx",
      "calendars": [
       {
        "id": "br_gas_do_povo_2026",
-       "source_url": "https://www.gov.br/mds/pt-br/acoes-e-programas/gas-do-povo",
-       "source_title": "Gás do Povo: novos vales todo dia 10 (MDS)",
+       "source_url": "https://www.caixa.gov.br/programas-sociais/programa-gas-do-povo/Paginas/default.aspx",
+       "source_title": "Gás do Povo: calendário 2026, vale-recarga todo dia 10 (Caixa)",
        "published": "2026-05-08",
        "valid_from": "2026-06-01",
        "valid_to": "2026-12-31",
-       "last_verified": "2026-10-01",
+       "last_verified": "2026-10-27",
        "status": "official",
        "payments": [
         {
