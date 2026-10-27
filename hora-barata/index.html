@@ -23,14 +23,14 @@
       "@context": "https://schema.org",
       "@type": "MobileApplication",
       "name": "Hora Barata",
-      "alternateName": "Precio Luz Hoy · Hora Barata",
+      "alternateName": "Precio Luz PVPC · Hora Barata",
       "operatingSystem": "ANDROID",
       "applicationCategory": "UtilitiesApplication",
       "inLanguage": "es",
       "url": "https://sillapps.com/hora-barata/",
       "installUrl": "https://play.google.com/store/apps/details?id=com.sillapps.ecoclaimspocket",
       "image": "https://sillapps.com/hora-barata/icon-192.png",
-      "description": "Precio de la luz PVPC hora a hora, hoy y mañana, con las horas más baratas y un planificador para la lavadora.",
+      "description": "Precio de la luz PVPC hora a hora, hoy y mañana, con las horas más baratas y la mejor hora para cada aparato.",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
       "publisher": { "@type": "Organization", "name": "Sillapps", "url": "https://sillapps.com/" }
     }
@@ -48,7 +48,7 @@
         {
           "@type": "Question",
           "name": "¿Cuál es la hora más barata de la luz hoy?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Cambia cada día. Suelen ser las horas de madrugada y, los días de mucho sol, las primeras horas de la tarde. En esta página y en la app las horas más baratas aparecen en verde." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Cambia cada día. Suelen ser las horas de madrugada y, los días de mucho sol, las primeras horas de la tarde. En esta página y en la app las horas baratas aparecen en turquesa." }
         },
         {
           "@type": "Question",
@@ -68,7 +68,7 @@
         {
           "@type": "Question",
           "name": "¿Hora Barata es gratis? ¿Tiene anuncios?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Es gratis, sin anuncios, sin cuenta y sin rastreo, con un widget de inicio gratis. Hora Barata Pro, un pago único de 4,99 €, añade las alertas de hora barata y el widget completo." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Es gratis, sin anuncios, sin cuenta y sin rastreo, con un widget de inicio gratis. Hora Barata Pro, un pago único de 4,99 €, añade el aviso diario, el aviso por debajo de un precio y el widget completo." }
         },
         {
           "@type": "Question",
@@ -182,8 +182,11 @@
               <p class="note">
                 Precios en €/kWh del término de energía PVPC 2.0TD (incluye peajes y cargos,
                 sin IVA ni impuesto eléctrico), en hora peninsular. En Canarias es una hora menos:
-                la app los muestra en hora canaria. Datos de Red Eléctrica, cargados por tu navegador
-                directamente desde su API pública (apidatos.ree.es). Hora Barata no está afiliada a Red Eléctrica.
+                la app los muestra en hora canaria. Datos de Red Eléctrica, publicados en
+                <a href="https://www.esios.ree.es/es/pvpc">esios.ree.es/es/pvpc</a> y
+                <a href="https://www.ree.es/es/datos/mercados/precios-mercados-tiempo-real">ree.es</a>,
+                cargados por tu navegador directamente desde su API pública. Hora Barata es una app independiente
+                y no oficial, no afiliada a Red Eléctrica.
               </p>
             </section>
 
@@ -234,8 +237,8 @@
                 <li>Lo mismo vale para el lavavajillas, la secadora, el termo o cargar el coche.</li>
               </ul>
               <p>
-                El planificador <strong>«¿Cuándo pongo la lavadora?»</strong> de Hora Barata calcula esa franja
-                según lo que dura tu electrodoméstico.
+                En Hora Barata, cada aparato tiene su tarjeta en la pantalla principal: la franja más barata
+                según lo que dura, y lo que cuesta.
               </p>
             </section>
 
@@ -251,11 +254,14 @@
             <section class="section" id="app">
               <h2>Qué hace la app</h2>
               <ul class="feature-list">
-                <li>El precio de ahora sobre un reloj de 24 horas, y si esta hora es barata, normal o cara frente a la media del día.</li>
+                <li>El precio de ahora, y si esta hora es barata, normal o cara frente a la media del día.</li>
+                <li>El día en un programador de 24 horas, como el de enchufe: las horas baratas se encienden en turquesa.</li>
+                <li>El mejor momento del día y, para cada aparato (lavadora, lavavajillas, secadora, horno, coche eléctrico), su hora de inicio más barata.</li>
                 <li>Los precios de hoy y de mañana hora a hora, el historial de los últimos 30 días y su media.</li>
                 <li>Los días con precio negativo, con sus horas y por qué pasa.</li>
-                <li>El planificador te dice cuánto cuesta cada uso en € y cuánto ahorras frente a empezar ahora.</li>
+                <li>Cuánto cuesta cada uso en € y cuánto ahorras frente a empezar ahora.</li>
                 <li><strong>«Avísame»</strong>: un recordatorio gratis antes de que empiece la franja que elegiste.</li>
+                <li>Widget con el precio de ahora y botón «Precio ahora» en los ajustes rápidos de Android, gratis.</li>
                 <li>Comparte las horas baratas del día con tu familia.</li>
                 <li>Funciona sin conexión con los últimos precios guardados. En español, catalán, inglés y francés.</li>
               </ul>
@@ -268,9 +274,9 @@
                 de 4,99 € (sin suscripción) que añade:
               </p>
               <ul>
-                <li><strong>Alertas de hora barata</strong>: un aviso antes de tu franja más barata y cuando salen los precios de mañana.</li>
-                <li><strong>Alerta de precio</strong>: un aviso si el precio baja del umbral que elijas (con 0 €, cuando sale negativo).</li>
-                <li><strong>Widget completo</strong>: las 24 horas en barras y la próxima hora barata. El widget básico, con el precio actual, es gratis.</li>
+                <li><strong>Aviso diario</strong>: al empezar la franja más barata del aparato que elijas, y cuando salen los precios de mañana.</li>
+                <li><strong>Aviso por debajo de un precio</strong>: tú eliges el precio (con 0 €, cuando sale negativo).</li>
+                <li><strong>Widget completo</strong>: el día entero y la próxima hora barata, al día cada hora. El widget básico, con el precio actual, es gratis.</li>
               </ul>
               <p>
                 Si lo prefieres, la app no te avisa de noche (de 23:00 a 7:00). Puedes probar Pro gratis
@@ -286,7 +292,7 @@
               </details>
               <details>
                 <summary>¿Cuál es la hora más barata de la luz hoy?</summary>
-                <p>Cambia cada día. Suelen ser las horas de madrugada y, los días de mucho sol, las primeras horas de la tarde. En esta página y en la app las horas más baratas aparecen en verde.</p>
+                <p>Cambia cada día. Suelen ser las horas de madrugada y, los días de mucho sol, las primeras horas de la tarde. En esta página y en la app las horas baratas aparecen en turquesa.</p>
               </details>
               <details>
                 <summary>¿El precio incluye impuestos?</summary>
@@ -302,7 +308,7 @@
               </details>
               <details>
                 <summary>¿Hora Barata es gratis? ¿Tiene anuncios?</summary>
-                <p>Es gratis, sin anuncios, sin cuenta y sin rastreo, con un widget de inicio gratis. Hora Barata Pro, un pago único de 4,99 €, añade las alertas de hora barata y el widget completo.</p>
+                <p>Es gratis, sin anuncios, sin cuenta y sin rastreo, con un widget de inicio gratis. Hora Barata Pro, un pago único de 4,99 €, añade el aviso diario, el aviso por debajo de un precio y el widget completo.</p>
               </details>
               <details>
                 <summary>¿Qué datos recoge la app?</summary>
