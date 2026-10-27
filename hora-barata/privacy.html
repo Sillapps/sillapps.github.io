@@ -37,7 +37,7 @@
           <div class="meta-card">
             <p class="meta-line">App name: Hora Barata (formerly Eco Claims Pocket)</p>
             <p class="meta-line">Developer: Sillapps</p>
-            <p class="meta-line">Effective date: October 12, 2026</p>
+            <p class="meta-line">Effective date: October 27, 2026</p>
             <p class="meta-line" lang="es">Versión en español: <a href="privacidad.html">Política de privacidad</a></p>
           </div>
 
@@ -52,13 +52,13 @@
             </section>
             <section class="section">
               <h2>Data collected</h2>
-              <p>Hora Barata does not collect, store on a server, or share personal data. There is no account, no analytics SDK and no advertising SDK. The only exception is the push token described under &ldquo;Alert by push notification&rdquo;, created only if you turn on the Pro alerts.</p>
+              <p>Hora Barata does not collect, store on a server, or share personal data. There is no account, no analytics SDK and no advertising SDK. The only exception is the push token (a device identifier) described under &ldquo;Alert by push notification&rdquo;, created only if you turn on the Pro daily alert (&ldquo;Aviso diario&rdquo;).</p>
               <p>The app stores a small amount of data locally on your device: your preferences (language, taxes display, appliance duration, alerts on or off), a cache of recent electricity prices, whether Hora Barata Pro is unlocked (or a trial is active), and when the app last asked you to rate it.</p>
               <p>Like any app's, these settings can be part of your phone's backup (your Google account on Android, iCloud or a computer on iPhone), under your control and the store's policies; the developer has no access to it.</p>
             </section>
             <section class="section">
               <h2>Network requests</h2>
-              <p>To download prices, the app sends anonymous requests to public open-data services of Red Eléctrica (apidatos.ree.es and api.esios.ree.es). These requests contain only the date requested. As with any internet request, those services can see your IP address; their processing is governed by Red Eléctrica's own policies.</p>
+              <p>To download prices, the app sends anonymous requests to public open-data services of Red Eléctrica (apidatos.ree.es and api.esios.ree.es). These requests contain only the date requested. As with any internet request, those services can see your IP address; their processing is governed by Red Eléctrica's own policies. The prices are those Red Eléctrica publishes on <a href="https://www.esios.ree.es/es/pvpc">https://www.esios.ree.es/es/pvpc</a> and <a href="https://www.ree.es/es/datos/mercados/precios-mercados-tiempo-real">https://www.ree.es/es/datos/mercados/precios-mercados-tiempo-real</a>, both linked in the app's settings. Hora Barata is an independent, unofficial app, not made by the Spanish government or Red Eléctrica.</p>
             </section>
             <section class="section">
               <h2>Purchases</h2>
@@ -69,13 +69,13 @@
               <p>The app may occasionally ask you to rate it using the store's official rating prompt (Google Play's In-App Review API, or the App Store's on iPhone). The prompt is shown and handled by the store: the developer does not receive your rating or review through the app, and any review you post is published on the store under your account, according to the store's policies.</p>
             </section>
             <section class="section">
-              <h2>Notifications and widget</h2>
-              <p>The free "Avísame" reminder of the planner and the Pro alerts are local notifications, scheduled on your own device, except the "tomorrow's prices are out" alert described below. The home screen widget reads prices stored locally by the app. None of these features sends data anywhere.</p>
+              <h2>Notifications, widget, tile and Shortcuts</h2>
+              <p>The free "Avísame" reminder of the planner and the Pro alerts are local notifications, scheduled on your own device, except the "tomorrow's prices are out" alert described below. The home screen widget reads prices stored locally by the app. The &ldquo;Precio ahora&rdquo; Quick Settings tile (Android) and the &ldquo;¿Es hora barata?&rdquo; Shortcuts action (iPhone) also only read the prices already stored on your phone. None of these features sends data anywhere.</p>
             </section>
             <section class="section">
               <h2>Alert by push notification</h2>
-              <p>With the Pro alerts on, the app tells you once a day, as soon as Red Eléctrica publishes tomorrow's prices (around 20:15), the cheapest hour of tomorrow. When you turn the alerts on, the app registers with Google's Firebase Cloud Messaging (and, on iPhone, Apple's push notification service), which gives your phone a push token, and subscribes it to one topic shared by everyone who uses the alerts. Once a day, shortly after publication, an automated job sends one message to that topic. The message is the same for everyone: it contains tomorrow's public prices and no personal data. Your phone then words the alert with your own settings (language, taxes, Canary Islands time) and schedules tomorrow's alerts.</p>
-              <p>The developer never receives the tokens and keeps no list of users. Google stores the token to deliver the messages, as a processor on the developer's behalf, under the Firebase terms (<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>); Google can also see your IP address when your phone connects to it. Turning the alerts off, or the end of the free trial, unsubscribes your phone and deletes its token. If you never turn the alerts on, no push token is created.</p>
+              <p>With the Pro daily alert (&ldquo;Aviso diario&rdquo;) on, the app tells you once a day, as soon as Red Eléctrica publishes tomorrow's prices (around 20:15), the cheapest hour of tomorrow. When you turn the alerts on, the app registers with Google's Firebase Cloud Messaging (and, on iPhone, Apple's push notification service), which gives your phone a push token, and subscribes it to one topic shared by everyone who uses the alerts. Once a day, shortly after publication, an automated job sends one message to that topic. The message is the same for everyone: it contains tomorrow's public prices and no personal data. Your phone then words the alert with your own settings (language, taxes, Canary Islands time) and schedules tomorrow's alerts.</p>
+              <p>The token is used only to deliver this alert and is not shared with anyone else (no advertising, no analytics); it travels encrypted. The developer never receives the tokens and keeps no list of users. Google stores the token to deliver the messages, as a processor on the developer's behalf, under the Firebase terms (<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>); Google can also see your IP address when your phone connects to it. Turning the alert off, or the end of the free trial, unsubscribes your phone and deletes its token; uninstalling the app makes the token stop working, and Google erases it. If you never turn the alert on, no push token is created.</p>
             </section>
             <section class="section">
               <h2>Error log</h2>
@@ -87,7 +87,7 @@
             </section>
             <section class="section">
               <h2>Data retention and deletion</h2>
-              <p>All app data stays on your device. You can delete it at any time by clearing the app storage or uninstalling the app. The push token, if any, is deleted when you turn the alerts off; Google deletes unused tokens on its own after a period of inactivity.</p>
+              <p>All app data stays on your device. You can delete it at any time by clearing the app storage or uninstalling the app. The push token, if any, is deleted when you turn the alert off or uninstall the app; Google erases unused tokens on its own after a period of inactivity.</p>
             </section>
             <section class="section">
               <h2>Your rights</h2>

@@ -38,7 +38,7 @@
           <div class="meta-card">
             <p class="meta-line">Aplicación: Hora Barata (antes Eco Claims Pocket)</p>
             <p class="meta-line">Desarrollador: Sillapps</p>
-            <p class="meta-line">Fecha de entrada en vigor: 12 de octubre de 2026</p>
+            <p class="meta-line">Fecha de entrada en vigor: 27 de octubre de 2026</p>
             <p class="meta-line" lang="en">English version: <a href="privacy.html">Privacy policy</a></p>
           </div>
 
@@ -53,13 +53,13 @@
             </section>
             <section class="section">
               <h2>Datos que se recogen</h2>
-              <p>Hora Barata no recoge datos personales, no los guarda en ningún servidor y no los comparte. No hay cuenta de usuario, ni SDK de analítica, ni SDK de publicidad. La única excepción es el identificador de notificaciones push descrito en «Alerta por notificación push», que solo se crea si activas las alertas de Pro.</p>
+              <p>Hora Barata no recoge datos personales, no los guarda en ningún servidor y no los comparte. No hay cuenta de usuario, ni SDK de analítica, ni SDK de publicidad. La única excepción es el identificador de notificaciones push (un identificador del dispositivo) descrito en «Alerta por notificación push», que solo se crea si activas el «Aviso diario» de Pro.</p>
               <p>La app guarda unos pocos datos solo en tu dispositivo: tus preferencias (idioma, mostrar impuestos, duración del electrodoméstico, alertas activadas o no), una copia de los precios recientes, si Hora Barata Pro está desbloqueado (o hay una prueba activa) y cuándo te pidió por última vez que la valoraras.</p>
               <p>Como los de cualquier app, estos ajustes pueden formar parte de la copia de seguridad de tu teléfono (tu cuenta de Google en Android, iCloud o un ordenador en iPhone), bajo tu control y según las políticas de la tienda; el desarrollador no tiene acceso a ella.</p>
             </section>
             <section class="section">
               <h2>Conexiones a internet</h2>
-              <p>Para descargar los precios, la app hace peticiones anónimas a los servicios públicos de datos abiertos de Red Eléctrica (apidatos.ree.es y api.esios.ree.es). Estas peticiones solo contienen la fecha consultada. Como en cualquier conexión a internet, esos servicios pueden ver tu dirección IP; su tratamiento se rige por las políticas de Red Eléctrica.</p>
+              <p>Para descargar los precios, la app hace peticiones anónimas a los servicios públicos de datos abiertos de Red Eléctrica (apidatos.ree.es y api.esios.ree.es). Estas peticiones solo contienen la fecha consultada. Como en cualquier conexión a internet, esos servicios pueden ver tu dirección IP; su tratamiento se rige por las políticas de Red Eléctrica. Los precios son los que Red Eléctrica publica en <a href="https://www.esios.ree.es/es/pvpc">https://www.esios.ree.es/es/pvpc</a> y <a href="https://www.ree.es/es/datos/mercados/precios-mercados-tiempo-real">https://www.ree.es/es/datos/mercados/precios-mercados-tiempo-real</a>, enlazadas en los ajustes de la app. Hora Barata es una app independiente y no oficial: no es del Gobierno ni de Red Eléctrica.</p>
             </section>
             <section class="section">
               <h2>Compras</h2>
@@ -70,13 +70,13 @@
               <p>De vez en cuando, la app puede pedirte que la valores mediante la ventana oficial de la tienda (la API In-App Review de Google Play, o la de la App Store en iPhone). La tienda muestra y gestiona esa ventana: el desarrollador no recibe tu valoración ni tu reseña a través de la app, y lo que publiques aparece en la tienda con tu cuenta, según sus políticas.</p>
             </section>
             <section class="section">
-              <h2>Notificaciones y widget</h2>
-              <p>El recordatorio gratis «Avísame» del planificador y las alertas de Pro son notificaciones locales: se programan en tu propio dispositivo, salvo el aviso «Ya están los precios de mañana», descrito a continuación. El widget de la pantalla de inicio lee los precios que la app guarda en el dispositivo. Ninguna de estas funciones envía datos a ninguna parte.</p>
+              <h2>Notificaciones, widget, botón de ajustes rápidos y Atajos</h2>
+              <p>El recordatorio gratis «Avísame» del planificador y las alertas de Pro son notificaciones locales: se programan en tu propio dispositivo, salvo el aviso «Ya están los precios de mañana», descrito a continuación. El widget de la pantalla de inicio lee los precios que la app guarda en el dispositivo. El botón «Precio ahora» de los ajustes rápidos (Android) y la acción «¿Es hora barata?» de Atajos (iPhone) también leen solo los precios ya guardados en tu teléfono. Ninguna de estas funciones envía datos a ninguna parte.</p>
             </section>
             <section class="section">
               <h2>Alerta por notificación push</h2>
-              <p>Con las alertas de Pro activadas, la app te avisa una vez al día, en cuanto Red Eléctrica publica los precios de mañana (hacia las 20:15), de la hora más barata de mañana. Al activar las alertas, la app se registra en Firebase Cloud Messaging de Google (y, en iPhone, en el servicio de notificaciones push de Apple), que da a tu teléfono un identificador de notificaciones push, y lo suscribe a un único tema compartido por todas las personas que usan las alertas. Una vez al día, poco después de la publicación, un proceso automático envía un mensaje a ese tema. El mensaje es el mismo para todos: contiene los precios públicos de mañana y ningún dato personal. Después, tu teléfono redacta el aviso con tus propios ajustes (idioma, impuestos, hora de Canarias) y programa las alertas de mañana.</p>
-              <p>El desarrollador nunca recibe los identificadores y no guarda ninguna lista de usuarios. Google guarda el identificador para entregar los mensajes, como encargado del tratamiento por cuenta del desarrollador, según las condiciones de Firebase (<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>); Google también puede ver tu dirección IP cuando tu teléfono se conecta. Al desactivar las alertas, o al terminar la prueba gratis, tu teléfono se da de baja del tema y su identificador se borra. Si nunca activas las alertas, no se crea ningún identificador.</p>
+              <p>Con el «Aviso diario» de Pro activado, la app te avisa una vez al día, en cuanto Red Eléctrica publica los precios de mañana (hacia las 20:15), de la hora más barata de mañana. Al activar las alertas, la app se registra en Firebase Cloud Messaging de Google (y, en iPhone, en el servicio de notificaciones push de Apple), que da a tu teléfono un identificador de notificaciones push, y lo suscribe a un único tema compartido por todas las personas que usan las alertas. Una vez al día, poco después de la publicación, un proceso automático envía un mensaje a ese tema. El mensaje es el mismo para todos: contiene los precios públicos de mañana y ningún dato personal. Después, tu teléfono redacta el aviso con tus propios ajustes (idioma, impuestos, hora de Canarias) y programa las alertas de mañana.</p>
+              <p>El identificador solo sirve para entregar este aviso y no se comparte con nadie más (ni publicidad ni analítica); viaja cifrado. El desarrollador nunca recibe los identificadores y no guarda ninguna lista de usuarios. Google guarda el identificador para entregar los mensajes, como encargado del tratamiento por cuenta del desarrollador, según las condiciones de Firebase (<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>); Google también puede ver tu dirección IP cuando tu teléfono se conecta. Al desactivar el aviso, o al terminar la prueba gratis, tu teléfono se da de baja del tema y su identificador se borra; al desinstalar la app, el identificador deja de funcionar y Google lo borra. Si nunca activas el aviso, no se crea ningún identificador.</p>
             </section>
             <section class="section">
               <h2>Registro de errores</h2>
@@ -88,7 +88,7 @@
             </section>
             <section class="section">
               <h2>Conservación y eliminación de los datos</h2>
-              <p>Todos los datos de la app se quedan en tu dispositivo. Puedes borrarlos cuando quieras limpiando el almacenamiento de la app o desinstalándola. El identificador de notificaciones push, si existe, se borra al desactivar las alertas; Google borra por su cuenta los identificadores que dejan de usarse tras un tiempo.</p>
+              <p>Todos los datos de la app se quedan en tu dispositivo. Puedes borrarlos cuando quieras limpiando el almacenamiento de la app o desinstalándola. El identificador de notificaciones push, si existe, se borra al desactivar el aviso o al desinstalar la app; Google borra por su cuenta los identificadores que dejan de usarse tras un tiempo.</p>
             </section>
             <section class="section">
               <h2>Tus derechos</h2>
