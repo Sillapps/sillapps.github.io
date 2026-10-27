@@ -136,7 +136,7 @@
     var tip = el("p", "hb-tip");
     if (win) {
       tip.textContent = (isToday ? "Lavadora de 2 h, lo más barato que queda hoy: " : "Lavadora de 2 h, lo más barato mañana: ") +
-        list[win.start].label + "–" + endLabel(list, win.start + 1) + " (media " + fmt(win.avg) + " €/kWh).";
+        list[win.start].label + "-" + endLabel(list, win.start + 1) + " (media " + fmt(win.avg) + " €/kWh).";
     } else {
       tip.textContent = "Hoy ya no quedan dos horas seguidas: mira los precios de mañana.";
     }
