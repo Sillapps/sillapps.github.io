@@ -22,4 +22,19 @@ URL:https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noti
  26/
 TRANSP:TRANSPARENT
 END:VEVENT
+BEGIN:VEVENT
+UID:mx_madres_trabajadoras-c-2026-11@sillapps.com
+DTSTAMP:20261027T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261107
+SUMMARY:Pago Madres Trabajadoras
+DESCRIPTION:Bimestre noviembre-diciembre\nNo es una app del gobierno.\nFuen
+ te oficial: https://www.programasparaelbienestar.gob.mx/noticias-y-comunic
+ ados/noticia/listo-el-calendario-de-pagos-del-bimestre-noviembre-diciembre
+ -de-programas-para-el-bienestar/
+URL:https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noti
+ cia/listo-el-calendario-de-pagos-del-bimestre-noviembre-diciembre-de-progr
+ amas-para-el-bienestar/
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR

@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 2026102701,
- "published": "2026-10-27",
+ "version": 2026102802,
+ "published": "2026-10-28",
  "countries": [
   {
    "code": "BR",
@@ -1126,19 +1126,76 @@
         "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras.",
         "No hay depósitos el miércoles 16 de septiembre (día feriado)."
        ]
+      },
+      {
+       "id": "mx_adultos_mayores_2026_nov_dic",
+       "source_url": "https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noticia/listo-el-calendario-de-pagos-del-bimestre-noviembre-diciembre-de-programas-para-el-bienestar/",
+       "source_title": "Listo, calendario de pagos del bimestre noviembre y diciembre de Programas para el Bienestar",
+       "published": "2026-10-27",
+       "valid_from": "2026-11-01",
+       "valid_to": "2026-12-31",
+       "last_verified": "2026-10-29",
+       "status": "official",
+       "payments": [
+        {
+         "period": "2026-11",
+         "label": "Bimestre noviembre-diciembre",
+         "by_key": {
+          "A": "2026-11-03",
+          "B": "2026-11-04",
+          "C": {
+           "from": "2026-11-05",
+           "to": "2026-11-06"
+          },
+          "D": "2026-11-09",
+          "E": "2026-11-09",
+          "F": "2026-11-09",
+          "G": {
+           "from": "2026-11-10",
+           "to": "2026-11-11"
+          },
+          "H": "2026-11-12",
+          "I": "2026-11-12",
+          "J": "2026-11-12",
+          "K": "2026-11-12",
+          "L": "2026-11-13",
+          "M": {
+           "from": "2026-11-17",
+           "to": "2026-11-18"
+          },
+          "N": "2026-11-19",
+          "Ñ": "2026-11-19",
+          "O": "2026-11-19",
+          "P": "2026-11-20",
+          "Q": "2026-11-20",
+          "R": {
+           "from": "2026-11-23",
+           "to": "2026-11-24"
+          },
+          "S": "2026-11-25",
+          "T": "2026-11-26",
+          "U": "2026-11-26",
+          "V": "2026-11-26",
+          "W": "2026-11-27",
+          "X": "2026-11-27",
+          "Y": "2026-11-27",
+          "Z": "2026-11-27"
+         }
+        }
+       ],
+       "notes": [
+        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
+        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
+        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
+        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras.",
+        "Es el último pago bimestral de 2026. No hay depósitos el lunes 16 de noviembre (día feriado)."
+       ]
       }
      ],
      "notes": [],
      "next_label": "",
      "day_note": "",
-     "pending": [
-      {
-       "period": "2026-11",
-       "label": "Bimestre noviembre-diciembre",
-       "expected": "La Secretaría de Bienestar suele anunciar el calendario por letra en la conferencia matutina el día en que inicia el pago o pocos días antes (en 2026 los pagos de los bimestres anteriores iniciaron el 5 ene, 2 mar, 4 may, 6 jul y 1 sep).",
-       "months": 2
-      }
-     ]
+     "pending": []
     },
     {
      "id": "mx_discapacidad",
@@ -1241,19 +1298,76 @@
         "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras.",
         "No hay depósitos el miércoles 16 de septiembre (día feriado)."
        ]
+      },
+      {
+       "id": "mx_discapacidad_2026_nov_dic",
+       "source_url": "https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noticia/listo-el-calendario-de-pagos-del-bimestre-noviembre-diciembre-de-programas-para-el-bienestar/",
+       "source_title": "Listo, calendario de pagos del bimestre noviembre y diciembre de Programas para el Bienestar",
+       "published": "2026-10-27",
+       "valid_from": "2026-11-01",
+       "valid_to": "2026-12-31",
+       "last_verified": "2026-10-29",
+       "status": "official",
+       "payments": [
+        {
+         "period": "2026-11",
+         "label": "Bimestre noviembre-diciembre",
+         "by_key": {
+          "A": "2026-11-03",
+          "B": "2026-11-04",
+          "C": {
+           "from": "2026-11-05",
+           "to": "2026-11-06"
+          },
+          "D": "2026-11-09",
+          "E": "2026-11-09",
+          "F": "2026-11-09",
+          "G": {
+           "from": "2026-11-10",
+           "to": "2026-11-11"
+          },
+          "H": "2026-11-12",
+          "I": "2026-11-12",
+          "J": "2026-11-12",
+          "K": "2026-11-12",
+          "L": "2026-11-13",
+          "M": {
+           "from": "2026-11-17",
+           "to": "2026-11-18"
+          },
+          "N": "2026-11-19",
+          "Ñ": "2026-11-19",
+          "O": "2026-11-19",
+          "P": "2026-11-20",
+          "Q": "2026-11-20",
+          "R": {
+           "from": "2026-11-23",
+           "to": "2026-11-24"
+          },
+          "S": "2026-11-25",
+          "T": "2026-11-26",
+          "U": "2026-11-26",
+          "V": "2026-11-26",
+          "W": "2026-11-27",
+          "X": "2026-11-27",
+          "Y": "2026-11-27",
+          "Z": "2026-11-27"
+         }
+        }
+       ],
+       "notes": [
+        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
+        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
+        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
+        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras.",
+        "Es el último pago bimestral de 2026. No hay depósitos el lunes 16 de noviembre (día feriado)."
+       ]
       }
      ],
      "notes": [],
      "next_label": "",
      "day_note": "",
-     "pending": [
-      {
-       "period": "2026-11",
-       "label": "Bimestre noviembre-diciembre",
-       "expected": "La Secretaría de Bienestar suele anunciar el calendario por letra en la conferencia matutina el día en que inicia el pago o pocos días antes (en 2026 los pagos de los bimestres anteriores iniciaron el 5 ene, 2 mar, 4 may, 6 jul y 1 sep).",
-       "months": 2
-      }
-     ]
+     "pending": []
     },
     {
      "id": "mx_mujeres_bienestar",
@@ -1356,19 +1470,76 @@
         "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras.",
         "No hay depósitos el miércoles 16 de septiembre (día feriado)."
        ]
+      },
+      {
+       "id": "mx_mujeres_bienestar_2026_nov_dic",
+       "source_url": "https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noticia/listo-el-calendario-de-pagos-del-bimestre-noviembre-diciembre-de-programas-para-el-bienestar/",
+       "source_title": "Listo, calendario de pagos del bimestre noviembre y diciembre de Programas para el Bienestar",
+       "published": "2026-10-27",
+       "valid_from": "2026-11-01",
+       "valid_to": "2026-12-31",
+       "last_verified": "2026-10-29",
+       "status": "official",
+       "payments": [
+        {
+         "period": "2026-11",
+         "label": "Bimestre noviembre-diciembre",
+         "by_key": {
+          "A": "2026-11-03",
+          "B": "2026-11-04",
+          "C": {
+           "from": "2026-11-05",
+           "to": "2026-11-06"
+          },
+          "D": "2026-11-09",
+          "E": "2026-11-09",
+          "F": "2026-11-09",
+          "G": {
+           "from": "2026-11-10",
+           "to": "2026-11-11"
+          },
+          "H": "2026-11-12",
+          "I": "2026-11-12",
+          "J": "2026-11-12",
+          "K": "2026-11-12",
+          "L": "2026-11-13",
+          "M": {
+           "from": "2026-11-17",
+           "to": "2026-11-18"
+          },
+          "N": "2026-11-19",
+          "Ñ": "2026-11-19",
+          "O": "2026-11-19",
+          "P": "2026-11-20",
+          "Q": "2026-11-20",
+          "R": {
+           "from": "2026-11-23",
+           "to": "2026-11-24"
+          },
+          "S": "2026-11-25",
+          "T": "2026-11-26",
+          "U": "2026-11-26",
+          "V": "2026-11-26",
+          "W": "2026-11-27",
+          "X": "2026-11-27",
+          "Y": "2026-11-27",
+          "Z": "2026-11-27"
+         }
+        }
+       ],
+       "notes": [
+        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
+        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
+        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
+        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras.",
+        "Es el último pago bimestral de 2026. No hay depósitos el lunes 16 de noviembre (día feriado)."
+       ]
       }
      ],
      "notes": [],
      "next_label": "",
      "day_note": "",
-     "pending": [
-      {
-       "period": "2026-11",
-       "label": "Bimestre noviembre-diciembre",
-       "expected": "La Secretaría de Bienestar suele anunciar el calendario por letra en la conferencia matutina el día en que inicia el pago o pocos días antes (en 2026 los pagos de los bimestres anteriores iniciaron el 5 ene, 2 mar, 4 may, 6 jul y 1 sep).",
-       "months": 2
-      }
-     ]
+     "pending": []
     },
     {
      "id": "mx_madres_trabajadoras",
@@ -1471,19 +1642,76 @@
         "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras.",
         "No hay depósitos el miércoles 16 de septiembre (día feriado)."
        ]
+      },
+      {
+       "id": "mx_madres_trabajadoras_2026_nov_dic",
+       "source_url": "https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noticia/listo-el-calendario-de-pagos-del-bimestre-noviembre-diciembre-de-programas-para-el-bienestar/",
+       "source_title": "Listo, calendario de pagos del bimestre noviembre y diciembre de Programas para el Bienestar",
+       "published": "2026-10-27",
+       "valid_from": "2026-11-01",
+       "valid_to": "2026-12-31",
+       "last_verified": "2026-10-29",
+       "status": "official",
+       "payments": [
+        {
+         "period": "2026-11",
+         "label": "Bimestre noviembre-diciembre",
+         "by_key": {
+          "A": "2026-11-03",
+          "B": "2026-11-04",
+          "C": {
+           "from": "2026-11-05",
+           "to": "2026-11-06"
+          },
+          "D": "2026-11-09",
+          "E": "2026-11-09",
+          "F": "2026-11-09",
+          "G": {
+           "from": "2026-11-10",
+           "to": "2026-11-11"
+          },
+          "H": "2026-11-12",
+          "I": "2026-11-12",
+          "J": "2026-11-12",
+          "K": "2026-11-12",
+          "L": "2026-11-13",
+          "M": {
+           "from": "2026-11-17",
+           "to": "2026-11-18"
+          },
+          "N": "2026-11-19",
+          "Ñ": "2026-11-19",
+          "O": "2026-11-19",
+          "P": "2026-11-20",
+          "Q": "2026-11-20",
+          "R": {
+           "from": "2026-11-23",
+           "to": "2026-11-24"
+          },
+          "S": "2026-11-25",
+          "T": "2026-11-26",
+          "U": "2026-11-26",
+          "V": "2026-11-26",
+          "W": "2026-11-27",
+          "X": "2026-11-27",
+          "Y": "2026-11-27",
+          "Z": "2026-11-27"
+         }
+        }
+       ],
+       "notes": [
+        "El depósito llega a la Tarjeta del Bienestar (Banco del Bienestar) según la letra inicial del primer apellido.",
+        "Puedes disponer del dinero a partir del día que te toca; no es necesario retirarlo ese mismo día, queda seguro en tu cuenta.",
+        "Cuando a una letra le tocan dos días, el depósito puede llegar cualquiera de esos días.",
+        "El mismo calendario aplica a Adultos Mayores, Personas con Discapacidad, Mujeres Bienestar y Madres Trabajadoras.",
+        "Es el último pago bimestral de 2026. No hay depósitos el lunes 16 de noviembre (día feriado)."
+       ]
       }
      ],
      "notes": [],
      "next_label": "",
      "day_note": "",
-     "pending": [
-      {
-       "period": "2026-11",
-       "label": "Bimestre noviembre-diciembre",
-       "expected": "La Secretaría de Bienestar suele anunciar el calendario por letra en la conferencia matutina el día en que inicia el pago o pocos días antes (en 2026 los pagos de los bimestres anteriores iniciaron el 5 ene, 2 mar, 4 may, 6 jul y 1 sep).",
-       "months": 2
-      }
-     ]
+     "pending": []
     },
     {
      "id": "mx_beca_rita_cetina",
