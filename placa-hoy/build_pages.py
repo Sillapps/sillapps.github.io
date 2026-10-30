@@ -513,7 +513,10 @@ def city_page(rules: dict, city: dict, country: dict, slug: str,
               Esta página resume las reglas que usa la app; la norma oficial es la que manda.</p>
           </div>
           {beta_text}
-          <p class="soon-badge">Próximamente en Google Play</p>
+          <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.placahoy&amp;referrer=utm_source%3Dsillapps.com%26utm_medium%3Dwebsite">
+            <img src="/brand/badges/google-play-es-419.png"
+                 alt="Disponible en Google Play" width="646" height="250" />
+          </a>
 
           <div class="section-grid">
 {chr(10).join(body)}
@@ -523,7 +526,7 @@ def city_page(rules: dict, city: dict, country: dict, slug: str,
               <p>Guarda tu placa una vez y <strong>Placa Hoy</strong> te dice cada día si puedes circular,
                 con el horario, la norma y el enlace a la fuente oficial. Sin anuncios, sin cuenta y sin rastreo.
                 Con Placa Hoy Pro (pago único): Mi viaje para ver tu placa en otra ciudad día por día, alertas la noche anterior y la mañana, y widget.</p>
-              <p>Placa Hoy llegará pronto a Google Play. <a href="/placa-hoy/">Más sobre la app</a></p>
+              <p><a href="https://play.google.com/store/apps/details?id=com.sillapps.placahoy&amp;referrer=utm_source%3Dsillapps.com%26utm_medium%3Dwebsite">Descargar Placa Hoy en Google Play</a> · <a href="/placa-hoy/">Más sobre la app</a></p>
             </section>
 
             <section class="section" id="ciudades">
