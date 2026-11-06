@@ -443,6 +443,31 @@
   --stripe: linear-gradient(180deg, #f0483a, #d3261e 55%, #a3141a);
 }
 
+/* Minimo: desktop app for dentists (minimo.sillapps.com), light "Sarcelle + Aqua vif" palette
+   from minimo lib/core/theme/app_theme_tokens.dart (6 Nov 2026). Card only, no page here. */
+[data-app="minimo"] {
+  color-scheme: light;
+  --bg: #e8eded;
+  --bg-2: #ecf1f1;
+  --surface: #f3f7f7;
+  --surface-2: #ffffff;
+  --surface-3: #d6ecef;
+  --text: #172830;
+  --muted: #42525a;
+  --faint: #5b6b72;
+  --line: rgba(23, 40, 48, 0.12);
+  --line-strong: rgba(23, 40, 48, 0.24);
+  --accent: #1a7886;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(79, 202, 216, 0.18);
+  --link: #1a7886;
+  --eyebrow: #1a7886;
+  --radius-xl: 16px;
+  --shadow: 0 18px 50px rgba(23, 40, 48, 0.12);
+  --art: radial-gradient(ellipse at 92% -12%, rgba(79, 202, 216, 0.25), transparent 55%);
+  --stripe: linear-gradient(90deg, #1a7886, #4fcad8);
+}
+
 /* ------------------------------------------------------------ base */
 
 *,
