@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 2026110302,
- "published": "2026-11-03",
+ "version": 2026110601,
+ "published": "2026-11-06",
  "countries": [
   {
    "code": "BR",
@@ -38,7 +38,7 @@
        "published": "2026-10-19",
        "valid_from": "2026-10-01",
        "valid_to": "2026-12-23",
-       "last_verified": "2026-10-26",
+       "last_verified": "2026-11-06",
        "status": "official",
        "payments": [
         {
@@ -131,7 +131,7 @@
        "published": "2025-12-24",
        "valid_from": "2025-12-22",
        "valid_to": "2027-01-08",
-       "last_verified": "2026-10-01",
+       "last_verified": "2026-11-06",
        "status": "official",
        "payments": [
         {
@@ -385,7 +385,7 @@
        "published": "2025-12-24",
        "valid_from": "2026-01-02",
        "valid_to": "2027-01-08",
-       "last_verified": "2026-10-01",
+       "last_verified": "2026-11-06",
        "status": "official",
        "payments": [
         {
@@ -641,7 +641,7 @@
        "published": "2025-12-31",
        "valid_from": "2026-02-16",
        "valid_to": "2026-12-30",
-       "last_verified": "2026-10-01",
+       "last_verified": "2026-11-06",
        "status": "official",
        "payments": [
         {
@@ -729,7 +729,7 @@
        "published": "2026-02-19",
        "valid_from": "2026-03-23",
        "valid_to": "2027-03-01",
-       "last_verified": "2026-10-01",
+       "last_verified": "2026-11-06",
        "status": "official",
        "payments": [
         {
@@ -851,7 +851,7 @@
        "published": "2026-02-19",
        "valid_from": "2026-03-23",
        "valid_to": "2027-03-01",
-       "last_verified": "2026-10-01",
+       "last_verified": "2026-11-06",
        "status": "official",
        "payments": [
         {
@@ -1896,7 +1896,7 @@
        "published": "2026-03-23",
        "valid_from": "2026-04-01",
        "valid_to": "2027-03-31",
-       "last_verified": "2026-10-01",
+       "last_verified": "2026-11-06",
        "status": "official",
        "payments": [
         {
