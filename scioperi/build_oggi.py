@@ -87,17 +87,36 @@ def parse_date(s: str | None) -> dt.date | None:
         return None
 
 
+# scioperi.mit.gov.it answers only from Italy since 2026-10-23, and GitHub
+# runners are not in Italy. The Cloudflare Worker "scioperi-relay" (account
+# sillapps.pro, placement AWS eu-south-1 = Milan) reads these two fixed URLs
+# and nothing else. fetch() tries the relay first, then the MIT directly (in
+# case the relay is down and the MIT opens up again).
+RELAY = {
+    RSS_URL: "https://scioperi-relay.sillapps-pro.workers.dev/rss",
+    NOTES_URL: "https://scioperi-relay.sillapps-pro.workers.dev/list",
+}
+
+
+def _get(url: str, timeout: int) -> str:
+    req = urllib.request.Request(url, headers={"User-Agent": "sillapps.com scioperi page (contact@sillapps.com)"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read().decode("utf-8", "replace")
+
+
 def fetch(url: str) -> str:
-    last: Exception | None = None
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": "sillapps.com scioperi page (contact@sillapps.com)"})
-            with urllib.request.urlopen(req, timeout=40) as r:
-                return r.read().decode("utf-8", "replace")
-        except Exception as e:  # noqa: BLE001 - any network error means "no update"
-            last = e
-            time.sleep(5 * (attempt + 1))
-    raise RuntimeError(f"{url}: {last}")
+    sources = [RELAY[url], url] if url in RELAY else [url]
+    errors = []
+    for src in sources:
+        last: Exception | None = None
+        for attempt in range(2):
+            try:
+                return _get(src, 40)
+            except Exception as e:  # noqa: BLE001 - any network error means "no update"
+                last = e
+                time.sleep(5 * (attempt + 1))
+        errors.append(f"{src}: {last}")
+    raise RuntimeError("; ".join(errors))
 
 
 def parse_rss(xml: str) -> tuple[list[dict], dt.date | None]:
