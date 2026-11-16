@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "published": "2026-11-02",
+ "published": "2026-11-16",
  "countries": [
   {
    "id": "CO",
@@ -1096,10 +1096,10 @@
       "car"
      ],
      "valid_from": "2026-05-08",
-     "valid_to": "2026-11-07",
-     "decree": "Decreto 213 de 2026 (8 de mayo)",
+     "valid_to": "2026-12-31",
+     "decree": "Decreto 213 de 2026 (8 de mayo), prorrogado por el Decreto 542 de 2026 (5 de noviembre)",
      "source_url": "https://www.santamarta.gov.co/sites/default/files/decretos_no._213_del_08_de_mayo_de_2026.pdf",
-     "last_verified": "2026-09-28",
+     "last_verified": "2026-11-16",
      "summary": "Lunes a viernes hábiles: lunes 1 y 2, martes 3 y 4, miércoles 5 y 6, jueves 7 y 8, viernes 9 y 0. Placas de Santa Marta: 7:00–9:00, 11:30–14:00 y 17:00–20:00; otras placas: 7:00–20:00.",
      "days": {
       "1": [
@@ -1152,7 +1152,8 @@
      "notes": [
       "Vehículos de otras ciudades: el día de llegada pueden circular mostrando el recibo de uno de los peajes de Neguanje, Tasajera o Tucurinca.",
       "No aplica festivos; en días cívicos solo si el decreto del día lo dice.",
-      "Eléctricos e híbridos exentos (Decreto 213, art. 3); los vehículos a gas no."
+      "Eléctricos e híbridos exentos (Decreto 213, art. 3); los vehículos a gas no.",
+      "El Decreto 542 de 2026 prorroga la medida y anuncia un permiso especial de circulación que la Secretaría de Movilidad aún debe reglamentar."
      ],
      "type": "weekday"
     }
@@ -1523,5 +1524,5 @@
    ]
   }
  ],
- "version": 2026110201
+ "version": 2026111601
 }
