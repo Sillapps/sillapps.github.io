@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en" data-app="stelami">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0e214d" />
+    <meta name="robots" content="noindex" />
+    <meta name="referrer" content="no-referrer" />
+    <title>Stelami card</title>
+    <meta name="description" content="A Stelami card shared by a friend." />
+    <link rel="icon" type="image/png" href="/stelami/icon-192.png" />
+    <link rel="stylesheet" href="/fonts/fonts.css?v=20261117-1" />
+    <link rel="stylesheet" href="/styles.css?v=20261117-1" />
+    <style>
+      [hidden] { display: none !important; }
+      #title { font-size: clamp(1.75rem, 6.4vw, 3rem); line-height: 1.08; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel hero">
+        <div class="panel-inner">
+          <div class="nav-row">
+            <a class="back-link" id="home" href="/stelami/">Stelami</a>
+          </div>
+
+          <div class="masthead">
+            <div>
+              <p class="eyebrow">Stelami</p>
+              <h1 class="title" id="title">A Stelami card</h1>
+            </div>
+            <img class="app-mark" src="/stelami/icon-192.png" alt="" width="76" height="76" />
+          </div>
+
+          <div id="card" hidden>
+            <section class="section st-card">
+              <p class="st-name" id="name"></p>
+              <dl>
+                <div><dt id="l-date"></dt><dd id="date"></dd></div>
+                <div id="time-row"><dt id="l-time"></dt><dd id="time"></dd></div>
+                <div><dt id="l-place"></dt><dd id="place"></dd></div>
+              </dl>
+            </section>
+
+            <div class="st-actions">
+              <a class="st-btn" id="open" href="/stelami/"></a>
+              <p class="soon-badge" id="soon"></p>
+            </div>
+
+            <div class="section-grid">
+              <section class="section">
+                <h2 id="how"></h2>
+                <ol class="st-steps" id="steps"></ol>
+              </section>
+            </div>
+            <p class="note" id="note"></p>
+          </div>
+
+          <p class="intro" id="invalid" hidden></p>
+          <noscript><p class="intro">Turn on JavaScript to read this Stelami card.</p></noscript>
+
+          <p class="note"><a id="what" href="/stelami/"></a></p>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      (function () {
+        'use strict';
+
+        // The card lives only in location.hash (after #): browsers never send it to a server,
+        // and this page never sends it anywhere (no fetch, no storage). Same format as the
+        // app's lib/people/card_link.dart.
+        var T = {
+          en: {
+            title: '{name} sent you their Stelami card',
+            none: 'A Stelami card',
+            date: 'Date of birth',
+            time: 'Time of birth',
+            place: 'Place of birth',
+            open: 'Open in Stelami',
+            soon: 'Coming soon to Android and iPhone',
+            how: 'How to add {name}',
+            steps: ['Install Stelami.', 'Open this link again on your phone.', "Stelami adds {name}'s card."],
+            note: 'The card travels inside this link. This page sends it nowhere.',
+            invalid: 'This card link is damaged. Ask for it again.',
+            what: 'What is Stelami?',
+            home: '/stelami/',
+            locale: 'en-US'
+          },
+          fr: {
+            title: "{name} t'envoie sa carte Stelami",
+            none: 'Une carte Stelami',
+            date: 'Date de naissance',
+            time: 'Heure de naissance',
+            place: 'Lieu de naissance',
+            open: 'Ouvrir dans Stelami',
+            soon: 'Bientôt sur Android et iPhone',
+            how: 'Pour ajouter {name}',
+            steps: ['Installe Stelami.', 'Rouvre ce lien sur ton téléphone.', 'Stelami ajoute la carte de {name}.'],
+            note: "La carte voyage dans ce lien. Cette page ne l'envoie nulle part.",
+            invalid: 'Ce lien de carte est abîmé. Redemande-le.',
+            what: "Stelami, c'est quoi ?",
+            home: '/stelami/fr/',
+            locale: 'fr-FR'
+          },
+          es: {
+            title: '{name} te envía su tarjeta de Stelami',
+            none: 'Una tarjeta de Stelami',
+            date: 'Fecha de nacimiento',
+            time: 'Hora de nacimiento',
+            place: 'Lugar de nacimiento',
+            open: 'Abrir en Stelami',
+            soon: 'Muy pronto en Android y iPhone',
+            how: 'Para añadir a {name}',
+            steps: ['Instala Stelami.', 'Vuelve a abrir este enlace en tu móvil.', 'Stelami añade la tarjeta de {name}.'],
+            note: 'La tarjeta va dentro de este enlace. Esta página no la envía a ningún sitio.',
+            invalid: 'Este enlace de tarjeta está dañado. Pídelo otra vez.',
+            what: '¿Qué es Stelami?',
+            home: '/stelami/',
+            locale: 'es'
+          },
+          pt: {
+            title: '{name} enviou o cartão Stelami para você',
+            none: 'Um cartão Stelami',
+            date: 'Data de nascimento',
+            time: 'Hora de nascimento',
+            place: 'Local de nascimento',
+            open: 'Abrir no Stelami',
+            soon: 'Em breve no Android e no iPhone',
+            how: 'Para adicionar {name}',
+            steps: ['Instale o Stelami.', 'Abra este link de novo no celular.', 'O Stelami adiciona o cartão de {name}.'],
+            note: 'O cartão vai dentro deste link. Esta página não o envia para lugar nenhum.',
+            invalid: 'Este link de cartão está danificado. Peça de novo.',
+            what: 'O que é o Stelami?',
+            home: '/stelami/',
+            locale: 'pt-BR'
+          },
+          de: {
+            title: '{name} hat dir eine Stelami-Karte geschickt',
+            none: 'Eine Stelami-Karte',
+            date: 'Geburtsdatum',
+            time: 'Geburtszeit',
+            place: 'Geburtsort',
+            open: 'In Stelami öffnen',
+            soon: 'Bald für Android und iPhone',
+            how: 'So fügst du {name} hinzu',
+            steps: ['Installiere Stelami.', 'Öffne diesen Link noch einmal auf deinem Handy.', 'Stelami fügt die Karte von {name} hinzu.'],
+            note: 'Die Karte steckt in diesem Link. Diese Seite schickt sie nirgendwohin.',
+            invalid: 'Dieser Kartenlink ist defekt. Fordere ihn neu an.',
+            what: 'Was ist Stelami?',
+            home: '/stelami/',
+            locale: 'de-DE'
+          },
+          it: {
+            title: '{name} ti ha inviato la sua scheda Stelami',
+            none: 'Una scheda Stelami',
+            date: 'Data di nascita',
+            time: 'Ora di nascita',
+            place: 'Luogo di nascita',
+            open: 'Apri in Stelami',
+            soon: 'Presto su Android e iPhone',
+            how: 'Per aggiungere {name}',
+            steps: ['Installa Stelami.', 'Riapri questo link sul telefono.', 'Stelami aggiunge la scheda di {name}.'],
+            note: 'La scheda viaggia dentro questo link. Questa pagina non la invia da nessuna parte.',
+            invalid: 'Il link di questa scheda è danneggiato. Chiedilo di nuovo.',
+            what: "Cos'è Stelami?",
+            home: '/stelami/',
+            locale: 'it-IT'
+          }
+        };
+
+        function pickLang() {
+          var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
+          for (var i = 0; i < list.length; i++) {
+            var base = String(list[i] || '').toLowerCase().split(/[-_]/)[0];
+            if (T[base]) return base;
+          }
+          return 'en';
+        }
+
+        var LANG = pickLang();
+        var t = T[LANG];
+        document.documentElement.lang = LANG === 'pt' ? 'pt-BR' : LANG;
+
+        function $(id) { return document.getElementById(id); }
+        function fill(text, name) { return text.split('{name}').join(name); }
+
+        // Base64url (no padding) -> UTF-8 text, or null.
+        function unb64(s) {
+          if (!/^[A-Za-z0-9_-]+$/.test(s)) return null;
+          var b = s.replace(/-/g, '+').replace(/_/g, '/');
+          while (b.length % 4) b += '=';
+          var bin = atob(b);
+          var bytes = new Uint8Array(bin.length);
+          for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+          return new TextDecoder('utf-8', { fatal: true }).decode(bytes);
+        }
+
+        function num(x) { return typeof x === 'number' && isFinite(x); }
+        function str(x) { return typeof x === 'string'; }
+
+        // The card, or null when the fragment is missing or not a valid card (same checks as the app).
+        function readCard(frag) {
+          if (!frag) return null;
+          try {
+            var j = JSON.parse(unb64(frag));
+            if (!j || j.v !== 1 || !str(j.n) || !str(j.d) || !str(j.p) || !str(j.z)) return null;
+            if (!num(j.la) || !num(j.lo)) return null;
+            var name = j.n.trim();
+            if (!name || name.length > 40) return null;
+            var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(j.d);
+            if (!m) return null;
+            var y = +m[1], mo = +m[2], d = +m[3];
+            if (y < 1900 || y > 2100 || mo < 1 || mo > 12 || d < 1 || d > 31) return null;
+            var day = new Date(Date.UTC(y, mo - 1, d));
+            if (day.getUTCMonth() !== mo - 1) return null;
+            var time = null;
+            if (j.t !== undefined && j.t !== null) {
+              var tm = str(j.t) ? /^(\d{2}):(\d{2})$/.exec(j.t) : null;
+              if (!tm || +tm[1] > 23 || +tm[2] > 59) return null;
+              time = new Date(Date.UTC(2000, 0, 1, +tm[1], +tm[2]));
+            }
+            // Throws on an unknown time zone, like the app.
+            new Intl.DateTimeFormat('en', { timeZone: j.z });
+            return {
+              name: name,
+              day: day,
+              time: time,
+              place: j.p,
+              region: str(j.r) ? j.r : '',
+              country: str(j.c) ? j.c : ''
+            };
+          } catch (e) {
+            return null;
+          }
+        }
+
+        function countryName(code) {
+          if (!/^[A-Za-z]{2}$/.test(code)) return code;
+          try {
+            return new Intl.DisplayNames([t.locale], { type: 'region' }).of(code.toUpperCase()) || code;
+          } catch (e) {
+            return code;
+          }
+        }
+
+        function render() {
+          var frag = (location.hash || '').replace(/^#/, '');
+          var card = readCard(frag);
+
+          $('what').textContent = t.what;
+          $('what').href = t.home;
+          $('home').href = t.home;
+
+          if (!card) {
+            $('card').hidden = true;
+            $('title').textContent = t.none;
+            document.title = t.none;
+            $('invalid').textContent = t.invalid;
+            $('invalid').hidden = false;
+            return;
+          }
+
+          var heading = fill(t.title, card.name);
+          $('title').textContent = heading;
+          document.title = heading;
+          $('invalid').hidden = true;
+
+          $('name').textContent = card.name;
+          $('l-date').textContent = t.date;
+          $('date').textContent = new Intl.DateTimeFormat(t.locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(card.day);
+          $('time-row').hidden = !card.time;
+          if (card.time) {
+            $('l-time').textContent = t.time;
+            $('time').textContent = new Intl.DateTimeFormat(t.locale, { hour: LANG === 'en' ? 'numeric' : '2-digit', minute: '2-digit', timeZone: 'UTC' }).format(card.time);
+          }
+          $('l-place').textContent = t.place;
+          var parts = [card.place];
+          if (card.region && card.region !== card.place) parts.push(card.region);
+          if (card.country) parts.push(countryName(card.country));
+          $('place').textContent = parts.join(', ');
+
+          $('open').textContent = t.open;
+          $('open').href = 'stelami://c/#' + frag;
+          $('soon').textContent = t.soon;
+
+          $('how').textContent = fill(t.how, card.name);
+          var ol = $('steps');
+          while (ol.firstChild) ol.removeChild(ol.firstChild);
+          for (var i = 0; i < t.steps.length; i++) {
+            var li = document.createElement('li');
+            li.textContent = fill(t.steps[i], card.name);
+            ol.appendChild(li);
+          }
+          $('note').textContent = t.note;
+          $('card').hidden = false;
+        }
+
+        render();
+        window.addEventListener('hashchange', render);
+      })();
+    </script>
+  </body>
+</html>

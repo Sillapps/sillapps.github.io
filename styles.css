@@ -468,6 +468,42 @@
   --stripe: linear-gradient(90deg, #1a7886, #4fcad8);
 }
 
+/* Stelami: "Cyanotype", the blueprint of old star charts. Prussian blue print, cream paper
+   cards with ink text, one marigold accent, Fraunces and Figtree (sillapps-stelami lib/ink/ink.dart). */
+[data-app="stelami"] {
+  color-scheme: dark;
+  --bg: #0e214d;
+  --bg-2: #0b1b40;
+  --surface: #16306b;
+  --surface-2: #f4eedf;
+  --surface-3: #24448a;
+  --text: #f4eedf;
+  --muted: rgba(244, 238, 223, 0.82);
+  --faint: rgba(244, 238, 223, 0.66);
+  --line: rgba(244, 238, 223, 0.16);
+  --line-strong: rgba(244, 238, 223, 0.34);
+  --accent: #f2b441;
+  --accent-ink: #14254f;
+  --accent-soft: rgba(242, 180, 65, 0.14);
+  --link: #f4eedf;
+  --eyebrow: rgba(244, 238, 223, 0.78);
+  --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --display-weight: 700;
+  --display-tracking: -0.012em;
+  --display-case: none;
+  --title-size: clamp(2.2rem, 6.6vw, 4rem);
+  --title-glow: none;
+  --radius-xl: 10px;
+  --radius-lg: 6px;
+  --radius-md: 4px;
+  --shadow: 0 30px 70px rgba(5, 14, 36, 0.5);
+  --art: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='108 312 152 110'%3E%3Cg stroke='%23F4EEDF' stroke-opacity='.45' stroke-width='1'%3E%3Cline x1='118' y1='372' x2='168' y2='338'/%3E%3Cline x1='168' y1='338' x2='214' y2='360'/%3E%3Cline x1='214' y1='360' x2='250' y2='322'/%3E%3Cline x1='214' y1='360' x2='206' y2='412'/%3E%3C/g%3E%3Cg fill='%23F4EEDF' fill-opacity='.9'%3E%3Ccircle cx='118' cy='372' r='2.6'/%3E%3Ccircle cx='214' cy='360' r='2.2'/%3E%3Ccircle cx='250' cy='322' r='3.0'/%3E%3Ccircle cx='206' cy='412' r='2.4'/%3E%3C/g%3E%3Ccircle cx='168' cy='338' r='4' fill='%23F2B441'/%3E%3C/svg%3E") right 190px top 102px / 152px 110px no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640'%3E%3Cg fill='none' stroke='%23F4EEDF' stroke-opacity='.17'%3E%3Ccircle cx='320' cy='320' r='80'/%3E%3Ccircle cx='320' cy='320' r='160'/%3E%3Ccircle cx='320' cy='320' r='240'/%3E%3Ccircle cx='320' cy='320' r='316'/%3E%3Cpath d='M400.0 320.0L636.0 320.0M389.3 360.0L593.7 478.0M360.0 389.3L478.0 593.7M320.0 400.0L320.0 636.0M280.0 389.3L162.0 593.7M250.7 360.0L46.3 478.0M240.0 320.0L4.0 320.0M250.7 280.0L46.3 162.0M280.0 250.7L162.0 46.3M320.0 240.0L320.0 4.0M360.0 250.7L478.0 46.3M389.3 280.0L593.7 162.0'/%3E%3Cpath stroke-opacity='.3' d='M636.0 320.0L626.0 320.0M634.8 347.5L629.8 347.1M631.2 374.9L626.3 374.0M625.2 401.8L620.4 400.5M616.9 428.1L612.2 426.4M606.4 453.5L601.9 451.4M593.7 478.0L585.0 473.0M578.9 501.3L574.8 498.4M562.1 523.1L558.2 519.9M543.4 543.4L539.9 539.9M523.1 562.1L519.9 558.2M501.3 578.9L498.4 574.8M478.0 593.7L473.0 585.0M453.5 606.4L451.4 601.9M428.1 616.9L426.4 612.2M401.8 625.2L400.5 620.4M374.9 631.2L374.0 626.3M347.5 634.8L347.1 629.8M320.0 636.0L320.0 626.0M292.5 634.8L292.9 629.8M265.1 631.2L266.0 626.3M238.2 625.2L239.5 620.4M211.9 616.9L213.6 612.2M186.5 606.4L188.6 601.9M162.0 593.7L167.0 585.0M138.7 578.9L141.6 574.8M116.9 562.1L120.1 558.2M96.6 543.4L100.1 539.9M77.9 523.1L81.8 519.9M61.1 501.3L65.2 498.4M46.3 478.0L55.0 473.0M33.6 453.5L38.1 451.4M23.1 428.1L27.8 426.4M14.8 401.8L19.6 400.5M8.8 374.9L13.7 374.0M5.2 347.5L10.2 347.1M4.0 320.0L14.0 320.0M5.2 292.5L10.2 292.9M8.8 265.1L13.7 266.0M14.8 238.2L19.6 239.5M23.1 211.9L27.8 213.6M33.6 186.5L38.1 188.6M46.3 162.0L55.0 167.0M61.1 138.7L65.2 141.6M77.9 116.9L81.8 120.1M96.6 96.6L100.1 100.1M116.9 77.9L120.1 81.8M138.7 61.1L141.6 65.2M162.0 46.3L167.0 55.0M186.5 33.6L188.6 38.1M211.9 23.1L213.6 27.8M238.2 14.8L239.5 19.6M265.1 8.8L266.0 13.7M292.5 5.2L292.9 10.2M320.0 4.0L320.0 14.0M347.5 5.2L347.1 10.2M374.9 8.8L374.0 13.7M401.8 14.8L400.5 19.6M428.1 23.1L426.4 27.8M453.5 33.6L451.4 38.1M478.0 46.3L473.0 55.0M501.3 61.1L498.4 65.2M523.1 77.9L519.9 81.8M543.4 96.6L539.9 100.1M562.1 116.9L558.2 120.1M578.9 138.7L574.8 141.6M593.7 162.0L585.0 167.0M606.4 186.5L601.9 188.6M616.9 211.9L612.2 213.6M625.2 238.2L620.4 239.5M631.2 265.1L626.3 266.0M634.8 292.5L629.8 292.9'/%3E%3Cellipse cx='320' cy='320' rx='300' ry='118' transform='rotate%28-23 320 320%29' stroke-dasharray='3 7' stroke-opacity='.3'/%3E%3C/g%3E%3C/svg%3E") right -190px top -210px / 640px 640px no-repeat,
+    radial-gradient(circle at 86% 0%, rgba(36, 68, 138, 0.9), transparent 52%);
+  --stripe: repeating-linear-gradient(90deg, #f4eedf 0 28px, #24448a 28px 56px);
+}
+
 /* ------------------------------------------------------------ base */
 
 *,
@@ -1113,6 +1149,251 @@ html[data-app="choghadiya"] {
 
 [data-app="choghadiya"].app-card .app-card-go {
   font-size: 0.96rem;
+}
+
+/* Stelami: sections are cream paper plates with a thin printed frame, ink text on paper. */
+[data-app="stelami"] .section {
+  --text: #14254f;
+  --muted: #34446c;
+  --faint: #56648a;
+  --line: rgba(20, 37, 79, 0.14);
+  --line-strong: rgba(20, 37, 79, 0.28);
+  --accent: #24448a;
+  --accent-soft: rgba(22, 48, 107, 0.08);
+  --link: #16306b;
+  color: var(--text);
+  box-shadow: inset 0 0 0 5px #f4eedf, inset 0 0 0 6px rgba(20, 37, 79, 0.3);
+  border-color: rgba(20, 37, 79, 0.2);
+}
+
+[data-app="stelami"] .section h2 {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  font-size: 1.32rem;
+  font-weight: 600;
+}
+
+[data-app="stelami"] .eyebrow {
+  letter-spacing: 0.2em;
+}
+
+[data-app="stelami"] .back-link {
+  border-radius: 4px;
+}
+
+[data-app="stelami"] .back-link.st-lang::before {
+  content: none;
+}
+
+/* Phone: the small constellation moves under the app icon, clear of the title. */
+@media (max-width: 760px) {
+  [data-app="stelami"] .panel {
+    --art: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='108 312 152 110'%3E%3Cg stroke='%23F4EEDF' stroke-opacity='.45' stroke-width='1'%3E%3Cline x1='118' y1='372' x2='168' y2='338'/%3E%3Cline x1='168' y1='338' x2='214' y2='360'/%3E%3Cline x1='214' y1='360' x2='250' y2='322'/%3E%3Cline x1='214' y1='360' x2='206' y2='412'/%3E%3C/g%3E%3Cg fill='%23F4EEDF' fill-opacity='.9'%3E%3Ccircle cx='118' cy='372' r='2.6'/%3E%3Ccircle cx='214' cy='360' r='2.2'/%3E%3Ccircle cx='250' cy='322' r='3.0'/%3E%3Ccircle cx='206' cy='412' r='2.4'/%3E%3C/g%3E%3Ccircle cx='168' cy='338' r='4' fill='%23F2B441'/%3E%3C/svg%3E") right 10px top 158px / 76px 55px no-repeat,
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640'%3E%3Cg fill='none' stroke='%23F4EEDF' stroke-opacity='.17'%3E%3Ccircle cx='320' cy='320' r='80'/%3E%3Ccircle cx='320' cy='320' r='160'/%3E%3Ccircle cx='320' cy='320' r='240'/%3E%3Ccircle cx='320' cy='320' r='316'/%3E%3Cpath d='M400.0 320.0L636.0 320.0M389.3 360.0L593.7 478.0M360.0 389.3L478.0 593.7M320.0 400.0L320.0 636.0M280.0 389.3L162.0 593.7M250.7 360.0L46.3 478.0M240.0 320.0L4.0 320.0M250.7 280.0L46.3 162.0M280.0 250.7L162.0 46.3M320.0 240.0L320.0 4.0M360.0 250.7L478.0 46.3M389.3 280.0L593.7 162.0'/%3E%3Cpath stroke-opacity='.3' d='M636.0 320.0L626.0 320.0M634.8 347.5L629.8 347.1M631.2 374.9L626.3 374.0M625.2 401.8L620.4 400.5M616.9 428.1L612.2 426.4M606.4 453.5L601.9 451.4M593.7 478.0L585.0 473.0M578.9 501.3L574.8 498.4M562.1 523.1L558.2 519.9M543.4 543.4L539.9 539.9M523.1 562.1L519.9 558.2M501.3 578.9L498.4 574.8M478.0 593.7L473.0 585.0M453.5 606.4L451.4 601.9M428.1 616.9L426.4 612.2M401.8 625.2L400.5 620.4M374.9 631.2L374.0 626.3M347.5 634.8L347.1 629.8M320.0 636.0L320.0 626.0M292.5 634.8L292.9 629.8M265.1 631.2L266.0 626.3M238.2 625.2L239.5 620.4M211.9 616.9L213.6 612.2M186.5 606.4L188.6 601.9M162.0 593.7L167.0 585.0M138.7 578.9L141.6 574.8M116.9 562.1L120.1 558.2M96.6 543.4L100.1 539.9M77.9 523.1L81.8 519.9M61.1 501.3L65.2 498.4M46.3 478.0L55.0 473.0M33.6 453.5L38.1 451.4M23.1 428.1L27.8 426.4M14.8 401.8L19.6 400.5M8.8 374.9L13.7 374.0M5.2 347.5L10.2 347.1M4.0 320.0L14.0 320.0M5.2 292.5L10.2 292.9M8.8 265.1L13.7 266.0M14.8 238.2L19.6 239.5M23.1 211.9L27.8 213.6M33.6 186.5L38.1 188.6M46.3 162.0L55.0 167.0M61.1 138.7L65.2 141.6M77.9 116.9L81.8 120.1M96.6 96.6L100.1 100.1M116.9 77.9L120.1 81.8M138.7 61.1L141.6 65.2M162.0 46.3L167.0 55.0M186.5 33.6L188.6 38.1M211.9 23.1L213.6 27.8M238.2 14.8L239.5 19.6M265.1 8.8L266.0 13.7M292.5 5.2L292.9 10.2M320.0 4.0L320.0 14.0M347.5 5.2L347.1 10.2M374.9 8.8L374.0 13.7M401.8 14.8L400.5 19.6M428.1 23.1L426.4 27.8M453.5 33.6L451.4 38.1M478.0 46.3L473.0 55.0M501.3 61.1L498.4 65.2M523.1 77.9L519.9 81.8M543.4 96.6L539.9 100.1M562.1 116.9L558.2 120.1M578.9 138.7L574.8 141.6M593.7 162.0L585.0 167.0M606.4 186.5L601.9 188.6M616.9 211.9L612.2 213.6M625.2 238.2L620.4 239.5M631.2 265.1L626.3 266.0M634.8 292.5L629.8 292.9'/%3E%3Cellipse cx='320' cy='320' rx='300' ry='118' transform='rotate%28-23 320 320%29' stroke-dasharray='3 7' stroke-opacity='.3'/%3E%3C/g%3E%3C/svg%3E") right -190px top -210px / 640px 640px no-repeat,
+      radial-gradient(circle at 86% 0%, rgba(36, 68, 138, 0.9), transparent 52%);
+  }
+}
+
+[data-app="stelami"] .title {
+  text-wrap: balance;
+}
+
+[data-app="stelami"] .section .feature-list + p {
+  margin-top: 14px;
+}
+
+[data-app="stelami"] .chips li {
+  border-radius: 4px;
+  background: rgba(36, 68, 138, 0.6);
+  color: var(--text);
+}
+
+[data-app="stelami"] .soon-badge {
+  border-radius: 4px;
+  color: var(--text);
+}
+
+/* Stelami page parts: the hero plate (a group as a constellation), the paid tag, the card page. */
+.st-hero {
+  display: grid;
+  gap: 18px 32px;
+  align-items: center;
+}
+
+.st-langhead {
+  margin: 40px 0 0;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4.4vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  scroll-margin-top: 16px;
+}
+
+.meta-card + .st-langhead {
+  margin-top: 28px;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.st-figure {
+  margin: 0;
+}
+
+.st-plate {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  margin: 4px auto 0;
+}
+
+.st-plate text {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  font-weight: 600;
+  fill: #f4eedf;
+}
+
+.st-tag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 8px;
+  border-radius: 3px;
+  background: #f2b441;
+  color: #14254f;
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  vertical-align: 0.25em;
+}
+
+.st-steps {
+  counter-reset: st;
+  list-style: none;
+}
+
+.section .st-steps {
+  padding-left: 0;
+}
+
+.st-steps li {
+  counter-increment: st;
+  position: relative;
+  padding-left: 38px;
+}
+
+.section .st-steps li + li {
+  margin-top: 10px;
+}
+
+.st-steps li::before {
+  content: counter(st);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 24px;
+  text-align: center;
+  color: var(--text);
+}
+
+.st-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  background: #f2b441;
+  color: #14254f;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: transform 180ms ease;
+}
+
+.st-btn:hover,
+.st-btn:focus-visible {
+  transform: translateY(-1px);
+}
+
+.st-card {
+  margin: 0;
+}
+
+.st-card dl {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+}
+
+.st-card dt {
+  color: var(--faint);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.st-card dd {
+  margin: 2px 0 0;
+  color: var(--text);
+  font-size: 1.08rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.st-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 18px;
+  margin: 22px 0 6px;
+}
+
+.st-actions .soon-badge {
+  margin-top: 14px;
+}
+
+.st-actions .st-btn {
+  margin-top: 14px;
+}
+
+.st-name {
+  margin: 0 0 12px;
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 6vw, 2.3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 761px) {
+  .st-hero {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  }
+
+  .st-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 14px;
+  }
+}
+
+.st-split {
+  display: grid;
+  gap: 14px;
 }
 
 /* ------------------------------------------------------------ home page */
