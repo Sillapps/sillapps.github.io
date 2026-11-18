@@ -341,34 +341,37 @@
   --stripe: linear-gradient(90deg, #e8383f 0 50%, #2e3035 50%);
 }
 
-/* Dia do Pagamento / Beneficios: "Agenda da família", cream paper, deep green, gold coins,
-   Nunito Sans only (sillapps-beneficios lib/src/core/theme.dart) */
+/* Dia do Pagamento / Beneficios: « Cédula », the banknote: aubergine and copper on paper,
+   Work Sans, titles in Abril Fatface (sillapps-beneficios lib/src/core/theme.dart) */
 [data-app="beneficios"] {
   color-scheme: light;
-  --font-body: "Nunito Sans", "Segoe UI", system-ui, sans-serif;
-  --font-display: "Nunito Sans", "Segoe UI", system-ui, sans-serif;
-  --bg: #f5f2ea;
-  --bg-2: #ede9df;
-  --surface: #ffffff;
-  --surface-2: #fbf9f4;
-  --surface-3: #edf5f0;
-  --text: #15201b;
-  --muted: #4a5751;
-  --faint: #5f6a64;
-  --line: rgba(21, 32, 27, 0.1);
-  --line-strong: rgba(21, 32, 27, 0.2);
-  --accent: #0b6e4f;
-  --accent-ink: #ffffff;
-  --accent-soft: #dcefe6;
-  --link: #0b6e4f;
-  --eyebrow: #8a5300;
-  --title: #07432f;
-  --radius-xl: 24px;
-  --radius-lg: 20px;
-  --shadow: 0 22px 60px rgba(21, 32, 27, 0.08);
-  --art: radial-gradient(circle at 90% -4%, rgba(244, 179, 33, 0.3), transparent 36%),
-    radial-gradient(circle at 2% 0%, rgba(11, 110, 79, 0.14), transparent 46%);
-  --stripe: linear-gradient(90deg, #0b6e4f, #0b6e4f 55%, #f4b321 55%, #ffd877);
+  --font-body: "Work Sans", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Abril Fatface", Georgia, serif;
+  /* Abril Fatface has one weight: never a synthetic bold. */
+  --display-weight: 400;
+  font-synthesis: none;
+  --bg: #f3efee;
+  --bg-2: #e8e1e2;
+  --surface: #fffdfb;
+  --surface-2: #faf6f4;
+  --surface-3: #ebddeb;
+  --text: #24161f;
+  --muted: #55464f;
+  --faint: #67575f;
+  --line: rgba(36, 22, 31, 0.1);
+  --line-strong: rgba(36, 22, 31, 0.22);
+  --accent: #4a2152;
+  --accent-ink: #fbf3ea;
+  --accent-soft: #ebddeb;
+  --link: #4a2152;
+  --eyebrow: #7a3a14;
+  --title: #36163d;
+  --radius-xl: 18px;
+  --radius-lg: 14px;
+  --shadow: 0 22px 60px rgba(74, 33, 82, 0.1);
+  --art: radial-gradient(circle at 90% -4%, rgba(180, 96, 47, 0.22), transparent 36%),
+    radial-gradient(circle at 2% 0%, rgba(74, 33, 82, 0.16), transparent 46%);
+  --stripe: linear-gradient(90deg, #4a2152, #4a2152 55%, #b4602f 55%, #f2bc93);
 }
 
 /* Fuel WA: the two-tone gauge, a dashboard at night: graphite, orange = fill up today,
@@ -1135,7 +1138,7 @@ code {
   display: inline-block;
   padding: 4px 12px;
   border-radius: 999px;
-  background: #fff1cc;
+  background: #f6e4d8;
 }
 
 /* Shubh Samay: Anek Latin has a small x-height, scale its text up to match the other apps. */

@@ -35,11 +35,11 @@
 @font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/ibmplexsans-700.woff2") format("woff2"); }
 @font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/ibmplexmono-500.woff2") format("woff2"); }
 @font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/ibmplexmono-600.woff2") format("woff2"); }
-@font-face { font-family: "Nunito Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/nunitosans-400.woff2") format("woff2"); }
-@font-face { font-family: "Nunito Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/nunitosans-600.woff2") format("woff2"); }
-@font-face { font-family: "Nunito Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/nunitosans-700.woff2") format("woff2"); }
-@font-face { font-family: "Nunito Sans"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/nunitosans-800.woff2") format("woff2"); }
-@font-face { font-family: "Nunito Sans"; font-style: normal; font-weight: 900; font-display: swap; src: url("/fonts/nunitosans-900.woff2") format("woff2"); }
+@font-face { font-family: "Work Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/worksans-400.woff2") format("woff2"); }
+@font-face { font-family: "Work Sans"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/worksans-500.woff2") format("woff2"); }
+@font-face { font-family: "Work Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/worksans-600.woff2") format("woff2"); }
+@font-face { font-family: "Work Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/worksans-700.woff2") format("woff2"); }
+@font-face { font-family: "Abril Fatface"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/abrilfatface-400.woff2") format("woff2"); }
 @font-face { font-family: "Chivo"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/chivo-400.woff2") format("woff2"); }
 @font-face { font-family: "Chivo"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/chivo-600.woff2") format("woff2"); }
 @font-face { font-family: "Chivo"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/chivo-800.woff2") format("woff2"); }
