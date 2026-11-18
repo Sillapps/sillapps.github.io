@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" data-app="cactolo">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fde6ec" />
+    <meta name="robots" content="noindex" />
+    <title>Cactolo · Couple budget invite</title>
+    <link rel="icon" type="image/png" href="/cactolo/icon-192.png" />
+    <link rel="stylesheet" href="/fonts/fonts.css?v=20261118-2" />
+    <link rel="stylesheet" href="/styles.css?v=20261118-2" />
+    <style>
+      html, body { margin: 0; overflow-x: hidden; }
+      .cj { box-sizing: border-box; width: 100%; max-width: 30rem; margin: 0 auto; padding: 2rem 1rem 3rem; text-align: center; overflow-wrap: anywhere; }
+      .cj img { width: 13rem; height: auto; margin: 0 auto .5rem; display: block; }
+      .cj h1 { font-family: var(--font-display, inherit); font-size: 2rem; line-height: 1.1; margin: .25rem 0 1rem; }
+      .cj ol { text-align: left; margin: 1.25rem 0; padding-left: 1.4rem; line-height: 1.5; }
+      .cj li { margin: .4rem 0; }
+      .cj button { font: inherit; font-weight: 700; border: 0; border-radius: 999px; padding: .95rem 1.6rem; background: #ee5f8e; color: #fff; cursor: pointer; width: 100%; max-width: 22rem; }
+      .cj .note { color: #7d5b67; font-size: .92rem; margin-top: 1.25rem; line-height: 1.45; }
+      .cj .bad { display: none; color: #c93a6b; }
+    </style>
+  </head>
+  <body>
+    <main class="cj">
+      <img src="/cactolo/cactus-proud.webp" alt="" width="208" height="208" />
+      <h1 data-en="You’re invited to a couple budget" data-fr="Invitation à un budget à deux">You’re invited to a couple budget</h1>
+      <p data-en="Someone wants to keep a budget with you on Cactolo." data-fr="Quelqu’un veut tenir son budget avec toi sur Cactolo.">Someone wants to keep a budget with you on Cactolo.</p>
+      <ol>
+        <li data-en="Copy this link with the button below." data-fr="Copie ce lien avec le bouton ci-dessous.">Copy this link with the button below.</li>
+        <li data-en="Open Cactolo (install it first if needed)." data-fr="Ouvre Cactolo (installe-la d’abord si besoin).">Open Cactolo (install it first if needed).</li>
+        <li data-en="Settings, Couple budget, I got an invite: the link is already there." data-fr="Réglages, Budget à deux, J’ai reçu une invitation : le lien y est déjà.">Settings, Couple budget, I got an invite: the link is already there.</li>
+      </ol>
+      <button id="copy" type="button" data-en="Copy the invite" data-fr="Copier l’invitation">Copy the invite</button>
+      <p class="note bad" id="bad" data-en="This link is incomplete. Ask for the invite again." data-fr="Ce lien est incomplet. Demande à recevoir l’invitation de nouveau.">This link is incomplete. Ask for the invite again.</p>
+      <p class="note" data-en="The part of the link after the # holds the key to your shared budget. It never leaves your phone: this page does not send it anywhere." data-fr="La partie du lien après le # contient la clé de votre budget commun. Elle ne quitte jamais ton téléphone : cette page ne l’envoie nulle part.">The part of the link after the # holds the key to your shared budget. It never leaves your phone: this page does not send it anywhere.</p>
+      <p class="note"><a href="/cactolo/" data-en="What is Cactolo?" data-fr="C’est quoi, Cactolo ?">What is Cactolo?</a></p>
+    </main>
+    <script>
+      (function () {
+        var fr = (navigator.language || '').toLowerCase().indexOf('fr') === 0;
+        if (fr) {
+          document.documentElement.lang = 'fr';
+          document.querySelectorAll('[data-fr]').forEach(function (el) { el.textContent = el.getAttribute('data-fr'); });
+          document.title = 'Cactolo · Invitation au budget à deux';
+        }
+        var ok = /r=[0-9a-f]{32}&k=[A-Za-z0-9_-]{43}/.test(location.hash);
+        if (!ok) { document.getElementById('bad').style.display = 'block'; document.getElementById('copy').disabled = true; }
+        document.getElementById('copy').addEventListener('click', function () {
+          var b = this;
+          navigator.clipboard.writeText(location.href).then(function () {
+            b.textContent = fr ? 'Copié, ouvre Cactolo' : 'Copied, now open Cactolo';
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
