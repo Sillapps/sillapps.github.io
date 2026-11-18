@@ -74,6 +74,8 @@
         var T = {
           en: {
             title: '{name} sent you their Stelami card',
+            moveTitle: 'A Stelami sky to move',
+            moveLine: 'This link moves a whole Stelami sky (a chart, friends, groups) to a new phone. Open it on that phone once Stelami is installed.',
             none: 'A Stelami card',
             date: 'Date of birth',
             time: 'Time of birth',
@@ -90,6 +92,8 @@
           },
           fr: {
             title: "{name} t'envoie sa carte Stelami",
+            moveTitle: 'Un ciel Stelami à transférer',
+            moveLine: 'Ce lien transfère tout un ciel Stelami (un thème, des amis, des groupes) vers un nouveau téléphone. Ouvre-le sur ce téléphone une fois Stelami installé.',
             none: 'Une carte Stelami',
             date: 'Date de naissance',
             time: 'Heure de naissance',
@@ -106,6 +110,8 @@
           },
           es: {
             title: '{name} te envía su tarjeta de Stelami',
+            moveTitle: 'Un cielo de Stelami para pasar',
+            moveLine: 'Este enlace pasa todo un cielo de Stelami (una carta, amigos, grupos) a un teléfono nuevo. Ábrelo en ese teléfono cuando tengas Stelami instalada.',
             none: 'Una tarjeta de Stelami',
             date: 'Fecha de nacimiento',
             time: 'Hora de nacimiento',
@@ -122,6 +128,8 @@
           },
           pt: {
             title: '{name} enviou o cartão Stelami para você',
+            moveTitle: 'Um céu do Stelami para transferir',
+            moveLine: 'Este link transfere todo um céu do Stelami (um mapa, amigos, grupos) para um celular novo. Abra nesse celular depois de instalar o Stelami.',
             none: 'Um cartão Stelami',
             date: 'Data de nascimento',
             time: 'Hora de nascimento',
@@ -138,6 +146,8 @@
           },
           de: {
             title: '{name} hat dir eine Stelami-Karte geschickt',
+            moveTitle: 'Ein Stelami-Himmel zum Übertragen',
+            moveLine: 'Dieser Link überträgt einen ganzen Stelami-Himmel (ein Geburtsbild, Freunde, Gruppen) auf ein neues Handy. Öffne ihn dort, sobald Stelami installiert ist.',
             none: 'Eine Stelami-Karte',
             date: 'Geburtsdatum',
             time: 'Geburtszeit',
@@ -154,6 +164,8 @@
           },
           it: {
             title: '{name} ti ha inviato la sua scheda Stelami',
+            moveTitle: 'Un cielo Stelami da trasferire',
+            moveLine: 'Questo link trasferisce un intero cielo Stelami (un tema, amici, gruppi) su un nuovo telefono. Aprilo su quel telefono dopo aver installato Stelami.',
             none: 'Una scheda Stelami',
             date: 'Data di nascita',
             time: 'Ora di nascita',
@@ -247,6 +259,15 @@
 
         function render() {
           var frag = (location.hash || '').replace(/^#/, '');
+          // A transfer link (#b...) carries a whole sky: point to the app, show nothing of it.
+          if (frag.charAt(0) === 'b') {
+            $('card').hidden = true;
+            $('title').textContent = t.moveTitle;
+            document.title = t.moveTitle;
+            $('invalid').textContent = t.moveLine;
+            $('invalid').hidden = false;
+            return;
+          }
           var card = readCard(frag);
 
           $('what').textContent = t.what;
