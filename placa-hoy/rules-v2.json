@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "published": "2026-11-16",
+ "published": "2026-11-18",
  "countries": [
   {
    "id": "CO",
@@ -115,8 +115,8 @@
      "valid_from": "2023-01-10",
      "valid_to": "2026-12-20",
      "decree": "Decreto 003 de 2023, compilado en el Decreto 652 de 2025",
-     "source_url": "https://www.movilidadbogota.gov.co/abece-del-pico-y-placa-en-bogota",
-     "last_verified": "2026-11-02",
+     "source_url": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/pico-y-placa-bogota-vehiculos-particulares-1-30-de-noviembre-de-2026",
+     "last_verified": "2026-11-18",
      "summary": "Lunes a viernes hábiles, 6:00–21:00. Días impares no circulan placas terminadas en 6, 7, 8, 9 y 0; días pares, 1, 2, 3, 4 y 5.",
      "type": "parity",
      "weekdays": [
@@ -167,7 +167,7 @@
      "valid_from": "2023-01-10",
      "valid_to": "2026-12-20",
      "decree": "Decreto 003 de 2023, compilado en el Decreto 652 de 2025",
-     "source_url": "https://www.movilidadbogota.gov.co/abece-del-pico-y-placa-en-bogota",
+     "source_url": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/pico-y-placa-bogota-vehiculos-particulares-1-30-de-noviembre-de-2026",
      "last_verified": "2026-11-02",
      "summary": "Las motos no tienen pico y placa en Bogotá.",
      "type": "none"
@@ -178,7 +178,7 @@
      "date": "2026-10-12",
      "title": "Pico y placa regional previsto",
      "text": "Último día de puente festivo: normalmente aplica el pico y placa regional. Si entras a Bogotá por uno de los 9 corredores del plan retorno: de 12:00 a 16:00 solo entran placas terminadas en número par (0, 2, 4, 6, 8) y de 16:00 a 20:00 solo placas impares (1, 3, 5, 7, 9). Motos y eléctricos e híbridos inscritos están exentos; el Pico y Placa Solidario no exime. Confírmalo en la fuente oficial.",
-     "source_url": "https://www.movilidadbogota.gov.co/noticias/festivo-de-san-pedro-y-san-pablo-asi-funcionara-el-pico-y-placa-regional",
+     "source_url": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/pico-y-placa-bogota-vehiculos-particulares-1-30-de-noviembre-de-2026",
      "regional": {
       "kinds": [
        "car"
@@ -205,7 +205,7 @@
      "date": "2026-11-02",
      "title": "Pico y placa regional",
      "text": "Último día de puente festivo: la Alcaldía de Bogotá confirmó el pico y placa regional. Si entras a Bogotá por uno de los 9 corredores del plan retorno: de 12:00 a 16:00 solo entran placas terminadas en número par (0, 2, 4, 6, 8) y de 16:00 a 20:00 solo placas impares (1, 3, 5, 7, 9). Motos y eléctricos e híbridos inscritos están exentos; el Pico y Placa Solidario no exime.",
-     "source_url": "https://www.movilidadbogota.gov.co/noticias/festivo-de-san-pedro-y-san-pablo-asi-funcionara-el-pico-y-placa-regional",
+     "source_url": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/pico-y-placa-bogota-vehiculos-particulares-1-30-de-noviembre-de-2026",
      "regional": {
       "kinds": [
        "car"
@@ -232,7 +232,7 @@
      "date": "2026-11-16",
      "title": "Pico y placa regional",
      "text": "Último día de puente festivo: la Alcaldía de Bogotá confirmó el pico y placa regional. Si entras a Bogotá por uno de los 9 corredores del plan retorno: de 12:00 a 16:00 solo entran placas terminadas en número par (0, 2, 4, 6, 8) y de 16:00 a 20:00 solo placas impares (1, 3, 5, 7, 9). Motos y eléctricos e híbridos inscritos están exentos; el Pico y Placa Solidario no exime.",
-     "source_url": "https://www.movilidadbogota.gov.co/noticias/festivo-de-san-pedro-y-san-pablo-asi-funcionara-el-pico-y-placa-regional",
+     "source_url": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/pico-y-placa-bogota-vehiculos-particulares-1-30-de-noviembre-de-2026",
      "regional": {
       "kinds": [
        "car"
@@ -1743,5 +1743,5 @@
    ]
   }
  ],
- "version": 2026111601
+ "version": 2026111801
 }
