@@ -193,6 +193,24 @@
     <lastmod>2026-11-18</lastmod>
   </url>
   <url>
+    <loc>https://sillapps.com/cactolo/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sillapps.com/cactolo/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sillapps.com/cactolo/fr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sillapps.com/cactolo/" />
+  </url>
+  <url>
+    <loc>https://sillapps.com/cactolo/fr/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sillapps.com/cactolo/fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sillapps.com/cactolo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sillapps.com/cactolo/" />
+  </url>
+  <url>
+    <loc>https://sillapps.com/cactolo/privacy.html</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
     <loc>https://sillapps.com/impressum.html</loc>
     <lastmod>2026-11-02</lastmod>
   </url>
