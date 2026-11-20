@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "version": 2026110601,
- "published": "2026-11-06",
+ "version": 2026112001,
+ "published": "2026-11-20",
  "countries": [
   {
    "code": "BR",
@@ -2056,23 +2056,37 @@
      "key": "none",
      "key_values": [],
      "official_url": "https://www.sanews.gov.za/south-africa/public-comment-sought-special-covid-19-srd-amendments",
-     "calendars": [],
+     "calendars": [
+      {
+       "id": "za_srd_2026_11",
+       "source_url": "https://x.com/OfficialSASSA/status/2120488190264111389",
+       "source_title": "SASSA official post 'COVID-19 SRD payment dates' for November 2026 (@OfficialSASSA on X, 11 November 2026)",
+       "published": "2026-11-11",
+       "valid_from": "2026-11-01",
+       "valid_to": "2026-11-30",
+       "last_verified": "2026-11-20",
+       "status": "official",
+       "payments": [
+        {
+         "period": "2026-11",
+         "label": "November 2026",
+         "all": {
+          "from": "2026-11-23",
+          "to": "2026-11-25"
+         }
+        }
+       ],
+       "notes": [
+        "SASSA pays the November 2026 SRD grant on 23 and 25 November 2026.",
+        "The SRD grant is R370 per month and is extended until 31 March 2027.",
+        "Only approved applicants are paid for a month. Check your own pay date and status on srd.sassa.gov.za."
+       ]
+      }
+     ],
      "notes": [],
      "next_label": "",
      "day_note": "",
      "pending": [
-      {
-       "period": "2026-10",
-       "label": "October 2026",
-       "expected": "SASSA announces the SRD payment dates each month, a few days before. In 2026 SRD was paid in the second half of the month (from about the 20th). Check your status on srd.sassa.gov.za.",
-       "months": 1
-      },
-      {
-       "period": "2026-11",
-       "label": "November 2026",
-       "expected": "SASSA announces the SRD payment dates each month, a few days before. In 2026 SRD was paid in the second half of the month (from about the 20th). Check your status on srd.sassa.gov.za.",
-       "months": 1
-      },
       {
        "period": "2026-12",
        "label": "December 2026",
