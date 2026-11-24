@@ -513,10 +513,15 @@ def city_page(rules: dict, city: dict, country: dict, slug: str,
               Esta página resume las reglas que usa la app; la norma oficial es la que manda.</p>
           </div>
           {beta_text}
-          <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.placahoy&amp;referrer=utm_source%3Dsillapps.com%26utm_medium%3Dwebsite">
-            <img src="/brand/badges/google-play-es-419.png"
-                 alt="Disponible en Google Play" width="646" height="250" />
-          </a>
+          <div style="display:flex;flex-wrap:wrap;align-items:center;column-gap:20px">
+            <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.sillapps.placahoy&amp;referrer=utm_source%3Dsillapps.com%26utm_medium%3Dwebsite">
+              <img src="/brand/badges/google-play-es-419.png"
+                   alt="Disponible en Google Play" width="646" height="250" />
+            </a>
+            <a class="play-badge" href="https://apps.apple.com/app/id6822545708">
+              <img src="/brand/badges/app-store-en.svg" alt="Descargar en el App Store" width="120" height="40" style="width:144px;margin:0" />
+            </a>
+          </div>
 
           <div class="section-grid">
 {chr(10).join(body)}
@@ -526,7 +531,7 @@ def city_page(rules: dict, city: dict, country: dict, slug: str,
               <p>Guarda tu placa una vez y <strong>Placa Hoy</strong> te dice cada día si puedes circular,
                 con el horario, la norma y el enlace a la fuente oficial. Sin anuncios, sin cuenta y sin rastreo.
                 Con Placa Hoy Pro (pago único): Mi viaje para ver tu placa en otra ciudad día por día, alertas la noche anterior y la mañana, y widget.</p>
-              <p><a href="https://play.google.com/store/apps/details?id=com.sillapps.placahoy&amp;referrer=utm_source%3Dsillapps.com%26utm_medium%3Dwebsite">Descargar Placa Hoy en Google Play</a> · <a href="/placa-hoy/">Más sobre la app</a></p>
+              <p><a href="https://play.google.com/store/apps/details?id=com.sillapps.placahoy&amp;referrer=utm_source%3Dsillapps.com%26utm_medium%3Dwebsite">Descargar Placa Hoy en Google Play</a> · <a href="https://apps.apple.com/app/id6822545708">en el App Store</a> · <a href="/placa-hoy/">Más sobre la app</a></p>
             </section>
 
             <section class="section" id="ciudades">
@@ -544,7 +549,7 @@ def city_page(rules: dict, city: dict, country: dict, slug: str,
             </nav>
             <p>Reglas de Placa Hoy versión {e(rules['version'])}, publicadas el {e(fmt_date(rules['published']))}.
               Esta página no usa cookies ni analítica. © {today.year} Sillapps.
-              Google Play es una marca de Google LLC.</p>
+              Google Play es una marca de Google LLC. App Store es una marca de Apple Inc.</p>
           </footer>
         </div>
       </section>
