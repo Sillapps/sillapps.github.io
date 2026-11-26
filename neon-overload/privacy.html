@@ -37,7 +37,7 @@
           <div class="meta-card">
             <p class="meta-line">App name: Neon Overload</p>
             <p class="meta-line">Developer: Sillapps</p>
-            <p class="meta-line">Last updated: November 19, 2026 (Mise à jour : 19 novembre 2026)</p>
+            <p class="meta-line">Last updated: November 26, 2026 (Mise à jour : 26 novembre 2026)</p>
           </div>
 
           <div class="section-grid" id="en">
@@ -121,9 +121,11 @@
                 identifiers, approximate location derived from IP address, app
                 interaction events, diagnostics, performance information,
                 transaction status, and fraud-prevention or security signals.
-                On iPhone, Neon Overload never asks for permission to track you,
-                so the ads SDK does not get Apple's advertising identifier
-                (IDFA).
+                On iPhone, Neon Overload asks once, through Apple's App Tracking
+                Transparency prompt, whether ads may use Apple's advertising
+                identifier (IDFA). The ads SDK only gets it if you allow it; you
+                can change this at any time in Settings &gt; Privacy &amp;
+                Security &gt; Tracking.
               </p>
               <p>
                 <strong>Purchases on iPhone.</strong> On iPhone, in-app purchases
@@ -426,9 +428,12 @@
                 l'appareil ou publicitaire, localisation approximative déduite de
                 l'adresse IP, interactions avec l'app, diagnostics, performances,
                 statut des transactions et signaux de sécurité ou de lutte contre
-                la fraude. Sur iPhone, Neon Overload ne demande jamais
-                l'autorisation de vous suivre : le SDK publicitaire n'obtient donc
-                pas l'identifiant publicitaire d'Apple (IDFA).
+                la fraude. Sur iPhone, Neon Overload demande une fois, par la
+                fenêtre « Suivi » d'Apple (App Tracking Transparency), si les
+                pubs peuvent utiliser l'identifiant publicitaire d'Apple (IDFA).
+                Le SDK publicitaire ne l'obtient que si vous l'autorisez ; vous
+                pouvez changer ce choix à tout moment dans Réglages &gt;
+                Confidentialité et sécurité &gt; Suivi.
               </p>
               <p>
                 <strong>Achats sur iPhone.</strong> Sur iPhone, les achats
